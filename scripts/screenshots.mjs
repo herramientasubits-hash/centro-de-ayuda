@@ -2,8 +2,11 @@
 /**
  * Regenera las capturas de `screenshots.json`.
  *
- *   source: "produccion"  → https://dash.barberlytics.com con la sesión de
- *                            `npm run shots:login`, con los datos enmascarados.
+ *   source: "produccion"  → https://dash.barberlytics.com. Con `"public": true`
+ *                            son pantallas de antes de entrar (login, recuperar
+ *                            número, contacto): no piden sesión ni enmascarado.
+ *                            Sin `public`, usan la sesión de `npm run shots:login`
+ *                            y salen con los datos enmascarados.
  *   source: "app"         → la app de Thema en local (HELP_APP_URL).
  *
  *   npm run shots:login                 (una vez: inicias sesión tú)
@@ -41,8 +44,28 @@ async function prodPage(page, recipe) {
   await page.waitForTimeout(1200);
 }
 
+/**
+ * Pantalla pública de producción con pasos opcionales (`steps` en la receta):
+ *   { "click": "selector" } · { "clickText": "Texto del botón" }
+ *   { "fill": ["selector", "valor"] } · { "wait": 500 }
+ * Solo se escribe texto de ejemplo que falla la validación del navegador;
+ * nunca un celular, un código ni un correo reales.
+ */
+async function publicPage(page, recipe) {
+  await page.goto(`${PROD_URL}${recipe.route}`, { waitUntil: "networkidle" });
+  await page.locator(".section-login").waitFor();
+  await page.waitForTimeout(900);
+  for (const step of recipe.steps ?? []) {
+    if (step.click) await page.locator(step.click).first().click();
+    else if (step.clickText) await page.getByText(step.clickText, { exact: true }).first().click();
+    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1]);
+    await page.waitForTimeout(step.wait ?? 500);
+  }
+}
+
 /** Cada estado deja la pantalla lista para la captura. */
 const STATES = {
+  "pub-page": publicPage,
   "app-page": async (page, recipe) => {
     await page.goto(`${APP_URL}${recipe.route}`);
     await page.getByRole("main").waitFor();
@@ -81,7 +104,7 @@ async function highlight(page, selector) {
 }
 
 async function shoot(browser, key, recipe, theme, mask) {
-  const isProd = recipe.source === "produccion";
+  const isProd = recipe.source === "produccion" && !recipe.public;
   const viewport = VIEWPORTS[recipe.viewport ?? "desktop"];
   const context = await browser.newContext({
     viewport,
@@ -130,7 +153,7 @@ if (!entries.length) {
   process.exit(1);
 }
 
-const needsProd = entries.some(([, recipe]) => recipe.source === "produccion");
+const needsProd = entries.some(([, recipe]) => recipe.source === "produccion" && !recipe.public);
 let mask = null;
 if (needsProd) {
   if (!fs.existsSync(AUTH_FILE)) {

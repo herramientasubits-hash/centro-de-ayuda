@@ -1,12 +1,197 @@
 {
   "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both.",
-
-  "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show", "highlight": ".dropdown-menu.show >> text=Cerrar Sesión" },
-  "acceso-y-cuenta/mi-perfil/pantalla": { "source": "produccion", "route": "/profile", "state": "prod-page", "viewport": "desktop", "theme": "light" },
-  "acceso-y-cuenta/cambiar-de-rol/menu-con-roles": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show" },
-
-  "navegacion/las-secciones-de-barberlytics/menu": { "source": "produccion", "route": "/", "state": "prod-page", "viewport": "desktop", "theme": "light" },
-  "navegacion/cambiar-de-sucursal/selector": { "source": "produccion", "route": "/", "state": "prod-branch-menu", "viewport": "desktop", "theme": "light" },
-  "navegacion/notificaciones/panel": { "source": "produccion", "route": "/", "state": "prod-notifications", "viewport": "desktop", "theme": "light" },
-  "navegacion/idioma-y-modo-oscuro/modo-oscuro": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show", "highlight": ".dropdown-menu.show >> text=Modo oscuro" }
+  "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-account-menu",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".dropdown-menu.show",
+    "highlight": ".dropdown-menu.show >> text=Cerrar Sesión"
+  },
+  "acceso-y-cuenta/mi-perfil/pantalla": {
+    "source": "produccion",
+    "route": "/profile",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "acceso-y-cuenta/cambiar-de-rol/menu-con-roles": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-account-menu",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".dropdown-menu.show"
+  },
+  "navegacion/las-secciones-de-barberlytics/menu": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "navegacion/cambiar-de-sucursal/selector": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-branch-menu",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "navegacion/notificaciones/panel": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-notifications",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "navegacion/idioma-y-modo-oscuro/modo-oscuro": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-account-menu",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".dropdown-menu.show",
+    "highlight": ".dropdown-menu.show >> text=Modo oscuro"
+  },
+  "acceso-y-cuenta/ingresar/pantalla-de-entrada": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "clip": ".section-login"
+  },
+  "acceso-y-cuenta/ingresar/campo-vacio": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "clip": ".section-login",
+    "steps": [
+      {
+        "clickText": "Iniciar Sesión"
+      }
+    ]
+  },
+  "acceso-y-cuenta/ingresar/idioma": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "steps": [
+      {
+        "click": "button.btn-action-dash.dropdown-toggle"
+      }
+    ]
+  },
+  "acceso-y-cuenta/elegir-el-pais-del-telefono/lista-de-paises": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "clip": ".section-login",
+    "steps": [
+      {
+        "click": ".bold-select-selected"
+      }
+    ]
+  },
+  "acceso-y-cuenta/confirmar-el-codigo/pantalla": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate/verifyotp",
+    "clip": ".section-login"
+  },
+  "acceso-y-cuenta/confirmar-el-codigo/codigo-vacio": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate/verifyotp",
+    "clip": ".section-login",
+    "steps": [
+      {
+        "clickText": "Confirmar"
+      }
+    ]
+  },
+  "acceso-y-cuenta/olvidaste-tu-numero/enlace": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "clip": ".section-login",
+    "highlight": "button.btn-inline"
+  },
+  "acceso-y-cuenta/olvidaste-tu-numero/pantalla": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate/forgot-number",
+    "clip": ".section-login"
+  },
+  "acceso-y-cuenta/olvidaste-tu-numero/correo-invalido": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate/forgot-number",
+    "clip": ".section-login",
+    "steps": [
+      {
+        "fill": [
+          "input[type=text]",
+          "no-es-un-correo"
+        ]
+      },
+      {
+        "clickText": "Enviar correo"
+      }
+    ]
+  },
+  "acceso-y-cuenta/contactar-a-soporte-desde-la-entrada/boton-de-ayuda": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "highlight": "button.help-float"
+  },
+  "acceso-y-cuenta/contactar-a-soporte-desde-la-entrada/formulario": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate/contact",
+    "clip": ".section-login"
+  },
+  "acceso-y-cuenta/politica-de-privacidad-y-terminos/enlace": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "route": "/authenticate",
+    "clip": ".section-login",
+    "highlight": "a.terms-link"
+  }
 }

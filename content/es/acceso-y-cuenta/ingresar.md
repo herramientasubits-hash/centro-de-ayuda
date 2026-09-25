@@ -1,42 +1,61 @@
 ---
 id: acceso-y-cuenta/ingresar
-title: "Entrar a Barberlytics con el código que te llega al celular"
-description: "Cómo confirmas que eres tú al entrar: escribes el código que te enviamos y tocas Confirmar."
+title: "Iniciar sesión con tu número de teléfono"
+description: "Cómo entras a Barberlytics: eliges el país, escribes tu teléfono y confirmas con un código."
 section: acceso-y-cuenta
 order: 10
 roles: [todos]
 screens: [/authenticate]
-keywords: [entrar, iniciar sesión, login, código, confirmar número, verificación, celular, móvil, reenviar código]
-related: [acceso-y-cuenta/cerrar-sesion, acceso-y-cuenta/mi-perfil]
-status: draft
-updated: 2026-09-24
+keywords: [iniciar sesión, entrar, login, ingresar, teléfono, celular, número, sin contraseña, código, acceso, sms]
+related: [acceso-y-cuenta/elegir-el-pais-del-telefono, acceso-y-cuenta/confirmar-el-codigo, acceso-y-cuenta/olvidaste-tu-numero]
+status: review
+updated: 2026-09-25
 ---
 
-# Entrar a Barberlytics con el código que te llega al celular
+# Iniciar sesión con tu número de teléfono
 
-**En resumen:** para entrar, Barberlytics confirma que eres tú con un código que te llega al celular.
-Escríbelo en **Código** y toca **Confirmar**. Si no te llegó, toca **Reenviar Código**.
+**En resumen:** en la pantalla de entrada escribes tu **Teléfono** y tocas **Iniciar Sesión**. Después confirmas
+que eres tú con un código. No hay contraseña que recordar.
 
-## Confirmar el número
+![La pantalla de entrada de Barberlytics con el campo Teléfono y el botón Iniciar Sesión](/assets/es/acceso-y-cuenta/ingresar/pantalla-de-entrada.png)
 
-Después de pedir el ingreso, la pantalla cambia a **Confirmar número** y te dice: «Hemos enviado un
-código a tu móvil para comprobar que eres tú».
+## Pasos
 
-1. Mira el mensaje que te llegó al celular y busca el código.
-2. Escríbelo en el campo **Código\***.
-3. Toca **Confirmar**.
+1. Abre **dash.barberlytics.com**. Verás el mensaje «Empieza a Gestionar, Medir y maximizar tu barbería.» y el campo
+   **Teléfono\***.
+2. Si tu número no es de Estados Unidos, elige tu país en la banderita de la izquierda del campo. Mira
+   [Elegir el país de tu teléfono](/ayuda/acceso-y-cuenta/elegir-el-pais-del-telefono).
+3. Escribe tu número. El campo solo acepta números.
+4. Toca **Iniciar Sesión**.
+5. Sigue con [Confirmar tu número con el código](/ayuda/acceso-y-cuenta/confirmar-el-codigo).
 
-Si el código es correcto, entras a tu cuenta.
+## Errores que puedes ver
 
-## Si el código no llega
+| Lo que dice la pantalla | Qué significa | Qué hacer |
+|---|---|---|
+| «El campo es requerido» | Tocaste **Iniciar Sesión** sin escribir tu número. | Escribe tu número y vuelve a tocar el botón. |
+| «El campo es muy corto» | Al número le faltan dígitos. | Revisa que escribiste el número completo, con el país correcto. |
 
-Toca **Reenviar Código** y espera el mensaje nuevo. Si te equivocaste de número al empezar, toca
-**← Atrás** para volver al paso anterior.
+![El aviso «El campo es requerido» debajo del campo Teléfono](/assets/es/acceso-y-cuenta/ingresar/campo-vacio.png)
+
+## Otras cosas que hay en esta pantalla
+
+- **Idioma:** el globo de arriba a la derecha cambia entre **ES** y **EN**.
+  ![El selector de idioma con ES y EN](/assets/es/acceso-y-cuenta/ingresar/idioma.png)
+- **¿Olvidaste tu número?:** debajo del campo. Mira [Olvidaste tu número](/ayuda/acceso-y-cuenta/olvidaste-tu-numero).
+- **Política de privacidad y términos de servicio:** al final de la tarjeta. Mira
+  [Política de privacidad y términos de servicio](/ayuda/acceso-y-cuenta/politica-de-privacidad-y-terminos).
+- **Botón de ayuda:** el círculo negro con un signo de interrogación, abajo a la derecha. Mira
+  [Contactar a soporte desde la entrada](/ayuda/acceso-y-cuenta/contactar-a-soporte-desde-la-entrada).
 
 ## Preguntas frecuentes
 
-**¿Puedo cambiar el idioma antes de entrar?**
-Sí. En la pantalla de entrada hay un selector de idioma arriba a la derecha.
+**¿Por qué no me pide contraseña?**
+En esta pantalla no hay contraseña: entras con tu teléfono y confirmas que eres tú con un código que te llega al móvil.
 
-**¿Hay algún botón de ayuda en esta pantalla?**
-Sí, abajo a la derecha hay un botón de ayuda.
+**¿Puedo crear mi cuenta desde aquí?**
+La pantalla de entrada no tiene un botón para crear cuenta. Si aún no tienes acceso, usa el botón de ayuda, abajo a la
+derecha, para escribirnos.
+
+**Escribo letras y no pasa nada.**
+Es normal: el campo **Teléfono** solo recibe números.

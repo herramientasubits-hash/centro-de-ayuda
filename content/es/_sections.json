@@ -9,7 +9,7 @@
   {
     "id": "acceso-y-cuenta",
     "title": "Acceso y cuenta",
-    "description": "Entrar, tu perfil y plan, cambiar de rol y cerrar sesión.",
+    "description": "Iniciar sesión, confirmar el código, recuperar tu número, cerrar sesión y tu perfil.",
     "icon": "key",
     "order": 20
   },

@@ -256,11 +256,11 @@ Esta acción es irreversible y no se puede deshacer.»
 
 Se necesita una sesión cerrada, un flujo completo o permisos de escritura para verlo:
 
-1. **Entrar (`/authenticate`)**: solo se vio el paso «Confirmar número» (`/authenticate/verifyotp`):
-   «Hemos enviado un código a tu móvil para comprobar que eres tú», campo **Código\***, botón
-   **Confirmar**, **Reenviar Código** y **← Atrás**, con un selector de idioma arriba y un botón de
-   ayuda flotante abajo a la derecha. Falta: el paso del número, los errores, el bloqueo, la
-   recuperación del número, si hay «Crear cuenta», si hay entrada con Google o Outlook.
+1. **Entrar (`/authenticate`)** — visto el 2026-09-25 con un navegador sin sesión (`casos/login.md`).
+   Lo que falta y solo se ve con un celular real: la transición número → código, el mensaje si el
+   código es incorrecto o vence, cuántos intentos hay y si existe un bloqueo, el mensaje si el número
+   no está registrado, qué pasa tras «Reenviar Código», qué pasa tras «Enviar» en Contáctanos y
+   tras «Enviar correo», y el contenido del correo de «Olvidaste tu número?».
 2. **Onboarding** de una cuenta nueva.
 3. **Flujos completos** que exigen guardar: crear una cita (selección de cliente, servicio, barbero,
    fecha), cobrar (pagar orden), abrir una cita del calendario (estados y acciones), crear un
