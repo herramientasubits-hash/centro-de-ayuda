@@ -3,7 +3,7 @@
  * Un paso sobre la ventana abierta por `booking-browser.mjs` (control remoto :9333):
  *   node scripts/booking-step.mjs [--click "Texto" | --click "sel:.css"]... [--shot nombre] [--html "selector"]
  * Imprime el texto visible de la página tras las acciones. `--shot` guarda una
- * captura enmascarada en assets/es/calendario/reservas-online-como-las-ve-tu-cliente/.
+ * captura enmascarada en assets/es/agendamiento-online/como-reserva-tu-cliente/.
  */
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -11,7 +11,7 @@ import { chromium } from "@playwright/test";
 import { applyMask, loadMaskConfig } from "./lib/mask.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const OUT_DIR = path.join(ROOT, "assets", "es", "calendario", "reservas-online-como-las-ve-tu-cliente");
+const OUT_DIR = path.join(ROOT, "assets", "es", "agendamiento-online", "como-reserva-tu-cliente");
 const args = process.argv.slice(2);
 const clicks = args.filter((arg, i) => args[i - 1] === "--click");
 const shot = args[args.indexOf("--shot") + 1];

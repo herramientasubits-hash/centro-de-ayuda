@@ -1904,9 +1904,9 @@
    "priority": "P1"
   },
   {
-   "id": "calendario/reservas-online-como-las-ve-tu-cliente",
+   "id": "agendamiento-online/como-reserva-tu-cliente",
    "title": "Reservas online: cómo las ve tu cliente",
-   "section": "calendario",
+   "section": "agendamiento-online",
    "type": "C",
    "screens": [
     "/online-booking"
@@ -1922,9 +1922,9 @@
    "priority": "P1"
   },
   {
-   "id": "calendario/citas-que-crea-el-cliente",
+   "id": "agendamiento-online/citas-que-crea-el-cliente",
    "title": "Citas que crea el cliente: cuándo entran y cómo las recibes",
-   "section": "calendario",
+   "section": "agendamiento-online",
    "type": "C",
    "screens": [
     "/calendar"
@@ -3753,9 +3753,9 @@
    "priority": "P1"
   },
   {
-   "id": "configuracion/agendamiento-online-que-es",
+   "id": "agendamiento-online/que-es",
    "title": "Agendamiento online: qué es y cómo funciona",
-   "section": "configuracion",
+   "section": "agendamiento-online",
    "type": "C",
    "screens": [
     "/online-booking"
@@ -3770,9 +3770,9 @@
    "priority": "P1"
   },
   {
-   "id": "configuracion/agendamiento-online-panel-lateral",
+   "id": "agendamiento-online/panel-lateral",
    "title": "Reservas en tu sitio web: botón «Book now» flotante",
-   "section": "configuracion",
+   "section": "agendamiento-online",
    "type": "G",
    "screens": [
     "/online-booking"
@@ -3786,9 +3786,9 @@
    "priority": "P1"
   },
   {
-   "id": "configuracion/agendamiento-online-abrir-desde-un-enlace",
+   "id": "agendamiento-online/abrir-desde-un-enlace",
    "title": "Reservas en tu sitio web: abrir desde tu propio botón",
-   "section": "configuracion",
+   "section": "agendamiento-online",
    "type": "G",
    "screens": [
     "/online-booking"
@@ -3802,9 +3802,9 @@
    "priority": "P2"
   },
   {
-   "id": "configuracion/agendamiento-online-embebido",
+   "id": "agendamiento-online/embebido",
    "title": "Reservas en tu sitio web: incrustar en una página",
-   "section": "configuracion",
+   "section": "agendamiento-online",
    "type": "G",
    "screens": [
     "/online-booking"
@@ -3818,9 +3818,9 @@
    "priority": "P2"
   },
   {
-   "id": "configuracion/enlace-directo-de-reserva-y-utm",
+   "id": "agendamiento-online/enlace-directo-y-utm",
    "title": "El enlace directo de reserva y los parámetros UTM",
-   "section": "configuracion",
+   "section": "agendamiento-online",
    "type": "G",
    "screens": [
     "/online-booking"
@@ -4316,6 +4316,133 @@
     "E"
    ],
    "priority": "P2"
+  },
+  {
+   "id": "agendamiento-online/cliente-que-vuelve",
+   "title": "Si ya es cliente: repetir su última visita",
+   "section": "agendamiento-online",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/elegir-sede-servicio-y-barbero",
+   "title": "Elegir sede, servicio y barbero",
+   "section": "agendamiento-online",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/elegir-fecha-y-hora",
+   "title": "Elegir fecha y hora",
+   "section": "agendamiento-online",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/confirmar-la-reserva",
+   "title": "Confirmar la reserva",
+   "section": "agendamiento-online",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/que-ve-tu-cliente",
+   "title": "Qué decide lo que ve tu cliente al reservar",
+   "section": "agendamiento-online",
+   "type": "R",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/no-aparece-un-servicio-o-barbero",
+   "title": "Un servicio o un barbero no aparece al reservar",
+   "section": "agendamiento-online",
+   "type": "P",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "agendamiento-online/no-hay-horas-disponibles",
+   "title": "El cliente no encuentra horas disponibles",
+   "section": "agendamiento-online",
+   "type": "P",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
   }
  ]
 }

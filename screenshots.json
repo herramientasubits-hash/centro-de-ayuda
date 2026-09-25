@@ -3159,7 +3159,7 @@
       }
     ]
   },
-  "configuracion/agendamiento-online-que-es/pantalla": {
+  "agendamiento-online/que-es/pantalla": {
     "source": "produccion",
     "route": "/online-booking",
     "state": "prod-page",
@@ -3169,7 +3169,7 @@
       "img"
     ]
   },
-  "configuracion/agendamiento-online-panel-lateral/fragmento": {
+  "agendamiento-online/panel-lateral/fragmento": {
     "source": "produccion",
     "route": "/online-booking",
     "state": "prod-page",
@@ -3180,7 +3180,7 @@
       "img"
     ]
   },
-  "configuracion/agendamiento-online-abrir-desde-un-enlace/fragmento": {
+  "agendamiento-online/abrir-desde-un-enlace/fragmento": {
     "source": "produccion",
     "route": "/online-booking",
     "state": "prod-page",
@@ -3191,7 +3191,7 @@
       "img"
     ]
   },
-  "configuracion/agendamiento-online-embebido/fragmento": {
+  "agendamiento-online/embebido/fragmento": {
     "source": "produccion",
     "route": "/online-booking",
     "state": "prod-page",
@@ -3202,7 +3202,7 @@
       "img"
     ]
   },
-  "configuracion/enlace-directo-de-reserva-y-utm/enlace": {
+  "agendamiento-online/enlace-directo-y-utm/enlace": {
     "source": "produccion",
     "route": "/online-booking",
     "state": "prod-page",
@@ -3575,7 +3575,7 @@
     "clip": ".actions-dashboard",
     "highlight": ".fa-magnifying-glass"
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/paso-1": {
+  "agendamiento-online/como-reserva-tu-cliente/paso-1": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3586,7 +3586,7 @@
       "img"
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/celular": {
+  "agendamiento-online/como-reserva-tu-cliente/celular": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3597,7 +3597,7 @@
       "img"
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/bienvenida": {
+  "agendamiento-online/como-reserva-tu-cliente/bienvenida": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3621,7 +3621,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/elegir-diferente": {
+  "agendamiento-online/como-reserva-tu-cliente/elegir-diferente": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3649,7 +3649,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/servicios": {
+  "agendamiento-online/como-reserva-tu-cliente/servicios": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3681,7 +3681,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/barberos": {
+  "agendamiento-online/como-reserva-tu-cliente/barberos": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3717,7 +3717,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/ver-barbero": {
+  "agendamiento-online/como-reserva-tu-cliente/ver-barbero": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3757,7 +3757,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/fecha-y-hora": {
+  "agendamiento-online/como-reserva-tu-cliente/fecha-y-hora": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3805,7 +3805,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/confirmar": {
+  "agendamiento-online/como-reserva-tu-cliente/confirmar": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
@@ -3861,7 +3861,7 @@
       }
     ]
   },
-  "calendario/reservas-online-como-las-ve-tu-cliente/agregar-cita": {
+  "agendamiento-online/como-reserva-tu-cliente/agregar-cita": {
     "source": "produccion",
     "public": true,
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",

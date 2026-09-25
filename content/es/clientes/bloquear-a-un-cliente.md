@@ -7,7 +7,7 @@ order: 130
 roles: [owner, admin, recepcion]
 screens: [/customers/*]
 keywords: [bloquear cliente, bloqueo, cliente bloqueado, cliente que no llega, cliente que no paga, no quiero que reserve, impedir reservas online, vetar cliente, banear, lista negra, desbloquear cliente, quitar bloqueo, motivo del bloqueo]
-related: [clientes/ver-un-cliente, clientes/tipos-de-cliente, calendario/citas-que-crea-el-cliente, calendario/el-cliente-no-se-presento]
+related: [clientes/ver-un-cliente, clientes/tipos-de-cliente, agendamiento-online/citas-que-crea-el-cliente, calendario/el-cliente-no-se-presento]
 status: draft
 updated: 2026-09-25
 ---

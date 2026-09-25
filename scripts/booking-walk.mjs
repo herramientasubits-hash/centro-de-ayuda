@@ -5,7 +5,7 @@
  * Abre una ventana de Chromium en la página pública de reserva. TÚ escribes tu
  * celular y avanzas por los pasos; el guion no escribe nada. Cada vez que la
  * pantalla cambia, guarda su texto en `casos/booking-flow.md` y una captura
- * enmascarada en `assets/es/calendario/reservas-online-como-las-ve-tu-cliente/`.
+ * enmascarada en `assets/es/agendamiento-online/como-reserva-tu-cliente/`.
  * Ciérrala tú cuando termines (o antes de confirmar, si no quieres crear la cita).
  *
  *   node scripts/booking-walk.mjs "https://fd.barberlytics.com/book/…"
@@ -22,7 +22,7 @@ if (!url) {
   console.error("Falta la URL de reserva.");
   process.exit(1);
 }
-const OUT_DIR = path.join(ROOT, "assets", "es", "calendario", "reservas-online-como-las-ve-tu-cliente");
+const OUT_DIR = path.join(ROOT, "assets", "es", "agendamiento-online", "como-reserva-tu-cliente");
 const NOTES = path.join(ROOT, "casos", "booking-flow.md");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const mask = loadMaskConfig() ?? { replace: {}, blur: [] };

@@ -7,7 +7,7 @@ order: 30
 roles: [owner, admin]
 screens: [/business-details/*]
 keywords: [enlaces en línea, sitio web, página web, instagram, facebook, mapas de google, google maps, redes sociales, enlaces en los correos, cómo llegar, dirección en el mapa, detalles del negocio, link de instagram]
-related: [configuracion/detalles-del-negocio-hora-y-calendario, configuracion/enlace-directo-de-reserva-y-utm, configuracion/conoce-configuracion]
+related: [configuracion/detalles-del-negocio-hora-y-calendario, agendamiento-online/enlace-directo-y-utm, configuracion/conoce-configuracion]
 status: draft
 updated: 2026-09-25
 ---
@@ -44,7 +44,7 @@ La pantalla lo explica así: «Añade el sitio web de su empresa y enlaces a red
 ## Preguntas frecuentes
 
 **¿Aquí pongo el enlace para que mis clientes reserven?**
-No. Este bloque es para tu sitio web y tus redes. El enlace para reservar está en **Configuración › Agendamiento online**. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/configuracion/enlace-directo-de-reserva-y-utm).
+No. Este bloque es para tu sitio web y tus redes. El enlace para reservar está en **Configuración › Agendamiento online**. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/agendamiento-online/enlace-directo-y-utm).
 
 **No tengo sitio web. ¿Dejo el campo vacío?**
 Sí. Ningún enlace es obligatorio. Llena solo los que tengas.

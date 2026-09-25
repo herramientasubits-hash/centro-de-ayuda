@@ -1,13 +1,13 @@
 ---
-id: calendario/citas-que-crea-el-cliente
+id: agendamiento-online/citas-que-crea-el-cliente
 title: "Citas que crea el cliente: cuándo entran y cómo las recibes"
 description: "Qué se sabe hoy de las citas que el cliente agenda solo por el enlace o el widget: dónde se activan, cómo se cuentan en Métricas y cómo se distinguen en el historial de la cita."
-section: calendario
-order: 260
+section: agendamiento-online
+order: 70
 roles: [owner, admin, recepcion]
 screens: [/calendar]
 keywords: [cita online, reserva online, el cliente agendó, agendamiento online, reserva por internet, widget de reserva, enlace de reserva, cita creada por el cliente, notificación de cita, agenda el cliente, book now, citas por internet]
-related: [calendario/reservas-online-como-las-ve-tu-cliente, calendario/abrir-una-cita, configuracion/agendamiento-online-que-es, configuracion/enlace-directo-de-reserva-y-utm, metricas/metodo-de-agendamiento-y-citas, metricas/clientes-reservas-online-y-rate-walk-in, navegacion/notificaciones]
+related: [agendamiento-online/como-reserva-tu-cliente, calendario/abrir-una-cita, agendamiento-online/que-es, agendamiento-online/enlace-directo-y-utm, metricas/metodo-de-agendamiento-y-citas, metricas/clientes-reservas-online-y-rate-walk-in, navegacion/notificaciones]
 status: draft
 updated: 2026-09-25
 ---
@@ -25,7 +25,7 @@ Tu cliente agenda desde una de las formas que activas en **Configuración › Ag
 - **Reserva embebida**: la reserva dentro de tu página.
 - **Enlace directo de reserva**: un enlace para compartir en Instagram o WhatsApp.
 
-Lo cuenta [Agendamiento online: qué es](/ayuda/configuracion/agendamiento-online-que-es) y, para el enlace, [Enlace directo de reserva y UTM](/ayuda/configuracion/enlace-directo-de-reserva-y-utm).
+Lo cuenta [Agendamiento online: qué es](/ayuda/agendamiento-online/que-es) y, para el enlace, [Enlace directo de reserva y UTM](/ayuda/agendamiento-online/enlace-directo-y-utm).
 
 ## Cómo las distingues
 
@@ -53,7 +53,7 @@ Lo cuenta [Agendamiento online: qué es](/ayuda/configuracion/agendamiento-onlin
 Todavía no está comprobado. En el calendario recorrido no se vio ningún paso de aprobación.
 
 **¿El cliente puede elegir barbero?**
-Depende de la **Visibilidad para agendamiento** de cada barbero, en su ficha. Cómo se ve para el cliente lo cuenta [Reservas online: cómo las ve tu cliente](/ayuda/calendario/reservas-online-como-las-ve-tu-cliente).
+Depende de la **Visibilidad para agendamiento** de cada barbero, en su ficha. Cómo se ve para el cliente lo cuenta [Reservas online: cómo las ve tu cliente](/ayuda/agendamiento-online/como-reserva-tu-cliente).
 
 **¿El cliente puede cancelar solo?**
 Si en la ficha del barbero, pestaña **Opciones**, está encendido **Los clientes pueden cancelar citas**, con el tiempo límite en **Horas** y **Minutos**.

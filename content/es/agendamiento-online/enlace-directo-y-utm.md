@@ -1,13 +1,13 @@
 ---
-id: configuracion/enlace-directo-de-reserva-y-utm
+id: agendamiento-online/enlace-directo-y-utm
 title: "El enlace directo de reserva y los parámetros UTM"
 description: "El enlace que compartes por WhatsApp e Instagram para que tus clientes reserven sin sitio web, y cómo marcarlo con UTM para saber de dónde llegan."
-section: configuracion
+section: agendamiento-online
 order: 90
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [enlace directo de reserva, link de reserva, enlace para reservar, compartir enlace, whatsapp, instagram, bio de instagram, utm, seguimiento utm, parámetros utm, marketing, de dónde llegan mis clientes, reservas por internet, copiar enlace, canales]
-related: [configuracion/agendamiento-online-que-es, configuracion/agendamiento-online-panel-lateral, metricas/marketing-canales-y-campanas, metricas/metodo-de-agendamiento-y-citas]
+related: [agendamiento-online/que-es, agendamiento-online/panel-lateral, metricas/marketing-canales-y-campanas, metricas/metodo-de-agendamiento-y-citas]
 status: draft
 updated: 2026-09-25
 ---
@@ -25,7 +25,7 @@ updated: 2026-09-25
 La pantalla lo explica así: «Comparte este enlace con tus clientes para que puedan reservar en línea directamente. Puedes agregar parámetros UTM para seguimiento de marketing.»
 
 1. En **Enlace directo de reserva**, toca **Copiar**.
-   ![El bloque Link de reserva online con el Enlace directo de reserva, el botón Copiar y el Seguimiento UTM](/assets/es/configuracion/enlace-directo-de-reserva-y-utm/enlace.png)
+   ![El bloque Link de reserva online con el Enlace directo de reserva, el botón Copiar y el Seguimiento UTM](/assets/es/agendamiento-online/enlace-directo-y-utm/enlace.png)
 2. Pégalo donde tus clientes lo vean: el mensaje de bienvenida de WhatsApp, la bio de Instagram, un anuncio.
 
 El enlace tiene esta forma, donde TU-ENLACE es el tramo propio de tu barbería. Cópialo siempre desde la pantalla con **Copiar**:

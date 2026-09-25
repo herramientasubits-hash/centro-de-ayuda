@@ -7,7 +7,7 @@ order: 290
 roles: [owner, admin, recepcion]
 screens: [/calendar, /notifications-center]
 keywords: [recordatorio, no le llegó el recordatorio, aviso de cita, sms al cliente, correo al cliente, notificación de cita, confirmación de cita, push]
-related: [configuracion/centro-de-notificaciones-como-funciona, calendario/citas-que-crea-el-cliente, equipo/ficha-de-un-barbero-opciones, clientes/perfil-de-un-cliente]
+related: [configuracion/centro-de-notificaciones-como-funciona, agendamiento-online/citas-que-crea-el-cliente, equipo/ficha-de-un-barbero-opciones, clientes/perfil-de-un-cliente]
 status: draft
 updated: 2026-09-25
 ---

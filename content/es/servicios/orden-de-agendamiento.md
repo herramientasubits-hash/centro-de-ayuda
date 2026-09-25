@@ -7,7 +7,7 @@ order: 130
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [orden de agendamiento, ordenar servicios, ordenar categorías, orden de las categorías, reserva online, agendamiento online, qué ve el cliente primero, reordenar, arrastrar, mover una categoría arriba, primero los cortes, ordenamiento de servicios para reservas online]
-related: [servicios/como-se-organizan-tus-servicios, servicios/crear-una-categoria-de-servicios, servicios/servicio-publico-o-privado, calendario/citas-que-crea-el-cliente, configuracion/agendamiento-online-que-es]
+related: [servicios/como-se-organizan-tus-servicios, servicios/crear-una-categoria-de-servicios, servicios/servicio-publico-o-privado, agendamiento-online/citas-que-crea-el-cliente, agendamiento-online/que-es]
 status: draft
 updated: 2026-09-25
 ---

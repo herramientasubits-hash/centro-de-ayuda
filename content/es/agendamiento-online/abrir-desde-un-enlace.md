@@ -1,13 +1,13 @@
 ---
-id: configuracion/agendamiento-online-abrir-desde-un-enlace
+id: agendamiento-online/abrir-desde-un-enlace
 title: "Reservas en tu sitio web: abrir desde tu propio botón"
 description: "La opción «Abrir desde enlace» del agendamiento online: la reserva se abre desde un botón o enlace que ya tienes en tu sitio web, sin botón flotante."
-section: configuracion
-order: 70
+section: agendamiento-online
+order: 110
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [abrir desde enlace, mi propio botón, reservar desde un enlace, agendamiento online, reservas en mi sitio web, widget, data-trigger, copiar código, botón de reserva, reserva online, sitio web, id del enlace, reservar cita]
-related: [configuracion/agendamiento-online-que-es, configuracion/agendamiento-online-panel-lateral, configuracion/agendamiento-online-embebido, configuracion/enlace-directo-de-reserva-y-utm]
+related: [agendamiento-online/que-es, agendamiento-online/panel-lateral, agendamiento-online/embebido, agendamiento-online/enlace-directo-y-utm]
 status: review
 updated: 2026-09-25
 ---
@@ -28,7 +28,7 @@ La pantalla lo explica así: «Sin botón flotante: el flujo de reserva se abre 
 
 1. En «Agrega las reservas a tu sitio web», elige **Abrir desde enlace**.
 2. Toca **Copiar**.
-   ![La opción Abrir desde enlace con su fragmento de código y el botón Copiar](/assets/es/configuracion/agendamiento-online-abrir-desde-un-enlace/fragmento.png)
+   ![La opción Abrir desde enlace con su fragmento de código y el botón Copiar](/assets/es/agendamiento-online/abrir-desde-un-enlace/fragmento.png)
 3. Pega el fragmento en tu sitio web.
 4. Conecta tu botón. La pantalla lo dice así: «Cambia #reservar por el id de tu enlace. Si no tiene, añádeselo: `<a id="reservar" href="#">Reservar cita</a>`.»
 
@@ -46,10 +46,10 @@ El fragmento es el mismo del panel lateral con un dato más, `data-trigger`, que
 ## Preguntas frecuentes
 
 **¿En qué se diferencia del panel lateral?**
-El **Panel lateral** pone su propio botón flotante «Book now». **Abrir desde enlace** usa el botón o enlace que tú ya tienes. Mira [Reservas en tu sitio web: botón «Book now» flotante](/ayuda/configuracion/agendamiento-online-panel-lateral).
+El **Panel lateral** pone su propio botón flotante «Book now». **Abrir desde enlace** usa el botón o enlace que tú ya tienes. Mira [Reservas en tu sitio web: botón «Book now» flotante](/ayuda/agendamiento-online/panel-lateral).
 
 **¿Y de la reserva embebida?**
-La **Reserva embebida** se ve desde el principio dentro de una página, sin botón ni panel. Mira [Reservas en tu sitio web: incrustar en una página](/ayuda/configuracion/agendamiento-online-embebido).
+La **Reserva embebida** se ve desde el principio dentro de una página, sin botón ni panel. Mira [Reservas en tu sitio web: incrustar en una página](/ayuda/agendamiento-online/embebido).
 
 **¿Tengo que saber programar?**
 La pantalla te da el código listo, pero hay que ponerle un id a tu enlace. Si otra persona administra tu sitio, envíale el fragmento y esta página.

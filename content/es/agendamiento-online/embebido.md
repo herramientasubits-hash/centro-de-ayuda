@@ -1,13 +1,13 @@
 ---
-id: configuracion/agendamiento-online-embebido
+id: agendamiento-online/embebido
 title: "Reservas en tu sitio web: incrustar en una página"
 description: "La opción «Reserva embebida»: la reserva se ve dentro de una página de tu sitio web, como una sección más, copiando el código desde Barberlytics."
-section: configuracion
-order: 80
+section: agendamiento-online
+order: 120
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [reserva embebida, incrustar reservas, embeber, dentro de mi página, agendamiento online, reservas en mi sitio web, widget, inline, copiar código, reserva online, sitio web, página de reservas, iframe]
-related: [configuracion/agendamiento-online-que-es, configuracion/agendamiento-online-panel-lateral, configuracion/agendamiento-online-abrir-desde-un-enlace, configuracion/enlace-directo-de-reserva-y-utm]
+related: [agendamiento-online/que-es, agendamiento-online/panel-lateral, agendamiento-online/abrir-desde-un-enlace, agendamiento-online/enlace-directo-y-utm]
 status: review
 updated: 2026-09-25
 ---
@@ -28,7 +28,7 @@ La pantalla lo explica así: «Incrusta el flujo de reserva dentro de tu página
 
 1. En «Agrega las reservas a tu sitio web», elige **Reserva embebida**.
 2. Toca **Copiar**.
-   ![La opción Reserva embebida con su fragmento de código y el botón Copiar](/assets/es/configuracion/agendamiento-online-embebido/fragmento.png)
+   ![La opción Reserva embebida con su fragmento de código y el botón Copiar](/assets/es/agendamiento-online/embebido/fragmento.png)
 3. Pega el fragmento en el lugar exacto de la página donde quieres que se vea la reserva. Ese lugar decide el ancho.
 
 El fragmento es el mismo de las otras dos formas, con `data-mode="inline"`. Aquí TU-ID y TU-PERFIL son solo nombres de ejemplo: copia siempre el tuyo desde la pantalla con **Copiar**.
@@ -47,4 +47,4 @@ Cuando tienes una página solo para reservar, por ejemplo `mibarberia.com/reserv
 Sí. La pantalla dice: «Si usas las dos en la misma página, incluye el <script> una sola vez.»
 
 **¿Puedo compartir la reserva sin tener sitio web?**
-Sí, con el **Enlace directo de reserva** de la misma pantalla. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/configuracion/enlace-directo-de-reserva-y-utm).
+Sí, con el **Enlace directo de reserva** de la misma pantalla. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/agendamiento-online/enlace-directo-y-utm).

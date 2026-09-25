@@ -7,7 +7,7 @@ order: 100
 roles: [owner, admin]
 screens: [/business-closed]
 keywords: [períodos de cierre, periodo cerrado, cerrar por vacaciones, cerrar la barbería, días cerrados, vacaciones de la barbería, reformas, puente, no recibir reservas, añadir periodo cerrado, fecha de inicio, fecha de finalización, cierre temporal, negocio cerrado]
-related: [configuracion/detalles-del-negocio-hora-y-calendario, configuracion/agendamiento-online-que-es, calendario/bloquear-el-calendario, calendario/vacaciones-de-un-barbero, sucursales/ajustes-generales-y-por-sucursal]
+related: [configuracion/detalles-del-negocio-hora-y-calendario, agendamiento-online/que-es, calendario/bloquear-el-calendario, calendario/vacaciones-de-un-barbero, sucursales/ajustes-generales-y-por-sucursal]
 status: draft
 updated: 2026-09-25
 ---

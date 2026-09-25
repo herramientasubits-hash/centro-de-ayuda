@@ -67,13 +67,13 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 
 ## Estado
 
-**249 artículos planeados · 249 escritos (100 %)**
+**256 artículos planeados · 256 escritos (100 %)**
 
 | Estado | Artículos |
 |---|---|
 | ○ pendiente | 0 |
 | ◐ borrador | 167 |
-| ◑ en revisión | 82 |
+| ◑ en revisión | 89 |
 | ● publicado | 0 |
 
 ### Por sección
@@ -86,7 +86,8 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 | Roles y permisos | 16 | 16 | 0 |
 | Moverte por la app | 7 | 7 | 0 |
 | Métricas | 20 | 20 | 0 |
-| Calendario | 30 | 30 | 0 |
+| Calendario | 28 | 28 | 0 |
+| Agendamiento online | 14 | 14 | 0 |
 | Clientes | 17 | 17 | 0 |
 | Servicios | 13 | 13 | 0 |
 | Productos | 10 | 10 | 0 |
@@ -94,7 +95,7 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 | Gastos | 6 | 6 | 0 |
 | Nómina | 12 | 12 | 0 |
 | Transacciones | 10 | 10 | 0 |
-| Configuración | 26 | 26 | 0 |
+| Configuración | 21 | 21 | 0 |
 | Glosario | 6 | 6 | 0 |
 | Problemas frecuentes | 4 | 4 | 0 |
 
@@ -278,12 +279,31 @@ _Agendar, cobrar, mover y cancelar citas; clientes sin cita, ventas rápidas y r
 | ◐ | Bloquear el calendario de un barbero | G | P1 | E | `/calendar` |
 | ◐ | Vacaciones de un barbero | G | P2 | E D | `/calendar` |
 | ◐ | Clientes sin preferencia de barbero: quién los atiende | C | P1 | L D | `/team/barbers/lineup` |
-| ◐ | Reservas online: cómo las ve tu cliente | C | P1 | L P | `/online-booking` |
-| ◐ | Citas que crea el cliente: cuándo entran y cómo las recibes | C | P2 | D E | `/calendar` |
 | ◐ | No puedo agendar a esta hora | P | P1 | L D | `/calendar` |
 | ◑ | Un barbero no aparece en el calendario | P | P1 | L | `/calendar` |
 | ◐ | El cliente no recibió el recordatorio | P | P2 | D | `/calendar` |
 | ◐ | La lista de espera: anotar a un cliente cuando no hay hueco | G | P2 | L E | `/calendar` |
+
+### Agendamiento online
+
+_Cómo reservan tus clientes por internet, paso a paso, y cómo pones la reserva en tu sitio web, tu enlace y tus redes._
+
+| | Artículo | T | Prio. | Necesita | Pantallas |
+|---|---|---|---|---|---|
+| ◑ | Reservas online: cómo las ve tu cliente | C | P1 | L P | `/online-booking` |
+| ◐ | Citas que crea el cliente: cuándo entran y cómo las recibes | C | P2 | D E | `/calendar` |
+| ◐ | Agendamiento online: qué es y cómo funciona | C | P1 | L P | `/online-booking` |
+| ◑ | Reservas en tu sitio web: botón «Book now» flotante | G | P1 | L | `/online-booking` |
+| ◑ | Reservas en tu sitio web: abrir desde tu propio botón | G | P2 | L | `/online-booking` |
+| ◑ | Reservas en tu sitio web: incrustar en una página | G | P2 | L | `/online-booking` |
+| ◐ | El enlace directo de reserva y los parámetros UTM | G | P1 | L D | `/online-booking` |
+| ◑ | Si ya es cliente: repetir su última visita | G | P1 | L | `/online-booking` |
+| ◑ | Elegir sede, servicio y barbero | G | P1 | L | `/online-booking` |
+| ◑ | Elegir fecha y hora | G | P1 | L | `/online-booking` |
+| ◐ | Confirmar la reserva | G | P1 | L E | `/online-booking` |
+| ◑ | Qué decide lo que ve tu cliente al reservar | R | P1 | L | `/online-booking` |
+| ◑ | Un servicio o un barbero no aparece al reservar | P | P1 | L | `/online-booking` |
+| ◑ | El cliente no encuentra horas disponibles | P | P1 | L | `/online-booking` |
 
 ### Clientes
 
@@ -441,11 +461,6 @@ _Cada ajuste de la barbería, uno por uno._
 | ◐ | Detalles del negocio: zona horaria, formato de hora, semana y festivos | G | P1 | L E | `/business-details/*` |
 | ◐ | Detalles del negocio: sitio web y redes sociales | G | P2 | L E | `/business-details/*` |
 | ◐ | Detalles de facturación y facturas | G | P1 | L | `/settings/billing-details` |
-| ◐ | Agendamiento online: qué es y cómo funciona | C | P1 | L P | `/online-booking` |
-| ◑ | Reservas en tu sitio web: botón «Book now» flotante | G | P1 | L | `/online-booking` |
-| ◑ | Reservas en tu sitio web: abrir desde tu propio botón | G | P2 | L | `/online-booking` |
-| ◑ | Reservas en tu sitio web: incrustar en una página | G | P2 | L | `/online-booking` |
-| ◐ | El enlace directo de reserva y los parámetros UTM | G | P1 | L D | `/online-booking` |
 | ◐ | Períodos de cierre del negocio | G | P1 | L E | `/business-closed` |
 | ◐ | Dispositivos de pago | G | P2 | L E D | `/devices` |
 | ◑ | Empresa: los datos de tu empresa | R | P2 | L | `/companies` |

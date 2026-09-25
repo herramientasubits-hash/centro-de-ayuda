@@ -7,7 +7,7 @@ order: 190
 roles: [owner, admin]
 screens: [/payment-integration]
 keywords: [integración de pagos, stripe, conectar stripe, pagos en línea, pagos por internet, clave pública, clave secreta, probar conexión, link de pago, cobrar en línea, pasarela de pagos, por ubicación, seleccione una sucursal, pagos con tarjeta online]
-related: [calendario/cobrar-una-cita, configuracion/dispositivos-de-pago, configuracion/agendamiento-online-que-es, sucursales/ajustes-generales-y-por-sucursal]
+related: [calendario/cobrar-una-cita, configuracion/dispositivos-de-pago, agendamiento-online/que-es, sucursales/ajustes-generales-y-por-sucursal]
 status: draft
 updated: 2026-09-25
 ---

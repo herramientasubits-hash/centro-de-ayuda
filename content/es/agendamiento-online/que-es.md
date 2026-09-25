@@ -1,13 +1,13 @@
 ---
-id: configuracion/agendamiento-online-que-es
+id: agendamiento-online/que-es
 title: "Agendamiento online: qué es y cómo funciona"
 description: "Cómo tus clientes agendan solos: el widget en tu sitio web, el enlace directo de reserva, qué servicios y productos ven y cómo se cuentan esas citas."
-section: configuracion
-order: 50
+section: agendamiento-online
+order: 10
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [agendamiento online, reserva online, reservas por internet, citas por internet, el cliente agenda solo, widget de reserva, enlace de reserva, book now, cita online, reservar en línea, página de reservas, sitio web, privado o público, negocio cerrado]
-related: [configuracion/agendamiento-online-panel-lateral, configuracion/agendamiento-online-abrir-desde-un-enlace, configuracion/agendamiento-online-embebido, configuracion/enlace-directo-de-reserva-y-utm, calendario/citas-que-crea-el-cliente, servicios/servicio-publico-o-privado, productos/producto-publico-o-privado, clientes/bloquear-a-un-cliente, metricas/metodo-de-agendamiento-y-citas]
+related: [agendamiento-online/panel-lateral, agendamiento-online/abrir-desde-un-enlace, agendamiento-online/embebido, agendamiento-online/enlace-directo-y-utm, agendamiento-online/citas-que-crea-el-cliente, servicios/servicio-publico-o-privado, productos/producto-publico-o-privado, clientes/bloquear-a-un-cliente, metricas/metodo-de-agendamiento-y-citas]
 status: draft
 updated: 2026-09-25
 ---
@@ -20,7 +20,7 @@ updated: 2026-09-25
 
 **Configuración › Configuración de la cuenta › Agendamiento online**. La tarjeta dice: «Ajustar la forma en que los clientes pueden reservar y gestionar sus citas en línea». La pantalla se llama «Reserva online» y explica: «Ajuste la forma en que los clientes pueden reservar y gestionar sus citas en línea. Estas son configuraciones generales, pero se pueden configurar individualmente para cada ubicación.»
 
-![La pantalla Reserva online con las tres formas de embeber la reserva y el enlace directo](/assets/es/configuracion/agendamiento-online-que-es/pantalla.png)
+![La pantalla Reserva online con las tres formas de embeber la reserva y el enlace directo](/assets/es/agendamiento-online/que-es/pantalla.png)
 
 ## Las dos maneras de recibir reservas
 
@@ -28,13 +28,13 @@ updated: 2026-09-25
 
 | Forma | Qué ve el cliente | Cuándo usarla |
 |---|---|---|
-| **Panel lateral** | Un botón flotante «Book now» abajo a la derecha; la reserva se abre en un panel sobre tu página. | Tienes un sitio que ya existe. Mira [Reservas en tu sitio web: botón «Book now» flotante](/ayuda/configuracion/agendamiento-online-panel-lateral). |
-| **Abrir desde enlace** | Sin botón flotante: la reserva se abre desde un botón o enlace que ya tienes, como el «Reservar cita» de tu menú. | Ya tienes tu propio botón. Mira [Reservas en tu sitio web: abrir desde tu propio botón](/ayuda/configuracion/agendamiento-online-abrir-desde-un-enlace). |
-| **Reserva embebida** | La reserva incrustada dentro de la página, como una sección más. | Tienes una página dedicada a reservar. Mira [Reservas en tu sitio web: incrustar en una página](/ayuda/configuracion/agendamiento-online-embebido). |
+| **Panel lateral** | Un botón flotante «Book now» abajo a la derecha; la reserva se abre en un panel sobre tu página. | Tienes un sitio que ya existe. Mira [Reservas en tu sitio web: botón «Book now» flotante](/ayuda/agendamiento-online/panel-lateral). |
+| **Abrir desde enlace** | Sin botón flotante: la reserva se abre desde un botón o enlace que ya tienes, como el «Reservar cita» de tu menú. | Ya tienes tu propio botón. Mira [Reservas en tu sitio web: abrir desde tu propio botón](/ayuda/agendamiento-online/abrir-desde-un-enlace). |
+| **Reserva embebida** | La reserva incrustada dentro de la página, como una sección más. | Tienes una página dedicada a reservar. Mira [Reservas en tu sitio web: incrustar en una página](/ayuda/agendamiento-online/embebido). |
 
 La pantalla avisa: «Para la siguiente opción, si no tienes experiencia técnica, podrías necesitar el apoyo de un programador para integrarla correctamente.»
 
-**Con un enlace.** El bloque «Link de reserva online para tu sitio web» te da el **Enlace directo de reserva**, para compartirlo por WhatsApp, Instagram o donde quieras. No necesitas sitio web. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/configuracion/enlace-directo-de-reserva-y-utm).
+**Con un enlace.** El bloque «Link de reserva online para tu sitio web» te da el **Enlace directo de reserva**, para compartirlo por WhatsApp, Instagram o donde quieras. No necesitas sitio web. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/agendamiento-online/enlace-directo-y-utm).
 
 ## Qué controla lo que el cliente puede reservar
 

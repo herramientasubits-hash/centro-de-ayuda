@@ -7,7 +7,7 @@ order: 80
 roles: [owner, admin]
 screens: [/services, /services/create, /services/*]
 keywords: [servicio público, servicio privado, privado o público, visible en el agendamiento online, esconder un servicio, ocultar un servicio, reserva online, agendamiento online, el cliente no ve un servicio, visibilidad, solo en la barbería, servicio interno]
-related: [servicios/crear-un-servicio, servicios/crear-una-categoria-de-servicios, servicios/crear-un-combo, servicios/orden-de-agendamiento, calendario/citas-que-crea-el-cliente, configuracion/agendamiento-online-que-es]
+related: [servicios/crear-un-servicio, servicios/crear-una-categoria-de-servicios, servicios/crear-un-combo, servicios/orden-de-agendamiento, agendamiento-online/citas-que-crea-el-cliente, agendamiento-online/que-es]
 status: review
 updated: 2026-09-25
 ---
