@@ -26,18 +26,31 @@ export function loadMaskConfig() {
 /** Corre dentro de la página; se vuelve a aplicar cuando el DOM cambia. */
 function browserMask({ replace, blur }) {
   const EMAIL = /[\w.+-]+@[\w-]+\.[\w.-]+/g;
-  const PHONE = /\+?\d[\d\s*().-]{7,}\d/g;
-  const entries = Object.entries(replace).sort((a, b) => b[0].length - a[0].length);
+  // Un teléfono: no va detrás de «$» ni de otra cifra, y no termina en centavos («729320.71» es un importe).
+  const PHONE = /(?<![$\d.,])\+?\d[\d\s*().-]{7,}\d(?!\.\d)/g;
+  // Cada nombre real se busca sin distinguir mayúsculas y con cualquier espacio entre palabras («Elkin  Garcia»).
+  const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const entries = Object.entries(replace)
+    .sort((a, b) => b[0].length - a[0].length)
+    .map(([from, to]) => [from, to, new RegExp(from.trim().split(/\s+/).map(escape).join("\\s+"), "gi")]);
   const cleanText = (value) => {
-    let out = value.replace(EMAIL, "correo@ejemplo.com").replace(PHONE, (match) => (/\d{4,}|\*{3,}/.test(match) ? "+57 300 000 0000" : match));
-    for (const [from, to] of entries) out = out.split(from).join(to).split(from.toLowerCase()).join(to);
+    let out = value.replace(EMAIL, "correo@ejemplo.com").replace(PHONE, (match) => (/\.\d{2}$/.test(match) || !/\d{4,}|\*{3,}/.test(match) ? match : "+57 300 000 0000"));
+    for (const [, to, pattern] of entries) out = out.replace(pattern, to);
     return out;
   };
+  const normalize = (value) => value.replace(/\s+/g, " ").trim();
   const walk = () => {
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     for (let node = walker.nextNode(); node; node = walker.nextNode()) {
       const next = cleanText(node.nodeValue ?? "");
       if (next !== node.nodeValue) node.nodeValue = next;
+    }
+    // Un nombre partido en varios nodos («<b>Elkin</b> Garcia») se cambia en el elemento que lo junta.
+    for (const el of document.body.querySelectorAll("*")) {
+      if (el.children.length > 4 || el.children.length === 0) continue;
+      const text = normalize(el.textContent ?? "");
+      const hit = entries.find(([, , pattern]) => pattern.test(text) && !pattern.test(""));
+      if (hit && ![...el.querySelectorAll("*")].some((child) => hit[2].test(normalize(child.textContent ?? "")))) el.textContent = cleanText(text);
     }
     for (const input of document.querySelectorAll("input, textarea")) {
       const next = cleanText(input.value ?? "");

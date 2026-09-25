@@ -193,5 +193,537 @@
     "route": "/authenticate",
     "clip": ".section-login",
     "highlight": "a.terms-link"
+  },
+  "metricas/como-leer-metricas/negocio": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "metricas/como-leer-metricas/pestanas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "nav.tab-styles",
+    "highlight": "nav.tab-styles"
+  },
+  "metricas/como-leer-metricas/clientes": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/como-leer-metricas/barberos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Barberos",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/como-leer-metricas/marketing": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/como-leer-metricas/ai-insights": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "AI Insights",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/filtrar-por-sucursal-equipo-y-periodo/filtros": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".containerFilterDahsboar"
+  },
+  "metricas/filtrar-por-sucursal-equipo-y-periodo/sucursal": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".containerFilterDahsboar .btn-location >> nth=0",
+        "wait": 600
+      }
+    ],
+    "clip": ".containerFilterDahsboar",
+    "clipExtra": 230
+  },
+  "metricas/filtrar-por-sucursal-equipo-y-periodo/equipo": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".containerFilterDahsboar .btn-location >> nth=1",
+        "wait": 600
+      }
+    ],
+    "clip": ".containerFilterDahsboar",
+    "clipExtra": 420
+  },
+  "metricas/filtrar-por-sucursal-equipo-y-periodo/periodo": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".containerFilterDahsboar",
+    "highlight": ".containerFilterDahsboar >> text=Semana >> xpath=.."
+  },
+  "metricas/filtrar-por-sucursal-equipo-y-periodo/mes": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".containerFilterDahsboar",
+    "highlight": ".containerFilterDahsboar >> text=/^[a-záéíóú]+ 20\\d\\d$/ >> xpath=.."
+  },
+  "metricas/ticket-promedio-cancelacion-y-propinas/ticket-promedio": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Ticket promedio\")"
+  },
+  "metricas/ticket-promedio-cancelacion-y-propinas/tasa-de-cancelacion": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Tasa de cancelación\")"
+  },
+  "metricas/ticket-promedio-cancelacion-y-propinas/propinas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"% de propinas\")"
+  },
+  "metricas/ventas-e-ingresos/ventas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Ventas\")"
+  },
+  "metricas/ventas-e-ingresos/ingresos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has(:is(h4, .dash-kpi-title):text-matches(\"^\\\\s*Ingresos\", \"i\"))"
+  },
+  "metricas/metodo-de-agendamiento-y-citas/metodo-de-agendamiento": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has(:is(h4, .dash-kpi-title):text-matches(\"^\\\\s*Metodo de agendamiento\", \"i\"))"
+  },
+  "metricas/metodo-de-agendamiento-y-citas/citas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has(:is(h4, .dash-kpi-title):text-is(\"Citas\"))"
+  },
+  "metricas/horas-de-solicitud-de-citas/horas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Horas de solicitud\")"
+  },
+  "metricas/horas-de-solicitud-de-citas/trafico": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".containerDahsboarMiddle:has-text(\"Tráfico según la hora del día\")"
+  },
+  "metricas/distribucion-de-pagos-reembolsos-y-descuentos/distribucion-de-pagos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Distribución de pagos\")"
+  },
+  "metricas/distribucion-de-pagos-reembolsos-y-descuentos/transacciones": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Transacciones\")"
+  },
+  "metricas/distribucion-de-pagos-reembolsos-y-descuentos/reembolsos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Reembolsos\")"
+  },
+  "metricas/distribucion-de-pagos-reembolsos-y-descuentos/descuentos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Descuentos\")"
+  },
+  "metricas/ventas-por-servicio-y-de-productos/ventas-por-servicio": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Ventas por servicio\")"
+  },
+  "metricas/ventas-por-servicio-y-de-productos/ventas-fisicas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".dash-stacked-card:has-text(\"Ventas físicas\")"
+  },
+  "metricas/ventas-por-servicio-y-de-productos/ventas-de-productos": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".dash-ranking-card:has-text(\"Ventas de productos\")"
+  },
+  "metricas/clientes-tasa-de-retencion/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Tasa de retención\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-ingreso-promedio-por-cliente/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Ingreso promedio\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-reservas-online-y-rate-walk-in/reservas-online": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Reservas online\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-reservas-online-y-rate-walk-in/rate-walk-in": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Rate walk-in\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-preferencia-de-barbero/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Preferencia de barbero\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-citas-por-tipo-de-cliente/citas-por-tipo": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Citas por tipo de cliente\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-citas-por-tipo-de-cliente/nuevos-vs-recurrentes": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Nuevos vs recurrentes\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/clientes-frecuencia-de-visita/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Frecuencia de visita\")",
+    "steps": [
+      {
+        "clickText": "Clientes",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/total-neto-del-equipo/total-neto": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Total neto del equipo\")",
+    "steps": [
+      {
+        "clickText": "Barberos",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/total-neto-del-equipo/lealtad": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Lealtad al barbero\")",
+    "steps": [
+      {
+        "clickText": "Barberos",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/total-neto-del-equipo/por-barbero": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Barberos",
+        "wait": 1500
+      }
+    ],
+    "clip": "section:has-text(\"Total neto del equipo ·\")"
+  },
+  "metricas/marketing-canales-y-campanas/reservas-online": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Reservas online\")",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/marketing-canales-y-campanas/mejor-canal": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Mejor canal\")",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/marketing-canales-y-campanas/canales-digitales": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Canales digitales\")",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/marketing-canales-y-campanas/campanas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Rendimiento de campañas\")",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/marketing-canales-y-campanas/conversion": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section:has-text(\"Conversión por canal\")",
+    "steps": [
+      {
+        "clickText": "Marketing",
+        "wait": 1500
+      }
+    ]
+  },
+  "metricas/puntaje-de-salud/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "AI Insights",
+        "wait": 1500
+      }
+    ],
+    "clip": ".containerDahsboarMiddle:has-text(\"Puntaje de Salud\")"
+  },
+  "metricas/alertas-de-riesgo-de-clientes/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "AI Insights",
+        "wait": 1500
+      }
+    ],
+    "clip": ".containerDahsboarMiddle:has-text(\"Alertas de Riesgo\")"
+  },
+  "metricas/mapa-de-capacidad/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "AI Insights",
+        "wait": 1500
+      }
+    ],
+    "clip": ".containerDahsboarMiddle:has-text(\"Mapa de Capacidad\")"
+  },
+  "metricas/recomendaciones-inteligentes/tarjeta": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "AI Insights",
+        "wait": 1500
+      }
+    ],
+    "clip": ".containerDahsboarMiddle:has-text(\"Recomendaciones Inteligentes\")"
   }
 }

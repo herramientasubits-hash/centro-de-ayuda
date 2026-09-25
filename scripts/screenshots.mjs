@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "@playwright/test";
+import { chooseBranch } from "./lib/prod.mjs";
 import { applyMask, loadMaskConfig } from "./lib/mask.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -31,7 +32,8 @@ const args = process.argv.slice(2);
 const noMask = args.includes("--no-mask");
 const filter = args.filter((arg) => !arg.startsWith("-"));
 
-const VIEWPORTS = { desktop: { width: 1280, height: 800 }, mobile: { width: 390, height: 844 } };
+// `tall` es para páginas largas: la app hace scroll dentro de un contenedor y fullPage no las alcanza.
+const VIEWPORTS = { desktop: { width: 1280, height: 800 }, tall: { width: 1280, height: 2400 }, mobile: { width: 390, height: 844 } };
 const CLIP_PADDING = 16;
 
 /** Los tres botones desplegables de la cabecera de producción, en orden. */
@@ -42,6 +44,11 @@ async function prodPage(page, recipe) {
   await page.locator(".actions-dashboard").waitFor();
   await page.waitForLoadState("networkidle");
   await page.waitForTimeout(1200);
+  // La sesión guardada arranca sin sucursal elegida; la receta puede pedir otra.
+  if (!recipe.keepBranchChooser && (await chooseBranch(page, recipe.branch))) {
+    await page.waitForLoadState("networkidle");
+  }
+  await runSteps(page, recipe.steps);
 }
 
 /**
@@ -51,16 +58,22 @@ async function prodPage(page, recipe) {
  * Solo se escribe texto de ejemplo que falla la validación del navegador;
  * nunca un celular, un código ni un correo reales.
  */
+async function runSteps(page, steps = []) {
+  for (const step of steps) {
+    if (step.click) await page.locator(step.click).first().click();
+    else if (step.clickText) await page.getByText(step.clickText, { exact: true }).locator("visible=true").first().click();
+    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1]);
+    else if (step.hover) await page.locator(step.hover).first().hover();
+    else if (step.scrollTo) await page.locator(step.scrollTo).first().scrollIntoViewIfNeeded();
+    await page.waitForTimeout(step.wait ?? 500);
+  }
+}
+
 async function publicPage(page, recipe) {
   await page.goto(`${PROD_URL}${recipe.route}`, { waitUntil: "networkidle" });
   await page.locator(".section-login").waitFor();
   await page.waitForTimeout(900);
-  for (const step of recipe.steps ?? []) {
-    if (step.click) await page.locator(step.click).first().click();
-    else if (step.clickText) await page.getByText(step.clickText, { exact: true }).first().click();
-    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1]);
-    await page.waitForTimeout(step.wait ?? 500);
-  }
+  await runSteps(page, recipe.steps);
 }
 
 /** Cada estado deja la pantalla lista para la captura. */
@@ -128,17 +141,23 @@ async function shoot(browser, key, recipe, theme, mask) {
     const target = path.join(ROOT, "assets", LOCALE, `${key}${suffix}.png`);
     fs.mkdirSync(path.dirname(target), { recursive: true });
     if (recipe.clip) {
-      const box = await page.locator(recipe.clip).first().boundingBox();
+      // La app hace scroll en un contenedor interno: se trae el elemento a la vista antes de medirlo.
+      const element = page.locator(recipe.clip).first();
+      await element.scrollIntoViewIfNeeded();
+      await page.waitForTimeout(300);
+      const box = await element.boundingBox();
       if (!box) throw new Error(`no encontré «${recipe.clip}» para recortar`);
+      // `clipExtra` alarga el recorte hacia abajo: para un desplegable abierto bajo el elemento.
       const clip = {
         x: Math.max(0, box.x - CLIP_PADDING),
         y: Math.max(0, box.y - CLIP_PADDING),
         width: Math.min(viewport.width, box.width + CLIP_PADDING * 2),
-        height: box.height + CLIP_PADDING * 2,
+        height: box.height + CLIP_PADDING * 2 + (recipe.clipExtra ?? 0),
       };
       await page.screenshot({ path: target, clip });
     } else {
-      await page.screenshot({ path: target });
+      // `fullPage` captura la página entera, no solo lo que cabe en el viewport.
+      await page.screenshot({ path: target, fullPage: recipe.fullPage ?? false });
     }
     console.log(`✓ ${path.relative(ROOT, target)}`);
   } finally {
