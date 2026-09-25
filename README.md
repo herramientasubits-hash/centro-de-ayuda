@@ -15,7 +15,7 @@ content/es/                 ← un idioma por carpeta; inglés después con la m
   <seccion>/<articulo>.md   ← un artículo = un archivo con frontmatter
 assets/es/<seccion>/<articulo>/<captura>.png
 screenshots.json            ← la receta de cada captura: ruta, estado, viewport, tema
-casos/<pantalla>.md         ← el mapa de casos de uso de cada pantalla, antes de redactar
+casos/produccion.md         ← el mapa de la app en producción: rutas, pestañas, acciones, textos
 STYLE.md                    ← cómo se escribe aquí
 scripts/build.mjs           ← md → dist/ (index.json, search.json, artículos, llms.txt)
 scripts/screenshots.mjs     ← regenera las capturas con Playwright contra la app
@@ -36,22 +36,23 @@ npm run shots      # regenera las capturas (necesita la app corriendo; ver abajo
 1. En este repo: `npm run build && npm run serve`.
 2. En el repo de la app: `VITE_HELP_BASE_URL=http://localhost:8787 npm run dev` y abre `/ayuda`.
 
-### Regenerar capturas
+### Capturas
 
-Las capturas salen de la aplicación con datos de prueba, así que son iguales en cualquier
-máquina y se pueden regenerar cuando cambie el diseño:
+Las capturas salen de **producción** (`source: produccion` en `screenshots.json`) con los datos
+enmascarados. Sin ellas los artículos se leen igual: la app muestra «Captura pendiente» y el
+check las lista como pendientes.
 
 ```bash
-# en el repo de la app
-VITE_USE_MOCKS=true npm run dev -- --port 5197
-# aquí
-npm run shots                      # todas
-npm run shots -- acceso-y-cuenta   # solo una sección
-HELP_APP_URL=http://localhost:5195 npm run shots
+cp .mask.example.json .mask.local.json   # una vez; pon los nombres reales → nombres de ejemplo
+npm run shots:install                    # una vez: descarga Chromium
+npm run shots:login                      # inicias sesión TÚ en la ventana; guarda .auth/prod.json
+npm run shots                            # todas
+npm run shots -- acceso-y-cuenta         # solo una sección
 ```
 
-Cada entrada de `screenshots.json` dice qué pantalla, en qué estado, a qué tamaño y en qué
-tema se toma. Los estados (`login-code`, `login-locked`…) están en `scripts/screenshots.mjs`.
+`.auth/` y `.mask.local.json` no se suben al repo. Sin `.mask.local.json` las capturas de
+producción se niegan a salir. Correos y teléfonos se enmascaran solos; los nombres los cambia el
+archivo local (`replace`) y lo que pongas en `blur` se difumina.
 
 ## Publicación
 

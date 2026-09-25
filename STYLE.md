@@ -4,6 +4,21 @@ Escribimos para la persona que tiene la barbería abierta, el celular en una man
 esperando. Cada artículo responde una pregunta que esa persona se hace, en el orden en el que
 la resolvería, y termina antes de aburrir.
 
+## Qué se documenta: solo lo que existe en producción
+
+La fuente de verdad es la aplicación real, **https://dash.barberlytics.com**. Antes de escribir un
+artículo se recorre la pantalla ahí (`casos/produccion.md` es el mapa) y se copian los textos tal
+cual salen. Lo que solo existe en el rediseño, en Notion o en una idea no se documenta hasta que
+llegue a producción, y lo que no pudimos ver se anota en «Pendiente de confirmar», no se inventa.
+Cada afirmación de un artículo tiene que poder comprobarse en pantalla.
+
+- **`screens`** usa las rutas de producción (`/calendar`, `/customers`, `/team/barbers`,
+  `/settings`...). La app del rediseño las traduce sola.
+- **Datos de ejemplo**, nunca los de la cuenta de prueba: «Mi Barbería», «Carlos», «Laura»,
+  `correo@ejemplo.com`. Las capturas pasan por `scripts/lib/mask.mjs`.
+- **`status: draft`** cuando algo del artículo no se pudo comprobar; `review` cuando todo se vio en
+  pantalla y espera tu lectura; `published` cuando lo aprobaste.
+
 ## Voz
 
 - **Tú**, nunca usted. «Escribe tu celular», no «Ingrese su número de teléfono».

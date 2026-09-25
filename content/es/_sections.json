@@ -1,16 +1,100 @@
 [
-  { "id": "empezar", "title": "Empezar", "description": "Qué es Barberlytics, tu primer ingreso y cómo dejar tu barbería lista.", "icon": "rocket", "order": 10 },
-  { "id": "acceso-y-cuenta", "title": "Acceso y cuenta", "description": "Entrar con tu celular, recuperar tu número, crear la cuenta y proteger tu acceso.", "icon": "key", "order": 20 },
-  { "id": "navegacion", "title": "Moverte por la app", "description": "El menú, la sucursal, el rol, la búsqueda y las notificaciones.", "icon": "compass", "order": 30 },
-  { "id": "panel", "title": "Panel", "description": "Lo que te dice el panel cada mañana y cómo leer cada indicador.", "icon": "gauge", "order": 40 },
-  { "id": "calendario", "title": "Calendario y citas", "description": "Agendar, mover y cerrar citas; walk-ins, bloqueos y recordatorios.", "icon": "calendar", "order": 50 },
-  { "id": "clientes", "title": "Clientes", "description": "El perfil, el ritmo de visita, el semáforo y cómo recuperar a quien se fue.", "icon": "users", "order": 60 },
-  { "id": "equipo", "title": "Equipo", "description": "Invitar, roles, estados, ocupación y la calibración trimestral.", "icon": "team", "order": 70 },
-  { "id": "servicios-y-productos", "title": "Servicios y productos", "description": "El catálogo, los precios, el inventario y las ventas de mostrador.", "icon": "scissors", "order": 80 },
-  { "id": "nomina", "title": "Nómina y pagos al equipo", "description": "Cómo se calcula la comisión, la renta y el salario, y qué ve cada barbero.", "icon": "wallet", "order": 90 },
-  { "id": "gastos-y-transacciones", "title": "Gastos y transacciones", "description": "Todo lo que entra y sale de caja, con su medio de pago.", "icon": "receipt", "order": 100 },
-  { "id": "configuracion", "title": "Configuración", "description": "Cada ajuste de la barbería, uno por uno.", "icon": "settings", "order": 110 },
-  { "id": "indicadores", "title": "Entender los números", "description": "Ocupación, retención, ritmo de visita, el indicador de precios y el P&L.", "icon": "chart", "order": 120 },
-  { "id": "problemas", "title": "Problemas frecuentes", "description": "No puedo entrar, no veo una sucursal, un número no cuadra.", "icon": "lifebuoy", "order": 130 },
-  { "id": "glosario", "title": "Glosario", "description": "Cada palabra de Barberlytics explicada en una frase.", "icon": "book", "order": 140 }
+  {
+    "id": "empezar",
+    "title": "Empezar",
+    "description": "Qué es Barberlytics, tu primer ingreso y cómo dejar tu barbería lista.",
+    "icon": "rocket",
+    "order": 10
+  },
+  {
+    "id": "acceso-y-cuenta",
+    "title": "Acceso y cuenta",
+    "description": "Entrar, tu perfil y plan, cambiar de rol y cerrar sesión.",
+    "icon": "key",
+    "order": 20
+  },
+  {
+    "id": "navegacion",
+    "title": "Moverte por la app",
+    "description": "Las secciones del menú, la sucursal, las notificaciones, el idioma y el modo oscuro.",
+    "icon": "compass",
+    "order": 30
+  },
+  {
+    "id": "panel",
+    "title": "Panel",
+    "description": "Lo que te dice el panel cada mañana y cómo leer cada indicador.",
+    "icon": "gauge",
+    "order": 40
+  },
+  {
+    "id": "calendario",
+    "title": "Calendario y citas",
+    "description": "Agendar, mover y cerrar citas; walk-ins, bloqueos y recordatorios.",
+    "icon": "calendar",
+    "order": 50
+  },
+  {
+    "id": "clientes",
+    "title": "Clientes",
+    "description": "El perfil, el ritmo de visita, el semáforo y cómo recuperar a quien se fue.",
+    "icon": "users",
+    "order": 60
+  },
+  {
+    "id": "equipo",
+    "title": "Equipo",
+    "description": "Invitar, roles, estados, ocupación y la calibración trimestral.",
+    "icon": "team",
+    "order": 70
+  },
+  {
+    "id": "servicios-y-productos",
+    "title": "Servicios y productos",
+    "description": "El catálogo, los precios, el inventario y las ventas de mostrador.",
+    "icon": "scissors",
+    "order": 80
+  },
+  {
+    "id": "nomina",
+    "title": "Nómina y pagos al equipo",
+    "description": "Cómo se calcula la comisión, la renta y el salario, y qué ve cada barbero.",
+    "icon": "wallet",
+    "order": 90
+  },
+  {
+    "id": "gastos-y-transacciones",
+    "title": "Gastos y transacciones",
+    "description": "Todo lo que entra y sale de caja, con su medio de pago.",
+    "icon": "receipt",
+    "order": 100
+  },
+  {
+    "id": "configuracion",
+    "title": "Configuración",
+    "description": "Cada ajuste de la barbería, uno por uno.",
+    "icon": "settings",
+    "order": 110
+  },
+  {
+    "id": "indicadores",
+    "title": "Entender los números",
+    "description": "Ocupación, retención, ritmo de visita, el indicador de precios y el P&L.",
+    "icon": "chart",
+    "order": 120
+  },
+  {
+    "id": "problemas",
+    "title": "Problemas frecuentes",
+    "description": "No puedo entrar, no veo una sucursal, un número no cuadra.",
+    "icon": "lifebuoy",
+    "order": 130
+  },
+  {
+    "id": "glosario",
+    "title": "Glosario",
+    "description": "Cada palabra de Barberlytics explicada en una frase.",
+    "icon": "book",
+    "order": 140
+  }
 ]

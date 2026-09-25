@@ -9,7 +9,8 @@
     "check": "node scripts/build.mjs --check",
     "serve": "node scripts/serve.mjs",
     "shots": "node scripts/screenshots.mjs",
-    "shots:install": "playwright install chromium"
+    "shots:install": "playwright install chromium",
+    "shots:login": "node scripts/prod-login.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3"

@@ -1,0 +1,9 @@
+{
+  "$comment": "Copia este archivo como .mask.local.json (no se sube al repo) y pon los nombres reales que aparecen en la cuenta de producción como claves, con el nombre de ejemplo que quieras mostrar como valor. Correos y teléfonos se enmascaran solos.",
+  "replace": {
+    "Nombre real de la persona de la cuenta": "Carlos Rodríguez",
+    "Nombre real de la barbería": "Mi Barbería",
+    "Nombre real de un cliente": "Laura Gómez"
+  },
+  "blur": []
+}

@@ -1,28 +1,12 @@
 {
-  "$comment": "Clave = ruta bajo assets/es sin .png. state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both.",
+  "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both.",
 
-  "acceso-y-cuenta/ingresar/pantalla-completa": { "route": "/login", "state": "login-phone", "viewport": "desktop", "theme": "light", "source": "app" },
-  "acceso-y-cuenta/ingresar/paso-1-celular": { "route": "/login", "state": "login-phone", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "[data-testid='login-submit']", "source": "app" },
-  "acceso-y-cuenta/ingresar/paso-2-codigo": { "route": "/login", "state": "login-code", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "[data-testid='login-verify']", "source": "app" },
-  "acceso-y-cuenta/ingresar/celular-movil": { "route": "/login", "state": "login-phone", "viewport": "mobile", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
+  "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show", "highlight": ".dropdown-menu.show >> text=Cerrar Sesión" },
+  "acceso-y-cuenta/mi-perfil/pantalla": { "source": "produccion", "route": "/profile", "state": "prod-page", "viewport": "desktop", "theme": "light" },
+  "acceso-y-cuenta/cambiar-de-rol/menu-con-roles": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show" },
 
-  "acceso-y-cuenta/entrar-con-google-o-outlook/botones": { "route": "/login", "state": "login-phone", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "[data-testid='login-google'], [data-testid='login-microsoft']", "source": "app" },
-
-  "acceso-y-cuenta/no-me-llega-el-codigo/reenviar": { "route": "/login", "state": "login-code", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "[data-testid='login-resend']", "source": "app" },
-  "acceso-y-cuenta/no-me-llega-el-codigo/cambiar-numero": { "route": "/login", "state": "login-code", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "button:has-text('Cambiar número')", "source": "app" },
-
-  "acceso-y-cuenta/codigo-incorrecto-o-vencido/error": { "route": "/login", "state": "login-code-error", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-
-  "acceso-y-cuenta/acceso-bloqueado/bloqueado": { "route": "/login", "state": "login-locked", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-
-  "acceso-y-cuenta/olvide-mi-numero/enlace": { "route": "/login", "state": "login-phone", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "highlight": "button:has-text('¿Olvidaste tu número?')", "source": "app" },
-  "acceso-y-cuenta/olvide-mi-numero/paso-1-correo": { "route": "/login", "state": "login-recovery", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-  "acceso-y-cuenta/olvide-mi-numero/paso-2-revisa-tu-correo": { "route": "/login", "state": "login-recovery-done", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-
-  "acceso-y-cuenta/crear-cuenta/formulario": { "route": "/login", "state": "login-signup", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-  "acceso-y-cuenta/crear-cuenta/listo": { "route": "/login", "state": "login-signup-done", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-
-  "acceso-y-cuenta/ticket-de-soporte/formulario": { "route": "/login", "state": "login-ticket", "viewport": "desktop", "theme": "light", "clip": "section:has(#login-heading)", "source": "app" },
-
-  "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": { "route": "/dashboard", "state": "app-account-menu", "viewport": "desktop", "theme": "light", "clip": "[role='menu']", "highlight": "[data-testid='shell-logout']", "source": "app" }
+  "navegacion/las-secciones-de-barberlytics/menu": { "source": "produccion", "route": "/", "state": "prod-page", "viewport": "desktop", "theme": "light" },
+  "navegacion/cambiar-de-sucursal/selector": { "source": "produccion", "route": "/", "state": "prod-branch-menu", "viewport": "desktop", "theme": "light" },
+  "navegacion/notificaciones/panel": { "source": "produccion", "route": "/", "state": "prod-notifications", "viewport": "desktop", "theme": "light" },
+  "navegacion/idioma-y-modo-oscuro/modo-oscuro": { "source": "produccion", "route": "/", "state": "prod-account-menu", "viewport": "desktop", "theme": "light", "clip": ".dropdown-menu.show", "highlight": ".dropdown-menu.show >> text=Modo oscuro" }
 }

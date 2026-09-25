@@ -48,6 +48,11 @@ function walk(dir) {
   });
 }
 
+const manifestPath = path.join(ROOT, "screenshots.json");
+const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : {};
+const pendingShots = [];
+const shotKey = (src) => src.replace(/^\/assets\/[a-z]{2}\//, "").replace(/\.png$/, "");
+
 const localeDir = path.join(CONTENT, LOCALE);
 const sections = JSON.parse(fs.readFileSync(path.join(localeDir, "_sections.json"), "utf8")).sort((a, b) => a.order - b.order);
 const sectionIds = new Set(sections.map((section) => section.id));
@@ -76,7 +81,12 @@ for (const file of files) {
 
   for (const image of extractImages(content)) {
     if (!image.src.startsWith("/assets/")) fail(rel, `la imagen «${image.src}» tiene que empezar por /assets/`);
-    else if (!fs.existsSync(path.join(ROOT, image.src))) fail(rel, `la imagen «${image.src}» no existe (¿falta npm run shots?)`);
+    else if (!fs.existsSync(path.join(ROOT, image.src))) {
+      // Una captura con receta pero sin archivo está pendiente de tomar (las de
+      // producción exigen que alguien inicie sesión); sin receta es un error.
+      if (manifest[shotKey(image.src)]) pendingShots.push({ article: expectedId, image: image.src, source: manifest[shotKey(image.src)].source ?? "app" });
+      else fail(rel, `la imagen «${image.src}» no existe y no tiene receta en screenshots.json`);
+    }
     if (!image.alt.trim()) warn(rel, `la imagen «${image.src}» no tiene texto alternativo`);
   }
 
@@ -113,14 +123,7 @@ for (const article of articles) {
   for (const link of article.links) if (!ids.has(link)) fail(article.file, `enlace interno a «${link}» que no existe`);
 }
 
-const manifestPath = path.join(ROOT, "screenshots.json");
-const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : {};
-for (const article of articles) {
-  for (const image of extractImages(article.body)) {
-    const key = image.src.replace(/^\/assets\/[a-z]{2}\//, "").replace(/\.png$/, "");
-    if (!manifest[key]) warn(article.file, `la captura «${key}» no tiene receta en screenshots.json`);
-  }
-}
+for (const shot of pendingShots) warn(shot.article, `captura pendiente: ${shot.image} (${shot.source})`);
 
 for (const message of warnings) console.warn(`⚠ ${message}`);
 for (const message of errors) console.error(`✖ ${message}`);
@@ -201,7 +204,7 @@ const llmsFull = [
 ].join("\n");
 
 if (checkOnly) {
-  console.log(`✓ ${articles.length} artículos en ${index.sections.filter((section) => section.articles.length).length} secciones. Sin errores.`);
+  console.log(`✓ ${articles.length} artículos en ${index.sections.filter((section) => section.articles.length).length} secciones. Sin errores, ${pendingShots.length} capturas pendientes.`);
   process.exit(0);
 }
 
@@ -211,6 +214,7 @@ fs.writeFileSync(path.join(DIST, "index.json"), JSON.stringify(index, null, 2));
 fs.writeFileSync(path.join(DIST, "search.json"), JSON.stringify(search));
 fs.writeFileSync(path.join(DIST, "llms.txt"), llms);
 fs.writeFileSync(path.join(DIST, "llms-full.txt"), llmsFull);
+fs.writeFileSync(path.join(DIST, "pending-shots.json"), JSON.stringify(pendingShots, null, 2));
 fs.writeFileSync(path.join(DIST, ".nojekyll"), "");
 for (const article of articles) {
   const target = path.join(DIST, article.meta.path);
@@ -219,4 +223,4 @@ for (const article of articles) {
 }
 if (fs.existsSync(ASSETS)) fs.cpSync(ASSETS, path.join(DIST, "assets"), { recursive: true });
 
-console.log(`✓ dist/ con ${articles.length} artículos, ${Object.keys(screens).length} pantallas con ayuda contextual.`);
+console.log(`✓ dist/ con ${articles.length} artículos, ${Object.keys(screens).length} pantallas con ayuda contextual, ${pendingShots.length} capturas pendientes.`);

@@ -1,141 +1,105 @@
 #!/usr/bin/env node
 /**
- * Regenera las capturas de `screenshots.json` contra la aplicación corriendo
- * con datos de prueba (`VITE_USE_MOCKS=true`). Cada receta dice a qué ruta ir,
- * en qué estado dejar la pantalla, a qué tamaño y en qué tema tomarla, y qué
- * recortar o resaltar.
+ * Regenera las capturas de `screenshots.json`.
  *
+ *   source: "produccion"  → https://dash.barberlytics.com con la sesión de
+ *                            `npm run shots:login`, con los datos enmascarados.
+ *   source: "app"         → la app de Thema en local (HELP_APP_URL).
+ *
+ *   npm run shots:login                 (una vez: inicias sesión tú)
  *   npm run shots                       todas
  *   npm run shots -- acceso-y-cuenta    solo las claves que empiecen así
- *   HELP_APP_URL=http://localhost:5195 npm run shots
  *
- * Los estados están abajo, en `STATES`. Añadir una captura de una pantalla
- * nueva es añadir su estado aquí y su receta al manifiesto.
+ * Las capturas de producción se niegan a salir si falta `.mask.local.json`
+ * (ver `.mask.example.json`): en producción hay personas reales.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "@playwright/test";
+import { applyMask, loadMaskConfig } from "./lib/mask.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const APP_URL = (process.env.HELP_APP_URL ?? "http://localhost:5197").replace(/\/+$/, "");
+const PROD_URL = (process.env.HELP_PROD_URL ?? "https://dash.barberlytics.com").replace(/\/+$/, "");
+const AUTH_FILE = path.join(ROOT, ".auth", "prod.json");
 const LOCALE = "es";
-const filter = process.argv.slice(2).filter((arg) => !arg.startsWith("-"));
+const args = process.argv.slice(2);
+const noMask = args.includes("--no-mask");
+const filter = args.filter((arg) => !arg.startsWith("-"));
 
 const VIEWPORTS = { desktop: { width: 1280, height: 800 }, mobile: { width: 390, height: 844 } };
-const CLIP_PADDING = 24;
+const CLIP_PADDING = 16;
 
-/** Cuenta de prueba del backend simulado (ver e2e/helpers.ts en la app). */
-const DEMO = { phone: "3001234567", code: "246810", wrongCode: "000000" };
+/** Los tres botones desplegables de la cabecera de producción, en orden. */
+const headerToggle = (page, index) => page.locator(".actions-dashboard > div.dropdown").nth(index).locator("button.dropdown-toggle");
 
-async function typeOtp(page, code) {
-  await page.getByLabel(/carácter 1 de 6/i).fill(code[0]);
-  for (const digit of code.slice(1)) await page.keyboard.type(digit);
-}
-
-async function goToCodeStep(page) {
-  await page.goto(`${APP_URL}/login`);
-  await page.getByTestId("login-phone").fill(DEMO.phone);
-  await page.getByTestId("login-submit").click();
-  await page.getByLabel(/carácter 1 de 6/i).waitFor();
-}
-
-async function failCode(page) {
-  await typeOtp(page, DEMO.wrongCode);
-  await page.getByRole("alert").waitFor();
-}
-
-async function login(page) {
-  await goToCodeStep(page);
-  await typeOtp(page, DEMO.code);
-  await page.waitForURL(/\/dashboard/);
-  await page.getByRole("main").waitFor();
+async function prodPage(page, recipe) {
+  await page.goto(`${PROD_URL}${recipe.route}`);
+  await page.locator(".actions-dashboard").waitFor();
+  await page.waitForLoadState("networkidle");
+  await page.waitForTimeout(1200);
 }
 
 /** Cada estado deja la pantalla lista para la captura. */
 const STATES = {
-  "login-phone": async (page) => {
-    await page.goto(`${APP_URL}/login`);
-    await page.getByTestId("login-phone").waitFor();
+  "app-page": async (page, recipe) => {
+    await page.goto(`${APP_URL}${recipe.route}`);
+    await page.getByRole("main").waitFor();
   },
-  "login-code": async (page) => {
-    await goToCodeStep(page);
+  "prod-page": prodPage,
+  "prod-branch-menu": async (page, recipe) => {
+    await prodPage(page, recipe);
+    await headerToggle(page, 0).click();
+    await page.locator(".dropdown-menu.show").waitFor();
   },
-  "login-code-error": async (page) => {
-    await goToCodeStep(page);
-    await failCode(page);
+  "prod-language-menu": async (page, recipe) => {
+    await prodPage(page, recipe);
+    await headerToggle(page, 1).click();
+    await page.locator(".dropdown-menu.show").waitFor();
   },
-  "login-locked": async (page) => {
-    await goToCodeStep(page);
-    for (let attempt = 0; attempt < 4; attempt += 1) {
-      await failCode(page).catch(() => {});
-      if (await page.getByText("Bloqueamos el acceso por seguridad").isVisible().catch(() => false)) break;
-    }
-    await page.getByText("Bloqueamos el acceso por seguridad").waitFor();
+  "prod-account-menu": async (page, recipe) => {
+    await prodPage(page, recipe);
+    await headerToggle(page, 2).click();
+    await page.locator(".dropdown-menu.show").waitFor();
   },
-  "login-recovery": async (page) => {
-    await page.goto(`${APP_URL}/login`);
-    await page.getByRole("button", { name: "¿Olvidaste tu número?" }).click();
-    await page.getByTestId("recovery-email").waitFor();
-  },
-  "login-recovery-done": async (page) => {
-    await STATES["login-recovery"](page);
-    await page.getByTestId("recovery-email").fill("dueno@mibarberia.co");
-    await page.getByTestId("recovery-send").click();
-    await page.getByText("Revisa tu correo").waitFor();
-  },
-  "login-signup": async (page) => {
-    await page.goto(`${APP_URL}/login`);
-    await page.getByTestId("login-signup").click();
-    await page.getByTestId("signup-form").waitFor();
-  },
-  "login-signup-done": async (page) => {
-    await STATES["login-signup"](page);
-    await page.locator("#signup-first-name").fill("Camila");
-    await page.locator("#signup-last-name").fill("Rojas");
-    await page.locator("#signup-company").fill("Barbería La 70");
-    await page.locator("#signup-email").fill("camila@la70.co");
-    await page.locator("#signup-phone").fill(DEMO.phone);
-    await page.locator("#signup-barbers").fill("4");
-    await page.locator("#signup-country").click();
-    await page.getByRole("option", { name: "Colombia" }).click();
-    await page.getByTestId("signup-submit").click();
-    await page.getByText("Recibimos tu registro").waitFor();
-  },
-  "login-ticket": async (page) => {
-    await STATES["login-locked"](page);
-    await page.getByTestId("locked-ticket").click();
-    await page.getByText("Contáctanos").waitFor();
-  },
-  "app-account-menu": async (page) => {
-    await login(page);
-    await page.getByTestId("shell-avatar").click();
-    await page.getByTestId("shell-logout").waitFor();
+  "prod-notifications": async (page, recipe) => {
+    await prodPage(page, recipe);
+    await page.locator(".actions-dashboard > .MuiBadge-root").nth(1).click();
+    await page.getByText("Notificaciones", { exact: true }).first().waitFor();
+    await page.waitForTimeout(800);
   },
 };
 
 async function highlight(page, selector) {
   await page.addStyleTag({
-    content: `[data-help-highlight]{outline:3px solid #0C5BEF !important;outline-offset:4px;border-radius:10px;box-shadow:0 0 0 6px rgba(12,91,239,.18)!important}`,
+    content: `[data-help-highlight]{outline:3px solid #0C5BEF !important;outline-offset:3px;border-radius:8px;box-shadow:0 0 0 6px rgba(12,91,239,.18)!important}`,
   });
-  const count = await page.locator(selector).count();
-  if (count === 0) throw new Error(`no encontré nada que resaltar con «${selector}»`);
-  for (let index = 0; index < count; index += 1) await page.locator(selector).nth(index).evaluate((el) => el.setAttribute("data-help-highlight", ""));
+  const locator = page.locator(selector);
+  if ((await locator.count()) === 0) throw new Error(`no encontré nada que resaltar con «${selector}»`);
+  await locator.first().evaluate((el) => el.setAttribute("data-help-highlight", ""));
 }
 
-async function shoot(browser, key, recipe, theme) {
+async function shoot(browser, key, recipe, theme, mask) {
+  const isProd = recipe.source === "produccion";
   const viewport = VIEWPORTS[recipe.viewport ?? "desktop"];
-  const context = await browser.newContext({ viewport, locale: "es-CO", colorScheme: theme, deviceScaleFactor: 2, reducedMotion: "reduce" });
+  const context = await browser.newContext({
+    viewport,
+    locale: "es-CO",
+    colorScheme: theme,
+    deviceScaleFactor: 2,
+    reducedMotion: "reduce",
+    ...(isProd ? { storageState: AUTH_FILE } : {}),
+  });
   const page = await context.newPage();
   try {
-    await page.addInitScript((mode) => {
-      // El tema lo manda la app; para la captura forzamos el modo pedido.
-      window.localStorage.setItem("thema-theme", JSON.stringify({ mode }));
-    }, theme);
+    if (!isProd) {
+      await page.addInitScript((mode) => window.localStorage.setItem("thema-theme", JSON.stringify({ mode })), theme);
+    }
     const state = STATES[recipe.state];
     if (!state) throw new Error(`estado desconocido «${recipe.state}»`);
-    await state(page);
-    await page.waitForTimeout(400);
+    await state(page, recipe);
+    if (isProd && mask) await applyMask(page, mask, recipe.blur);
     if (recipe.highlight) await highlight(page, recipe.highlight);
     const suffix = recipe.theme === "both" && theme === "dark" ? "-oscuro" : "";
     const target = path.join(ROOT, "assets", LOCALE, `${key}${suffix}.png`);
@@ -149,9 +113,9 @@ async function shoot(browser, key, recipe, theme) {
         width: Math.min(viewport.width, box.width + CLIP_PADDING * 2),
         height: box.height + CLIP_PADDING * 2,
       };
-      await page.screenshot({ path: target, clip, fullPage: true });
+      await page.screenshot({ path: target, clip });
     } else {
-      await page.screenshot({ path: target, fullPage: false });
+      await page.screenshot({ path: target });
     }
     console.log(`✓ ${path.relative(ROOT, target)}`);
   } finally {
@@ -166,17 +130,27 @@ if (!entries.length) {
   process.exit(1);
 }
 
+const needsProd = entries.some(([, recipe]) => recipe.source === "produccion");
+let mask = null;
+if (needsProd) {
+  if (!fs.existsSync(AUTH_FILE)) {
+    console.error("Falta la sesión de producción. Corre primero: npm run shots:login");
+    process.exit(1);
+  }
+  mask = noMask ? null : loadMaskConfig();
+  if (!mask && !noMask) {
+    console.error("Falta .mask.local.json (ver .mask.example.json). En producción hay datos de personas reales: sin enmascarado no se toman capturas. Para saltarlo a propósito: --no-mask");
+    process.exit(1);
+  }
+}
+
 const browser = await chromium.launch();
 let failures = 0;
 for (const [key, recipe] of entries) {
-  if (recipe.source && recipe.source !== "app") {
-    console.log(`· ${key}: fuente «${recipe.source}», se toma a mano`);
-    continue;
-  }
   const themes = recipe.theme === "both" ? ["light", "dark"] : [recipe.theme ?? "light"];
   for (const theme of themes) {
     try {
-      await shoot(browser, key, recipe, theme);
+      await shoot(browser, key, recipe, theme, mask);
     } catch (error) {
       failures += 1;
       console.error(`✖ ${key} (${theme}): ${error.message.split("\n")[0]}`);
