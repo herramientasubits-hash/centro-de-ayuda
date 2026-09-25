@@ -157,6 +157,21 @@ async function shoot(browser, key, recipe, theme, mask) {
         height: box.height + CLIP_PADDING * 2 + (recipe.clipExtra ?? 0),
       };
       await page.screenshot({ path: target, clip });
+    } else if (viewport.height > 900 && recipe.trim !== false) {
+      // En viewports altos se recorta por debajo del último elemento visible (sin contar la barra lateral fija).
+      const bottom = await page.evaluate((limit) => {
+        let max = 0;
+        for (const el of document.body.querySelectorAll("*")) {
+          const style = getComputedStyle(el);
+          if (style.position === "fixed" || style.position === "sticky" || style.display === "none") continue;
+          const box = el.getBoundingClientRect();
+          if (box.height === 0 || box.height >= limit * 0.9) continue;
+          if (box.bottom > max && box.bottom <= limit) max = box.bottom;
+        }
+        return max;
+      }, viewport.height);
+      const height = Math.min(viewport.height, Math.max(400, Math.ceil(bottom) + 32));
+      await page.screenshot({ path: target, clip: { x: 0, y: 0, width: viewport.width, height } });
     } else {
       // `fullPage` captura la página entera, no solo lo que cabe en el viewport.
       await page.screenshot({ path: target, fullPage: recipe.fullPage ?? false });

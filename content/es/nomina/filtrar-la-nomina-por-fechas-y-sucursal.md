@@ -1,58 +1,55 @@
 ---
 id: nomina/filtrar-la-nomina-por-fechas-y-sucursal
 title: "Filtrar la nómina por fechas y sucursal"
-description: "Cómo cambiar la sucursal y el rango de fechas de la nómina, y qué columnas ves en cada pestaña."
+description: "La barra Filtros de Nómina paso a paso: elegir la sucursal, cambiar el rango de fechas y moverte al periodo anterior o siguiente con las flechas."
 section: nomina
 order: 50
 roles: [owner, admin]
 screens: [/payroll]
-keywords: [nómina, filtrar nómina, rango de fechas, quincena, sucursal, pago a barberos, filtros, cambiar fechas, comisiones, renta, salario, pago neto]
-related: []
-status: review
+keywords: [filtrar nómina, rango de fechas, quincena, mes pasado, periodo de pago, sucursal, cambiar fechas, ver otra quincena, flechas, 15 dias, nómina de una sucursal, todas las sucursales]
+related: [nomina/como-funciona-la-nomina, nomina/ciclo-de-pago, nomina/descargar-la-nomina, navegacion/cambiar-de-sucursal]
+status: draft
 updated: 2026-09-25
 ---
 
 # Filtrar la nómina por fechas y sucursal
 
-**En resumen:** en **Nómina** usas **Filtros** para elegir la sucursal y el **Rango de fechas**. Por defecto ves la quincena, por ejemplo «01 SEP - 15 SEP · 15 Dias».
+**En resumen:** debajo de las pestañas de **Nómina** está la barra **Filtros**, con **Sucursal** y **Rango de fechas**. Al lado del rango ves el periodo («septiembre» o «01 SEP - 15 SEP»), las flechas **‹ ›** para cambiarlo y cuántos días abarca («15 Dias»). La tabla se recalcula con cada cambio.
 
-La pantalla dice: «En este apartado podrás tener trazabilidad y control de tu barbería».
+![La barra Filtros de Nómina: Sucursal, Rango de fechas, el periodo con flechas y los días](/assets/es/nomina/filtrar-la-nomina-por-fechas-y-sucursal/filtros.png)
 
-## Pasos
+## 1. Elegir la sucursal
 
-1. Toca **Nómina** en el menú.
-2. Abre **Filtros**.
-3. Elige la **sucursal**.
-4. Elige el **Rango de fechas**.
-5. Elige la pestaña de la persona que quieres ver: **Barbero por comisión**, **Barbero de renta** o **Barbero por salario**.
+1. Toca **Sucursal**.
+2. Elige la sucursal cuya nómina quieres ver.
 
-## Qué columnas ves en cada pestaña
+Cada barbero aparece con lo que hizo en esa sucursal. Si una persona trabaja en dos, revisa las dos.
 
-**Barbero por comisión**
+## 2. Cambiar el rango de fechas
 
-**Miembro**, **Servicios**, **Venta de servicios**, **Venta de productos**, **Comisión de servicios**, **Comisión de productos**, **Total comisiones**, **Impuestos**, **Propinas** y **Pago neto**. La primera fila, «All», es el total del equipo.
+1. Toca el campo **Rango de fechas** (muestra algo como «01/SEP/26 - 30/SEP/26»).
+2. Elige el inicio y el fin del periodo en el selector.
+   ![El selector de fechas abierto sobre el campo Rango de fechas](/assets/es/nomina/filtrar-la-nomina-por-fechas-y-sucursal/rango.png)
 
-**Barbero de renta**
+Al abrir **Nómina**, el rango viene puesto según tu **Ciclo de pago** de **Configuración › Nomina** ([El ciclo de pago](/ayuda/nomina/ciclo-de-pago)).
 
-Las mismas columnas y, además, **Renta fija**.
+## 3. Moverte al periodo anterior o siguiente
 
-**Barbero por salario**
+Toca **‹** para ir al periodo anterior y **›** para el siguiente. El texto del medio cambia («septiembre», «01 SEP - 15 SEP») y el contador de días también.
 
-**Venta de productos**, **Comisión de productos**, **Impuestos**, **Propinas**, **Salario** y **Pago neto**.
+> [!TIP]
+> Para liquidar la quincena pasada, no escribas fechas: toca **‹** una vez y revisa que el texto del medio diga el periodo que esperas.
 
 > [!NOTE]
-> El botón **Descargar** ofrece CSV, Excel y PDF.
+> El selector que se abre al tocar **Rango de fechas** no se pudo ver en detalle. Cómo se eligen el inicio y el fin (dos calendarios, un solo calendario con dos toques) se confirmará con la captura.
 
 ## Preguntas frecuentes
 
-**¿Qué fechas veo al abrir Nómina?**
-La quincena, por ejemplo «01 SEP - 15 SEP · 15 Dias».
+**¿Puedo ver la nómina de todas las sucursales a la vez?**
+En la barra **Filtros** se elige una sucursal. Si necesitas el total, descarga la de cada una ([Descargar la nómina](/ayuda/nomina/descargar-la-nomina)).
 
-**¿Puedo ver la nómina de una sola sucursal?**
-Sí, con **Filtros** eliges la sucursal.
+**Cambié las fechas y un barbero desapareció.**
+No cobró nada en ese periodo o no estaba activo en la sucursal. Prueba con un rango más amplio.
 
-**¿Por qué el Pago neto de un barbero de renta sale negativo?**
-En la pestaña **Barbero de renta**, el pago neto sale negativo cuando la renta supera lo generado. Es lo que el barbero le debe a la barbería.
-
-**¿Dónde cambio cada cuánto se paga?**
-En **Configuración › Nomina**, con **Ciclo de pago\*** (semanal, quincenal o mensual) y **Día de inicio del ciclo**.
+**¿El filtro se guarda al salir?**
+No se vio que se guarde. Al volver a **Nómina**, revisa el rango antes de leer los números.

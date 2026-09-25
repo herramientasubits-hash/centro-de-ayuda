@@ -3516,5 +3516,48 @@
         "wait": 1500
       }
     ]
+  },
+  "navegacion/el-menu-en-el-celular/barra": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "mobile",
+    "theme": "light"
+  },
+  "navegacion/el-menu-en-el-celular/mas": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "mobile",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Más",
+        "wait": 1200
+      }
+    ]
+  },
+  "navegacion/el-menu-en-el-celular/calendario": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "mobile",
+    "theme": "light"
+  },
+  "navegacion/buscar-una-cita/pantalla": {
+    "source": "produccion",
+    "route": "/search-appointment",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "navegacion/buscar-una-cita/lupa": {
+    "source": "produccion",
+    "route": "/",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".actions-dashboard",
+    "highlight": ".fa-magnifying-glass"
   }
 }
