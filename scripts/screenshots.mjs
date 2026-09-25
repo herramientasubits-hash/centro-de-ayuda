@@ -81,6 +81,12 @@ async function publicPage(page, recipe) {
 /** Cada estado deja la pantalla lista para la captura. */
 const STATES = {
   "pub-page": publicPage,
+  // Una página pública por URL completa (la reserva online del cliente), sin sesión.
+  "pub-url": async (page, recipe) => {
+    await page.goto(recipe.route, { waitUntil: "networkidle" });
+    await page.waitForTimeout(1200);
+    await runSteps(page, recipe.steps);
+  },
   "app-page": async (page, recipe) => {
     await page.goto(`${APP_URL}${recipe.route}`);
     await page.getByRole("main").waitFor();
@@ -137,7 +143,8 @@ async function shoot(browser, key, recipe, theme, mask) {
     const state = STATES[recipe.state];
     if (!state) throw new Error(`estado desconocido «${recipe.state}»`);
     await state(page, recipe);
-    if (isProd && mask) await applyMask(page, mask, recipe.blur);
+    // También en páginas públicas: la reserva online muestra el nombre y el teléfono de la sucursal.
+    if (mask) await applyMask(page, mask, recipe.blur);
     if (recipe.highlight) await highlight(page, recipe.highlight);
     const suffix = recipe.theme === "both" && theme === "dark" ? "-oscuro" : "";
     const target = path.join(ROOT, "assets", LOCALE, `${key}${suffix}.png`);
@@ -190,7 +197,7 @@ if (!entries.length) {
 }
 
 const needsProd = entries.some(([, recipe]) => recipe.source === "produccion" && !recipe.public);
-let mask = null;
+let mask = needsProd ? null : loadMaskConfig();
 if (needsProd) {
   if (!fs.existsSync(AUTH_FILE)) {
     console.error("Falta la sesión de producción. Corre primero: npm run shots:login");

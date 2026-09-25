@@ -67,12 +67,12 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 
 ## Estado
 
-**249 artículos planeados · 241 escritos (97 %)**
+**249 artículos planeados · 249 escritos (100 %)**
 
 | Estado | Artículos |
 |---|---|
-| ○ pendiente | 8 |
-| ◐ borrador | 159 |
+| ○ pendiente | 0 |
+| ◐ borrador | 167 |
 | ◑ en revisión | 82 |
 | ● publicado | 0 |
 
@@ -81,13 +81,13 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 | Sección | Planeados | Escritos | P1 pendientes |
 |---|---|---|---|
 | Empezar | 8 | 8 | 0 |
-| Acceso y cuenta | 16 | 13 | 2 |
+| Acceso y cuenta | 16 | 16 | 0 |
 | Sucursales | 19 | 19 | 0 |
 | Roles y permisos | 16 | 16 | 0 |
 | Moverte por la app | 7 | 7 | 0 |
 | Métricas | 20 | 20 | 0 |
-| Calendario | 30 | 28 | 1 |
-| Clientes | 17 | 14 | 0 |
+| Calendario | 30 | 30 | 0 |
+| Clientes | 17 | 17 | 0 |
 | Servicios | 13 | 13 | 0 |
 | Productos | 10 | 10 | 0 |
 | Equipo | 29 | 29 | 0 |
@@ -102,27 +102,18 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 
 | Necesita | Qué implica | Artículos pendientes | De ellos P1 |
 |---|---|---|---|
-| **L** | leer producción | 3 | 1 |
-| **E** | crear datos de prueba en la sucursal «Prueba Elkin» | 1 | 0 |
+| **L** | leer producción | 0 | 0 |
+| **E** | crear datos de prueba en la sucursal «Prueba Elkin» | 0 | 0 |
 | **R** | verlo con otro rol | 0 | 0 |
-| **C** | celular real (lo hace el usuario) | 3 | 2 |
-| **D** | confirmar una regla con el equipo | 3 | 0 |
-| **P** | pantalla pública, sin sesión | 1 | 1 |
+| **C** | celular real (lo hace el usuario) | 0 | 0 |
+| **D** | confirmar una regla con el equipo | 0 | 0 |
+| **P** | pantalla pública, sin sesión | 0 | 0 |
 
-**Se pueden escribir ya, solo leyendo producción:** 1 artículos (1 de prioridad P1).
+**Se pueden escribir ya, solo leyendo producción:** 0 artículos (0 de prioridad P1).
 
 ## Reglas por confirmar con el equipo (D)
 
 Cada línea es un artículo cuya regla la pantalla no explica. Se agrupan para llevarlas juntas a producto.
-
-**Calendario**
-
-- El cliente no recibió el recordatorio
-
-**Clientes**
-
-- Descargar la lista de clientes
-- Un cliente aparece duplicado o con datos incompletos
 
 
 ## Inventario por sección
@@ -159,9 +150,9 @@ _Iniciar sesión, recuperar tu número, cerrar sesión, tu perfil y tu plan._
 | ◑ | Cerrar sesión | G | P1 | L | `/*` |
 | ◑ | Mi perfil: tu cuenta, tu plan y tus métodos de pago | R | P1 | L | `/profile` |
 | ◑ | Cambiar de rol | G | P1 | L R | `/*` |
-| ○ | Qué hacer si el código es incorrecto o vence | P | P1 | C | `/authenticate/verifyotp` |
-| ○ | Qué hacer si tu número no está registrado | P | P1 | C | `/authenticate` |
-| ○ | Reenviar el código | G | P2 | C | `/authenticate/verifyotp` |
+| ◐ | Qué hacer si el código es incorrecto o vence | P | P1 | C | `/authenticate/verifyotp` |
+| ◐ | Qué hacer si tu número no está registrado | P | P1 | C | `/authenticate` |
+| ◐ | Reenviar el código | G | P2 | C | `/authenticate/verifyotp` |
 | ◐ | Cambiar tu plan de Barberlytics | G | P2 | L D | `/profile` |
 | ◐ | Administrar la tarjeta con la que pagas Barberlytics | G | P2 | L | `/profile` `/settings/billing-details` |
 | ◑ | Descargar las facturas de Barberlytics | G | P2 | L | `/profile` `/settings/billing-details` |
@@ -287,11 +278,11 @@ _Agendar, cobrar, mover y cancelar citas; clientes sin cita, ventas rápidas y r
 | ◐ | Bloquear el calendario de un barbero | G | P1 | E | `/calendar` |
 | ◐ | Vacaciones de un barbero | G | P2 | E D | `/calendar` |
 | ◐ | Clientes sin preferencia de barbero: quién los atiende | C | P1 | L D | `/team/barbers/lineup` |
-| ○ | Reservas online: cómo las ve tu cliente | C | P1 | L P | `/online-booking` |
+| ◐ | Reservas online: cómo las ve tu cliente | C | P1 | L P | `/online-booking` |
 | ◐ | Citas que crea el cliente: cuándo entran y cómo las recibes | C | P2 | D E | `/calendar` |
 | ◐ | No puedo agendar a esta hora | P | P1 | L D | `/calendar` |
 | ◑ | Un barbero no aparece en el calendario | P | P1 | L | `/calendar` |
-| ○ | El cliente no recibió el recordatorio | P | P2 | D | `/calendar` |
+| ◐ | El cliente no recibió el recordatorio | P | P2 | D | `/calendar` |
 | ◐ | La lista de espera: anotar a un cliente cuando no hay hueco | G | P2 | L E | `/calendar` |
 
 ### Clientes
@@ -313,10 +304,10 @@ _La lista, los tipos de cliente, su ficha, sus notas y cómo bloquearlos._
 | ◐ | Notas del cliente: notas, medicamento y alergias | G | P1 | L E | `/customers/*` |
 | ◐ | Agregar familia o amigos a un cliente | G | P2 | E | `/customers/*` |
 | ◐ | Bloquear a un cliente | G | P1 | E D | `/customers/*` |
-| ○ | Importar clientes | G | P2 | L E | `/customers` |
-| ○ | Descargar la lista de clientes | G | P3 | L D | `/customers` |
+| ◐ | Importar clientes | G | P2 | L E | `/customers` |
+| ◐ | Descargar la lista de clientes | G | P3 | L D | `/customers` |
 | ◐ | Cómo cambia un cliente de tipo con el tiempo | C | P1 | D | `/customers` |
-| ○ | Un cliente aparece duplicado o con datos incompletos | P | P3 | D | `/customers` |
+| ◐ | Un cliente aparece duplicado o con datos incompletos | P | P3 | D | `/customers` |
 
 ### Servicios
 

@@ -3574,5 +3574,21 @@
     "theme": "light",
     "clip": ".actions-dashboard",
     "highlight": ".fa-magnifying-glass"
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/paso-1": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/celular": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "mobile",
+    "theme": "light"
   }
 }

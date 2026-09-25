@@ -18,16 +18,18 @@ const [route = "/", selector = "body"] = positional;
 const clicks = args.filter((arg, i) => args[i - 1] === "--click");
 const hovers = args.filter((arg, i) => args[i - 1] === "--hover");
 const asText = args.includes("--text");
+// --public: sin sesión ni modal de sucursal (páginas que ve el cliente).
+const isPublic = args.includes("--public");
 
 const browser = await chromium.launch();
 try {
-  const context = await browser.newContext({ storageState: path.join(ROOT, ".auth", "prod.json"), viewport: { width: 1280, height: 800 }, locale: "es-CO" });
+  const context = await browser.newContext({ ...(isPublic ? {} : { storageState: path.join(ROOT, ".auth", "prod.json") }), viewport: { width: 1280, height: 800 }, locale: "es-CO" });
   const page = await context.newPage();
-  await page.goto(`${PROD_URL}${route}`);
+  await page.goto(route.startsWith("http") ? route : `${PROD_URL}${route}`);
   // El calendario consulta sin parar: si la red no se calma en 8 s, seguimos.
   await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   await page.waitForTimeout(1500);
-  await chooseBranch(page);
+  if (!isPublic) await chooseBranch(page);
   // --click "Texto" pulsa por texto visible; --click "sel:.css" por selector; "sel:.css*5" lo repite 5 veces.
   for (const text of clicks) {
     const [, selector, times] = text.match(/^sel:(.+?)(?:\*(\d+))?$/) ?? [];
