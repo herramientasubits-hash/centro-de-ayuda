@@ -1,0 +1,4301 @@
+{
+ "generado": "2026-09-25",
+ "tipos": {
+  "C": "concepto",
+  "G": "guía paso a paso",
+  "R": "referencia",
+  "P": "problema"
+ },
+ "necesita": {
+  "L": "leer producción",
+  "E": "crear datos de prueba en la sucursal «Prueba Elkin»",
+  "R": "verlo con otro rol",
+  "C": "celular real (lo hace el usuario)",
+  "D": "confirmar una regla con el equipo",
+  "P": "pantalla pública, sin sesión"
+ },
+ "articulos": [
+  {
+   "id": "empezar/que-es-barberlytics",
+   "title": "Qué es Barberlytics y qué puedes hacer con él",
+   "section": "empezar",
+   "type": "C",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "empezar/primeros-pasos-del-dueno",
+   "title": "Primeros pasos: dejar tu barbería lista para agendar",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "empezar/usar-barberlytics-desde-el-celular",
+   "title": "Usar Barberlytics desde el celular",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "empezar/guia-del-dueno",
+   "title": "Un día como dueño: qué revisar y en qué orden",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "empezar/guia-del-administrador",
+   "title": "Un día como administrador de la sucursal",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "admin"
+   ],
+   "needs": [
+    "R"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "empezar/guia-de-recepcion",
+   "title": "Un día en recepción",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "recepcion"
+   ],
+   "needs": [
+    "R"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "empezar/guia-del-barbero-por-comision",
+   "title": "Un día como barbero por comisión",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "barbero"
+   ],
+   "needs": [
+    "R"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "empezar/guia-del-barbero-de-renta",
+   "title": "Un día como barbero de renta",
+   "section": "empezar",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "barbero"
+   ],
+   "needs": [
+    "R"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "acceso-y-cuenta/ingresar",
+   "title": "Iniciar sesión con tu número de teléfono",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/elegir-el-pais-del-telefono",
+   "title": "Elegir el país de tu teléfono",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/confirmar-el-codigo",
+   "title": "Confirmar tu número con el código",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate/verifyotp"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/olvidaste-tu-numero",
+   "title": "Olvidaste tu número",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate/forgot-number"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/contactar-a-soporte-desde-la-entrada",
+   "title": "Contactar a soporte desde la entrada",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate/contact"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/politica-de-privacidad-y-terminos",
+   "title": "Política de privacidad y términos de servicio",
+   "section": "acceso-y-cuenta",
+   "type": "R",
+   "screens": [
+    "/authenticate"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "P"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "acceso-y-cuenta/cerrar-sesion",
+   "title": "Cerrar sesión",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/mi-perfil",
+   "title": "Mi perfil: tu cuenta, tu plan y tus métodos de pago",
+   "section": "acceso-y-cuenta",
+   "type": "R",
+   "screens": [
+    "/profile"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/cambiar-de-rol",
+   "title": "Cambiar de rol",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/codigo-incorrecto-o-vencido",
+   "title": "Qué hacer si el código es incorrecto o vence",
+   "section": "acceso-y-cuenta",
+   "type": "P",
+   "screens": [
+    "/authenticate/verifyotp"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "C"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/numero-no-registrado",
+   "title": "Qué hacer si tu número no está registrado",
+   "section": "acceso-y-cuenta",
+   "type": "P",
+   "screens": [
+    "/authenticate"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "C"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "acceso-y-cuenta/reenviar-el-codigo",
+   "title": "Reenviar el código",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/authenticate/verifyotp"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "C"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "acceso-y-cuenta/cambiar-mi-plan",
+   "title": "Cambiar tu plan de Barberlytics",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/profile"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "acceso-y-cuenta/metodos-de-pago-de-tu-plan",
+   "title": "Administrar la tarjeta con la que pagas Barberlytics",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/profile",
+    "/settings/billing-details"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "acceso-y-cuenta/descargar-tus-facturas",
+   "title": "Descargar las facturas de Barberlytics",
+   "section": "acceso-y-cuenta",
+   "type": "G",
+   "screens": [
+    "/profile",
+    "/settings/billing-details"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "acceso-y-cuenta/tienes-dos-perfiles",
+   "title": "Tengo dos perfiles: dueño y barbero",
+   "section": "acceso-y-cuenta",
+   "type": "C",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/como-se-organiza-tu-barberia",
+   "title": "Cómo se organiza tu barbería: empresa, sucursales, equipo y catálogos",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/settings/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/empresa-y-sucursales",
+   "title": "Empresa y sucursales: en qué se diferencian",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/companies",
+    "/companies/locations"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal",
+   "title": "Qué cambia de una sucursal a otra: moneda, zona horaria, idioma y horario",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/companies/locations/edit/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/equipo-compartido-entre-sucursales",
+   "title": "El equipo es de la empresa y se activa en cada sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/team/activate"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales",
+   "title": "Servicios y productos: se crean una vez y se activan por sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/services/location/activate-service"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/perfiles-y-roles",
+   "title": "Perfiles y roles: qué son y en qué se diferencian",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/los-cinco-roles",
+   "title": "Los cinco roles y para qué sirve cada uno",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/como-funcionan-los-permisos",
+   "title": "Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/tabla-de-permisos-por-rol",
+   "title": "Tabla de permisos: qué puede hacer cada rol",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/permisos-dueno",
+   "title": "Qué puede hacer y qué ve del dueño",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner",
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/permisos-administrador-de-la-locacion",
+   "title": "Qué puede hacer y qué ve del administrador de la locación",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "admin",
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/permisos-recepcion",
+   "title": "Qué puede hacer y qué ve de recepción",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "recepcion",
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/permisos-barbero-por-comision",
+   "title": "Qué puede hacer y qué ve del barbero por comisión",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "barbero",
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/permisos-barbero-de-renta",
+   "title": "Qué puede hacer y qué ve del barbero de renta",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "barbero",
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/que-ve-cada-rol-en-el-menu",
+   "title": "Qué secciones del menú ve cada rol",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/de-que-depende-lo-que-ves",
+   "title": "De qué depende lo que ves: tu rol, tu sucursal y tus permisos",
+   "section": "sucursales-roles-y-permisos",
+   "type": "C",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/crear-una-sucursal",
+   "title": "Crear una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/editar-una-sucursal",
+   "title": "Editar los datos de una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations/edit/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/ver-el-detalle-de-una-sucursal",
+   "title": "Ver el detalle de una sucursal: clientes, equipo y licencia",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations/view/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/inactivar-una-sucursal",
+   "title": "Inactivar una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations/view/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/borrar-una-sucursal",
+   "title": "Borrar una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/ver-todas-las-sucursales-a-la-vez",
+   "title": "Ver todas las sucursales a la vez",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/activar-equipo-en-una-sucursal",
+   "title": "Activar al equipo en una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/team/activate"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/activar-servicios-en-una-sucursal",
+   "title": "Activar servicios en una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/services/location/activate-service"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/activar-productos-en-una-sucursal",
+   "title": "Activar productos en una sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/products/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/un-barbero-que-trabaja-en-dos-sucursales",
+   "title": "Un barbero que trabaja en dos sucursales",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/team/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/abrir-una-sucursal-nueva",
+   "title": "Abrir una sucursal nueva: la lista completa, paso a paso",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/companies/locations"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/cambiar-los-permisos-de-un-rol",
+   "title": "Cambiar los permisos predeterminados de un rol",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/cambiar-los-permisos-de-una-persona",
+   "title": "Cambiar los permisos de una persona sin cambiar su rol",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/darle-a-recepcion-solo-lo-necesario",
+   "title": "Darle a recepción solo lo que necesita",
+   "section": "sucursales-roles-y-permisos",
+   "type": "G",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/ajustes-generales-y-por-sucursal",
+   "title": "Ajustes generales y ajustes por sucursal: dónde se cambia cada uno",
+   "section": "sucursales-roles-y-permisos",
+   "type": "R",
+   "screens": [
+    "/settings"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/no-veo-a-un-barbero-en-mi-sucursal",
+   "title": "No veo a un barbero en mi sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "P",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal",
+   "title": "No veo un servicio o un producto en mi sucursal",
+   "section": "sucursales-roles-y-permisos",
+   "type": "P",
+   "screens": [
+    "/services",
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/no-veo-una-seccion-del-menu",
+   "title": "No veo una sección del menú",
+   "section": "sucursales-roles-y-permisos",
+   "type": "P",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "sucursales-roles-y-permisos/no-puedo-editar-o-borrar",
+   "title": "No puedo editar o borrar algo",
+   "section": "sucursales-roles-y-permisos",
+   "type": "P",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "navegacion/las-secciones-de-barberlytics",
+   "title": "Las secciones de Barberlytics y para qué sirve cada una",
+   "section": "navegacion",
+   "type": "R",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "navegacion/cambiar-de-sucursal",
+   "title": "Cambiar de sucursal",
+   "section": "navegacion",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "navegacion/notificaciones",
+   "title": "Ver tus notificaciones",
+   "section": "navegacion",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "navegacion/idioma-y-modo-oscuro",
+   "title": "Cambiar el idioma y activar el modo oscuro",
+   "section": "navegacion",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "navegacion/buscar-una-cita",
+   "title": "Buscar una cita con la lupa",
+   "section": "navegacion",
+   "type": "G",
+   "screens": [
+    "/search-appointment"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "navegacion/el-menu-en-el-celular",
+   "title": "El menú en el celular: Inicio, Calendario, Equipo, Clientes y Más",
+   "section": "navegacion",
+   "type": "R",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "navegacion/notificaciones-que-recibes",
+   "title": "Qué avisos recibes y de dónde salen",
+   "section": "navegacion",
+   "type": "R",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/como-leer-metricas",
+   "title": "Cómo leer Métricas: pestañas, filtros y periodos",
+   "section": "metricas",
+   "type": "C",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/filtrar-por-sucursal-equipo-y-periodo",
+   "title": "Filtrar por sucursal, por barbero y por periodo",
+   "section": "metricas",
+   "type": "G",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/ticket-promedio-cancelacion-y-propinas",
+   "title": "Ticket promedio, tasa de cancelación y % de propinas",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/ventas-e-ingresos",
+   "title": "Ventas e ingresos: servicios, productos, impuestos, propinas y tarifas",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/metodo-de-agendamiento-y-citas",
+   "title": "Método de agendamiento y citas: interno, online y sin cita previa",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/horas-de-solicitud-de-citas",
+   "title": "Horas de solicitud de citas: mañana, tarde y noche",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/distribucion-de-pagos-reembolsos-y-descuentos",
+   "title": "Distribución de pagos, reembolsos y descuentos",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/ventas-por-servicio-y-de-productos",
+   "title": "Ventas por servicio, ventas físicas y ventas de productos",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/clientes-tasa-de-retencion",
+   "title": "Tasa de retención y clientes recurrentes",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/clientes-ingreso-promedio-por-cliente",
+   "title": "Ingreso promedio por cliente",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/clientes-reservas-online-y-rate-walk-in",
+   "title": "Reservas online y rate de clientes sin cita previa",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/clientes-preferencia-de-barbero",
+   "title": "Preferencia de barbero: con y sin preferencia",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/clientes-citas-por-tipo-de-cliente",
+   "title": "Citas por tipo de cliente y nuevos vs recurrentes",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/clientes-frecuencia-de-visita",
+   "title": "Frecuencia de visita de tus clientes",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/total-neto-del-equipo",
+   "title": "Total neto del equipo y lealtad al barbero",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "metricas/marketing-canales-y-campanas",
+   "title": "Marketing: canales digitales, campañas y conversión",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/puntaje-de-salud",
+   "title": "Puntaje de salud de tu barbería",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/alertas-de-riesgo-de-clientes",
+   "title": "Alertas de riesgo: clientes en riesgo, perdidos y vencidos",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/mapa-de-capacidad",
+   "title": "Mapa de capacidad: qué horas se llenan",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "metricas/recomendaciones-inteligentes",
+   "title": "Recomendaciones inteligentes: de dónde salen y qué hacer con ellas",
+   "section": "metricas",
+   "type": "R",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/conoce-el-calendario",
+   "title": "Conoce el calendario: barberos, horas y colores",
+   "section": "calendario",
+   "type": "C",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/ver-el-dia-la-agenda-o-el-mes",
+   "title": "Ver el día, la agenda o el mes",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/filtrar-el-calendario-por-equipo",
+   "title": "Filtrar por equipo: quién aparece en el calendario",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/moverte-entre-fechas",
+   "title": "Moverte entre fechas",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/crear-una-cita",
+   "title": "Crear una cita",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/crear-una-cita-para-un-cliente-nuevo",
+   "title": "Crear una cita para un cliente nuevo",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/cita-que-se-repite",
+   "title": "Crear una cita que se repite",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/cliente-sin-cita-previa",
+   "title": "Cliente que llega sin cita previa",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/venta-sin-cita",
+   "title": "Venta sin cita",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/crear-una-venta-rapida",
+   "title": "Crear una venta rápida de productos",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/lista-de-cobros",
+   "title": "La lista de cobros: por cobrar y pagado",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/estados-de-una-cita",
+   "title": "Los estados de una cita: agendada, llegó, en silla, cerrada y terminada",
+   "section": "calendario",
+   "type": "C",
+   "screens": [
+    "/calendar",
+    "/transactions"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/abrir-una-cita",
+   "title": "Abrir una cita y ver su detalle",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/marcar-que-el-cliente-llego",
+   "title": "Marcar que el cliente llegó (check in)",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "recepcion",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/pasar-al-cliente-a-la-silla",
+   "title": "Pasar al cliente a la silla",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "barbero",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/cobrar-una-cita",
+   "title": "Cobrar una cita (check out)",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "recepcion",
+    "admin",
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/cobrar-con-propina",
+   "title": "Cobrar con propina",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "recepcion",
+    "admin",
+    "owner"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/aplicar-un-descuento",
+   "title": "Aplicar un descuento a una cita",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/mover-o-reprogramar-una-cita",
+   "title": "Mover o reprogramar una cita",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/cancelar-una-cita",
+   "title": "Cancelar una cita",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/el-cliente-no-se-presento",
+   "title": "El cliente no se presentó",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/bloquear-el-calendario",
+   "title": "Bloquear el calendario de un barbero",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "barbero"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/vacaciones-de-un-barbero",
+   "title": "Vacaciones de un barbero",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "barbero"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/clientes-sin-preferencia-de-barbero",
+   "title": "Clientes sin preferencia de barbero: quién los atiende",
+   "section": "calendario",
+   "type": "C",
+   "screens": [
+    "/team/barbers/lineup"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/reservas-online-como-las-ve-tu-cliente",
+   "title": "Reservas online: cómo las ve tu cliente",
+   "section": "calendario",
+   "type": "C",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/citas-que-crea-el-cliente",
+   "title": "Citas que crea el cliente: cuándo entran y cómo las recibes",
+   "section": "calendario",
+   "type": "C",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "D",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "calendario/no-puedo-agendar-a-esta-hora",
+   "title": "No puedo agendar a esta hora",
+   "section": "calendario",
+   "type": "P",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/un-barbero-no-aparece-en-el-calendario",
+   "title": "Un barbero no aparece en el calendario",
+   "section": "calendario",
+   "type": "P",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "calendario/el-cliente-no-recibio-el-recordatorio",
+   "title": "El cliente no recibió el recordatorio",
+   "section": "calendario",
+   "type": "P",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/la-lista-de-clientes",
+   "title": "La lista de clientes: columnas, búsqueda y paginación",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/tipos-de-cliente",
+   "title": "Los tipos de cliente: nuevo, retenido, frecuente, VIP, pre-perdida, perdido y recuperado",
+   "section": "clientes",
+   "type": "C",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/buscar-un-cliente",
+   "title": "Buscar un cliente",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/crear-un-cliente",
+   "title": "Crear un cliente",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/ver-un-cliente",
+   "title": "Ver un cliente: información general",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/indicadores-de-un-cliente",
+   "title": "Los indicadores de un cliente: FOV, AVF, LTV, ver índice y vuelve a reservar",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/perfil-de-un-cliente",
+   "title": "El perfil de un cliente: ubicación, nacimiento y reserva solo online",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/citas-de-un-cliente",
+   "title": "Las citas de un cliente",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/pagos-de-un-cliente",
+   "title": "Los pagos de un cliente",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/productos-de-un-cliente",
+   "title": "Los productos que compró un cliente",
+   "section": "clientes",
+   "type": "R",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "clientes/notas-del-cliente",
+   "title": "Notas del cliente: notas, medicamento y alergias",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/familia-y-amigos",
+   "title": "Agregar familia o amigos a un cliente",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/bloquear-a-un-cliente",
+   "title": "Bloquear a un cliente",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/importar-clientes",
+   "title": "Importar clientes",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "clientes/descargar-clientes",
+   "title": "Descargar la lista de clientes",
+   "section": "clientes",
+   "type": "G",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "clientes/como-se-clasifica-un-cliente",
+   "title": "Cómo cambia un cliente de tipo con el tiempo",
+   "section": "clientes",
+   "type": "C",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "clientes/un-cliente-aparece-duplicado",
+   "title": "Un cliente aparece duplicado o con datos incompletos",
+   "section": "clientes",
+   "type": "P",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "servicios/como-se-organizan-tus-servicios",
+   "title": "Cómo se organizan tus servicios: categorías, servicios y combos",
+   "section": "servicios",
+   "type": "C",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/la-lista-de-servicios",
+   "title": "La lista de servicios",
+   "section": "servicios",
+   "type": "R",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/crear-una-categoria-de-servicios",
+   "title": "Crear una categoría de servicios",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/crear-un-servicio",
+   "title": "Crear un servicio: datos generales",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/crear-un-servicio-equipo",
+   "title": "Crear un servicio: quién lo hace",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/crear-un-servicio-avanzado",
+   "title": "Crear un servicio: opciones avanzadas",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "servicios/costo-y-precio-de-un-servicio",
+   "title": "Costo del servicio y precio básico",
+   "section": "servicios",
+   "type": "C",
+   "screens": [
+    "/services/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/servicio-publico-o-privado",
+   "title": "Servicio público o privado: qué ve el cliente al reservar",
+   "section": "servicios",
+   "type": "C",
+   "screens": [
+    "/services/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/precio-para-clientes-nuevos-y-de-lealtad",
+   "title": "Precio para clientes nuevos y precio de lealtad",
+   "section": "servicios",
+   "type": "C",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/editar-un-servicio",
+   "title": "Editar un servicio",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/desactivar-o-borrar-un-servicio",
+   "title": "Desactivar o borrar un servicio",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "servicios/crear-un-combo",
+   "title": "Crear un combo de servicios",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "servicios/orden-de-agendamiento",
+   "title": "El orden de los servicios al agendar",
+   "section": "servicios",
+   "type": "G",
+   "screens": [
+    "/services"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "productos/como-se-organizan-tus-productos",
+   "title": "Cómo se organizan tus productos",
+   "section": "productos",
+   "type": "C",
+   "screens": [
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/la-lista-de-productos",
+   "title": "La lista de productos",
+   "section": "productos",
+   "type": "R",
+   "screens": [
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/crear-una-categoria-de-productos",
+   "title": "Crear una categoría de productos",
+   "section": "productos",
+   "type": "G",
+   "screens": [
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/crear-un-producto",
+   "title": "Crear un producto",
+   "section": "productos",
+   "type": "G",
+   "screens": [
+    "/products/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/precio-de-compra-precio-de-venta-y-sku",
+   "title": "Precio de compra, precio de venta y código SKU",
+   "section": "productos",
+   "type": "C",
+   "screens": [
+    "/products/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/producto-publico-o-privado",
+   "title": "Producto público o privado y disponibilidad de venta",
+   "section": "productos",
+   "type": "C",
+   "screens": [
+    "/products/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/fotos-de-un-producto",
+   "title": "Fotos de un producto",
+   "section": "productos",
+   "type": "G",
+   "screens": [
+    "/products/create"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "productos/editar-o-borrar-un-producto",
+   "title": "Editar o borrar un producto",
+   "section": "productos",
+   "type": "G",
+   "screens": [
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "productos/vender-un-producto",
+   "title": "Vender un producto",
+   "section": "productos",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "productos/inventario-y-unidades",
+   "title": "Inventario: unidades y avisos de poco stock",
+   "section": "productos",
+   "type": "C",
+   "screens": [
+    "/products"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/conoce-la-seccion-equipo",
+   "title": "Conoce la sección Equipo",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/la-lista-de-barberos",
+   "title": "La lista de barberos: por comisión y de renta",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/comision-o-renta",
+   "title": "Barbero por comisión o de renta: cuál elegir",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-dueno",
+   "title": "Crear un dueño",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-administrador",
+   "title": "Crear un administrador de la locación",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-recepcionista",
+   "title": "Crear una recepcionista",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-barbero-por-comision",
+   "title": "Crear un barbero por comisión",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-barbero-de-renta",
+   "title": "Crear un barbero de renta",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-perfil",
+   "title": "La ficha de un barbero: perfil",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-servicios",
+   "title": "La ficha de un barbero: servicios y precios propios",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-compensacion",
+   "title": "La ficha de un barbero por comisión: compensación",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/commission/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-de-renta-pagos",
+   "title": "La ficha de un barbero de renta: pagos",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/rent/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-calendario",
+   "title": "La ficha de un barbero: su horario semanal",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-permisos",
+   "title": "La ficha de un barbero: permisos",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/ficha-de-un-barbero-opciones",
+   "title": "La ficha de un barbero: opciones",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/editar-a-un-miembro-del-equipo",
+   "title": "Editar a un miembro del equipo",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/inactivar-a-un-miembro-del-equipo",
+   "title": "Inactivar a un miembro del equipo",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/borrar-a-un-miembro-del-equipo",
+   "title": "Borrar a un miembro del equipo",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/niveles-de-barberos",
+   "title": "Niveles de barberos: para qué sirven",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/crear-y-editar-un-nivel",
+   "title": "Crear y editar un nivel",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/horas-de-trabajo-del-equipo",
+   "title": "Las horas de trabajo del equipo: ver y cambiar la semana",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/gerentes",
+   "title": "Gerentes: quiénes son y qué pueden hacer",
+   "section": "equipo",
+   "type": "R",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/ordenar-barberos",
+   "title": "Ordenar a los barberos",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/orden-para-clientes-sin-cita",
+   "title": "Orden para clientes que llegan sin cita",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers/lineup"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/orden-para-clientes-sin-preferencia",
+   "title": "Orden para clientes sin preferencia de barbero",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers/lineup"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/visibilidad-para-agendamiento",
+   "title": "Visibilidad para agendamiento: mostrar u ocultar a un barbero",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "equipo/codigo-de-un-barbero",
+   "title": "El código de un barbero",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "equipo/habilidades-y-fotos",
+   "title": "Habilidades y fotos de un barbero",
+   "section": "equipo",
+   "type": "G",
+   "screens": [
+    "/team/barbers/view/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "equipo/como-se-le-paga-a-un-barbero",
+   "title": "Cómo se le paga a cada tipo de barbero",
+   "section": "equipo",
+   "type": "C",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/como-funciona-la-nomina",
+   "title": "Cómo funciona la nómina",
+   "section": "nomina",
+   "type": "C",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/nomina-barberos-por-comision",
+   "title": "Nómina de barberos por comisión: cada columna",
+   "section": "nomina",
+   "type": "R",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/nomina-barberos-de-renta",
+   "title": "Nómina de barberos de renta: renta fija y pago neto",
+   "section": "nomina",
+   "type": "R",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/nomina-barberos-por-salario",
+   "title": "Nómina de barberos por salario",
+   "section": "nomina",
+   "type": "R",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/filtrar-la-nomina-por-fechas-y-sucursal",
+   "title": "Filtrar la nómina por fechas y sucursal",
+   "section": "nomina",
+   "type": "G",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/descargar-la-nomina",
+   "title": "Descargar la nómina en CSV, Excel o PDF",
+   "section": "nomina",
+   "type": "G",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/como-se-calcula-una-comision",
+   "title": "Cómo se calcula una comisión",
+   "section": "nomina",
+   "type": "C",
+   "screens": [
+    "/payroll",
+    "/team-commission"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "barbero"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/como-se-calcula-la-renta",
+   "title": "Cómo se calcula el pago de un barbero de renta",
+   "section": "nomina",
+   "type": "C",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/propinas-en-la-nomina",
+   "title": "Las propinas en la nómina",
+   "section": "nomina",
+   "type": "C",
+   "screens": [
+    "/payroll",
+    "/sales-tips"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "nomina/ciclo-de-pago",
+   "title": "El ciclo de pago: semanal, quincenal o mensual",
+   "section": "nomina",
+   "type": "G",
+   "screens": [
+    "/settings/payroll"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/mi-pago-neto-sale-negativo",
+   "title": "Mi pago neto sale negativo",
+   "section": "nomina",
+   "type": "P",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "nomina/la-nomina-no-coincide-con-lo-que-espero",
+   "title": "La nómina no coincide con lo que espero",
+   "section": "nomina",
+   "type": "P",
+   "screens": [
+    "/payroll"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "barbero"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "gastos/gastos-fijos-y-variables",
+   "title": "Gastos fijos y variables: en qué se diferencian",
+   "section": "gastos",
+   "type": "C",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "gastos/la-lista-de-gastos",
+   "title": "La lista de gastos",
+   "section": "gastos",
+   "type": "R",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "gastos/crear-un-gasto-fijo",
+   "title": "Crear un gasto fijo",
+   "section": "gastos",
+   "type": "G",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "gastos/crear-un-gasto-variable",
+   "title": "Crear un gasto variable",
+   "section": "gastos",
+   "type": "G",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "barbero"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "gastos/editar-o-borrar-un-gasto",
+   "title": "Editar o borrar un gasto",
+   "section": "gastos",
+   "type": "G",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "gastos/frecuencia-de-un-gasto-fijo",
+   "title": "La frecuencia de un gasto fijo",
+   "section": "gastos",
+   "type": "C",
+   "screens": [
+    "/expenses"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "transacciones/como-leer-transacciones",
+   "title": "Cómo leer Transacciones: cuentas, cobros y pendientes",
+   "section": "transacciones",
+   "type": "C",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/las-cinco-tarjetas-de-transacciones",
+   "title": "Facturado, cobrado, por cobrar, propinas y devuelto",
+   "section": "transacciones",
+   "type": "R",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/filtrar-transacciones",
+   "title": "Filtrar por fechas, estado de la cuenta y estado de la cita",
+   "section": "transacciones",
+   "type": "G",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/estados-de-una-cuenta",
+   "title": "Estados de una cuenta: por cobrar, cobrada y devuelta",
+   "section": "transacciones",
+   "type": "C",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/ver-el-detalle-de-una-cuenta",
+   "title": "Ver el detalle de una cuenta",
+   "section": "transacciones",
+   "type": "G",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/buscar-una-transaccion",
+   "title": "Buscar una transaccion",
+   "section": "transacciones",
+   "type": "G",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "transacciones/clientes-walk-in-en-transacciones",
+   "title": "Cuentas de clientes sin registro («Walk in»)",
+   "section": "transacciones",
+   "type": "C",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "transacciones/devolver-un-pago",
+   "title": "Devolver un pago",
+   "section": "transacciones",
+   "type": "G",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "transacciones/metodos-de-pago-aceptados",
+   "title": "Métodos de pago que puedes cobrar",
+   "section": "transacciones",
+   "type": "R",
+   "screens": [
+    "/transactions",
+    "/devices"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "transacciones/una-cuenta-quedo-por-cobrar",
+   "title": "Una cuenta quedó por cobrar",
+   "section": "transacciones",
+   "type": "P",
+   "screens": [
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion"
+   ],
+   "needs": [
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/conoce-configuracion",
+   "title": "Conoce Configuración: los cuatro grupos de ajustes",
+   "section": "configuracion",
+   "type": "C",
+   "screens": [
+    "/settings"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/detalles-del-negocio-hora-y-calendario",
+   "title": "Detalles del negocio: zona horaria, formato de hora, semana y festivos",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/business-details/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/detalles-del-negocio-enlaces-en-linea",
+   "title": "Detalles del negocio: sitio web y redes sociales",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/business-details/*"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/detalles-de-facturacion-y-facturas",
+   "title": "Detalles de facturación y facturas",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/settings/billing-details"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/agendamiento-online-que-es",
+   "title": "Agendamiento online: qué es y cómo funciona",
+   "section": "configuracion",
+   "type": "C",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "P"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/agendamiento-online-panel-lateral",
+   "title": "Reservas en tu sitio web: botón «Book now» flotante",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/agendamiento-online-abrir-desde-un-enlace",
+   "title": "Reservas en tu sitio web: abrir desde tu propio botón",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/agendamiento-online-embebido",
+   "title": "Reservas en tu sitio web: incrustar en una página",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/enlace-directo-de-reserva-y-utm",
+   "title": "El enlace directo de reserva y los parámetros UTM",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/online-booking"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/periodos-de-cierre",
+   "title": "Períodos de cierre del negocio",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/business-closed"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/dispositivos-de-pago",
+   "title": "Dispositivos de pago",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/devices"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/empresa",
+   "title": "Empresa: los datos de tu empresa",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/companies"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/permisos-donde-se-cambian",
+   "title": "Permisos: dónde se cambian y cómo se guardan",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/team-permission"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/comisiones-que-se-deduce",
+   "title": "Comisiones: qué se resta antes de calcular",
+   "section": "configuracion",
+   "type": "C",
+   "screens": [
+    "/team-commission"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/impuestos",
+   "title": "Impuestos: cómo agregarlos y cómo se aplican",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/sales-taxes"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/tarifa-por-uso-de-tarjeta",
+   "title": "Tarifa por uso de tarjeta de crédito",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/credit-card"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/propinas-opciones-y-comportamiento",
+   "title": "Propinas: opciones, valor predeterminado y qué ve el cajero",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/sales-tips"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/precios-moneda-y-calculo-de-impuestos",
+   "title": "Precios: moneda y si el precio incluye impuestos",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/sales-pricing"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "E",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/integracion-de-pagos-con-stripe",
+   "title": "Integración de pagos con Stripe",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/payment-integration"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/centro-de-notificaciones-como-funciona",
+   "title": "Centro de notificaciones: cómo funciona",
+   "section": "configuracion",
+   "type": "C",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "configuracion/notificaciones-de-clientes",
+   "title": "Avisos sobre clientes: importación, reseñas, estados y bloqueos",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/notificaciones-de-productos",
+   "title": "Avisos sobre productos y combos",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/notificaciones-del-calendario",
+   "title": "Avisos del calendario: agenda ocupada, bloqueos y vacaciones",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/notificaciones-de-metricas",
+   "title": "Avisos de métricas: salud de tu barbería",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/notificaciones-por-rol",
+   "title": "Qué avisos recibe cada rol",
+   "section": "configuracion",
+   "type": "R",
+   "screens": [
+    "/notifications-center"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "R"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "configuracion/eliminar-tu-cuenta",
+   "title": "Eliminar tu cuenta",
+   "section": "configuracion",
+   "type": "G",
+   "screens": [
+    "/settings"
+   ],
+   "roles": [
+    "owner"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "glosario/glosario-de-barberlytics",
+   "title": "Glosario: cada palabra de Barberlytics en una frase",
+   "section": "glosario",
+   "type": "R",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "glosario/que-es-el-avf",
+   "title": "AVF: el ritmo de visita de cada cliente",
+   "section": "glosario",
+   "type": "C",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "glosario/que-es-el-ltv",
+   "title": "LTV: cuánto ha gastado un cliente",
+   "section": "glosario",
+   "type": "C",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "glosario/que-es-el-fov",
+   "title": "FOV: la frecuencia de visitas",
+   "section": "glosario",
+   "type": "C",
+   "screens": [
+    "/customers/*"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P2"
+  },
+  {
+   "id": "glosario/que-es-el-churn",
+   "title": "Churn: cuando un cliente se pierde",
+   "section": "glosario",
+   "type": "C",
+   "screens": [
+    "/customers"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "glosario/que-es-la-ocupacion",
+   "title": "Ocupación: qué tan llena está la agenda",
+   "section": "glosario",
+   "type": "C",
+   "screens": [
+    "/"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "problemas/no-puedo-entrar",
+   "title": "No puedo entrar a Barberlytics",
+   "section": "problemas",
+   "type": "P",
+   "screens": [
+    "/authenticate"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "C"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "problemas/la-app-esta-lenta-o-no-carga",
+   "title": "La app va lenta o no carga",
+   "section": "problemas",
+   "type": "P",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P3"
+  },
+  {
+   "id": "problemas/como-contactar-a-soporte",
+   "title": "Cómo contactar a soporte estando dentro de la app",
+   "section": "problemas",
+   "type": "G",
+   "screens": [
+    "/*"
+   ],
+   "roles": [
+    "todos"
+   ],
+   "needs": [
+    "L",
+    "D"
+   ],
+   "priority": "P1"
+  },
+  {
+   "id": "problemas/un-numero-no-cuadra",
+   "title": "Un número no cuadra con lo que espero",
+   "section": "problemas",
+   "type": "P",
+   "screens": [
+    "/",
+    "/payroll",
+    "/transactions"
+   ],
+   "roles": [
+    "owner",
+    "admin"
+   ],
+   "needs": [
+    "D"
+   ],
+   "priority": "P1"
+  }
+ ]
+}

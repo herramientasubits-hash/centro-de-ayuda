@@ -2,16 +2,23 @@
   {
     "id": "empezar",
     "title": "Empezar",
-    "description": "Qué es Barberlytics, tu primer ingreso y cómo dejar tu barbería lista.",
+    "description": "Qué es Barberlytics, los primeros pasos y una guía por rol.",
     "icon": "rocket",
     "order": 10
   },
   {
     "id": "acceso-y-cuenta",
     "title": "Acceso y cuenta",
-    "description": "Iniciar sesión, confirmar el código, recuperar tu número, cerrar sesión y tu perfil.",
+    "description": "Iniciar sesión, recuperar tu número, cerrar sesión, tu perfil y tu plan.",
     "icon": "key",
     "order": 20
+  },
+  {
+    "id": "sucursales-roles-y-permisos",
+    "title": "Sucursales, roles y permisos",
+    "description": "Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte entre sucursales.",
+    "icon": "shield",
+    "order": 25
   },
   {
     "id": "navegacion",
@@ -21,73 +28,73 @@
     "order": 30
   },
   {
-    "id": "panel",
-    "title": "Panel",
-    "description": "Lo que te dice el panel cada mañana y cómo leer cada indicador.",
+    "id": "metricas",
+    "title": "Métricas",
+    "description": "Cómo va tu barbería: negocio, clientes, barberos, marketing y recomendaciones.",
     "icon": "gauge",
     "order": 40
   },
   {
     "id": "calendario",
-    "title": "Calendario y citas",
-    "description": "Agendar, mover y cerrar citas; walk-ins, bloqueos y recordatorios.",
+    "title": "Calendario",
+    "description": "Agendar, cobrar, mover y cancelar citas; clientes sin cita, ventas rápidas y reservas online.",
     "icon": "calendar",
     "order": 50
   },
   {
     "id": "clientes",
     "title": "Clientes",
-    "description": "El perfil, el ritmo de visita, el semáforo y cómo recuperar a quien se fue.",
+    "description": "La lista, los tipos de cliente, su ficha, sus notas y cómo bloquearlos.",
     "icon": "users",
     "order": 60
   },
   {
-    "id": "equipo",
-    "title": "Equipo",
-    "description": "Invitar, roles, estados, ocupación y la calibración trimestral.",
-    "icon": "team",
+    "id": "servicios",
+    "title": "Servicios",
+    "description": "Categorías, servicios y combos, con sus precios.",
+    "icon": "scissors",
     "order": 70
   },
   {
-    "id": "servicios-y-productos",
-    "title": "Servicios y productos",
-    "description": "El catálogo, los precios, el inventario y las ventas de mostrador.",
-    "icon": "scissors",
+    "id": "productos",
+    "title": "Productos",
+    "description": "Lo que vendes en la barbería, con su precio y su inventario.",
+    "icon": "package",
     "order": 80
   },
   {
-    "id": "nomina",
-    "title": "Nómina y pagos al equipo",
-    "description": "Cómo se calcula la comisión, la renta y el salario, y qué ve cada barbero.",
-    "icon": "wallet",
+    "id": "equipo",
+    "title": "Equipo",
+    "description": "Barberos, niveles, horarios, gerentes y la ficha de cada persona.",
+    "icon": "team",
     "order": 90
   },
   {
-    "id": "gastos-y-transacciones",
-    "title": "Gastos y transacciones",
-    "description": "Todo lo que entra y sale de caja, con su medio de pago.",
+    "id": "gastos",
+    "title": "Gastos",
+    "description": "Lo que gasta la barbería, fijo o variable.",
     "icon": "receipt",
     "order": 100
+  },
+  {
+    "id": "nomina",
+    "title": "Nómina",
+    "description": "Cómo se le paga a cada barbero y cómo leer cada columna.",
+    "icon": "wallet",
+    "order": 110
+  },
+  {
+    "id": "transacciones",
+    "title": "Transacciones",
+    "description": "Todo lo cobrado y lo pendiente por cobrar.",
+    "icon": "swap",
+    "order": 120
   },
   {
     "id": "configuracion",
     "title": "Configuración",
     "description": "Cada ajuste de la barbería, uno por uno.",
     "icon": "settings",
-    "order": 110
-  },
-  {
-    "id": "indicadores",
-    "title": "Entender los números",
-    "description": "Ocupación, retención, ritmo de visita, el indicador de precios y el P&L.",
-    "icon": "chart",
-    "order": 120
-  },
-  {
-    "id": "problemas",
-    "title": "Problemas frecuentes",
-    "description": "No puedo entrar, no veo una sucursal, un número no cuadra.",
-    "icon": "lifebuoy",
     "order": 130
   },
   {
@@ -96,5 +103,12 @@
     "description": "Cada palabra de Barberlytics explicada en una frase.",
     "icon": "book",
     "order": 140
+  },
+  {
+    "id": "problemas",
+    "title": "Problemas frecuentes",
+    "description": "No puedo entrar, un número no cuadra y qué hacer.",
+    "icon": "lifebuoy",
+    "order": 150
   }
 ]
