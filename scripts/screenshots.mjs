@@ -64,7 +64,8 @@ async function runSteps(page, steps = []) {
     // `force: true` salta la comprobación de que nada tape el elemento (capas decorativas).
     if (step.click) await page.locator(step.click).first().click({ force: Boolean(step.force) });
     else if (step.clickText) await page.getByText(step.clickText, { exact: true }).locator("visible=true").first().click();
-    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1]);
+    // Un valor `$NOMBRE` se lee de una variable de entorno: así un celular real nunca queda en el repo.
+    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1].replace(/^\$(\w+)$/, (_, name) => process.env[name] ?? ""));
     else if (step.hover) await page.locator(step.hover).first().hover();
     else if (step.scrollTo) await page.locator(step.scrollTo).first().scrollIntoViewIfNeeded();
     await page.waitForTimeout(step.wait ?? 500);
@@ -165,30 +166,40 @@ async function shoot(browser, key, recipe, theme, mask) {
       };
       await page.screenshot({ path: target, clip });
     } else if (viewport.height > 900 && recipe.trim !== false) {
-      // En viewports altos se recorta por debajo del último elemento visible (sin contar la barra lateral fija).
-      const bottom = await page.evaluate((limit) => {
-        let max = 0;
-        const pinned = (el) => {
-          for (let node = el; node && node !== document.body; node = node.parentElement) {
-            const position = getComputedStyle(node).position;
-            if (position === "fixed" || position === "sticky") return true;
+      // En viewports altos se mide dónde empieza y termina el contenido real (texto, campos, botones, imágenes;
+      // sin la barra lateral ni pies fijos). Si la página lo pega abajo, se encoge la ventana a su altura y se
+      // vuelve a medir; luego se recorta por debajo del último elemento.
+      const measure = () =>
+        page.evaluate((limit) => {
+          const pinned = (el) => {
+            for (let node = el; node && node !== document.body; node = node.parentElement) {
+              const position = getComputedStyle(node).position;
+              if (position === "fixed" || position === "sticky") return true;
+            }
+            return false;
+          };
+          const VISUAL = new Set(["IMG", "INPUT", "BUTTON", "SVG", "TEXTAREA", "SELECT", "HR", "CANVAS", "TABLE"]);
+          const hasOwnText = (el) => [...el.childNodes].some((node) => node.nodeType === 3 && node.textContent.trim());
+          let top = Infinity;
+          let bottom = 0;
+          for (const el of document.body.querySelectorAll("*")) {
+            if (!VISUAL.has(el.tagName) && !hasOwnText(el)) continue;
+            const style = getComputedStyle(el);
+            if (style.display === "none" || style.visibility === "hidden" || pinned(el)) continue;
+            const box = el.getBoundingClientRect();
+            if (box.height === 0 || box.height >= limit * 0.9 || box.bottom > limit) continue;
+            if (box.top < top) top = box.top;
+            if (box.bottom > bottom) bottom = box.bottom;
           }
-          return false;
-        };
-        // Solo cuentan los elementos con contenido real: texto propio, campos, botones, imágenes o gráficos.
-        const VISUAL = new Set(["IMG", "INPUT", "BUTTON", "SVG", "TEXTAREA", "SELECT", "HR", "CANVAS", "TABLE"]);
-        const hasOwnText = (el) => [...el.childNodes].some((node) => node.nodeType === 3 && node.textContent.trim());
-        for (const el of document.body.querySelectorAll("*")) {
-          if (!VISUAL.has(el.tagName) && !hasOwnText(el)) continue;
-          const style = getComputedStyle(el);
-          if (style.display === "none" || style.visibility === "hidden" || pinned(el)) continue;
-          const box = el.getBoundingClientRect();
-          if (box.height === 0 || box.height >= limit * 0.9) continue;
-          if (box.bottom > max && box.bottom <= limit) max = box.bottom;
-        }
-        return max;
-      }, viewport.height);
-      const height = Math.min(viewport.height, Math.max(400, Math.ceil(bottom) + 32));
+          return { top: top === Infinity ? 0 : top, bottom };
+        }, page.viewportSize().height);
+      let { top, bottom } = await measure();
+      if (top > 160) {
+        await page.setViewportSize({ width: viewport.width, height: Math.max(600, Math.min(viewport.height, Math.ceil(bottom - top) + 160)) });
+        await page.waitForTimeout(500);
+        ({ bottom } = await measure());
+      }
+      const height = Math.min(page.viewportSize().height, Math.max(400, Math.ceil(bottom) + 32));
       await page.screenshot({ path: target, clip: { x: 0, y: 0, width: viewport.width, height } });
     } else {
       // `fullPage` captura la página entera, no solo lo que cabe en el viewport.
