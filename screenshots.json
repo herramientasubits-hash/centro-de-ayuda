@@ -2233,5 +2233,1288 @@
         "wait": 1500
       }
     ]
+  },
+  "equipo/conoce-la-seccion-equipo/pantalla": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "equipo/conoce-la-seccion-equipo/menu-acciones": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      }
+    ],
+    "clip": "button:has-text('Acciones') >> nth=0 >> xpath=ancestor::*[2]",
+    "clipExtra": 230
+  },
+  "equipo/la-lista-de-barberos/comision": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "equipo/la-lista-de-barberos/renta": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Barbero renta",
+        "wait": 1000
+      }
+    ]
+  },
+  "equipo/la-lista-de-barberos/acciones-fila": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      }
+    ],
+    "clip": "text=Listado de Barberos >> xpath=ancestor::*[2]",
+    "clipExtra": 180
+  },
+  "equipo/niveles-de-barberos/lista": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Niveles')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/crear-y-editar-un-nivel/crear": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear nivel",
+        "wait": 1500
+      }
+    ]
+  },
+  "equipo/horas-de-trabajo-del-equipo/semana": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Horas de trabajo')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/horas-de-trabajo-del-equipo/menu-turno": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Horas de trabajo')",
+        "wait": 1200
+      },
+      {
+        "click": "text=6am - 11pm >> nth=0",
+        "wait": 1000
+      }
+    ]
+  },
+  "equipo/horas-de-trabajo-del-equipo/editar-dia": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Horas de trabajo')",
+        "wait": 1200
+      },
+      {
+        "click": "text=6am - 11pm >> nth=0",
+        "wait": 1000
+      },
+      {
+        "clickText": "Editar este día",
+        "wait": 1500
+      }
+    ]
+  },
+  "equipo/gerentes/lista": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Gerentes')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/gerentes/acciones-fila": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Gerentes')",
+        "wait": 1200
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1000
+      }
+    ],
+    "clip": "text=Lista de miembros >> xpath=ancestor::*[2]",
+    "clipExtra": 240
+  },
+  "equipo/crear-barbero-por-comision/roles": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      }
+    ]
+  },
+  "equipo/crear-barbero-por-comision/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      },
+      {
+        "clickText": "Barbero de renta",
+        "wait": 600
+      },
+      {
+        "click": "label[for='Commission']",
+        "force": true,
+        "wait": 800
+      },
+      {
+        "clickText": "Crear",
+        "wait": 2000
+      }
+    ]
+  },
+  "equipo/crear-barbero-de-renta/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      },
+      {
+        "clickText": "Barbero de renta",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear",
+        "wait": 2000
+      }
+    ]
+  },
+  "equipo/crear-recepcionista/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      },
+      {
+        "clickText": "Recepcionista",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear",
+        "wait": 2000
+      }
+    ]
+  },
+  "equipo/crear-administrador/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      },
+      {
+        "clickText": "Administrador de la locación",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear",
+        "wait": 2000
+      }
+    ]
+  },
+  "equipo/crear-dueno/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear miembro del equipo",
+        "wait": 1500
+      },
+      {
+        "clickText": "Dueño",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear",
+        "wait": 2000
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-perfil/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-servicios/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Servicios')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-compensacion/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Compensación')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-compensacion/editar": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": "a:text-is('Compensación')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-de-renta-pagos/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Barbero renta",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero de renta",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Pagos')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-calendario/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Calendario')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-calendario/editar": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": "a:text-is('Calendario')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-permisos/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Permisos')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-opciones/ver": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": ".listtab-item-tab >> a:text-is('Opciones')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/ficha-de-un-barbero-opciones/editar": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar Barbero por comisión",
+        "wait": 1800
+      },
+      {
+        "click": "a:text-is('Opciones')",
+        "wait": 1200
+      }
+    ]
+  },
+  "equipo/editar-a-un-miembro-del-equipo/perfil": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=2",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar Barbero por comisión",
+        "wait": 1800
+      }
+    ]
+  },
+  "equipo/ordenar-barberos/pantalla": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Ordenar barberos",
+        "wait": 1500
+      }
+    ]
+  },
+  "equipo/orden-para-clientes-sin-cita/pantalla": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Ordenamiento para agendamiento sin cita y sin preferencia",
+        "wait": 1500
+      }
+    ]
+  },
+  "equipo/orden-para-clientes-sin-preferencia/pantalla": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Ordenamiento para agendamiento sin cita y sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1000
+      }
+    ]
+  },
+  "sucursales/activar-equipo-en-una-sucursal/pantalla": {
+    "source": "produccion",
+    "route": "/team/barbers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Activar equipo dentro de esta sucursal",
+        "wait": 1500
+      }
+    ]
+  },
+  "gastos/la-lista-de-gastos/fijos": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "gastos/la-lista-de-gastos/variables": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Variables')",
+        "wait": 1000
+      }
+    ]
+  },
+  "gastos/la-lista-de-gastos/acciones-fila": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1000
+      }
+    ],
+    "clip": "text=Lista de gastos fijos >> xpath=ancestor::*[2]",
+    "clipExtra": 150
+  },
+  "gastos/gastos-fijos-y-variables/menu-acciones": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      }
+    ],
+    "clip": "button:has-text('Acciones') >> nth=0 >> xpath=ancestor::*[2]",
+    "clipExtra": 130
+  },
+  "gastos/crear-un-gasto-fijo/formulario": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear gasto fijo",
+        "wait": 1500
+      }
+    ]
+  },
+  "gastos/frecuencia-de-un-gasto-fijo/opciones": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear gasto fijo",
+        "wait": 1500
+      },
+      {
+        "click": "[role=combobox] >> nth=-1",
+        "wait": 1000
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "gastos/crear-un-gasto-variable/formulario": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 1000
+      },
+      {
+        "clickText": "Crear gasto variable",
+        "wait": 1500
+      }
+    ]
+  },
+  "gastos/editar-o-borrar-un-gasto/ver": {
+    "source": "produccion",
+    "route": "/expenses",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1000
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ]
+  },
+  "nomina/como-funciona-la-nomina/pantalla": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "nomina/nomina-barberos-por-comision/tabla": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "text=Miembro >> xpath=ancestor::*[6]"
+  },
+  "nomina/nomina-barberos-de-renta/tabla": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "a:text-is('Barbero de renta')",
+        "wait": 1500
+      }
+    ]
+  },
+  "nomina/nomina-barberos-por-salario/tabla": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "a:text-is('Barbero por salario')",
+        "wait": 1500
+      }
+    ]
+  },
+  "nomina/filtrar-la-nomina-por-fechas-y-sucursal/filtros": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "text=Filtros >> xpath=ancestor::*[2]"
+  },
+  "nomina/filtrar-la-nomina-por-fechas-y-sucursal/rango": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "input[readonly]",
+        "wait": 1200
+      }
+    ]
+  },
+  "nomina/descargar-la-nomina/menu": {
+    "source": "produccion",
+    "route": "/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Descargar",
+        "wait": 1000
+      }
+    ],
+    "clip": "button:has-text('Descargar') >> xpath=ancestor::*[2]",
+    "clipExtra": 140
+  },
+  "transacciones/como-leer-transacciones/pantalla": {
+    "source": "produccion",
+    "route": "/transactions",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "transacciones/las-cinco-tarjetas-de-transacciones/tarjetas": {
+    "source": "produccion",
+    "route": "/transactions",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "text=FACTURADO >> xpath=ancestor::*[3]"
+  },
+  "transacciones/filtrar-transacciones/filtros": {
+    "source": "produccion",
+    "route": "/transactions",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "text=Aplicar >> xpath=ancestor::*[2]"
+  },
+  "transacciones/buscar-una-transaccion/buscador": {
+    "source": "produccion",
+    "route": "/transactions",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "text=search",
+        "wait": 1000
+      }
+    ],
+    "clip": "text=Transacciones >> nth=0 >> xpath=ancestor::*[2]"
+  },
+  "transacciones/ver-el-detalle-de-una-cuenta/fila": {
+    "source": "produccion",
+    "route": "/transactions",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "text=Fecha >> nth=0 >> xpath=ancestor::*[4]"
+  },
+  "configuracion/conoce-configuracion/indice": {
+    "source": "produccion",
+    "route": "/settings",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/eliminar-tu-cuenta/tarjeta": {
+    "source": "produccion",
+    "route": "/settings",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Eliminar cuenta >> nth=0 >> xpath=ancestor::*[2]"
+  },
+  "configuracion/detalles-del-negocio-hora-y-calendario/formulario": {
+    "source": "produccion",
+    "route": "/business-details/9",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/detalles-del-negocio-hora-y-calendario/festivos": {
+    "source": "produccion",
+    "route": "/business-details/9",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "[role=combobox] >> nth=-1",
+        "wait": 1200
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "configuracion/detalles-del-negocio-enlaces-en-linea/enlaces": {
+    "source": "produccion",
+    "route": "/business-details/9",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Enlaces en línea >> xpath=ancestor::*[2]"
+  },
+  "configuracion/detalles-de-facturacion-y-facturas/pantalla": {
+    "source": "produccion",
+    "route": "/settings/billing-details",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/detalles-de-facturacion-y-facturas/metodos-de-pago": {
+    "source": "produccion",
+    "route": "/settings/billing-details",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Administrar métodos de pago",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/agendamiento-online-que-es/pantalla": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/agendamiento-online-panel-lateral/fragmento": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Panel lateral >> xpath=ancestor::*[2]"
+  },
+  "configuracion/agendamiento-online-abrir-desde-un-enlace/fragmento": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Abrir desde enlace >> xpath=ancestor::*[2]"
+  },
+  "configuracion/agendamiento-online-embebido/fragmento": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Reserva embebida >> xpath=ancestor::*[2]"
+  },
+  "configuracion/enlace-directo-de-reserva-y-utm/enlace": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Link de reserva online para tu sitio web >> xpath=ancestor::*[2]"
+  },
+  "configuracion/periodos-de-cierre/pantalla": {
+    "source": "produccion",
+    "route": "/business-closed",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/periodos-de-cierre/formulario": {
+    "source": "produccion",
+    "route": "/business-closed",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Añadir periodo cerrado",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/dispositivos-de-pago/pantalla": {
+    "source": "produccion",
+    "route": "/devices",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/dispositivos-de-pago/formulario": {
+    "source": "produccion",
+    "route": "/devices",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Agregar dispositivo",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/empresa/lista": {
+    "source": "produccion",
+    "route": "/companies",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "sucursales/empresa-y-sucursales/lista": {
+    "source": "produccion",
+    "route": "/companies/locations",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "sucursales/empresa-y-sucursales/acciones-fila": {
+    "source": "produccion",
+    "route": "/companies/locations",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1200
+      }
+    ],
+    "clip": "text=Lista de sucursales >> xpath=ancestor::*[2]",
+    "clipExtra": 150
+  },
+  "sucursales/ver-el-detalle-de-una-sucursal/pantalla": {
+    "source": "produccion",
+    "route": "/companies/locations",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1200
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1800
+      }
+    ]
+  },
+  "sucursales/editar-una-sucursal/formulario": {
+    "source": "produccion",
+    "route": "/companies/locations",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 1200
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1800
+      }
+    ]
+  },
+  "sucursales/crear-una-sucursal/formulario": {
+    "source": "produccion",
+    "route": "/companies/locations",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Crear Sucursal",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/permisos-donde-se-cambian/pantalla": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "roles-y-permisos/tabla-de-permisos-por-rol/administrador": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Administrador de la locación'), a:text-is('Administrador de la locación')",
+        "wait": 1500
+      }
+    ]
+  },
+  "roles-y-permisos/tabla-de-permisos-por-rol/barbero-por-comision": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Barbero por comisión'), a:text-is('Barbero por comisión')",
+        "wait": 1500
+      }
+    ]
+  },
+  "roles-y-permisos/tabla-de-permisos-por-rol/barbero-por-renta": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Barbero por renta'), a:text-is('Barbero por renta')",
+        "wait": 1500
+      }
+    ]
+  },
+  "roles-y-permisos/tabla-de-permisos-por-rol/recepcion": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Recepción - mostrador de recepción'), a:text-is('Recepción - mostrador de recepción')",
+        "wait": 1500
+      }
+    ]
+  },
+  "roles-y-permisos/tabla-de-permisos-por-rol/dueno": {
+    "source": "produccion",
+    "route": "/team-permission",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Dueño'), a:text-is('Dueño')",
+        "wait": 1500
+      }
+    ]
+  },
+  "nomina/ciclo-de-pago/pantalla": {
+    "source": "produccion",
+    "route": "/settings/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "nomina/ciclo-de-pago/opciones": {
+    "source": "produccion",
+    "route": "/settings/payroll",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "[role=combobox] >> nth=0",
+        "wait": 1200
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "configuracion/comisiones-que-se-deduce/pantalla": {
+    "source": "produccion",
+    "route": "/team-commission",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/impuestos/pantalla": {
+    "source": "produccion",
+    "route": "/sales-taxes",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/impuestos/formulario": {
+    "source": "produccion",
+    "route": "/sales-taxes",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Añadir impuesto",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/tarifa-por-uso-de-tarjeta/pantalla": {
+    "source": "produccion",
+    "route": "/credit-card",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/propinas-opciones-y-comportamiento/pantalla": {
+    "source": "produccion",
+    "route": "/sales-tips",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/propinas-opciones-y-comportamiento/mostrar-en-el-cobro": {
+    "source": "produccion",
+    "route": "/sales-tips",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "[role=combobox] >> nth=-1",
+        "wait": 1200
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "configuracion/precios-moneda-y-calculo-de-impuestos/pantalla": {
+    "source": "produccion",
+    "route": "/sales-pricing",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/integracion-de-pagos-con-stripe/pantalla": {
+    "source": "produccion",
+    "route": "/payment-integration",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "configuracion/centro-de-notificaciones-como-funciona/pantalla": {
+    "source": "produccion",
+    "route": "/notifications-center",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "configuracion/notificaciones-por-rol/pestanas": {
+    "source": "produccion",
+    "route": "/notifications-center",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "nav >> xpath=ancestor::*[1]"
+  },
+  "configuracion/notificaciones-por-rol/barbero-por-comision": {
+    "source": "produccion",
+    "route": "/notifications-center",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Barbero por comisión'), a:text-is('Barbero por comisión')",
+        "wait": 1500
+      }
+    ]
+  },
+  "configuracion/notificaciones-por-rol/recepcion": {
+    "source": "produccion",
+    "route": "/notifications-center",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Recepción - mostrador de recepción'), a:text-is('Recepción - mostrador de recepción')",
+        "wait": 1500
+      }
+    ]
   }
 }

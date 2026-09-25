@@ -61,7 +61,8 @@ async function prodPage(page, recipe) {
  */
 async function runSteps(page, steps = []) {
   for (const step of steps) {
-    if (step.click) await page.locator(step.click).first().click();
+    // `force: true` salta la comprobación de que nada tape el elemento (capas decorativas).
+    if (step.click) await page.locator(step.click).first().click({ force: Boolean(step.force) });
     else if (step.clickText) await page.getByText(step.clickText, { exact: true }).locator("visible=true").first().click();
     else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1]);
     else if (step.hover) await page.locator(step.hover).first().hover();

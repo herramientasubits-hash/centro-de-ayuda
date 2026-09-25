@@ -1,51 +1,62 @@
 ---
 id: equipo/ficha-de-un-barbero-calendario
 title: "La ficha de un barbero: su horario semanal"
-description: "Qué muestra la pestaña Calendario de la ficha de un barbero: su horario semanal con día, hora de inicio y hora de cierre."
+description: "La pestaña Calendario de la ficha: el horario de cada día con Hora de inicio y Hora de cierre, cómo se edita y cómo se relaciona con Horas de trabajo."
 section: equipo
 order: 130
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
-keywords: [horario del barbero, horario semanal, calendario del barbero, hora de inicio, hora de cierre, días de trabajo, ficha del barbero, horas de trabajo, cambiar horario, disponibilidad]
-related: [equipo/ficha-de-un-barbero-perfil, equipo/la-lista-de-barberos, calendario/un-barbero-no-aparece-en-el-calendario]
+keywords: [horario del barbero, horario semanal, calendario del barbero, hora de inicio, hora de cierre, días de trabajo, cambiar horario, día libre, descanso, disponibilidad, turno, ficha del barbero]
+related: [equipo/ficha-de-un-barbero-perfil, equipo/horas-de-trabajo-del-equipo, equipo/editar-a-un-miembro-del-equipo, calendario/un-barbero-no-aparece-en-el-calendario, calendario/vacaciones-de-un-barbero]
 status: draft
 updated: 2026-09-25
 ---
 
 # La ficha de un barbero: su horario semanal
 
-**En resumen:** la pestaña **Calendario** de la ficha de un barbero muestra su horario semanal: una casilla por cada día de la semana, con su **Hora de inicio** y su **Hora de cierre**. Es igual para el barbero por comisión y para el de renta.
+**En resumen:** la pestaña **Calendario** de la ficha muestra el horario fijo de la semana: por cada día, de **Domingo** a **Sabado**, su **Hora de inicio** y su **Hora de cierre**. Al editar, una casilla por día decide si trabaja o no. Es igual para el barbero por comisión y para el de renta.
 
 ## Cómo llegar
 
-1. Toca **Equipo** en el menú lateral.
-2. En la pestaña **Barberos**, toca **Ver** en la fila de la persona.
+1. Toca **Equipo** en el menú.
+2. En **Barberos**, toca **Acciones** › **Ver Barbero por comisión** (o **Ver Barbero de renta**) en la fila de la persona.
 3. Toca la pestaña **Calendario**.
+   ![La pestaña Calendario de la ficha con los siete días y sus horas](/assets/es/equipo/ficha-de-un-barbero-calendario/ver.png)
 
-> [!IMPORTANT]
-> La ficha solo carga si entras desde la lista de barberos.
+## Qué ves
 
-## Qué hay en la pestaña
+Una fila por día, de **Domingo** a **Sabado**, con **Hora de inicio** y **Hora de cierre**. Por ejemplo, Lunes 06:00 AM – 11:00 PM. Un día sin horas es un día que no trabaja.
 
-Un horario semanal con:
+## Cómo cambiar el horario
 
-- Una **casilla por cada día** de la semana.
-- **Hora de inicio** y **Hora de cierre** para cada día.
+1. En la lista, toca **Acciones** › **Editar Barbero por comisión** y abre **Calendario**.
+   ![La pestaña Calendario en modo editar, con una casilla por día y las horas](/assets/es/equipo/ficha-de-un-barbero-calendario/editar.png)
+2. Marca la casilla de cada día que trabaja. Los días activos llevan asterisco en sus horas.
+3. Pon la **Hora de inicio** y la **Hora de cierre** de cada día marcado.
+4. Toca **Guardar**.
 
-## El horario de todo el equipo
-
-Para ver a todo el equipo en una sola pantalla, usa la pestaña **Horas de trabajo** de **Equipo**. Ahí hay una cuadrícula de barbero por día, y cada casilla se puede editar. Mira Las horas de trabajo del equipo.
+| Campo | Obligatorio | Qué es |
+|---|---|---|
+| Casilla del día | No | Si el barbero trabaja ese día. |
+| **Hora de inicio\*** | Sí, en los días marcados | A qué hora empieza. |
+| **Hora de cierre\*** | Sí, en los días marcados | A qué hora termina. |
 
 > [!NOTE]
-> Aún no está documentado cómo se guarda un cambio en esta pestaña ni cómo se relaciona con **Horas de trabajo** y con el Calendario. Cuando lo confirmemos, se agregará aquí.
+> Qué pasa al tocar **Guardar** y cómo se refleja el cambio en el **Calendario** y en **Horas de trabajo** todavía no está comprobado. Se completará con un barbero de prueba.
+
+## Horario fijo y horario de una semana
+
+- Esta pestaña es el horario **fijo** del barbero, el de todas las semanas.
+- La pestaña **Horas de trabajo** de **Equipo** muestra a todo el equipo semana por semana y permite editar un día concreto. Mira [Las horas de trabajo del equipo](/ayuda/equipo/horas-de-trabajo-del-equipo).
+- Para unos días de vacaciones no cambies el horario: usa un bloqueo. Mira [Vacaciones de un barbero](/ayuda/calendario/vacaciones-de-un-barbero).
 
 ## Preguntas frecuentes
 
-**¿Dónde veo el horario de un barbero?**
-En la pestaña **Calendario** de su ficha, o en **Horas de trabajo** dentro de **Equipo**.
+**Un barbero no sale en el calendario un día.**
+Revisa que ese día tenga casilla marcada y horas aquí. Si no trabaja ese día, el calendario no lo muestra. Mira [Un barbero no aparece en el calendario](/ayuda/calendario/un-barbero-no-aparece-en-el-calendario).
+
+**¿Cómo le doy un día libre solo esta semana?**
+En **Equipo** › **Horas de trabajo**, toca su turno de ese día y elige **Editar este día** o **Borrar este turno**.
 
 **¿Es distinto para un barbero de renta?**
-No. La pestaña **Calendario** es igual para el barbero por comisión y para el de renta.
-
-**Abro la ficha y sale vacía, ¿qué pasó?**
-La ficha solo carga si entras desde la lista con **Ver**. No funciona abriendo su dirección directamente.
+No. La pestaña es igual para los dos tipos.
