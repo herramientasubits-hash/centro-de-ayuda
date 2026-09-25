@@ -3581,7 +3581,10 @@
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
     "state": "pub-url",
     "viewport": "desktop",
-    "theme": "light"
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
   },
   "calendario/reservas-online-como-las-ve-tu-cliente/celular": {
     "source": "produccion",
@@ -3589,6 +3592,9 @@
     "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
     "state": "pub-url",
     "viewport": "mobile",
-    "theme": "light"
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
   }
 }

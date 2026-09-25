@@ -168,9 +168,20 @@ async function shoot(browser, key, recipe, theme, mask) {
       // En viewports altos se recorta por debajo del último elemento visible (sin contar la barra lateral fija).
       const bottom = await page.evaluate((limit) => {
         let max = 0;
+        const pinned = (el) => {
+          for (let node = el; node && node !== document.body; node = node.parentElement) {
+            const position = getComputedStyle(node).position;
+            if (position === "fixed" || position === "sticky") return true;
+          }
+          return false;
+        };
+        // Solo cuentan los elementos con contenido real: texto propio, campos, botones, imágenes o gráficos.
+        const VISUAL = new Set(["IMG", "INPUT", "BUTTON", "SVG", "TEXTAREA", "SELECT", "HR", "CANVAS", "TABLE"]);
+        const hasOwnText = (el) => [...el.childNodes].some((node) => node.nodeType === 3 && node.textContent.trim());
         for (const el of document.body.querySelectorAll("*")) {
+          if (!VISUAL.has(el.tagName) && !hasOwnText(el)) continue;
           const style = getComputedStyle(el);
-          if (style.position === "fixed" || style.position === "sticky" || style.display === "none") continue;
+          if (style.display === "none" || style.visibility === "hidden" || pinned(el)) continue;
           const box = el.getBoundingClientRect();
           if (box.height === 0 || box.height >= limit * 0.9) continue;
           if (box.bottom > max && box.bottom <= limit) max = box.bottom;
