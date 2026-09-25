@@ -3,7 +3,7 @@ id: acceso-y-cuenta/mi-perfil
 title: "Mi perfil: tu cuenta, tu plan y tus métodos de pago"
 description: "Dónde ves los datos de tu cuenta, tu plan de Barberlytics, tu tarjeta y tus facturas."
 section: acceso-y-cuenta
-order: 30
+order: 80
 roles: [owner]
 screens: [/profile]
 keywords: [mi perfil, perfil, plan, cambiar plan, renovación, método de pago, tarjeta, factura, facturas, suscripción, cuenta]
