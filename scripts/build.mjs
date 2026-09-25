@@ -15,7 +15,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
-import { extractH1, extractHeadings, extractImages, extractInternalLinks, readingMinutes, toPlainText } from "./lib/markdown.mjs";
+import { extractH1, extractHeadings, extractImages, extractInternalLinks, extractQuestions, readingMinutes, toPlainText } from "./lib/markdown.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = path.join(ROOT, "content");
@@ -155,6 +155,7 @@ const search = articles.map((article) => ({
   section: article.meta.section,
   keywords: article.meta.keywords,
   headings: article.meta.headings.map((heading) => heading.text),
+  questions: extractQuestions(article.body),
   roles: article.meta.roles,
   status: article.meta.status,
   text: article.plain.slice(0, 6000),

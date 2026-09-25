@@ -86,3 +86,8 @@ export function readingMinutes(plain) {
   const words = plain.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 180));
 }
+
+/** Las preguntas frecuentes: líneas en negrita que terminan en «?». */
+export function extractQuestions(body) {
+  return [...stripCodeBlocks(body).matchAll(/^\*\*(.+?\?)\*\*\s*$/gm)].map((m) => inlineToText(m[1]));
+}
