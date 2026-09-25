@@ -1392,5 +1392,846 @@
       }
     ],
     "clip": ".rightmodal-aside-2"
+  },
+  "clientes/la-lista-de-clientes/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "clientes/la-lista-de-clientes/pestanas": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]"
+  },
+  "clientes/la-lista-de-clientes/buscador": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section.filters",
+    "highlight": ".container-search"
+  },
+  "clientes/la-lista-de-clientes/acciones-fila": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      }
+    ],
+    "clip": "section.filters",
+    "clipExtra": 120
+  },
+  "clientes/la-lista-de-clientes/paginacion": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "text=Rows per page >> xpath=ancestor::*[2]"
+  },
+  "clientes/tipos-de-cliente/nuevo": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Nuevo')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/retenido": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Retenido')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/frecuente": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Frecuente')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/vip": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('VIP')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/pre-perdida": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Pre-perdida')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/perdido": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Perdido')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/recuperado": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Recuperado')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/tipos-de-cliente/bloqueo": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav.child-menu-filter >> a:text-is('Bloqueo')",
+        "wait": 1000
+      }
+    ],
+    "clip": "nav.child-menu-filter >> xpath=ancestor::section[1]",
+    "clipExtra": 70
+  },
+  "clientes/ver-un-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ]
+  },
+  "clientes/ver-un-cliente/acciones": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "click": "button:has-text('Acciones')",
+        "wait": 900
+      }
+    ],
+    "clip": "button:has-text('Acciones') >> xpath=ancestor::*[2]",
+    "clipExtra": 140
+  },
+  "clientes/ver-un-cliente/indicadores": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ],
+    "clip": "text=Total de citas >> xpath=ancestor::*[3]"
+  },
+  "clientes/ver-un-cliente/informacion-importante": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ],
+    "clip": "text=Información importante >> xpath=ancestor::*[2]"
+  },
+  "clientes/ver-un-cliente/ultima-cita": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ],
+    "clip": "text=Última cita >> xpath=ancestor::*[2]"
+  },
+  "clientes/ver-un-cliente/notas": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ],
+    "clip": "text=Notas del cliente >> xpath=ancestor::*[2]"
+  },
+  "clientes/perfil-de-un-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "clickText": "Perfil",
+        "wait": 1200
+      }
+    ]
+  },
+  "clientes/citas-de-un-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "clickText": "Citas",
+        "wait": 1200
+      }
+    ]
+  },
+  "clientes/pagos-de-un-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "clickText": "Métodos de pago",
+        "wait": 1200
+      }
+    ]
+  },
+  "clientes/productos-de-un-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "clickText": "Productos",
+        "wait": 1200
+      }
+    ]
+  },
+  "clientes/crear-un-cliente/formulario": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Crear cliente",
+        "wait": 1500
+      }
+    ]
+  },
+  "clientes/notas-del-cliente/crear-nota": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "click": "button:has-text('Acciones')",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear nota",
+        "wait": 1000
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "clientes/bloquear-a-un-cliente/modal": {
+    "source": "produccion",
+    "route": "/customers",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=0",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      },
+      {
+        "click": "button:has-text('Acciones')",
+        "wait": 900
+      },
+      {
+        "clickText": "Bloquear cliente",
+        "wait": 1000
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "servicios/como-se-organizan-tus-servicios/categorias": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "servicios/como-se-organizan-tus-servicios/menu-acciones": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      }
+    ],
+    "clip": "button:has-text('Acciones') >> nth=0 >> xpath=ancestor::*[2]",
+    "clipExtra": 220
+  },
+  "servicios/la-lista-de-servicios/servicios": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      }
+    ]
+  },
+  "servicios/la-lista-de-servicios/acciones-fila": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      }
+    ],
+    "clip": "text=Listado de servicios >> xpath=ancestor::*[2]",
+    "clipExtra": 140
+  },
+  "servicios/la-lista-de-servicios/combos": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Combos')",
+        "wait": 1000
+      }
+    ]
+  },
+  "servicios/crear-un-servicio/general": {
+    "source": "produccion",
+    "route": "/services/create",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "servicios/crear-un-servicio-equipo/equipo": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1500
+      },
+      {
+        "click": "a:text-is('Equipo')",
+        "wait": 1200
+      }
+    ]
+  },
+  "servicios/crear-un-servicio-avanzado/avanzado": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1500
+      },
+      {
+        "click": "a:text-is('Avanzado')",
+        "wait": 1200
+      }
+    ]
+  },
+  "servicios/crear-un-servicio-avanzado/restriccion": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1500
+      },
+      {
+        "click": "a:text-is('Avanzado')",
+        "wait": 1200
+      },
+      {
+        "clickText": "Añadir una Restriccion de Tiempo",
+        "wait": 900
+      }
+    ]
+  },
+  "servicios/editar-un-servicio/ver": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ]
+  },
+  "servicios/editar-un-servicio/editar": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Servicios')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1500
+      }
+    ]
+  },
+  "servicios/crear-una-categoria-de-servicios/formulario": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear categoría",
+        "wait": 1500
+      }
+    ]
+  },
+  "servicios/crear-un-combo/formulario": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear combo",
+        "wait": 1500
+      }
+    ]
+  },
+  "servicios/crear-un-combo/ver-combo": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Combos')",
+        "wait": 1000
+      },
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ]
+  },
+  "servicios/orden-de-agendamiento/pantalla": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Orden de agendamiento",
+        "wait": 1500
+      }
+    ]
+  },
+  "sucursales/activar-servicios-en-una-sucursal/pantalla": {
+    "source": "produccion",
+    "route": "/services",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Activar servicios",
+        "wait": 1500
+      }
+    ]
+  },
+  "productos/la-lista-de-productos/productos": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "productos/la-lista-de-productos/acciones-fila": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      }
+    ],
+    "clip": "text=lista de productos >> xpath=ancestor::*[2]",
+    "clipExtra": 140
+  },
+  "productos/como-se-organizan-tus-productos/categorias": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "nav >> a:text-is('Categorías')",
+        "wait": 1000
+      }
+    ]
+  },
+  "productos/como-se-organizan-tus-productos/menu-acciones": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      }
+    ],
+    "clip": "button:has-text('Acciones') >> nth=0 >> xpath=ancestor::*[2]",
+    "clipExtra": 160
+  },
+  "productos/crear-un-producto/general": {
+    "source": "produccion",
+    "route": "/products/create",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "productos/editar-o-borrar-un-producto/ver": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Ver",
+        "wait": 1500
+      }
+    ]
+  },
+  "productos/editar-o-borrar-un-producto/avanzado": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button:has-text('Acciones') >> nth=1",
+        "wait": 900
+      },
+      {
+        "click": ".dropdown-menu.show >> text=Editar",
+        "wait": 1500
+      },
+      {
+        "click": "a:text-is('Avanzado')",
+        "wait": 1200
+      }
+    ]
+  },
+  "productos/crear-una-categoria-de-productos/formulario": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear Categoría",
+        "wait": 1500
+      }
+    ]
+  },
+  "sucursales/activar-productos-en-una-sucursal/pantalla": {
+    "source": "produccion",
+    "route": "/products",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Activar productos de barbería",
+        "wait": 1500
+      }
+    ]
   }
 }

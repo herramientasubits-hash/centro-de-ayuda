@@ -34,7 +34,7 @@ function browserMask({ replace, blur }) {
     .sort((a, b) => b[0].length - a[0].length)
     .map(([from, to]) => [from, to, new RegExp(from.trim().split(/\s+/).map(escape).join("\\s+"), "gi")]);
   const cleanText = (value) => {
-    let out = value.replace(EMAIL, "correo@ejemplo.com").replace(PHONE, (match) => (/\.\d{2}$/.test(match) || !/\d{4,}|\*{3,}/.test(match) ? match : "+57 300 000 0000"));
+    let out = value.replace(EMAIL, "correo@ejemplo.com").replace(PHONE, (match) => (/\.\d{2}$/.test(match) || /^\d{4}-\d{2}-\d{2}$/.test(match) || !/\d{4,}|\*{3,}/.test(match) ? match : "+57 300 000 0000"));
     for (const [, to, pattern] of entries) out = out.replace(pattern, to);
     return out;
   };
