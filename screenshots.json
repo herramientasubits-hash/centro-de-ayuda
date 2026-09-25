@@ -1,5 +1,5 @@
 {
-  "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both.",
+  "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both. Las recetas de la reserva online rellenan el celular con la variable de entorno HELP_BOOKING_PHONE (nunca se guarda en el repo).",
   "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": {
     "source": "produccion",
     "route": "/",
@@ -3595,6 +3595,330 @@
     "theme": "light",
     "blur": [
       "img"
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/bienvenida": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/elegir-diferente": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/servicios": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/barberos": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/ver-barbero": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/fecha-y-hora": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/confirmar": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d PM/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/reservas-online-como-las-ve-tu-cliente/agregar-cita": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d PM/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "clickText": "Agregar cita",
+        "wait": 1500
+      }
     ]
   }
 }
