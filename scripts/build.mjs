@@ -80,7 +80,8 @@ for (const file of files) {
     if (!image.alt.trim()) warn(rel, `la imagen «${image.src}» no tiene texto alternativo`);
   }
 
-  const plain = toPlainText(content);
+  // Sin el título: la página ya lo pinta y el fragmento de búsqueda no debe empezar por él.
+  const plain = toPlainText(content.replace(/^\s*#\s+.+\n+/, ""));
   articles.push({
     file: rel,
     body: content,
