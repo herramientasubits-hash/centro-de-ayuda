@@ -130,7 +130,7 @@ async function shoot(browser, key, recipe, theme) {
   try {
     await page.addInitScript((mode) => {
       // El tema lo manda la app; para la captura forzamos el modo pedido.
-      window.localStorage.setItem("thema.theme", JSON.stringify({ mode }));
+      window.localStorage.setItem("thema-theme", JSON.stringify({ mode }));
     }, theme);
     const state = STATES[recipe.state];
     if (!state) throw new Error(`estado desconocido «${recipe.state}»`);
