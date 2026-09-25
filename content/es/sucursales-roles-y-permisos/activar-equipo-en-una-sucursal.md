@@ -8,7 +8,7 @@ roles: [owner, admin]
 screens: [/team/activate, /team/barbers]
 keywords: [activar equipo, importar equipo, activar barbero, sucursal, gerentes, comisión, renta, interruptor, guardar, equipo en otra sucursal]
 related: [sucursales-roles-y-permisos/equipo-compartido-entre-sucursales, sucursales-roles-y-permisos/no-veo-a-un-barbero-en-mi-sucursal, equipo/la-lista-de-barberos]
-status: draft
+status: review
 updated: 2026-09-25
 ---
 
@@ -31,10 +31,12 @@ updated: 2026-09-25
 
 ## Después de activar
 
-La persona aparece en **Equipo** de esa sucursal. Si trabaja en dos sucursales, repite los pasos en la otra.
+Al tocar **Guardar** vuelves a **Equipo**. La persona aparece en la lista de **Barberos** de esa sucursal, con su sucursal, su nivel, su correo, su teléfono y el estado **Activo**. Si trabaja en dos sucursales, repite los pasos en la otra.
+
+Una sucursal nueva empieza con «0 Barberos». En ese caso **Equipo** muestra «Aquí podrás ver los barberos de tu equipo.» y el botón **Crear barbero comisión**.
 
 > [!NOTE]
-> Este artículo se escribió leyendo la pantalla. Falta ejecutar el guardado en una sucursal de prueba para confirmar qué ves justo después.
+> Si ningún barbero tiene horario ese día, el **Calendario** dice «Nadie trabaja este día». Mira [Un barbero no aparece en el calendario](/ayuda/calendario/un-barbero-no-aparece-en-el-calendario).
 
 ## Preguntas frecuentes
 

@@ -19,7 +19,7 @@ updated: 2026-09-25
 ## Pasos
 
 1. Toca el nombre de la sucursal, arriba.
-2. Elige **Todas las sucursales**.
+2. Si la lista trae **Todas las sucursales**, elígela.
 
 Para volver a una sola, repite el paso 1 y elige esa sucursal. Los detalles están en [Cambiar de sucursal](/ayuda/navegacion/cambiar-de-sucursal).
 
@@ -27,6 +27,9 @@ Para volver a una sola, repite el paso 1 y elige esa sucursal. Los detalles est�
 
 - Las pantallas de **Configuración** se ven igual en cualquier sucursal, porque son de toda la empresa.
 - Si tienes solo un perfil de barbero, ves los datos de tu trabajo.
+
+> [!WARNING]
+> En el **Calendario**, la lista de sucursales trae solo las sucursales, sin **Todas las sucursales**. En qué pantallas aparece esa opción todavía no está confirmado.
 
 > [!NOTE]
 > Qué pantallas consolidan sus datos al elegir **Todas las sucursales**, y cuáles piden que elijas una, todavía no está documentado. Para las métricas de una sola sucursal, el filtro de sucursal está dentro de **Métricas**.

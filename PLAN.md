@@ -72,8 +72,8 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 | Estado | Artículos |
 |---|---|
 | ○ pendiente | 167 |
-| ◐ borrador | 35 |
-| ◑ en revisión | 46 |
+| ◐ borrador | 34 |
+| ◑ en revisión | 47 |
 | ● publicado | 0 |
 
 ### Por sección
@@ -331,7 +331,7 @@ _Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte en
 | ○ | Inactivar una sucursal | G | P2 | E D | `/companies/locations/view/*` |
 | ○ | Borrar una sucursal | G | P3 | E D | `/companies/locations` |
 | ◐ | Ver todas las sucursales a la vez | G | P2 | L | `/*` |
-| ◐ | Activar al equipo en una sucursal | G | P1 | L E | `/team/activate` |
+| ◑ | Activar al equipo en una sucursal | G | P1 | L E | `/team/activate` |
 | ◐ | Activar servicios en una sucursal | G | P1 | L E | `/services/location/activate-service` |
 | ◐ | Activar productos en una sucursal | G | P1 | L E | `/products/*` |
 | ○ | Un barbero que trabaja en dos sucursales | G | P1 | E | `/team/*` |

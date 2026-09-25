@@ -32,6 +32,10 @@ La pantalla dice: «Seleccione el equipo que desea importar activando el equipo 
 > [!IMPORTANT]
 > El equipo es uno solo para toda la barbería, pero cada persona se activa en cada sucursal donde trabaja. La lista de **Equipo** muestra solo a quienes están activos en la sucursal que elegiste.
 
+## Si el calendario dice «Nadie trabaja este día»
+
+En una sucursal donde ningún barbero tiene horario ese día, el calendario muestra «Nadie trabaja este día» y explica: «Ningún barbero tiene horario el viernes, 25 de septiembre de 2026. Si hay citas agendadas, las puedes ver en todo el equipo.» Debajo hay dos botones: **Ver todo el equipo** y **Configurar horarios**. Las horas de cada barbero se cambian en **Equipo › Horas de trabajo**.
+
 ## Preguntas frecuentes
 
 **Un barbero trabaja en dos sucursales. ¿Tengo que crearlo dos veces?**
