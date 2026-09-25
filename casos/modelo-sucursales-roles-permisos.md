@@ -168,6 +168,35 @@ Acciones por fila: **Ver**, **Editar**, **Inactivar** y **Borrar** «Barbero por
 - **Niveles** (`Equipo › Niveles`): agrupan barberos (Master, Senior, «Sin nivel»…); cada barbero tiene uno. Con
   **Crear nivel** se agregan.
 
+## 6b. Qué cambia al cambiar de perfil (visto el 2026-09-25)
+
+Cambio hecho desde `Cuenta` (cabecera) tocando el perfil **Barber comission**; luego se volvió a **Business**. No pidió
+volver a entrar. Al cambiar de perfil la app **recarga y aterriza en el Calendario** (`/calendar`); al volver a Business
+aterriza en Métricas (`/`).
+
+| Qué | Perfil **Business** (dueño) | Perfil **Barber comission** (mismo login) |
+|---|---|---|
+| Menú lateral | Inicio · Calendario · Clientes · Servicios & Productos (Servicios, Productos) · Equipo · Gastos · Nómina · Transacciones · Configuración | Inicio · Calendario · Clientes · Equipo · Gastos · Configuración. **Se ocultan Servicios & Productos, Nómina y Transacciones** |
+| Menú del celular (barra de abajo) | Inicio · Calendario · Equipo · Clientes · Más | Inicio · Calendario · Gastos · Clientes · Más |
+| Cabecera de la cuenta | «Elkin Garcia · **Propietario**» | «Elkin Garcia» (sin «Propietario») |
+| Calendario | Una columna por barbero, filtro **Equipo\***, vista Agenda/Día/Mes | **Solo su propia columna** (Elkin Garcia); mismas Acciones: Crear cita, Crear venta rapida, Venta sin cita, Lista de cobros |
+| Métricas | Cinco pestañas (Negocio, Clientes, Barberos, Marketing, AI Insights), filtros de sucursal y «Todo el equipo» | Tres pestañas: **Negocio, Clientes, Barberos**; el filtro de barbero no está; las cifras son **las de esa persona** (p. ej. $120,000 frente a $10,260,490 de todo el equipo) |
+| Equipo | Cuatro pestañas (Barberos, Niveles, Horas de trabajo, Gerentes) | Tres pestañas: **Barberos, Niveles, Horas de trabajo** (sin Gerentes); ve la lista de los 10 barberos de la sucursal |
+| Clientes | Lista completa | Lista completa (44 clientes), **con el teléfono enmascarado** (`+57******2020`) |
+| Gastos | Fijos y Variables | Fijos y Variables (ve los de la sucursal) |
+| Configuración | Los 17 ajustes en cuatro grupos | **Solo dos: «Formato de hora» y «Eliminar cuenta»** (personales) |
+
+Lectura: **el menú se arma con los permisos del perfil**. Si a una persona se le quita «Ver» en una función, esa
+sección deja de aparecer en su menú (confirmado por el usuario: «si le quito a un usuario que pueda ver el equipo ya no
+ve el módulo Team»). El barbero por comisión ve Equipo porque su matriz le da **Ver** en Equipo.
+
+**Dónde se ajusta lo «general» por sucursal:** según el usuario, se ve **entrando con una persona que tenga permiso de
+edición de sucursal**; con la cuenta de dueño no aparece. Sigue pendiente de verificar.
+
+**Qué pasa si se cambian los permisos de alguien que ya existe:** según el usuario, **se le ocultan módulos o
+funciones** (ejemplo: quitar «Ver» en Equipo oculta la sección). Falta comprobar si cambiar el **predeterminado del
+rol** toca a quienes ya lo tienen.
+
 ## 7. Preguntas del usuario que este modelo responde (semilla de artículos)
 
 - ¿Qué diferencia hay entre empresa y sucursal? ¿Cuántas puedo tener?

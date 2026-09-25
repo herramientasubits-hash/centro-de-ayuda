@@ -118,9 +118,18 @@ for (const file of files) {
 }
 
 const ids = new Set(articles.map((article) => article.meta.id));
+// Un enlace a un artículo que está en el plan pero aún no se escribe es un aviso, no un error:
+// así los artículos pueden enlazarse entre sí antes de que todos existan.
+const planPath = path.join(ROOT, "plan", "plan.json");
+const planned = new Set(fs.existsSync(planPath) ? JSON.parse(fs.readFileSync(planPath, "utf8")).articulos.map((item) => item.id) : []);
+function missing(article, kind, target) {
+  if (ids.has(target)) return;
+  if (planned.has(target)) warn(article.file, `${kind} «${target}» está en el plan pero aún no se escribe`);
+  else fail(article.file, `${kind} «${target}» no existe`);
+}
 for (const article of articles) {
-  for (const related of article.meta.related) if (!ids.has(related)) fail(article.file, `related «${related}» no existe`);
-  for (const link of article.links) if (!ids.has(link)) fail(article.file, `enlace interno a «${link}» que no existe`);
+  for (const related of article.meta.related) missing(article, "related", related);
+  for (const link of article.links) missing(article, "enlace interno a", link);
 }
 
 for (const shot of pendingShots) warn(shot.article, `captura pendiente: ${shot.image} (${shot.source})`);
@@ -131,6 +140,9 @@ if (errors.length) {
   console.error(`\n${errors.length} error(es) de contenido.`);
   process.exit(1);
 }
+
+// En el índice solo van los relacionados que ya existen (los planeados salen como aviso arriba).
+for (const article of articles) article.meta.related = article.meta.related.filter((id) => ids.has(id));
 
 articles.sort((a, b) => a.meta.section.localeCompare(b.meta.section) || a.meta.order - b.meta.order || a.meta.title.localeCompare(b.meta.title, "es"));
 
