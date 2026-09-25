@@ -96,7 +96,8 @@ for (const file of files) {
       keywords: data.keywords ?? [],
       related: data.related ?? [],
       status: data.status ?? "draft",
-      updated: String(data.updated ?? ""),
+      // YAML lee `2026-09-24` como fecha: se guarda siempre como texto ISO.
+      updated: data.updated instanceof Date ? data.updated.toISOString().slice(0, 10) : String(data.updated ?? ""),
       headings: extractHeadings(content),
       readingMinutes: readingMinutes(plain),
       path: `articles/${expectedId}.md`,
