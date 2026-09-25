@@ -1,0 +1,23 @@
+{
+  "name": "@barberlytics/centro-de-ayuda",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Centro de ayuda de Barberlytics: artículos en Markdown que leen la app y la IA.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "serve": "node scripts/serve.mjs",
+    "shots": "node scripts/screenshots.mjs",
+    "shots:install": "playwright install chromium"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
