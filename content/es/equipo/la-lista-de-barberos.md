@@ -4,6 +4,7 @@ title: "La lista de barberos: por comisión y de renta"
 description: "Las dos vistas del Listado de Barberos, sus columnas, cómo filtrar por nivel o buscar a alguien y las cuatro acciones de cada fila."
 section: equipo
 order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [lista de barberos, listado de barberos, barbero por comisión, barbero renta, barbero de renta, alquiler de silla, filtrar por nivel, buscar un barbero, estado del barbero, activo, ver barbero, editar barbero, inactivar barbero, borrar barbero, cuenta bancaria]

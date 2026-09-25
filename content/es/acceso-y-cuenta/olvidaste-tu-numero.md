@@ -3,7 +3,8 @@ id: acceso-y-cuenta/olvidaste-tu-numero
 title: "Olvidaste tu número"
 description: "Si no recuerdas con qué teléfono te registraste, o quieres cambiarlo, te escribimos al correo de tu cuenta."
 section: acceso-y-cuenta
-order: 40
+order: 50
+group: "Entrar"
 roles: [todos]
 screens: [/authenticate/forgot-number]
 keywords: [olvidé mi número, olvidaste tu número, recuperar número, cambiar número, cambié de celular, correo, no recuerdo mi teléfono]

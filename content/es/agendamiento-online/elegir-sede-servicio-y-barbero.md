@@ -3,7 +3,8 @@ id: agendamiento-online/elegir-sede-servicio-y-barbero
 title: "Elegir sede, servicio y barbero"
 description: "Los dos primeros pasos de la reserva online: la sucursal, el servicio con su precio y duración, y el barbero (o Sin preferencia) con su precio y su ficha."
 section: agendamiento-online
-order: 40
+order: 60
+group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [elegir sede, elegir sucursal, elegir servicio, elegir barbero, sin preferencia, precio por barbero, ficha del barbero, seleccionar este barbero, desde, &up]

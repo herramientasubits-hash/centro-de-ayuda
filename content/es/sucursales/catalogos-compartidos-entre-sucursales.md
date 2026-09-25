@@ -4,6 +4,7 @@ title: "Servicios y productos: se crean una vez y se activan por sucursal"
 description: "Cómo se reparten tus servicios y productos entre sucursales y dónde se activan."
 section: sucursales
 order: 50
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/services, /products, /services/location/activate-service]
 keywords: [servicios, productos, catálogo, activar servicios, activar productos, sucursal, importar servicios, no aparece el servicio, compartido]

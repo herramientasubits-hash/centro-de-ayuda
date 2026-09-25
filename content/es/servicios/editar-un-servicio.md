@@ -4,6 +4,7 @@ title: "Editar un servicio"
 description: "Cómo ver y editar un servicio que ya existe: la pantalla Ver servicio, el formulario Editar Servicio con sus tres pestañas y el botón Guardar en cada una."
 section: servicios
 order: 100
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [editar servicio, cambiar el precio de un servicio, subir precios, cambiar la duración, cambiar de categoría, ver servicio, modificar un servicio, renombrar un servicio, guardar cambios, actualizar un servicio, corregir un servicio]

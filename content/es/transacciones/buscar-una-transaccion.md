@@ -3,7 +3,8 @@ id: transacciones/buscar-una-transaccion
 title: "Buscar una transaccion"
 description: "Cómo encontrar una cuenta con la lupa de Transacciones, cuándo usar el botón de recargar y por qué la lupa de la cabecera no sirve para esto."
 section: transacciones
-order: 60
+order: 70
+group: "Buscar y revisar"
 roles: [owner, admin]
 screens: [/transactions, /search-appointment]
 keywords: [buscar transacción, buscar cuenta, encontrar una cuenta, lupa, buscador, recargar, actualizar la lista, buscar por cliente, buscar factura, buscar cita, no encuentro una cuenta]

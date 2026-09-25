@@ -4,6 +4,7 @@ title: "La lista de servicios"
 description: "Qué muestra la pestaña Servicios: el filtro por categoría, el buscador, las columnas Servicio, Categoría, Precio básico y Estado, el menú Acciones de cada fila y la lista de combos."
 section: servicios
 order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/services]
 keywords: [lista de servicios, listado de servicios, precio básico, estado del servicio, servicio activo, filtrar servicios, buscar un servicio, categoría, combos, lista de combos, tabla de servicios, ver servicio, editar servicio, borrar servicio, precios de mis servicios]

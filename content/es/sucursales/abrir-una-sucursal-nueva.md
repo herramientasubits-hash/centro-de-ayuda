@@ -3,7 +3,8 @@ id: sucursales/abrir-una-sucursal-nueva
 title: "Abrir una sucursal nueva: la lista completa, paso a paso"
 description: "El orden para dejar lista una sucursal nueva: crearla, activar equipo, servicios y productos, poner horarios y revisar hora, moneda y precios."
 section: sucursales
-order: 150
+order: 70
+group: "Crear y administrar"
 roles: [owner]
 screens: [/companies/locations, /team/activate, /services/location/activate-service, /products]
 keywords: [abrir sucursal, sucursal nueva, segunda sucursal, checklist de sucursal, qué hacer al abrir una sucursal, lista completa, paso a paso, dejar lista la sucursal, expandir, nuevo local, nueva sede]

@@ -4,6 +4,7 @@ title: "Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo"
 description: "Qué significa cada columna de la pantalla de Permisos y cómo se reparten entre el rol y cada persona."
 section: roles-y-permisos
 order: 30
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team-permission, /team/barbers]
 keywords: [permisos, ver, crear, editar, borrar, activo, matriz de permisos, roles, personalizar permisos, qué puede hacer, acceso total, propietario]

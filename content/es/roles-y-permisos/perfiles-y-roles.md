@@ -4,6 +4,7 @@ title: "Perfiles y roles: qué son y en qué se diferencian"
 description: "Tu perfil es el «sombrero» con el que entras; el rol define qué puedes hacer. Una persona puede tener varios perfiles."
 section: roles-y-permisos
 order: 10
+group: "Cómo funciona"
 roles: [todos]
 screens: [/*]
 keywords: [perfil, rol, dueño y barbero, business, barber comission, varios perfiles, cambiar perfil, dos roles, permisos, sombrero]

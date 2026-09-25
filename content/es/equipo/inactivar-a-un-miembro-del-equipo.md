@@ -3,7 +3,8 @@ id: equipo/inactivar-a-un-miembro-del-equipo
 title: "Inactivar a un miembro del equipo"
 description: "Cómo dejar fuera del equipo a una persona sin borrarla, con Acciones › Inactivar, y en qué se diferencia de borrar o de desactivarla en una sucursal."
 section: equipo
-order: 170
+order: 220
+group: "Editar, inactivar o borrar"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [inactivar barbero, inactivar miembro del equipo, desactivar barbero, dar de baja, se fue un barbero, despedir, renunció, suspender, pausar, dejar de mostrar, inactivar dueño, estado activo]

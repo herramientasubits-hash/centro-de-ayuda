@@ -3,7 +3,8 @@ id: calendario/pasar-al-cliente-a-la-silla
 title: "Pasar al cliente a la silla"
 description: "Marcar que el barbero ya está atendiendo al cliente: la opción Sentado del menú Acciones de la cita, y qué es Barbero listo."
 section: calendario
-order: 150
+order: 140
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [sentado, en silla, pasar a la silla, empezar el servicio, el barbero ya lo atiende, barbero listo, cliente en la silla, iniciar corte, atendiendo, estado de la cita, acciones de la cita]

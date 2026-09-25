@@ -4,6 +4,7 @@ title: "Reservas en tu sitio web: incrustar en una página"
 description: "La opción «Reserva embebida»: la reserva se ve dentro de una página de tu sitio web, como una sección más, copiando el código desde Barberlytics."
 section: agendamiento-online
 order: 120
+group: "Llevar la reserva a tus canales"
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [reserva embebida, incrustar reservas, embeber, dentro de mi página, agendamiento online, reservas en mi sitio web, widget, inline, copiar código, reserva online, sitio web, página de reservas, iframe]

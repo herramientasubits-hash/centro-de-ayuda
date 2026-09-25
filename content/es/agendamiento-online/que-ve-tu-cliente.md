@@ -3,7 +3,8 @@ id: agendamiento-online/que-ve-tu-cliente
 title: "Qué decide lo que ve tu cliente al reservar"
 description: "Cada ajuste de la app que cambia la página de reserva: servicios públicos, orden de categorías, visibilidad y precios de los barberos, horarios, cierres, bloqueos y clientes bloqueados."
 section: agendamiento-online
-order: 80
+order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/online-booking, /services, /team/barbers, /business-closed]
 keywords: [qué ve el cliente, configurar reserva online, ocultar servicio, ocultar barbero, servicio privado, visibilidad para agendamiento, orden de agendamiento, cierre, bloquear cliente]

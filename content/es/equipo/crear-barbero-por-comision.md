@@ -3,7 +3,8 @@ id: equipo/crear-barbero-por-comision
 title: "Crear un barbero por comisión"
 description: "Paso a paso para dar de alta a un barbero al que le pagas un porcentaje por servicio: el rol, la pestaña Perfil con todos sus campos y las pestañas que siguen."
 section: equipo
-order: 70
+order: 60
+group: "Agregar a alguien"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear barbero, barbero por comisión, contratar barbero, dar de alta a un barbero, nuevo barbero, agregar barbero, crear miembro del equipo, nivel de barbero, visibilidad para agendamiento, habilidades, galería, comisión]

@@ -4,6 +4,7 @@ title: "Moverte entre fechas"
 description: "Ir al día anterior o al siguiente, saltar a una fecha con el calendario y volver a hoy."
 section: calendario
 order: 40
+group: "Conoce el calendario"
 roles: [todos]
 screens: [/calendar]
 keywords: [cambiar de fecha, otro día, día anterior, día siguiente, flechas, selector de fecha, ir a mañana, ver ayer, fecha del calendario, moverse en el calendario, volver a hoy, hoy]

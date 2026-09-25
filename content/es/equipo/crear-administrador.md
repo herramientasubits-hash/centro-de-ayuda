@@ -3,7 +3,8 @@ id: equipo/crear-administrador
 title: "Crear un administrador de la locación"
 description: "Paso a paso para dar de alta al administrador de una sucursal: el rol, el formulario Perfil, el interruptor Esta persona es barbero y la pestaña Permisos."
 section: equipo
-order: 50
+order: 90
+group: "Agregar a alguien"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear administrador, administrador de la locación, administrador de sucursal, encargado, gerente de sucursal, dar de alta, contratar administrador, esta persona es barbero, permisos del administrador, crear miembro del equipo]

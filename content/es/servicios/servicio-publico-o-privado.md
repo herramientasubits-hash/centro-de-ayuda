@@ -3,7 +3,8 @@ id: servicios/servicio-publico-o-privado
 title: "Servicio público o privado: qué ve el cliente al reservar"
 description: "Qué hace el interruptor Privado / Público de un servicio, de una categoría y de un combo, y cuándo conviene dejar un servicio fuera del agendamiento online."
 section: servicios
-order: 80
+order: 120
+group: "Lo que ve el cliente al reservar"
 roles: [owner, admin]
 screens: [/services, /services/create, /services/*]
 keywords: [servicio público, servicio privado, privado o público, visible en el agendamiento online, esconder un servicio, ocultar un servicio, reserva online, agendamiento online, el cliente no ve un servicio, visibilidad, solo en la barbería, servicio interno]

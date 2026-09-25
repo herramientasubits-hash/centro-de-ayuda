@@ -3,7 +3,8 @@ id: calendario/el-cliente-no-se-presento
 title: "El cliente no se presentó"
 description: "Marcar que el cliente no vino con No se presentó en el menú Acciones, en qué se diferencia de Cancelar y dónde se ve el plantón después."
 section: calendario
-order: 210
+order: 170
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [no se presentó, no show, no-show, plantón, el cliente no vino, no llegó, faltó a la cita, cliente que no aparece, marcar inasistencia, ausente, no asistió, cumplimiento del cliente]

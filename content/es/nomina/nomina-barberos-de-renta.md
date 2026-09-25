@@ -3,7 +3,8 @@ id: nomina/nomina-barberos-de-renta
 title: "Nómina de barberos de renta: renta fija y pago neto"
 description: "Qué muestra cada columna de la pestaña Barbero de renta, qué es la Renta fija y por qué el Pago neto puede salir en negativo."
 section: nomina
-order: 30
+order: 70
+group: "Leer la nómina"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [nómina de renta, barbero de renta, renta fija, alquiler de silla, arriendo de silla, pago neto negativo, cuánto me debe el barbero, columnas, comisión de servicios, propinas, liquidación de renta]

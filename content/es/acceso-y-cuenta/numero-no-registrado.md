@@ -3,7 +3,8 @@ id: acceso-y-cuenta/numero-no-registrado
 title: "Qué hacer si tu número no está registrado"
 description: "Barberlytics solo deja entrar con un celular que ya esté en tu barbería. Si el tuyo no está, quien te creó en el equipo debe revisarlo."
 section: acceso-y-cuenta
-order: 36
+order: 90
+group: "Si no puedes entrar"
 roles: [todos]
 screens: [/authenticate]
 keywords: [número no registrado, no reconoce mi número, no existe el usuario, no puedo entrar con mi celular, celular equivocado, alta en el equipo, me cambiaron el número]

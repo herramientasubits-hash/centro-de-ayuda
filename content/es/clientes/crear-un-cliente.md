@@ -3,7 +3,8 @@ id: clientes/crear-un-cliente
 title: "Crear un cliente"
 description: "Registrar a un cliente nuevo desde Clientes › Crear cliente: qué campos son obligatorios, qué es cada uno y el interruptor Reserva y pago solo online."
 section: clientes
-order: 40
+order: 30
+group: "La lista de clientes"
 roles: [owner, admin, recepcion]
 screens: [/customers]
 keywords: [crear cliente, nuevo cliente, agregar cliente, registrar cliente, dar de alta un cliente, añadir cliente, ficha nueva, datos del cliente, celular del cliente, correo del cliente, fecha de nacimiento, reserva y pago solo online, cliente sin cita]

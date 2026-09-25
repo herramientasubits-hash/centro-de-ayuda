@@ -3,7 +3,8 @@ id: equipo/orden-para-clientes-sin-preferencia
 title: "Orden para clientes sin preferencia de barbero"
 description: "Cómo decidir qué barberos atienden a los clientes que no piden a nadie y en qué orden, en la pestaña Sin preferencia."
 section: equipo
-order: 250
+order: 290
+group: "Horarios, niveles y orden"
 roles: [owner, admin]
 screens: [/team/barbers/lineup, /team/barbers]
 keywords: [sin preferencia, cliente sin preferencia, no pidió barbero, cualquier barbero, orden de atención, quién atiende, fila de barberos, póngase en fila, interruptor, ordenamiento, reparto de clientes, rotación]

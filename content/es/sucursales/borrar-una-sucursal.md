@@ -3,7 +3,8 @@ id: sucursales/borrar-una-sucursal
 title: "Borrar una sucursal"
 description: "Dónde está la opción Borrar de una sucursal, qué revisar antes y por qué conviene inactivarla en lugar de borrarla."
 section: sucursales
-order: 116
+order: 130
+group: "Crear y administrar"
 roles: [owner]
 screens: [/companies/locations]
 keywords: [borrar sucursal, eliminar sucursal, quitar sucursal, borrar un local, eliminar sede, borrar, eliminar, sucursal, se puede recuperar, deshacer]

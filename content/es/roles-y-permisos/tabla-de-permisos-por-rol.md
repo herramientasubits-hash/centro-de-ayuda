@@ -4,6 +4,7 @@ title: "Tabla de permisos: qué puede hacer cada rol"
 description: "Los permisos de fábrica de cada uno de los cinco roles, función por función."
 section: roles-y-permisos
 order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team-permission]
 keywords: [tabla de permisos, permisos por rol, qué puede hacer cada rol, administrador, recepción, barbero por comisión, barbero de renta, dueño, matriz, predeterminados]

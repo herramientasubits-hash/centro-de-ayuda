@@ -3,7 +3,8 @@ id: configuracion/eliminar-tu-cuenta
 title: "Eliminar tu cuenta"
 description: "Dónde está la opción Eliminar cuenta, qué borra y por qué no se puede deshacer."
 section: configuracion
-order: 260
+order: 210
+group: "Eliminar cuenta"
 roles: [owner, admin]
 screens: [/settings]
 keywords: [eliminar cuenta, borrar cuenta, cerrar mi cuenta, dar de baja, cancelar barberlytics, borrar mis datos, eliminar la barbería, irreversible, no se puede deshacer, darse de baja, cancelar la suscripción]

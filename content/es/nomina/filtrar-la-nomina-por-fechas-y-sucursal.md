@@ -3,7 +3,8 @@ id: nomina/filtrar-la-nomina-por-fechas-y-sucursal
 title: "Filtrar la nómina por fechas y sucursal"
 description: "La barra Filtros de Nómina paso a paso: elegir la sucursal, cambiar el rango de fechas y moverte al periodo anterior o siguiente con las flechas."
 section: nomina
-order: 50
+order: 90
+group: "Leer la nómina"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [filtrar nómina, rango de fechas, quincena, mes pasado, periodo de pago, sucursal, cambiar fechas, ver otra quincena, flechas, 15 dias, nómina de una sucursal, todas las sucursales]

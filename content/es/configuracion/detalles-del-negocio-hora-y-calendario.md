@@ -4,6 +4,7 @@ title: "Detalles del negocio: zona horaria, formato de hora, semana y festivos"
 description: "Dónde eliges la zona horaria, el formato de 12 o 24 horas, el día en que empieza la semana, las horas de apertura y los festivos en los que no abres."
 section: configuracion
 order: 20
+group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/business-details/*]
 keywords: [detalles del negocio, zona horaria, formato de hora, 12 horas, 24 horas, inicio de semana, hora de inicio, hora de fin, horario de la barbería, festivos, feriados, días festivos, no abrir un festivo, horario de verano, configuración de hora y calendario]

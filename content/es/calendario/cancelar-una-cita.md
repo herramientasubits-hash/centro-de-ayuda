@@ -3,7 +3,8 @@ id: calendario/cancelar-una-cita
 title: "Cancelar una cita"
 description: "Cancelar una cita desde el menú Acciones de la cita, la diferencia con No se presentó, y dónde quedan las canceladas."
 section: calendario
-order: 200
+order: 160
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [cancelar cita, cancelación, anular cita, el cliente canceló, borrar cita, eliminar cita, cita cancelada, cancelada, tasa de cancelación, el cliente no viene, deshacer cita, quitar cita]

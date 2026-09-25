@@ -3,7 +3,8 @@ id: servicios/costo-y-precio-de-un-servicio
 title: "Costo del servicio y precio básico"
 description: "Qué diferencia hay entre el Costo del servicio y el Precio básico, dónde se ven, cuál cobra el cliente y cómo el costo puede descontarse antes de la comisión."
 section: servicios
-order: 70
+order: 30
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/services, /services/create, /services/*]
 keywords: [costo del servicio, precio básico, precio del servicio, cuánto cobrar, margen, ganancia por servicio, insumos, valor del servicio, deducir el costo del servicio, comisión, precio de lista, precio por barbero, cuánto me cuesta un corte]

@@ -3,7 +3,8 @@ id: agendamiento-online/confirmar-la-reserva
 title: "Confirmar la reserva"
 description: "El último paso de la reserva online: el resumen de la cita, cómo editarla, eliminarla o agregar otro servicio, y el botón ¡Reservar ahora!."
 section: agendamiento-online
-order: 60
+order: 80
+group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [confirmar cita, reservar ahora, resumen de la reserva, agregar cita, varios servicios, editar reserva, eliminar reserva, terminar de reservar]

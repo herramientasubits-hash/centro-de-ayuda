@@ -4,6 +4,7 @@ title: "Detalles de facturación y facturas"
 description: "Tu plan, tus datos de facturación, tu tarjeta y el listado de facturas de Barberlytics, con filtros por tipo, año y mes y el botón Descargar."
 section: configuracion
 order: 40
+group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/settings/billing-details]
 keywords: [detalles de facturación, facturación, facturas, editar detalles de facturación, dirección de facturación, método de pago, tarjeta, plan, anual, próxima factura, descargar factura, tarifas, suscripción, membresía, administrar métodos de pago, añadir método de pago]

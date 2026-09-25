@@ -4,6 +4,7 @@ title: "Marketing: canales digitales, campañas y conversión"
 description: "La pestaña Marketing: qué parte de tus citas llega online, por qué canal llegan, qué campaña las trajo y cuánto convierte cada canal."
 section: metricas
 order: 160
+group: "Barberos y marketing"
 roles: [owner, admin]
 screens: [/]
 keywords: [marketing, reservas online, mejor canal, canales digitales, direct_link, website, enlace directo, página web, instagram, rendimiento de campañas, sin campaña, conversión por canal, de dónde vienen mis clientes, publicidad]

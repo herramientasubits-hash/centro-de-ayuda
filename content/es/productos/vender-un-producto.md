@@ -3,7 +3,8 @@ id: productos/vender-un-producto
 title: "Vender un producto"
 description: "Los dos caminos para vender un producto desde el calendario: una venta rápida para productos sueltos y Añadir productos al cobrar una cita. Qué necesita el producto para aparecer."
 section: productos
-order: 90
+order: 100
+group: "Vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/products, /calendar]
 keywords: [vender un producto, venta de productos, venta rápida, crear venta rapida, añadir productos, cobrar un producto, vender una cera, producto en la cita, venta de mostrador, el producto no aparece al vender, pagar orden, caja, comisión por productos]

@@ -3,7 +3,8 @@ id: calendario/abrir-una-cita
 title: "Abrir una cita y ver su detalle"
 description: "Todo lo que ves al tocar una cita: el siguiente paso, el recorrido del cliente, los datos de la cita, la fidelidad al barbero, las notas, la ficha del cliente y el historial."
 section: calendario
-order: 150
+order: 110
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [abrir cita, detalle de la cita, ver cita, resumen, notas, cliente, historial, siguiente paso, recorrido del cliente, fidelidad, duración, cambiar duración, pidió a, visitas]

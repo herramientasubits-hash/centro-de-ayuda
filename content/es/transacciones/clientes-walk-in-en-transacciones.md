@@ -3,7 +3,8 @@ id: transacciones/clientes-walk-in-en-transacciones
 title: "Cuentas de clientes sin registro («Walk in»)"
 description: "Por qué algunas cuentas dicen «Walk in» en la columna Cliente, de dónde sale ese cliente y en qué se diferencia del interruptor Cliente sin cita previa."
 section: transacciones
-order: 70
+order: 40
+group: "Cómo leer Transacciones"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [walk in, walk-in, cliente sin registro, cliente sin nombre, cliente genérico, cuenta sin cliente, cliente sin cita previa, sin cita, cliente de paso, quién es walk in, columna cliente]

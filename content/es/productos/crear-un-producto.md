@@ -3,7 +3,8 @@ id: productos/crear-un-producto
 title: "Crear un producto"
 description: "Crear un producto paso a paso: la pestaña General (nombre, categoría, impuestos, precio de compra, precio de venta, SKU, público o privado, disponibilidad de venta y fotos) y la pestaña Avanzado (marca y distribuidor)."
 section: productos
-order: 40
+order: 70
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/products, /products/create]
 keywords: [crear producto, nuevo producto, agregar producto, añadir producto, dar de alta un producto, precio de venta, precio de compra, código sku, categoría, impuestos, fotos del producto, marca, distribuidor, disponibilidad de venta, producto público, continuar]

@@ -3,7 +3,8 @@ id: calendario/cobrar-con-propina
 title: "Cobrar con propina"
 description: "Dónde se agrega la propina al cobrar una cita: la línea Propina del resumen y la pantalla Añadir propina con montos fijos, Sin propina y Personalizar."
 section: calendario
-order: 170
+order: 190
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [propina, cobrar con propina, añadir propina, tip, propina para el barbero, sin propina, personalizar propina, monto de propina, checkout, pagar cita, link de pago, pago mixto, propinas]

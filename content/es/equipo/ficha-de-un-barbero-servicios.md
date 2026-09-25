@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-servicios
 title: "La ficha de un barbero: servicios y precios propios"
 description: "Qué muestra la pestaña Servicios de la ficha: por cada servicio, el precio, el precio para clientes nuevos, el de lealtad, el tiempo, la comisión dividida y la comisión extra de ese barbero."
 section: equipo
-order: 100
+order: 120
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [servicios del barbero, precio por barbero, precio propio, precio del servicio, nuevo cliente precio, precio de lealtad, tiempo del servicio, duración por barbero, comisión dividida, comisión extra, qué servicios hace un barbero, tarifa por barbero]

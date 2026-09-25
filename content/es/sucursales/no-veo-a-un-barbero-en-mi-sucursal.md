@@ -3,7 +3,8 @@ id: sucursales/no-veo-a-un-barbero-en-mi-sucursal
 title: "No veo a un barbero en mi sucursal"
 description: "Un barbero de tu equipo no aparece en Equipo, en el calendario o al agendar: casi siempre falta activarlo en esa sucursal."
 section: sucursales
-order: 60
+order: 180
+group: "Si algo no aparece"
 roles: [owner, admin]
 screens: [/team/barbers, /team/activate, /calendar]
 keywords: [no veo al barbero, no aparece el barbero, barbero desaparecido, falta un barbero, activar equipo, sucursal, calendario sin barbero, equipo]

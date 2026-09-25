@@ -4,6 +4,7 @@ title: "Elegir el país de tu teléfono"
 description: "Cómo cambiar el código de país del campo Teléfono y qué países están disponibles."
 section: acceso-y-cuenta
 order: 20
+group: "Entrar"
 roles: [todos]
 screens: [/authenticate]
 keywords: [país, código de país, bandera, +57, +1, +58, colombia, estados unidos, venezuela, indicativo, prefijo]

@@ -3,7 +3,8 @@ id: configuracion/comisiones-que-se-deduce
 title: "Comisiones: qué se resta antes de calcular"
 description: "Los cuatro interruptores de Configuración › Comisiones: si los descuentos, los impuestos, el costo del servicio y el costo del producto se restan del precio antes de calcular la comisión del barbero."
 section: configuracion
-order: 140
+order: 90
+group: "Equipo"
 roles: [owner, admin]
 screens: [/team-commission]
 keywords: [comisiones, cálculo de comisiones, deducir descuentos, deducir impuestos, deducir el costo del servicio, deducir el costo del producto, base de la comisión, qué se resta, comisión del barbero, comisión sobre el precio, comisión neta, porcentaje del barbero, nómina]

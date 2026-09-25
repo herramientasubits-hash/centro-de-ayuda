@@ -4,6 +4,7 @@ title: "Cliente que llega sin cita previa"
 description: "Cómo atender a un cliente que entra por la puerta sin agendar: el interruptor Cliente sin cita previa, la opción Walk in y la Venta sin cita."
 section: calendario
 order: 80
+group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [sin cita previa, walk-in, walk in, llegó sin cita, cliente de paso, cliente sin agendar, atender sin cita, venta sin cita, comisión de walk-in, rate walk-in, cliente espontáneo, sin reserva]

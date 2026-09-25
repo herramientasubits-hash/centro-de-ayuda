@@ -3,7 +3,8 @@ id: transacciones/ver-el-detalle-de-una-cuenta
 title: "Ver el detalle de una cuenta"
 description: "Cómo desplegar una fila de la tabla de Transacciones para ver el detalle de esa cuenta."
 section: transacciones
-order: 50
+order: 80
+group: "Buscar y revisar"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [detalle de una cuenta, ver detalle, desplegar cuenta, abrir cuenta, fila, factura, qué incluye una cuenta, servicios de la cuenta, ver la cuenta, transacción]

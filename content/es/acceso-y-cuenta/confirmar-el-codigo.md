@@ -4,6 +4,7 @@ title: "Confirmar tu número con el código"
 description: "El paso después de Iniciar Sesión: escribes el código que te llegó al móvil y tocas Confirmar."
 section: acceso-y-cuenta
 order: 30
+group: "Entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]
 keywords: [código, confirmar número, verificación, reenviar código, no me llega, no llega el código, sms, móvil, atrás]

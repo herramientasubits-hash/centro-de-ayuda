@@ -3,7 +3,8 @@ id: configuracion/tarifa-por-uso-de-tarjeta
 title: "Tarifa por uso de tarjeta de crédito"
 description: "Cómo cobrar un recargo cuando el cliente paga con tarjeta de crédito: activarlo, ponerle nombre y definirlo como porcentaje o como monto fijo."
 section: configuracion
-order: 160
+order: 110
+group: "Ventas"
 roles: [owner, admin]
 screens: [/credit-card]
 keywords: [tarifa por uso de tarjeta, recargo por tarjeta, comisión por tarjeta, pago con tarjeta de crédito, cobrar más por tarjeta, porcentaje o monto fijo, habilitar esta opción, nombre de la tarifa, tasa, datáfono, cargo por tarjeta, sobrecosto tarjeta]

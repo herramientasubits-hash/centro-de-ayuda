@@ -3,7 +3,8 @@ id: calendario/vacaciones-de-un-barbero
 title: "Vacaciones de un barbero"
 description: "Bloquear varios días de la agenda de un barbero con un bloqueo de categoría Vacaciones: desde la vista Mes, Crear bloque de tiempo, fechas y horas."
 section: calendario
-order: 230
+order: 250
+group: "Bloqueos y vacaciones"
 roles: [owner, admin, barbero]
 screens: [/calendar]
 keywords: [vacaciones, vacaciones de un barbero, bloquear agenda, bloquear varios días, días libres, permiso, ausencia, enfermo, incapacidad, crear bloqueo, bloque de tiempo, no recibir citas, cerrar agenda]

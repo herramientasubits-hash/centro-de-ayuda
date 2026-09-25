@@ -3,7 +3,8 @@ id: clientes/como-se-clasifica-un-cliente
 title: "Cómo cambia un cliente de tipo con el tiempo"
 description: "El camino de un cliente por los tipos, con ejemplos: de Nuevo a Retenido y Frecuente por número de citas, a VIP por constancia, y a Pre-perdida, Perdido y Recuperado según los ciclos que pase sin venir."
 section: clientes
-order: 160
+order: 70
+group: "Tipos de cliente"
 roles: [owner, admin]
 screens: [/customers]
 keywords: [cómo se clasifica un cliente, cambio de tipo, ciclo de frecuencia, ciclo, cada cuánto viene, cuándo pasa a VIP, cuándo se pierde un cliente, cliente en riesgo, pre-perdida, perdido, recuperado, retención, fidelidad, por qué mi cliente es nuevo, por qué cambió de tipo, clasificación de clientes]

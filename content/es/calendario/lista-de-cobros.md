@@ -3,7 +3,8 @@ id: calendario/lista-de-cobros
 title: "La lista de cobros: por cobrar y pagado"
 description: "El panel Listo para pagar del calendario: qué citas del día faltan por cobrar y cuáles ya se pagaron."
 section: calendario
-order: 130
+order: 210
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [lista de cobros, listo para pagar, por cobrar, pagado, citas pendientes de pago, qué falta cobrar, cierre del día, cobros del día, pendientes]

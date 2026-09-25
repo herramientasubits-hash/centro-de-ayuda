@@ -3,7 +3,8 @@ id: calendario/un-barbero-no-aparece-en-el-calendario
 title: "Un barbero no aparece en el calendario"
 description: "Qué revisar si falta la columna de un barbero: si está activado en la sucursal y si el filtro Equipo lo muestra."
 section: calendario
-order: 280
+order: 270
+group: "Si algo falla"
 roles: [owner, admin]
 screens: [/calendar, /team/barbers, /team/activate]
 keywords: [barbero no aparece, no veo al barbero, falta un barbero, columna del barbero, calendario sin barbero, activar equipo, equipo en la sucursal, barbero desaparecido, activar barbero, filtro equipo]

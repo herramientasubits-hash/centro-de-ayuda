@@ -4,6 +4,7 @@ title: "Cómo se organiza tu barbería: empresa, sucursales, equipo y catálogos
 description: "El mapa de Barberlytics en una página: qué es de toda la empresa, qué es de cada sucursal y qué se activa en cada una."
 section: sucursales
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/companies/locations, /team/barbers, /services, /products, /settings]
 keywords: [empresa, sucursal, sucursales, locación, equipo, catálogo, servicios, productos, activar, organización, varias sucursales, cómo funciona, estructura]

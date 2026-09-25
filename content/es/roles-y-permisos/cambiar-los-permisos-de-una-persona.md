@@ -3,7 +3,8 @@ id: roles-y-permisos/cambiar-los-permisos-de-una-persona
 title: "Cambiar los permisos de una persona sin cambiar su rol"
 description: "Cómo dar o quitar permisos a un solo miembro del equipo desde su ficha, pestaña Permisos, sin tocar los predeterminados de su rol."
 section: roles-y-permisos
-order: 150
+order: 130
+group: "Cambiar permisos"
 roles: [owner, admin]
 screens: [/team/barbers, /team/barbers/view/*]
 keywords: [permisos de una persona, permisos de un barbero, cambiar permisos, dar permiso, quitar permiso, ficha pestaña permisos, sin cambiar el rol, personalizar permisos, un barbero no ve, editar barbero, permisos por usuario]

@@ -3,7 +3,8 @@ id: equipo/crear-barbero-de-renta
 title: "Crear un barbero de renta"
 description: "Paso a paso para dar de alta a un barbero que te alquila la silla: el rol, la pestaña Perfil y la pestaña Pagos con la base de la renta y las deducciones."
 section: equipo
-order: 80
+order: 70
+group: "Agregar a alguien"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear barbero de renta, barbero renta, alquiler de silla, renta de silla, arrendar puesto, dar de alta, contratar barbero de renta, base de la renta, deducciones, información bancaria, crear miembro del equipo, nivel de barbero]

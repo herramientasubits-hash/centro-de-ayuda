@@ -3,7 +3,8 @@ id: equipo/como-se-le-paga-a-un-barbero
 title: "Cómo se le paga a cada tipo de barbero"
 description: "Las tres formas de pagar a un barbero en Barberlytics: comisión por servicio y por producto, renta con deducciones y salario; dónde se define cada una y dónde se ve el resultado."
 section: equipo
-order: 290
+order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/payroll, /team/barbers/view/*]
 keywords: [cómo se le paga a un barbero, pago a barberos, comisión, renta, salario, sueldo fijo, porcentaje por servicio, comisión por producto, base de la renta, deducciones, tipo de compensación, nómina, pago neto, alquiler de silla]

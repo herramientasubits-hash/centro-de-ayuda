@@ -4,6 +4,7 @@ title: "Una cuenta quedó por cobrar"
 description: "Qué hacer cuando una cita ya terminó pero su cuenta sigue en POR COBRAR: cómo encontrarla, desde dónde cobrarla y cómo evitar que se repita."
 section: transacciones
 order: 100
+group: "Si algo falla"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [por cobrar, cuenta abierta, pendiente por cobrar, cita sin cobrar, cliente se fue sin pagar, cerrar una cuenta, cobrar después, lista de cobros, cuentas abiertas, cuadrar la caja, se me olvidó cobrar]

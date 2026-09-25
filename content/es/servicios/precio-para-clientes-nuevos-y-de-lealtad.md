@@ -3,7 +3,8 @@ id: servicios/precio-para-clientes-nuevos-y-de-lealtad
 title: "Precio para clientes nuevos y precio de lealtad"
 description: "Qué son el Precio para clientes nuevos y el Precio de fidelidad de un servicio, dónde se ponen (por barbero, en la pestaña Equipo o en la ficha del barbero) y cómo se relacionan con la comisión."
 section: servicios
-order: 90
+order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/services, /services/*, /team/barbers/view/*]
 keywords: [precio para clientes nuevos, nuevo cliente precio, precio de lealtad, precio de fidelidad, frecuencia de visita, precio por tipo de cliente, promoción primera visita, descuento cliente frecuente, precio por barbero, comisión dividida, comisión extra, división de la comisión, cliente nuevo, cliente recurrente]

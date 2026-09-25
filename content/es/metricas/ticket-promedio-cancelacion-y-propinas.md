@@ -4,6 +4,7 @@ title: "Ticket promedio, tasa de cancelación y % de propinas"
 description: "Las tres tarjetas de arriba de la pestaña Negocio: cuánto deja cada cobro, cuántas citas se caen y qué parte de lo cobrado son propinas."
 section: metricas
 order: 30
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [ticket promedio, cuánto deja cada cliente, promedio por transacción, tasa de cancelación, canceladas, no-show, no se presentó, no vino, propinas, porcentaje de propinas, tips, cuánto vendí por cita, negocio]

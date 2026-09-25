@@ -4,6 +4,7 @@ title: "Cómo leer Métricas: pestañas, filtros y periodos"
 description: "Un recorrido por la pantalla de inicio: sus cinco pestañas, qué tarjeta responde qué pregunta y cómo cambian las cifras con los filtros."
 section: metricas
 order: 10
+group: "Cómo leer Métricas"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [métricas, indicadores, kpi, dashboard, panel, resumen del negocio, cómo va mi barbería, negocio, clientes, barberos, marketing, ai insights, inicio, pestañas, reportes, estadísticas]

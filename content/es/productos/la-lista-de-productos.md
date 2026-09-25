@@ -4,6 +4,7 @@ title: "La lista de productos"
 description: "Qué muestra la pestaña Productos: el filtro de categorías, el buscador, las columnas Nombre, Categoría, Precio y Acción, y el menú Acciones de cada fila con Ver, Editar y Borrar."
 section: productos
 order: 20
+group: "Cómo funciona"
 roles: [owner, admin, recepcion]
 screens: [/products]
 keywords: [lista de productos, listado de productos, productos de barbería, precio del producto, filtrar productos, buscar un producto, categorías, todas las categorías, tabla de productos, ver producto, editar producto, borrar producto, inventario, cuántos productos tengo]

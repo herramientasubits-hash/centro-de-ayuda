@@ -4,6 +4,7 @@ title: "La nómina no coincide con lo que espero"
 description: "Una lista de cosas que revisar cuando el pago neto de un barbero no cuadra: rango, sucursal, pestaña, citas sin cobrar, deducciones y precios propios."
 section: nomina
 order: 120
+group: "Si algo no cuadra"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [la nómina no cuadra, comisión mal calculada, falta una cita en la nómina, pago neto incorrecto, no coincide, falta dinero, barbero reclama, por cobrar, deducciones, precios propios del barbero, revisar la nómina]

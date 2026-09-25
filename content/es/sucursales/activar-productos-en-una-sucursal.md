@@ -3,7 +3,8 @@ id: sucursales/activar-productos-en-una-sucursal
 title: "Activar productos en una sucursal"
 description: "Cómo elegir cuáles de los productos de tu empresa vende la sucursal donde estás, con la pantalla Activar producto y su interruptor por producto."
 section: sucursales
-order: 100
+order: 160
+group: "Activar equipo y catálogos"
 roles: [owner, admin]
 screens: [/products]
 keywords: [activar productos, activar productos de barbería, productos en otra sucursal, sucursal nueva, catálogo de productos, inventario, interruptor, guardar, no veo un producto, activar producto]

@@ -3,7 +3,8 @@ id: calendario/venta-sin-cita
 title: "Venta sin cita"
 description: "Registrar un servicio que ya se hizo sin cita: fecha y hora, cliente, servicio y barbero, desde Acciones › Venta sin cita."
 section: calendario
-order: 110
+order: 220
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [venta sin cita, registrar servicio sin cita, walk-in, cliente que ya atendí, cobrar sin cita, servicio de mostrador, sin agendar, cita pasada]

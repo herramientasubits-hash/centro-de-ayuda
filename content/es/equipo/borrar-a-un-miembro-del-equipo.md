@@ -3,7 +3,8 @@ id: equipo/borrar-a-un-miembro-del-equipo
 title: "Borrar a un miembro del equipo"
 description: "Dónde está Acciones › Borrar en la lista de barberos, cuándo conviene inactivar en vez de borrar y qué aún no está confirmado."
 section: equipo
-order: 180
+order: 230
+group: "Editar, inactivar o borrar"
 roles: [owner]
 screens: [/team/barbers]
 keywords: [borrar barbero, eliminar barbero, borrar miembro del equipo, eliminar del equipo, quitar a un barbero, despedir, dar de baja definitiva, borrar barbero de renta, borrar dueño, no se puede deshacer]

@@ -4,6 +4,7 @@ title: "Ventas e ingresos: servicios, productos, impuestos, propinas y tarifas"
 description: "Las dos tarjetas de dinero de la pestaña Negocio: cuánto vendiste en total, qué parte fue servicios o productos, y de qué se compone lo que entró."
 section: metricas
 order: 40
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [ventas, ingresos, cuánto vendí, cuánto entró, total del mes, servicios, productos, impuestos, propinas, tarifas, no se presentaron, facturación, dinero del mes, negocio]

@@ -4,6 +4,7 @@ title: "Ingreso promedio por cliente"
 description: "La tarjeta de la pestaña Clientes que te dice cuánto te deja cada cliente en promedio en el periodo."
 section: metricas
 order: 100
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [ingreso promedio por cliente, cuánto me deja cada cliente, valor del cliente, gasto promedio, cuánto gasta un cliente, promedio por cliente, ticket por cliente, clientes]

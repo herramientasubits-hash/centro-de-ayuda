@@ -3,7 +3,8 @@ id: clientes/bloquear-a-un-cliente
 title: "Bloquear a un cliente"
 description: "Cómo bloquear a un cliente desde Acciones › Bloquear cliente para que no pueda agendar online, qué escribir en la Descripción y dónde queda después."
 section: clientes
-order: 130
+order: 160
+group: "La ficha de un cliente"
 roles: [owner, admin, recepcion]
 screens: [/customers/*]
 keywords: [bloquear cliente, bloqueo, cliente bloqueado, cliente que no llega, cliente que no paga, no quiero que reserve, impedir reservas online, vetar cliente, banear, lista negra, desbloquear cliente, quitar bloqueo, motivo del bloqueo]

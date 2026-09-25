@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-permisos
 title: "La ficha de un barbero: permisos"
 description: "La pestaña Permisos de la ficha: cómo se lee la matriz Ver, Crear, Editar, Borrar y Activo, de dónde salen los permisos de una persona y qué pasa si le quitas Ver."
 section: equipo
-order: 140
+order: 160
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [permisos de un barbero, permisos de una persona, matriz de permisos, ver crear editar borrar, activo, quitar permisos, dar permisos, ocultar sección del menú, personalizar permisos, permisos por usuario, no ve una sección, rol y permisos]

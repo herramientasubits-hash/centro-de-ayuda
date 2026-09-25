@@ -3,7 +3,8 @@ id: agendamiento-online/como-reserva-tu-cliente
 title: "Cómo reserva tu cliente, paso a paso"
 description: "El recorrido completo de la página pública de reserva, de principio a fin: celular, última visita, sede, servicio, barbero, fecha, hora y confirmación."
 section: agendamiento-online
-order: 20
+order: 40
+group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking, /calendar]
 keywords: [reserva online, cita online, cómo reserva el cliente, enlace de reserva, página de reserva, book now, reservar por internet, el cliente agenda solo, flujo de reserva, booking]

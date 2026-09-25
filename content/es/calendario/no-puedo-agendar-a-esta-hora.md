@@ -3,7 +3,8 @@ id: calendario/no-puedo-agendar-a-esta-hora
 title: "No puedo agendar a esta hora"
 description: "Qué revisar cuando una franja del calendario sale sombreada o el barbero no aparece: su horario, un bloqueo, el filtro Equipo* y si está activado en la sucursal."
 section: calendario
-order: 270
+order: 260
+group: "Si algo falla"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [no puedo agendar, franja sombreada, hora no disponible, gris, fuera de horario, el barbero no trabaja, horario de trabajo, bloqueo, no deja crear cita, no aparece la hora, hora ocupada, no me deja, horas de trabajo]

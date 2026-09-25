@@ -3,7 +3,8 @@ id: productos/fotos-de-un-producto
 title: "Fotos de un producto"
 description: "Dónde se ponen las fotos de un producto: la foto principal y el bloque Fotos, con un máximo de cinco."
 section: productos
-order: 70
+order: 80
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/products, /products/create, /products/*]
 keywords: [fotos de un producto, subir foto, imagen del producto, foto principal, cinco fotos, galería del producto, cambiar la foto, quitar una foto, foto de la cera, producto sin foto]

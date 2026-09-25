@@ -4,6 +4,7 @@ title: "Horas de solicitud de citas: mañana, tarde y noche"
 description: "La tarjeta que reparte las citas entre mañana, tarde y noche, y el gráfico hora a hora que te dice a qué hora llega más gente."
 section: metricas
 order: 60
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [horas de solicitud de citas, a qué hora vienen mis clientes, mañana, tarde, noche, tráfico según la hora del día, hora pico, horas muertas, cuándo se llena, horarios, hora a hora, negocio]

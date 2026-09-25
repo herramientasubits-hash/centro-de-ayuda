@@ -3,7 +3,8 @@ id: clientes/ver-un-cliente
 title: "Ver un cliente: información general"
 description: "Cómo abrir la ficha de un cliente y qué hay en su pestaña Información general: el botón Acciones, los doce indicadores, Información importante, Última cita y Notas del cliente."
 section: clientes
-order: 50
+order: 80
+group: "La ficha de un cliente"
 roles: [todos]
 screens: [/customers/*]
 keywords: [ver cliente, ficha del cliente, ficha de cliente, abrir un cliente, perfil del cliente, información general, datos del cliente, historial del cliente, última cita, notas del cliente, acciones del cliente, crear nota, crear cita, bloquear cliente, cuánto ha gastado un cliente]

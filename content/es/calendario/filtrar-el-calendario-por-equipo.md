@@ -4,6 +4,7 @@ title: "Filtrar por equipo: quién aparece en el calendario"
 description: "El filtro Equipo* del calendario: ver a los que trabajan hoy, a todo el equipo o a un solo barbero, y por qué a veces falta una columna."
 section: calendario
 order: 30
+group: "Conoce el calendario"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [filtrar calendario, filtro equipo, trabajando, todo el equipo, ver un solo barbero, columna del barbero, falta un barbero, quién trabaja hoy, nadie trabaja este día, ver todo el equipo, ocultar barberos, agenda por barbero]

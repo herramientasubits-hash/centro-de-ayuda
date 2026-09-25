@@ -3,7 +3,8 @@ id: configuracion/precios-moneda-y-calculo-de-impuestos
 title: "Precios: moneda y si el precio incluye impuestos"
 description: "Dónde eliges la moneda de tus servicios y productos y si el precio que escribes ya incluye los impuestos o se le suman al cobrar."
 section: configuracion
-order: 180
+order: 130
+group: "Ventas"
 roles: [owner, admin]
 screens: [/sales-pricing]
 keywords: [precios, moneda, cop, usd, pesos, dólares, cálculo de impuestos, precios incluyen impuestos, precios no incluyen impuestos, iva incluido, precio con iva, precio sin iva, precio base, total, moneda de la plataforma, cambiar moneda]

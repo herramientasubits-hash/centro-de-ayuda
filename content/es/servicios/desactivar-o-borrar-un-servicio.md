@@ -4,6 +4,7 @@ title: "Desactivar o borrar un servicio"
 description: "Cómo dejar de ofrecer un servicio: apagarlo en una sucursal, sacarlo de la reserva online o borrarlo del catálogo con Acciones › Borrar."
 section: servicios
 order: 110
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [borrar servicio, eliminar servicio, desactivar servicio, quitar un servicio, dejar de ofrecer, apagar un servicio, servicio inactivo, estado activo, ya no hago este servicio, esconder un servicio, sacar del menú]

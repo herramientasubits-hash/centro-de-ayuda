@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-de-renta-pagos
 title: "La ficha de un barbero de renta: pagos"
 description: "La pestaña Pagos de un barbero de renta: la Lógica de pago con la base de la renta y las tres deducciones, y la Información bancaria."
 section: equipo
-order: 120
+order: 140
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/rent/*]
 keywords: [pagos del barbero de renta, base de la renta, renta fija, alquiler de silla, deducción por cita sin agendamiento, deducción por clientes nuevos, deducción por citas sin preferencia, información bancaria, nombre del banco, número de cuenta, lógica de pago, cuánto paga el barbero de renta]

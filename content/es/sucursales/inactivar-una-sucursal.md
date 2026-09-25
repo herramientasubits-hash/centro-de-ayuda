@@ -3,7 +3,8 @@ id: sucursales/inactivar-una-sucursal
 title: "Inactivar una sucursal"
 description: "Dónde está la opción Inactivar de una sucursal, en qué se diferencia de Borrar y qué falta por confirmar antes de usarla."
 section: sucursales
-order: 114
+order: 120
+group: "Crear y administrar"
 roles: [owner]
 screens: [/companies/locations/view/*]
 keywords: [inactivar sucursal, desactivar sucursal, cerrar sucursal, sucursal inactiva, pausar sucursal, cerrar un local, dejar de usar una sucursal, estado de la sucursal, activo, inactivar]

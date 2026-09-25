@@ -3,7 +3,8 @@ id: equipo/visibilidad-para-agendamiento
 title: "Visibilidad para agendamiento: mostrar u ocultar a un barbero"
 description: "Qué es el interruptor Visibilidad para agendamiento del perfil de un barbero, dónde se cambia y qué revisar cuando un barbero no se puede agendar."
 section: equipo
-order: 260
+order: 180
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*, /team/barbers]
 keywords: [visibilidad para agendamiento, ocultar barbero, mostrar barbero, barbero no se puede agendar, habilitado, deshabilitado, interruptor, no aparece para agendar, agendamiento online, barbero oculto, desactivar agenda]

@@ -3,7 +3,8 @@ id: equipo/niveles-de-barberos
 title: "Niveles de barberos: para qué sirven"
 description: "Qué es un nivel, dónde se ve la Lista de niveles y en qué pantallas aparece el nivel de cada barbero."
 section: equipo
-order: 190
+order: 250
+group: "Horarios, niveles y orden"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [niveles, nivel de barbero, lista de niveles, senior, master, junior, categoría de barbero, rango, jerarquía, filtrar por nivel, sin nivel, crear nivel]

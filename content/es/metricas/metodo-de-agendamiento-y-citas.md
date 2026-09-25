@@ -4,6 +4,7 @@ title: "Método de agendamiento y citas: interno, online y sin cita previa"
 description: "Las dos donas de citas de la pestaña Negocio: por dónde entraron las citas y en qué estado quedaron."
 section: metricas
 order: 50
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [método de agendamiento, cómo agendan mis clientes, cita online, interno, sin cita previa, walk-in, citas, completadas, pendientes de cobro, canceladas, no se presentaron, no-show, cuántas citas tuve, estado de las citas]

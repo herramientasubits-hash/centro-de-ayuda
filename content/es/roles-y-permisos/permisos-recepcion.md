@@ -3,7 +3,8 @@ id: roles-y-permisos/permisos-recepcion
 title: "Qué puede hacer y qué ve la recepción"
 description: "Los permisos de fábrica del rol Recepcionista."
 section: roles-y-permisos
-order: 100
+order: 90
+group: "Qué puede hacer cada rol"
 roles: [owner, admin, recepcion]
 screens: [/team-permission]
 keywords: [recepción, recepcionista, secretaria, mostrador, permisos de recepción, qué ve la recepcionista, check in]

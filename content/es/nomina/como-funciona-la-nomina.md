@@ -4,6 +4,7 @@ title: "Cómo funciona la nómina"
 description: "Qué muestra la pantalla Nómina: las tres pestañas según cómo se le paga a cada barbero, los filtros de sucursal y fechas, la fila All y el botón Descargar."
 section: nomina
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [nómina, liquidación, cuánto le pago a cada barbero, pago a barberos, quincena, barbero por comisión, barbero de renta, barbero por salario, pago neto, fila all, total del equipo, descargar nómina, filtros de nómina]

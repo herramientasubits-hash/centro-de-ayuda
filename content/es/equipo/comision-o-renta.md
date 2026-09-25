@@ -4,6 +4,7 @@ title: "Barbero por comisión o de renta: cuál elegir"
 description: "La diferencia entre un barbero por comisión y uno de renta, qué cambia en su ficha, en sus permisos y en la nómina, y cómo decidir al crearlo."
 section: equipo
 order: 30
+group: "Cómo funciona"
 roles: [owner]
 screens: [/team/barbers]
 keywords: [comisión o renta, barbero por comisión, barbero de renta, alquiler de silla, renta de silla, porcentaje por servicio, base de la renta, deducciones, salario, tipo de compensación, qué rol elegir, contratar barbero, cómo se le paga]

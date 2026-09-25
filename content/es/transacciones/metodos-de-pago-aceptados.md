@@ -3,7 +3,8 @@ id: transacciones/metodos-de-pago-aceptados
 title: "Métodos de pago que puedes cobrar"
 description: "Los cuatro métodos del checkout (efectivo, tarjeta, link de pago y pago mixto), qué necesita cada uno en Configuración y cómo sale cada cobro en la columna Método de Transacciones."
 section: transacciones
-order: 90
+order: 50
+group: "Cómo leer Transacciones"
 roles: [owner, admin]
 screens: [/transactions, /devices, /payment-integration]
 keywords: [métodos de pago, efectivo, tarjeta, crédito, débito, datáfono, terminal, link de pago, pago mixto, stripe, dispositivos de pago, integración de pagos, columna método, cash, cómo cobrar, formas de pago]

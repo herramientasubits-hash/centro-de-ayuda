@@ -3,7 +3,8 @@ id: acceso-y-cuenta/cambiar-de-rol
 title: "Cambiar de rol"
 description: "Si tu cuenta tiene más de un rol, por ejemplo dueño y barbero, cómo elegir con cuál trabajas."
 section: acceso-y-cuenta
-order: 90
+order: 110
+group: "Tu cuenta y tus perfiles"
 roles: [owner, admin]
 screens: [/*]
 keywords: [cambiar rol, cambiar perfil, roles, dueño, barbero, business, barber comission, dos roles, rol activo, perfil]

@@ -3,7 +3,8 @@ id: nomina/ciclo-de-pago
 title: "El ciclo de pago: semanal, quincenal o mensual"
 description: "Dónde se define cada cuánto pagas a tu equipo y qué día empieza el periodo, y cómo se refleja en el rango de fechas de Nómina."
 section: nomina
-order: 100
+order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/settings/payroll, /payroll]
 keywords: [ciclo de pago, periodo de pago, semanal, quincenal, biweekly, mensual, día de inicio del ciclo, cada cuánto pago, quincena, configuración nomina, cambiar el periodo de la nómina]

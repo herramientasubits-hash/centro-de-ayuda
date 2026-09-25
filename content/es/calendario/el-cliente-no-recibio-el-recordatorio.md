@@ -3,7 +3,8 @@ id: calendario/el-cliente-no-recibio-el-recordatorio
 title: "El cliente no recibió el recordatorio"
 description: "Qué avisos configura Barberlytics hoy y qué revisar cuando un cliente dice que no le llegó nada de su cita."
 section: calendario
-order: 290
+order: 280
+group: "Si algo falla"
 roles: [owner, admin, recepcion]
 screens: [/calendar, /notifications-center]
 keywords: [recordatorio, no le llegó el recordatorio, aviso de cita, sms al cliente, correo al cliente, notificación de cita, confirmación de cita, push]

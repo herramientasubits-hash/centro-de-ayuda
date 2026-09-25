@@ -4,6 +4,7 @@ title: "Distribución de pagos, reembolsos y descuentos"
 description: "Las tarjetas de cobro de la pestaña Negocio: con qué pagaron tus clientes, cuántos cobros hubo, cuánto devolviste y cuánto descontaste."
 section: metricas
 order: 70
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [distribución de pagos, método de pago, efectivo, tarjeta, transferencia, cuántos cobros, transacciones, reembolsos, devoluciones, cuánto devolví, descuentos, cuánto desconté, promociones, negocio]

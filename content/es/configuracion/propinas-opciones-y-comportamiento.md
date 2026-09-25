@@ -3,7 +3,8 @@ id: configuracion/propinas-opciones-y-comportamiento
 title: "Propinas: opciones, valor predeterminado y qué ve el cajero"
 description: "Los porcentajes de propina que se sugieren al cobrar, cuál sale marcado por defecto y si el cajero ve montos, porcentajes o los dos."
 section: configuracion
-order: 170
+order: 120
+group: "Ventas"
 roles: [owner, admin]
 screens: [/sales-tips]
 keywords: [propinas, porcentaje de propina, opciones de propina, propina sugerida, propina predeterminada, selección predeterminada, comportamiento de propinas, mostrar en el cobro, solo monto, solo porcentaje, monto y porcentaje, propina personalizada, tip, propina al cobrar]

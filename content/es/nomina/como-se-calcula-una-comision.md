@@ -3,7 +3,8 @@ id: nomina/como-se-calcula-una-comision
 title: "Cómo se calcula una comisión"
 description: "Las piezas que usa Barberlytics para la comisión de un barbero: los cinco porcentajes por tipo de cliente de su ficha, la comisión por productos y lo que se resta antes según Configuración › Comisiones."
 section: nomina
-order: 70
+order: 30
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/payroll, /team-commission]
 keywords: [cómo se calcula la comisión, porcentaje de comisión, comisión básica, cliente recurrente, cliente sin cita, walk-in, sin preferencia, nuevos clientes, deducir descuentos, deducir impuestos, costo del servicio, costo del producto, comisión de productos, cuánto le toca al barbero]

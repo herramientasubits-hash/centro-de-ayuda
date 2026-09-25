@@ -4,6 +4,7 @@ title: "Total neto del equipo y lealtad al barbero"
 description: "La pestaña Barberos: cuánto produjo el equipo, cuánto produjo cada barbero de mayor a menor, y qué parte de los clientes pide a su barbero."
 section: metricas
 order: 150
+group: "Barberos y marketing"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [total neto del equipo, cuánto produjo cada barbero, ranking de barberos, quién vende más, barbero que más produce, lealtad al barbero, clientes con preferencia, productividad, por barbero, barberos]

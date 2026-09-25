@@ -3,7 +3,8 @@ id: calendario/marcar-que-el-cliente-llego
 title: "Marcar que el cliente llegó (check in)"
 description: "Dónde está el botón Ingresar cuando el cliente entra a la barbería: en la tarjeta de la cita, en Siguiente paso y en el menú Acciones."
 section: calendario
-order: 140
+order: 130
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [check in, checkin, el cliente llegó, llegó, ingresar, marcar llegada, registrar llegada, cliente en la barbería, recibir al cliente, barbero listo, aún no ha llegado, siguiente paso, estado de la cita]

@@ -3,7 +3,8 @@ id: productos/inventario-y-unidades
 title: "Inventario: unidades y avisos de poco stock"
 description: "Qué hay hoy de inventario en Barberlytics: no hay campo de existencias en el producto, pero sí las unidades vendidas por cliente, las ventas de productos en Métricas y los avisos de pocas unidades y agotado en el Centro de notificaciones."
 section: productos
-order: 100
+order: 50
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/products]
 keywords: [inventario, stock, existencias, unidades, cuántas unidades me quedan, pocas unidades, agotado, se acabó el producto, control de inventario, entradas de producto, unidades vendidas, aviso de poco stock, notificaciones de productos, conteo]

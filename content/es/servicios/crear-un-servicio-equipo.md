@@ -3,7 +3,8 @@ id: servicios/crear-un-servicio-equipo
 title: "Crear un servicio: quién lo hace"
 description: "La pestaña Equipo de un servicio: elegir qué barberos lo hacen y, para cada uno, su precio, el precio para clientes nuevos, el de fidelidad, la duración y la comisión."
 section: servicios
-order: 50
+order: 70
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/create, /services/*]
 keywords: [pestaña equipo, qué barbero hace el servicio, asignar servicio a un barbero, precio por barbero, precio del servicio, precio para clientes nuevos, precio de fidelidad, duración por barbero, división de la comisión, comisión extra, seleccionar todo, un barbero no ofrece este servicio]

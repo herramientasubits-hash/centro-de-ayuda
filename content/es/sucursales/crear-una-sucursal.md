@@ -3,7 +3,8 @@ id: sucursales/crear-una-sucursal
 title: "Crear una sucursal"
 description: "El formulario Crear Sucursal campo por campo: cuáles son obligatorios, qué poner en Moneda, Idioma y Zona horaria, y qué hacer después de crearla."
 section: sucursales
-order: 105
+order: 80
+group: "Crear y administrar"
 roles: [owner]
 screens: [/companies/locations]
 keywords: [crear sucursal, nueva sucursal, abrir sucursal, agregar sucursal, segunda sucursal, otro local, sede nueva, formulario de sucursal, moneda, idioma, zona horaria, identificación, campos obligatorios]

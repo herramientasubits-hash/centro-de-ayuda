@@ -3,7 +3,8 @@ id: configuracion/impuestos
 title: "Impuestos: cómo agregarlos y cómo se aplican"
 description: "Cómo crear un grupo de impuestos con uno o varios impuestos (por ejemplo IVA) para que se cobren en caja y salgan en los recibos y los informes."
 section: configuracion
-order: 150
+order: 100
+group: "Ventas"
 roles: [owner, admin]
 screens: [/sales-taxes]
 keywords: [impuestos, iva, tasa de impuestos, grupo de impuestos, añadir impuesto, nombre fiscal, impuesto en caja, impuesto en el cobro, impuesto en el recibo, porcentaje de impuesto, cobrar iva, impuestos por sucursal, tax, impoconsumo]

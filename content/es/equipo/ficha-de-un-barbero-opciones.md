@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-opciones
 title: "La ficha de un barbero: opciones"
 description: "La pestaña Opciones de la ficha: propinas, varias citas a la vez, clientes nuevos, cancelaciones por parte del cliente, el intervalo de agendamiento y los recordatorios para el barbero."
 section: equipo
-order: 150
+order: 170
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [opciones del barbero, puede recibir propinas, puede programar múltiples citas, puede tomar nuevos clientes, los clientes pueden cancelar citas, intervalo de agendamiento, recordatorio para barbero, redes sociales, link, minutos, propinas, cancelación]

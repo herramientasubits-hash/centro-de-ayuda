@@ -4,6 +4,7 @@ title: "Mapa de capacidad: qué horas se llenan"
 description: "La tabla de AI Insights que cruza los días de la semana con las horas y te muestra cuántas citas hay en cada una."
 section: metricas
 order: 190
+group: "AI Insights"
 roles: [owner, admin]
 screens: [/]
 keywords: [mapa de capacidad, qué horas se llenan, día y hora, tabla de citas, horas pico, horas vacías, lunes a domingo, capacidad, ocupación, cuándo hay más gente, heatmap, ai insights]

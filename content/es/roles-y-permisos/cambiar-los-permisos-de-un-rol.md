@@ -3,7 +3,8 @@ id: roles-y-permisos/cambiar-los-permisos-de-un-rol
 title: "Cambiar los permisos predeterminados de un rol"
 description: "Cómo se ajusta en Configuración › Permisos lo que trae de fábrica cada rol: la pestaña por rol, la matriz Ver, Crear, Editar, Borrar y Activo, y qué falta por confirmar sobre a quién afecta."
 section: roles-y-permisos
-order: 140
+order: 120
+group: "Cambiar permisos"
 roles: [owner]
 screens: [/team-permission]
 keywords: [cambiar permisos de un rol, permisos predeterminados, permisos por defecto, configuración permisos, matriz de permisos, ver crear editar borrar activo, rol, administrador, recepción, barbero, quitar permiso, dar permiso, personalizar por ubicación]

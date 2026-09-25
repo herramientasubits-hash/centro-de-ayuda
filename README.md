@@ -29,7 +29,14 @@ npm run check      # valida frontmatter, enlaces, imágenes y relacionados; no e
 npm run build      # genera dist/
 npm run serve      # sirve dist/ en http://localhost:8787 con CORS, para probar la app en local
 npm run shots      # regenera las capturas (necesita la app corriendo; ver abajo)
+npm run groups     # aplica los subgrupos del menú de scripts/lib/groups.json (group y order de cada artículo)
+npm run plan       # regenera PLAN.md desde plan/plan.json
 ```
+
+**Subgrupos del menú.** Las secciones grandes reparten sus artículos en subgrupos («Agendar», «Cobrar y vender»…)
+para que el menú no sea una lista interminable. Se definen en `scripts/lib/groups.json` y se aplican con
+`npm run groups`. Si añades un artículo a una sección con subgrupos, ponlo en ese archivo: `npm run check` falla si
+un artículo queda sin grupo.
 
 ### Probar en local con la aplicación
 

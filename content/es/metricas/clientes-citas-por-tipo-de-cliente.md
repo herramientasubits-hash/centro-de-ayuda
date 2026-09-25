@@ -4,6 +4,7 @@ title: "Citas por tipo de cliente y nuevos vs recurrentes"
 description: "Las dos donas de la pestaña Clientes que separan a tus clientes en nuevos, retenidos, recurrentes y recuperados."
 section: metricas
 order: 130
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [citas por tipo de cliente, nuevos clientes, clientes nuevos, retención de nuevos clientes, clientes recurrentes, clientes recuperados, nuevos vs recurrentes, cuántos clientes nuevos, cuántos repiten, clientes que volvieron, tipos de cliente, clientes]

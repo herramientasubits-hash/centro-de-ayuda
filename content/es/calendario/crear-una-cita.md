@@ -4,6 +4,7 @@ title: "Crear una cita"
 description: "Agendar una cita paso a paso: elegir cliente, servicio, barbero y hora, y qué significa cada campo del panel Crear cita."
 section: calendario
 order: 50
+group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [crear cita, agendar, nueva cita, reservar, apartar hora, agendar cliente, cita para un cliente, repetición, walk-in, sin cita previa, servicio, barbero, fecha y hora]

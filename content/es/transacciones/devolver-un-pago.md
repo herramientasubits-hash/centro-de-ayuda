@@ -3,7 +3,8 @@ id: transacciones/devolver-un-pago
 title: "Devolver un pago"
 description: "Qué se sabe hoy de las devoluciones en Barberlytics: el estado Devuelta, la tarjeta DEVUELTO y dónde se ven los reembolsos en Métricas."
 section: transacciones
-order: 80
+order: 90
+group: "Buscar y revisar"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [devolver un pago, devolución, reembolso, reembolsar, regresar el dinero, cuenta devuelta, tarjeta devuelto, cliente pide su dinero, anular un cobro, cobré mal]

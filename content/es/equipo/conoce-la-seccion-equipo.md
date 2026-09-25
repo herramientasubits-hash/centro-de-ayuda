@@ -4,6 +4,7 @@ title: "Conoce la sección Equipo"
 description: "Las cuatro pestañas de Equipo, las cinco opciones del botón Acciones y por qué solo ves a las personas activas en tu sucursal."
 section: equipo
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team/barbers, /team/activate]
 keywords: [equipo, sección equipo, personal, empleados, barberos, niveles, horas de trabajo, gerentes, acciones, crear miembro del equipo, activar equipo, equipo por sucursal, no veo a un barbero, contratar barbero, dar de alta]

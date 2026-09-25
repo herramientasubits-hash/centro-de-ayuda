@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-compensacion
 title: "La ficha de un barbero por comisión: compensación"
 description: "La pestaña Compensación de un barbero por comisión: los cinco porcentajes por tipo de cliente, la compensación por producto y cómo se editan con el Tipo de compensación."
 section: equipo
-order: 110
+order: 130
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/commission/*]
 keywords: [compensación, comisión del barbero, porcentaje de comisión, comisión básica, comisión de cliente recurrente, comisión de clientes sin cita, comisión sin preferencia, comisión de nuevos clientes, comisión por producto, tipo de compensación, comisión de escala, salario, cambiar comisión]

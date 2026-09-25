@@ -3,7 +3,8 @@ id: nomina/nomina-barberos-por-salario
 title: "Nómina de barberos por salario"
 description: "Qué muestra cada columna de la pestaña Barbero por salario: el Salario, la comisión de productos, los impuestos, las propinas y el Pago neto."
 section: nomina
-order: 40
+order: 80
+group: "Leer la nómina"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [nómina por salario, barbero por salario, sueldo fijo, salario, comisión de productos, impuestos, propinas, pago neto, columnas, tipo de compensación, liquidación de sueldo]

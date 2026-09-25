@@ -4,6 +4,7 @@ title: "Conoce Configuración: los cuatro grupos de ajustes"
 description: "Un mapa de Configuración: los ajustes de tu barbería en cuatro grupos, qué hay en cada tarjeta y qué ve un barbero cuando entra."
 section: configuracion
 order: 10
+group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/settings]
 keywords: [configuración, ajustes, settings, dónde cambio, grupos de ajustes, configuración de la cuenta, equipo, ventas, notificaciones, mapa de configuración, eliminar cuenta, opciones, preferencias, zona horaria, impuestos, propinas]

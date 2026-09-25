@@ -3,7 +3,8 @@ id: productos/crear-una-categoria-de-productos
 title: "Crear una categoría de productos"
 description: "Cómo crear una categoría para agrupar tus productos: el formulario Crear Categoría, sus dos campos y el botón Crear."
 section: productos
-order: 30
+order: 60
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/products, /products/*]
 keywords: [crear categoría, categoría de productos, nueva categoría, agrupar productos, ceras, shampoos, marcas, organizar productos, categoría de inventario, sección de productos]

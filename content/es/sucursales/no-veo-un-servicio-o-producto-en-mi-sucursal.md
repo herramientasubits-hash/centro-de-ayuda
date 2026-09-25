@@ -3,7 +3,8 @@ id: sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal
 title: "No veo un servicio o un producto en mi sucursal"
 description: "Un servicio o un producto existe pero no aparece en tu sucursal: falta activarlo ahí."
 section: sucursales
-order: 70
+order: 190
+group: "Si algo no aparece"
 roles: [owner, admin]
 screens: [/services, /products, /services/location/activate-service]
 keywords: [no veo el servicio, no aparece el servicio, no aparece el producto, falta un servicio, activar servicios, activar productos, sucursal nueva vacía]

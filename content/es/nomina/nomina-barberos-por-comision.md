@@ -3,7 +3,8 @@ id: nomina/nomina-barberos-por-comision
 title: "Nómina de barberos por comisión: cada columna"
 description: "Qué muestra cada una de las diez columnas de la pestaña Barbero por comisión, de Miembro a Pago neto, y qué es la fila All."
 section: nomina
-order: 20
+order: 60
+group: "Leer la nómina"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [nómina por comisión, columnas de la nómina, comisión de servicios, comisión de productos, total comisiones, venta de servicios, venta de productos, impuestos, propinas, pago neto, fila all, liquidación de comisiones, cuánto gana un barbero]

@@ -3,7 +3,8 @@ id: sucursales/ajustes-generales-y-por-sucursal
 title: "Ajustes generales y ajustes por sucursal: dónde se cambia cada uno"
 description: "Qué ajustes son de toda la empresa, cuáles son de cada sucursal y qué dice la app sobre ajustar por ubicación."
 section: sucursales
-order: 130
+order: 60
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/settings, /team-commission, /sales-taxes, /sales-tips, /business-closed, /team-permission]
 keywords: [ajustes generales, ajustes por sucursal, configuración por ubicación, comisiones, impuestos, propinas, cierres, permisos, configuración general]

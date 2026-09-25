@@ -3,7 +3,8 @@ id: sucursales/ver-el-detalle-de-una-sucursal
 title: "Ver el detalle de una sucursal: clientes, equipo y licencia"
 description: "Qué muestra la pantalla Ver sucursal: las tres cifras de arriba (Clientes, Equipo y Licencia), la ficha con sus datos y el menú Acciones con Editar Sucursal e Inactivar."
 section: sucursales
-order: 112
+order: 100
+group: "Crear y administrar"
 roles: [owner, admin]
 screens: [/companies/locations, /companies/locations/view/*]
 keywords: [ver sucursal, detalle de la sucursal, clientes de la sucursal, equipo de la sucursal, licencia, vencimiento de la licencia, ficha de la sucursal, datos de la sucursal, inactivar, editar sucursal, cuántos clientes tiene mi sucursal]

@@ -11,7 +11,8 @@
     "shots": "node scripts/screenshots.mjs",
     "shots:install": "playwright install chromium",
     "shots:login": "node scripts/prod-login.mjs",
-    "plan": "node scripts/plan.mjs"
+    "plan": "node scripts/plan.mjs",
+    "groups": "node scripts/apply-groups.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3"

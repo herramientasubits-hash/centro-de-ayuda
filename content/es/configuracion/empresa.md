@@ -3,7 +3,8 @@ id: configuracion/empresa
 title: "Empresa: los datos de tu empresa"
 description: "La lista de empresas de Configuración: nombre, identificación, teléfono y estado, con las acciones Ver y Editar, y cómo se relaciona con tus sucursales."
 section: configuracion
-order: 120
+order: 70
+group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/companies]
 keywords: [empresa, empresas, lista de empresas, identificación, datos de la empresa, razón social, nit, configuración de la empresa, sucursales de la empresa, estado de la empresa, teléfono, ver empresa, editar empresa, compañía]

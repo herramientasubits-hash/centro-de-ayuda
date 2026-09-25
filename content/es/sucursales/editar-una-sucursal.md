@@ -3,7 +3,8 @@ id: sucursales/editar-una-sucursal
 title: "Editar los datos de una sucursal"
 description: "Dónde cambiar el nombre, la dirección, el teléfono, la moneda, el idioma, la zona horaria y las fotos de una sucursal, campo por campo."
 section: sucursales
-order: 110
+order: 90
+group: "Crear y administrar"
 roles: [owner, admin]
 screens: [/companies/locations, /companies/locations/edit/*]
 keywords: [editar sucursal, cambiar nombre de sucursal, dirección, moneda, idioma, zona horaria, teléfono, código postal, logo, fotos, guardar, datos de la sucursal, modificar sucursal]

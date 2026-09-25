@@ -4,6 +4,7 @@ title: "El orden de los servicios al agendar"
 description: "Cómo decidir en qué orden ve tu cliente las categorías de servicios al reservar online, con Acciones › Orden de agendamiento."
 section: servicios
 order: 130
+group: "Lo que ve el cliente al reservar"
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [orden de agendamiento, ordenar servicios, ordenar categorías, orden de las categorías, reserva online, agendamiento online, qué ve el cliente primero, reordenar, arrastrar, mover una categoría arriba, primero los cortes, ordenamiento de servicios para reservas online]

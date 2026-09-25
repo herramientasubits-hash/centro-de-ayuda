@@ -4,6 +4,7 @@ title: "Facturado, cobrado, por cobrar, propinas y devuelto"
 description: "Qué suma cada una de las cinco tarjetas de Transacciones y cómo usarlas para el cierre de caja del día o del mes."
 section: transacciones
 order: 20
+group: "Cómo leer Transacciones"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [facturado, cobrado, por cobrar, propinas, devuelto, tarjetas de transacciones, totales, cierre de caja, cuánto vendí, cuánto entró, pendiente por cobrar, cuentas abiertas, reembolsos]

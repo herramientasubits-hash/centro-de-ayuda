@@ -4,6 +4,7 @@ title: "Cómo se organizan tus productos"
 description: "Las dos pestañas de Productos, qué hay en cada una, las tres opciones del botón Acciones y la regla de que un producto se crea una vez y se activa en cada sucursal donde se vende."
 section: productos
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/products]
 keywords: [productos, categorías de productos, catálogo de productos, organizar productos, activar productos, productos por sucursal, no veo un producto, productos de barbería, crear producto, inventario, cera, shampoo, marcas, qué vendo en la barbería, servicios y productos]

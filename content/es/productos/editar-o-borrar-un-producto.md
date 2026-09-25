@@ -3,7 +3,8 @@ id: productos/editar-o-borrar-un-producto
 title: "Editar o borrar un producto"
 description: "Cómo ver, editar y borrar un producto que ya existe: la pantalla Ver producto, el formulario con las pestañas General y Avanzado, el botón Guardar y Acciones › Borrar."
 section: productos
-order: 80
+order: 90
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/products, /products/*]
 keywords: [editar producto, cambiar el precio de un producto, subir el precio, borrar producto, eliminar producto, quitar un producto, ya no vendo este producto, ver producto, modificar un producto, renombrar, cambiar de categoría, marca, distribuidor, guardar cambios]

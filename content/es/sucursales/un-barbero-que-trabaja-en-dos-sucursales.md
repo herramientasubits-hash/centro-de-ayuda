@@ -3,7 +3,8 @@ id: sucursales/un-barbero-que-trabaja-en-dos-sucursales
 title: "Un barbero que trabaja en dos sucursales"
 description: "Cómo hacer que la misma persona atienda en dos sucursales: una sola ficha, activada en las dos, con horario en cada una y sus servicios activados en ambas."
 section: sucursales
-order: 140
+order: 170
+group: "Activar equipo y catálogos"
 roles: [owner]
 screens: [/team/barbers, /team/activate]
 keywords: [barbero en dos sucursales, trabaja en dos sucursales, mismo barbero en varias sucursales, compartir barbero, activar en dos sucursales, horario por sucursal, no duplicar barbero, nómina por sucursal, un barbero en dos locales]

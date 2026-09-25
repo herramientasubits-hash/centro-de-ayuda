@@ -3,7 +3,8 @@ id: clientes/familia-y-amigos
 title: "Agregar familia o amigos a un cliente"
 description: "Qué es el bloque Familia y amigos del perfil de un cliente, qué muestra de cada persona ligada y qué falta por confirmar sobre cómo se agregan."
 section: clientes
-order: 120
+order: 150
+group: "La ficha de un cliente"
 roles: [owner, admin, recepcion]
 screens: [/customers/*]
 keywords: [familia y amigos, agregar familiar, agregar amigo, hijo del cliente, padre e hijo, clientes relacionados, vincular clientes, relación, amigo, familia, grupo familiar, cliente trae a su hijo, perfil del cliente]

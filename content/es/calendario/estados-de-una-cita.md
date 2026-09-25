@@ -3,7 +3,8 @@ id: calendario/estados-de-una-cita
 title: "Los estados de una cita: agendada, llegó, en silla, cerrada y terminada"
 description: "Por qué estados pasa una cita, con qué botón se cambia cada uno y cómo los nombra la app en el calendario, en el detalle y en Transacciones."
 section: calendario
-order: 140
+order: 120
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar, /transactions]
 keywords: [estados de la cita, agendada, llegó, en silla, cerrada, terminada, cancelada, pendiente, ingresar, sentado, cobrar, no se presentó, barbero listo, check in, check out, flujo de la cita]

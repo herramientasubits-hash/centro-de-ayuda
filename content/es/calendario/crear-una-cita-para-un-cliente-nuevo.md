@@ -4,6 +4,7 @@ title: "Crear una cita para un cliente nuevo"
 description: "Agendar a alguien que todavía no está en tu lista de clientes: buscarlo primero, crearlo desde el panel Crear cita o anotarlo como Walk in."
 section: calendario
 order: 60
+group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [cliente nuevo, crear cliente desde el calendario, agendar a un cliente nuevo, primera cita, no está en la lista, registrar cliente, walk in, cliente sin registrar, buscar cliente, crear cita, nuevo cliente, alta de cliente]

@@ -3,7 +3,8 @@ id: roles-y-permisos/darle-a-recepcion-solo-lo-necesario
 title: "Darle a recepción solo lo que necesita"
 description: "Qué trae de fábrica el rol Recepción, qué conviene apagar o encender según cómo trabaja tu mostrador, y dónde hacerlo."
 section: roles-y-permisos
-order: 160
+order: 140
+group: "Cambiar permisos"
 roles: [owner]
 screens: [/team-permission, /team/barbers/view/*]
 keywords: [recepción, recepcionista, permisos de recepción, limitar a recepción, mostrador, secretaria, que no vea, solo lo necesario, quitar permisos, dar permisos, ver productos, ver métricas, borrar clientes]

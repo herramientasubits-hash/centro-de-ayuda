@@ -4,6 +4,7 @@ title: "Ver el día, la agenda o el mes"
 description: "Las tres vistas del calendario, qué muestra cada una y cuándo conviene usarla: Dia por barbero, Agenda como lista y Mes con la ocupación."
 section: calendario
 order: 20
+group: "Conoce el calendario"
 roles: [todos]
 screens: [/calendar]
 keywords: [vista del calendario, agenda, día, dia, mes, cambiar vista, calendario mensual, calendario diario, ver el mes, ver la agenda, vistas, ocupación, lista de citas del día]

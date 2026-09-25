@@ -3,7 +3,8 @@ id: equipo/crear-dueno
 title: "Crear un dueño"
 description: "Cómo dar de alta a otro dueño de la barbería desde Crear miembro del equipo y qué implica ese rol."
 section: equipo
-order: 40
+order: 100
+group: "Agregar a alguien"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear dueño, nuevo dueño, socio, propietario, dar de alta a un dueño, agregar dueño, rol dueño, crear miembro del equipo, acceso total, dueño barbero]

@@ -3,7 +3,8 @@ id: clientes/notas-del-cliente
 title: "Notas del cliente: notas, medicamento y alergias"
 description: "Cómo dejar una nota en la ficha de un cliente con Acciones › Crear nota, qué tipo elegir (Notas, Medicamento o Alergias) y dónde se leen después."
 section: clientes
-order: 110
+order: 140
+group: "La ficha de un cliente"
 roles: [todos]
 screens: [/customers/*]
 keywords: [notas del cliente, crear nota, agregar nota, anotar algo de un cliente, medicamento, alergias, alergia a un producto, cliente alérgico, observaciones del cliente, comentarios del cliente, cómo le gusta el corte, apuntes, tipo de nota]

@@ -3,7 +3,8 @@ id: configuracion/notificaciones-de-clientes
 title: "Avisos sobre clientes: importación, reseñas, estados y bloqueos"
 description: "Los avisos del grupo Clientes del Centro de notificaciones, uno por uno: importaciones, malas reseñas, cambios a Churn, Pre-Churn, Recuperado y VIP, y bloqueos."
 section: configuracion
-order: 210
+order: 160
+group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]
 keywords: [avisos de clientes, notificaciones de clientes, importación de clientes, mala reseña, satisfacción del cliente, churn, pre-churn, cliente perdido, posible pérdida, recuperado, vip, bloquear un cliente, aviso de bloqueo, estados de clientes, correo, push]

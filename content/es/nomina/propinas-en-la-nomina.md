@@ -3,7 +3,8 @@ id: nomina/propinas-en-la-nomina
 title: "Las propinas en la nómina"
 description: "De dónde salen las propinas de la columna Propinas, cómo se registran en el cobro, qué barberos pueden recibirlas y dónde se configuran las opciones."
 section: nomina
-order: 90
+order: 50
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/payroll, /sales-tips]
 keywords: [propinas, propina en la nómina, columna propinas, cobrar con propina, puede recibir propinas, porcentaje de propina, propina del barbero, tips, propinas del periodo, configuración de propinas]

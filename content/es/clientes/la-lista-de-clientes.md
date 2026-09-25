@@ -4,6 +4,7 @@ title: "La lista de clientes: columnas, búsqueda y paginación"
 description: "Qué ves al entrar en Clientes: las pestañas por tipo, el buscador, cada columna de la tabla, el botón Acciones de cada fila y cómo pasar de página."
 section: clientes
 order: 10
+group: "La lista de clientes"
 roles: [todos]
 screens: [/customers]
 keywords: [clientes, lista de clientes, listado de clientes, mis clientes, base de datos de clientes, cuántos clientes tengo, columnas, tipo de cliente, LTV, teléfono con asteriscos, número de citas, paginación, ver cliente, crear cliente, ordenar clientes]

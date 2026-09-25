@@ -4,6 +4,7 @@ title: "Reservas online y rate de clientes sin cita previa"
 description: "Las dos tarjetas de la pestaña Clientes que te dicen qué parte de tus citas llegan online y qué parte de tus clientes llegan sin cita."
 section: metricas
 order: 110
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [reservas online, citas online, cita por internet, agendan solos, vs presenciales, rate walk-in, walk-in, sin cita previa, llegan sin cita, clientes de paso, porcentaje online, clientes]

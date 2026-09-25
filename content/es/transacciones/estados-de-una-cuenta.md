@@ -3,7 +3,8 @@ id: transacciones/estados-de-una-cuenta
 title: "Estados de una cuenta: por cobrar, cobrada y devuelta"
 description: "Qué significa cada estado de una cuenta en Transacciones, cómo pasa de uno a otro y en qué se diferencia del estado de la cita."
 section: transacciones
-order: 40
+order: 30
+group: "Cómo leer Transacciones"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [estado de la cuenta, por cobrar, cobrada, devuelta, pendiente de pago, pagada, reembolsada, cuenta abierta, cuenta cerrada, diferencia con estado de la cita, terminada sin cobrar]

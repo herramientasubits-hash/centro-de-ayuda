@@ -3,7 +3,8 @@ id: agendamiento-online/citas-que-crea-el-cliente
 title: "Citas que crea el cliente: cuándo entran y cómo las recibes"
 description: "Qué se sabe hoy de las citas que el cliente agenda solo por el enlace o el widget: dónde se activan, cómo se cuentan en Métricas y cómo se distinguen en el historial de la cita."
 section: agendamiento-online
-order: 70
+order: 30
+group: "Cómo funciona"
 roles: [owner, admin, recepcion]
 screens: [/calendar]
 keywords: [cita online, reserva online, el cliente agendó, agendamiento online, reserva por internet, widget de reserva, enlace de reserva, cita creada por el cliente, notificación de cita, agenda el cliente, book now, citas por internet]

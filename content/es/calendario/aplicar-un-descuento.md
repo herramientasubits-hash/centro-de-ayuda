@@ -3,7 +3,8 @@ id: calendario/aplicar-un-descuento
 title: "Aplicar un descuento a una cita"
 description: "Qué hay hoy en el cobro para descontar: en Pagar cita y en el checkout no aparece un botón de descuento; en Métricas sí se ve cuánto descontaste."
 section: calendario
-order: 180
+order: 200
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [descuento, aplicar descuento, rebaja, promoción, cupón, precio especial, cobrar menos, descontar, cortesía, descuentos en métricas, cambiar el precio, checkout]

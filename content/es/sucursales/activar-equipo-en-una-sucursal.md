@@ -3,7 +3,8 @@ id: sucursales/activar-equipo-en-una-sucursal
 title: "Activar al equipo en una sucursal"
 description: "Paso a paso para elegir qué barberos y gerentes trabajan en la sucursal donde estás, con la pantalla Activar equipo dentro de esta sucursal y lo que ves después de Guardar."
 section: sucursales
-order: 80
+order: 140
+group: "Activar equipo y catálogos"
 roles: [owner, admin]
 screens: [/team/activate, /team/barbers]
 keywords: [activar equipo, importar equipo, activar barbero, activar equipo dentro de esta sucursal, sucursal, gerentes, comisión, renta, interruptor, guardar, equipo en otra sucursal, barbero en dos sucursales]

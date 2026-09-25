@@ -3,7 +3,8 @@ id: acceso-y-cuenta/cerrar-sesion
 title: "Cerrar sesión"
 description: "Cómo salir de tu cuenta de Barberlytics desde el menú de la cuenta."
 section: acceso-y-cuenta
-order: 70
+order: 130
+group: "Tu cuenta y tus perfiles"
 roles: [todos]
 screens: [/*]
 keywords: [cerrar sesión, salir, logout, cerrar cuenta, terminar sesión, computador compartido]

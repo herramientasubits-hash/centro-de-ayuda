@@ -4,6 +4,7 @@ title: "De qué depende lo que ves: tu perfil, tu sucursal y tus permisos"
 description: "Tres cosas deciden qué secciones y qué datos aparecen en tu pantalla: el perfil con el que entraste, la sucursal elegida y tus permisos."
 section: roles-y-permisos
 order: 50
+group: "Cómo funciona"
 roles: [todos]
 screens: [/*]
 keywords: [qué veo, por qué no veo, menú, secciones, perfil, sucursal, permisos, no aparece, ver menos, diferente pantalla, roles]

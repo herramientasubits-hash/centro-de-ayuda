@@ -4,6 +4,7 @@ title: "Recomendaciones inteligentes: de dónde salen y qué hacer con ellas"
 description: "La tarjeta de AI Insights que te da consejos concretos a partir de tus datos de los últimos 3 meses, con su prioridad y una acción sugerida."
 section: metricas
 order: 200
+group: "AI Insights"
 roles: [owner, admin]
 screens: [/]
 keywords: [recomendaciones inteligentes, recomendaciones de ia, inteligencia artificial, qué debo hacer, consejos, prioridad, capacidad, retención, marketing, negocio, clientes, crecimiento, acción sugerida, desbalance, ai insights]

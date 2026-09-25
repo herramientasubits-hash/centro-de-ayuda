@@ -4,6 +4,7 @@ title: "Filtrar por sucursal, por barbero y por periodo"
 description: "La barra de filtros de Métricas paso a paso: elegir la sucursal, ver a un solo barbero, pasar de Hoy a Semana o Mes y moverte con las flechas."
 section: metricas
 order: 20
+group: "Cómo leer Métricas"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [filtrar métricas, filtro, sucursal, todo el equipo, barbero, periodo, hoy, semana, mes, cambiar fecha, ver otra semana, ver otro mes, todas las sucursales, mes pasado, flechas]

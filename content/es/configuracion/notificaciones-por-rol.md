@@ -3,7 +3,8 @@ id: configuracion/notificaciones-por-rol
 title: "Qué avisos recibe cada rol"
 description: "Las pestañas por rol del Centro de notificaciones: cada rol tiene su propia lista de interruptores, y el ajuste es general para todas las sucursales."
 section: configuracion
-order: 250
+order: 200
+group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]
 keywords: [avisos por rol, notificaciones por rol, pestañas de roles, administrador de la locación, barbero por comisión, barbero por renta, recepción, dueño, quién recibe los avisos, avisos para barberos, avisos para recepción, todas las ubicaciones, correo, push]

@@ -3,7 +3,8 @@ id: roles-y-permisos/que-ve-cada-rol-en-el-menu
 title: "Qué secciones del menú ve cada rol"
 description: "El menú completo del dueño y el del barbero por comisión, y cómo se deduce el de los demás roles."
 section: roles-y-permisos
-order: 130
+order: 60
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/*]
 keywords: [menú por rol, qué ve cada rol, secciones del menú, menú del barbero, menú del dueño, recepción menú, qué secciones tiene cada uno]

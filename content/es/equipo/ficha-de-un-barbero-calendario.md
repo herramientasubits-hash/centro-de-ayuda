@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-calendario
 title: "La ficha de un barbero: su horario semanal"
 description: "La pestaña Calendario de la ficha: el horario de cada día con Hora de inicio y Hora de cierre, cómo se edita y cómo se relaciona con Horas de trabajo."
 section: equipo
-order: 130
+order: 150
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [horario del barbero, horario semanal, calendario del barbero, hora de inicio, hora de cierre, días de trabajo, cambiar horario, día libre, descanso, disponibilidad, turno, ficha del barbero]

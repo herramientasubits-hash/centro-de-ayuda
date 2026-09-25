@@ -3,7 +3,8 @@ id: nomina/descargar-la-nomina
 title: "Descargar la nómina en CSV, Excel o PDF"
 description: "Cómo llevarte la nómina del periodo con el botón Descargar, en qué formato conviene cada uso y qué revisar antes de descargarla."
 section: nomina
-order: 60
+order: 100
+group: "Leer la nómina"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [descargar nómina, exportar nómina, csv, excel, pdf, imprimir nómina, enviar la nómina al contador, archivo de nómina, liquidación en excel, descargar pagos]

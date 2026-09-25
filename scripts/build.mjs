@@ -102,6 +102,8 @@ for (const file of files) {
       description: data.description,
       section: data.section,
       order: Number(data.order ?? 0),
+      // Subgrupo del menú dentro de la sección (ver scripts/lib/groups.json); null si la sección no tiene.
+      group: data.group ? String(data.group) : null,
       roles: data.roles ?? ["todos"],
       screens: data.screens ?? [],
       // YAML lee `+57` o `no` como número o booleano: en el índice todo es texto.
@@ -116,6 +118,14 @@ for (const file of files) {
     },
     links: extractInternalLinks(content),
   });
+}
+
+// Si una sección declara subgrupos, cada artículo suyo tiene que estar en uno de ellos.
+for (const article of articles) {
+  const declared = sections.find((section) => section.id === article.meta.section)?.groups;
+  if (!declared?.length) continue;
+  if (!article.meta.group) fail(article.file, `la sección «${article.meta.section}» tiene subgrupos: añádelo a scripts/lib/groups.json y corre npm run groups`);
+  else if (!declared.includes(article.meta.group)) fail(article.file, `el grupo «${article.meta.group}» no está en los subgrupos de «${article.meta.section}»`);
 }
 
 const ids = new Set(articles.map((article) => article.meta.id));

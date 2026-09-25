@@ -3,7 +3,8 @@ id: calendario/bloquear-el-calendario
 title: "Bloquear el calendario de un barbero"
 description: "Crear un bloque de tiempo para que no se agende a un barbero: almuerzo, reunión, enfermedad, festivo, vacaciones o un bloqueo del negocio."
 section: calendario
-order: 210
+order: 240
+group: "Bloqueos y vacaciones"
 roles: [owner, admin, barbero]
 screens: [/calendar]
 keywords: [bloquear calendario, bloque de tiempo, bloqueo, almuerzo, reunión, enfermo, festivo, vacaciones, no agendar, cerrar agenda, bloqueo personal, bloqueo del negocio, crear bloqueo]

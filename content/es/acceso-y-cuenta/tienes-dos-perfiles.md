@@ -3,7 +3,8 @@ id: acceso-y-cuenta/tienes-dos-perfiles
 title: "Tengo dos perfiles: dueño y barbero"
 description: "Qué significa ver tu nombre dos veces en el menú de la cuenta y cómo pasar de dueño a barbero."
 section: acceso-y-cuenta
-order: 95
+order: 120
+group: "Tu cuenta y tus perfiles"
 roles: [owner]
 screens: [/*]
 keywords: [dos perfiles, dueño y barbero, business, barber comission, mi nombre aparece dos veces, cambiar de perfil, soy dueño y corto pelo]

@@ -3,7 +3,8 @@ id: agendamiento-online/cliente-que-vuelve
 title: "Si ya es cliente: repetir su última visita"
 description: "Qué ve un cliente que ya vino a tu barbería: su última sede, servicio y barbero preseleccionados, y solo elige día y hora."
 section: agendamiento-online
-order: 30
+order: 50
+group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [bienvenido de nuevo, cliente que vuelve, repetir cita, última visita, reservar lo mismo, cliente recurrente, reserva rápida, preseleccionamos]

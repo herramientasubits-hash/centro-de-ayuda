@@ -3,7 +3,8 @@ id: equipo/crear-y-editar-un-nivel
 title: "Crear y editar un nivel"
 description: "Paso a paso para crear un nivel desde Acciones › Crear nivel, y dónde están Editar y Borrar en la Lista de niveles."
 section: equipo
-order: 200
+order: 260
+group: "Horarios, niveles y orden"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear nivel, nuevo nivel, editar nivel, borrar nivel, cambiar nombre del nivel, nombre nivel, senior, master, niveles de barberos, agregar categoría, eliminar nivel]

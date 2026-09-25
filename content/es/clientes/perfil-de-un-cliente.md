@@ -3,7 +3,8 @@ id: clientes/perfil-de-un-cliente
 title: "El perfil de un cliente: ubicación, nacimiento y reserva solo online"
 description: "Qué hay en la pestaña Perfil de la ficha de un cliente: su nombre y tipo, el interruptor Reserva y pago solo online, su ubicación, su fecha de nacimiento, su fecha de creación y su familia y amigos."
 section: clientes
-order: 70
+order: 100
+group: "La ficha de un cliente"
 roles: [todos]
 screens: [/customers/*]
 keywords: [perfil del cliente, pestaña perfil, datos del cliente, dirección del cliente, ubicación, ciudad, código postal, fecha de nacimiento, cumpleaños del cliente, fecha de creación, desde cuándo es cliente, actitud, reserva y pago solo online, familia y amigos, editar cliente]

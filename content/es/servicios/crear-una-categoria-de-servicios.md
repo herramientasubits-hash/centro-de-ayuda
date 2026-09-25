@@ -3,7 +3,8 @@ id: servicios/crear-una-categoria-de-servicios
 title: "Crear una categoría de servicios"
 description: "Cómo crear una categoría para agrupar tus servicios: el formulario Crear categoría, sus campos y el interruptor Privado / Público."
 section: servicios
-order: 30
+order: 50
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [crear categoría, categoría de servicios, nueva categoría, agrupar servicios, categoría privada, categoría pública, cortes, barba, color, organizar el menú, carta de servicios, sección de servicios]

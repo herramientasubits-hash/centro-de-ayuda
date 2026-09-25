@@ -3,7 +3,8 @@ id: clientes/descargar-clientes
 title: "Descargar la lista de clientes"
 description: "Qué se sabe hoy de la descarga de clientes: existe el permiso Descarga de cliente, pero no se encontró el botón en la lista."
 section: clientes
-order: 150
+order: 50
+group: "La lista de clientes"
 roles: [owner]
 screens: [/customers, /team-permission]
 keywords: [descargar clientes, exportar clientes, lista de clientes en excel, bajar la base de clientes, csv de clientes, exportar]

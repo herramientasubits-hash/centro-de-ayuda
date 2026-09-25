@@ -3,7 +3,8 @@ id: roles-y-permisos/permisos-barbero-de-renta
 title: "Qué puede hacer y qué ve el barbero de renta"
 description: "Los permisos de fábrica del rol Barbero de renta: quien alquila su espacio de trabajo."
 section: roles-y-permisos
-order: 120
+order: 110
+group: "Qué puede hacer cada rol"
 roles: [owner, admin, barbero]
 screens: [/team-permission]
 keywords: [barbero de renta, barbero renta, alquila silla, permisos del barbero de renta, qué ve el barbero de renta, renta]

@@ -4,6 +4,7 @@ title: "Detalles del negocio: sitio web y redes sociales"
 description: "Dónde escribes el sitio web, el Instagram, el Facebook y el mapa de Google de tu barbería para que salgan en los correos a tus clientes."
 section: configuracion
 order: 30
+group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/business-details/*]
 keywords: [enlaces en línea, sitio web, página web, instagram, facebook, mapas de google, google maps, redes sociales, enlaces en los correos, cómo llegar, dirección en el mapa, detalles del negocio, link de instagram]

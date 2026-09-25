@@ -3,7 +3,8 @@ id: equipo/habilidades-y-fotos
 title: "Habilidades y fotos de un barbero"
 description: "Dónde se cargan la foto de perfil, la galería de hasta cinco fotos y las habilidades de un barbero, y dónde se ven después."
 section: equipo
-order: 280
+order: 190
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*, /team/barbers]
 keywords: [habilidades, fotos del barbero, galería, foto de perfil, subir foto, portafolio, trabajos del barbero, especialidades, qué sabe hacer, imagen del barbero, galeria 0/5, descripción]

@@ -3,7 +3,8 @@ id: calendario/clientes-sin-preferencia-de-barbero
 title: "Clientes sin preferencia de barbero: quién los atiende"
 description: "Qué es un cliente sin preferencia, dónde se define el orden y qué barberos pueden tomarlo (Equipo › Ordenamiento para agendamiento sin cita y sin preferencia), y cómo se ve en la cita."
 section: calendario
-order: 240
+order: 90
+group: "Agendar"
 roles: [owner, admin]
 screens: [/team/barbers/lineup, /calendar]
 keywords: [sin preferencia, cliente sin preferencia, cualquier barbero, quién atiende, orden de barberos, lineup, ordenamiento, agendamiento sin cita, turno de barberos, repartir clientes, pidió a, comisión sin preferencia, rotación]

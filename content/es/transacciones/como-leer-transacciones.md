@@ -4,6 +4,7 @@ title: "Cómo leer Transacciones: cuentas, cobros y pendientes"
 description: "Qué muestra la pantalla Transacciones de arriba abajo: la lupa y el botón de recargar, el encabezado, los filtros, las cinco tarjetas y la tabla de cuentas con cada columna."
 section: transacciones
 order: 10
+group: "Cómo leer Transacciones"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [transacciones, cuentas, cobros, cierre de caja, cuánto cobré hoy, por cobrar, cobrada, devuelta, facturado, cobrado, propinas, devuelto, factura, walk in, método de pago, cash, tabla de cuentas, columnas]

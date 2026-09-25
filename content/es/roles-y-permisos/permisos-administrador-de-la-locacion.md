@@ -3,7 +3,8 @@ id: roles-y-permisos/permisos-administrador-de-la-locacion
 title: "Qué puede hacer y qué ve el administrador de la locación"
 description: "Los permisos de fábrica del rol Administrador de la locación."
 section: roles-y-permisos
-order: 90
+order: 80
+group: "Qué puede hacer cada rol"
 roles: [owner, admin]
 screens: [/team-permission]
 keywords: [administrador, administrador de la locación, gerente de sucursal, permisos del administrador, qué ve el administrador]

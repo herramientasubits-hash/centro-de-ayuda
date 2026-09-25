@@ -3,7 +3,8 @@ id: calendario/mover-o-reprogramar-una-cita
 title: "Mover o reprogramar una cita"
 description: "Arrastrar la tarjeta de una cita a otra hora o a otro barbero, alargar o acortar la cita con Cambiar duracion, y dónde está la duración en el detalle."
 section: calendario
-order: 190
+order: 150
+group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [mover cita, reprogramar, cambiar la hora, cambiar de barbero, arrastrar cita, cambiar duración, alargar cita, acortar cita, reagendar, pasar a otro día, cambiar fecha, editar cita]

@@ -4,6 +4,7 @@ title: "Crear una cita que se repite"
 description: "El campo Repetición del panel Crear cita: agendar al cliente cada semana, cada dos semanas o cada mes de una sola vez."
 section: calendario
 order: 70
+group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [cita que se repite, repetición, cita recurrente, cada semana, semanalmente, cada dos semanas, quincenal, mensualmente, cada mes, cliente fijo, cita periódica, agendar varias veces, serie de citas]

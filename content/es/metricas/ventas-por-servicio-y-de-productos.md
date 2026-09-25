@@ -4,6 +4,7 @@ title: "Ventas por servicio, ventas físicas y ventas de productos"
 description: "Las tres listas de la parte baja de la pestaña Negocio: qué servicios vendiste más, cuántas tarjetas de regalo y productos salieron, y qué productos se vendieron."
 section: metricas
 order: 80
+group: "Negocio"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [ventas por servicio, qué servicio vendo más, servicio más vendido, corte, barba, ventas físicas, tarjeta de regalo, gift card, productos vendidos, unidades, ventas de productos, cera, inventario, negocio]

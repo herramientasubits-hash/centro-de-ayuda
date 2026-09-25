@@ -3,7 +3,8 @@ id: clientes/citas-de-un-cliente
 title: "Las citas de un cliente"
 description: "Qué muestra la pestaña Citas de la ficha de un cliente: una tarjeta por cita con el servicio, la fecha, el barbero, cómo se agendó, si pidió barbero y su estado."
 section: clientes
-order: 80
+order: 110
+group: "La ficha de un cliente"
 roles: [todos]
 screens: [/customers/*]
 keywords: [citas de un cliente, historial de citas, pestaña citas, citas pasadas, próximas citas del cliente, cuántas veces ha venido, estado de la cita, tipo de agendamiento, cita online, cita interna, sin preferencia, ver cita, con qué barbero se corta]

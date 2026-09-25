@@ -3,7 +3,8 @@ id: clientes/pagos-de-un-cliente
 title: "Los pagos de un cliente"
 description: "Qué muestra la pestaña Métodos de pago de la ficha de un cliente: sus Transacciones, los filtros Tarjetas de Credito, Tienda y Stripe, el rango Desde y Hasta y cada columna."
 section: clientes
-order: 90
+order: 120
+group: "La ficha de un cliente"
 roles: [owner, admin]
 screens: [/customers/*]
 keywords: [pagos de un cliente, métodos de pago, transacciones del cliente, historial de pagos, cuánto ha pagado un cliente, qué me ha pagado, cobros a un cliente, tarjeta de crédito, tienda, Stripe, ID de transacción, ver detalle, desde hasta, filtrar pagos por fecha]

@@ -4,6 +4,7 @@ title: "Cómo se organizan tus servicios: categorías, servicios y combos"
 description: "Las tres pestañas de Servicios, qué hay en cada una, las cinco opciones del botón Acciones y la regla de que un servicio se crea una vez y se activa en cada sucursal."
 section: servicios
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/services]
 keywords: [servicios, categorías de servicios, combos, catálogo de servicios, menú de servicios, carta de servicios, organizar servicios, activar servicios, servicios por sucursal, no veo un servicio, servicios y productos, crear servicio, uncategorized, sin categoría, precios de la barbería]

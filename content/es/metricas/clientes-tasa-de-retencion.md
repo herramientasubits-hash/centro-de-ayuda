@@ -4,6 +4,7 @@ title: "Tasa de retención y clientes recurrentes"
 description: "La primera tarjeta de la pestaña Clientes: qué parte de tus clientes vuelve a la barbería."
 section: metricas
 order: 90
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [tasa de retención, retención, clientes recurrentes, clientes que vuelven, cuántos clientes regresan, fidelidad, churn, clientes perdidos, repiten, clientes]

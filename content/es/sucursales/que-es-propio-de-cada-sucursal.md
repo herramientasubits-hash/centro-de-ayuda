@@ -4,6 +4,7 @@ title: "Qué cambia de una sucursal a otra: moneda, zona horaria, idioma y horar
 description: "Los datos que cada sucursal tiene por su cuenta y los que son de toda la empresa."
 section: sucursales
 order: 30
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/companies/locations, /business-details/*, /sales-pricing]
 keywords: [moneda, zona horaria, idioma, horario, hora de inicio, formato de hora, sucursal, otro país, pesos, dólares, cambiar moneda, propio de cada sucursal]

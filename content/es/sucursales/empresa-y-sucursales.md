@@ -4,6 +4,7 @@ title: "Empresa y sucursales: en qué se diferencian"
 description: "Qué es la empresa, qué es una sucursal, dónde se ve cada una en Configuración, qué columnas trae cada lista y qué acciones tiene cada fila."
 section: sucursales
 order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/companies, /companies/locations]
 keywords: [empresa, sucursal, sucursales, locación, ubicación, diferencia, lista de sucursales, lista de empresas, crear sucursal, identificación, nit, compañía, local, sede]

@@ -4,6 +4,7 @@ title: "Mi pago neto sale negativo"
 description: "Por qué un barbero de renta puede tener Pago neto en negativo, qué significa y qué revisar antes de cobrarle."
 section: nomina
 order: 110
+group: "Si algo no cuadra"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [pago neto negativo, número negativo en la nómina, barbero de renta, renta fija, el barbero me debe, debe a la barbería, signo menos, renta supera lo generado, cuánto me debe]

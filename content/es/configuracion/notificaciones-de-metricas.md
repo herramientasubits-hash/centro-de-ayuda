@@ -3,7 +3,8 @@ id: configuracion/notificaciones-de-metricas
 title: "Avisos de métricas: salud de tu barbería"
 description: "Los avisos del grupo Métricas del Centro de notificaciones: cuando el indicador de salud baja a amarillo o rojo o sube a verde, y la retención de cada barbero cada 3 meses."
 section: configuracion
-order: 240
+order: 190
+group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]
 keywords: [avisos de métricas, notificaciones de métricas, indicador de salud, puntaje de salud, amarillo, rojo, verde, métrica baja, retención de clientes, retención por barbero, cada 3 meses, rendimiento, alertas de negocio, correo, push]

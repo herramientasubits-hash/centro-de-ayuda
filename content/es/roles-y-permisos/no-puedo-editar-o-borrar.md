@@ -3,7 +3,8 @@ id: roles-y-permisos/no-puedo-editar-o-borrar
 title: "No puedo editar o borrar algo"
 description: "Por qué a veces faltan las opciones Editar o Borrar y qué hacer."
 section: roles-y-permisos
-order: 70
+order: 160
+group: "Si algo no aparece"
 roles: [todos]
 screens: [/*]
 keywords: [no puedo editar, no puedo borrar, no aparece editar, sin permiso, botón borrar, no me deja, permisos]

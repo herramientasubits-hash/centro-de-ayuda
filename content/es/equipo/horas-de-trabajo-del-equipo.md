@@ -3,7 +3,8 @@ id: equipo/horas-de-trabajo-del-equipo
 title: "Las horas de trabajo del equipo: ver y cambiar la semana"
 description: "La pestaña Horas de trabajo de Equipo: la cuadrícula de barbero por día, cómo moverte de semana y cómo editar o borrar el turno de un día."
 section: equipo
-order: 210
+order: 240
+group: "Horarios, niveles y orden"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [horas de trabajo, horario del equipo, turnos, semana, esta semana, editar este día, borrar este turno, no está trabajando, cambiar turno, día libre, horario por sucursal, quién trabaja hoy, cuadrícula]

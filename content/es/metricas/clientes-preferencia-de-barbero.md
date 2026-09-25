@@ -4,6 +4,7 @@ title: "Preferencia de barbero: con y sin preferencia"
 description: "La tarjeta de la pestaña Clientes que te dice cuántas citas se pidieron con un barbero concreto y cuántas con el primero disponible."
 section: metricas
 order: 120
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [preferencia de barbero, con preferencia, sin preferencia, piden a un barbero, barbero favorito, cualquiera disponible, primero disponible, lealtad, fidelidad al barbero, cola sin preferencia, clientes]

@@ -4,6 +4,7 @@ title: "Conoce el calendario: barberos, horas y colores"
 description: "Un recorrido por la pantalla del calendario: la barra de arriba, la columna de cada barbero, las franjas de trabajo, la línea roja y la tarjeta de cada cita."
 section: calendario
 order: 10
+group: "Conoce el calendario"
 roles: [todos]
 screens: [/calendar]
 keywords: [calendario, agenda, citas, columnas, barberos, horas, línea roja, franja de trabajo, cuadrícula, pantalla del calendario, acciones, hora actual, tarjeta de cita, ingresar, sombreado]

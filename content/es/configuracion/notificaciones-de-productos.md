@@ -3,7 +3,8 @@ id: configuracion/notificaciones-de-productos
 title: "Avisos sobre productos y combos"
 description: "Los avisos del grupo Productos del Centro de notificaciones: pocas unidades, producto agotado, lo mismo para combos, y las importaciones de productos."
 section: configuracion
-order: 220
+order: 170
+group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]
 keywords: [avisos de productos, notificaciones de productos, pocas unidades, producto agotado, stock bajo, inventario bajo, se acabó un producto, combos, importación de productos, reponer productos, alerta de inventario, correo, push]

@@ -3,7 +3,8 @@ id: transacciones/filtrar-transacciones
 title: "Filtrar por fechas, estado de la cuenta y estado de la cita"
 description: "Cómo usar DESDE, HASTA, ESTADO DE LA CUENTA y ESTADO DE LA CITA para ver solo las cuentas que te interesan, y por qué hace falta tocar Aplicar."
 section: transacciones
-order: 30
+order: 60
+group: "Buscar y revisar"
 roles: [owner, admin]
 screens: [/transactions]
 keywords: [filtrar transacciones, filtros, desde, hasta, rango de fechas, estado de la cuenta, estado de la cita, por cobrar, cobrada, devuelta, agendada, llegó, en silla, cerrada, terminada, cancelada, aplicar, cuentas de hoy, cuentas del mes]

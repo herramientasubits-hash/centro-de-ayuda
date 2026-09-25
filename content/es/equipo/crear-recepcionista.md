@@ -3,7 +3,8 @@ id: equipo/crear-recepcionista
 title: "Crear una recepcionista"
 description: "Paso a paso para dar de alta a la persona del mostrador: el rol Recepcionista, el formulario Perfil y la pestaña Permisos."
 section: equipo
-order: 60
+order: 80
+group: "Agregar a alguien"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [crear recepcionista, recepción, mostrador, secretaria, cajera, dar de alta, contratar recepcionista, registrar citas, check in, check out, permisos de recepción, crear miembro del equipo]

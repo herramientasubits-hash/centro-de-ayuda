@@ -3,7 +3,8 @@ id: clientes/buscar-un-cliente
 title: "Buscar un cliente"
 description: "Cómo encontrar a un cliente en la lista: escribir en el buscador y tocar Buscar, filtrar por su tipo con las pestañas y qué revisar si no aparece."
 section: clientes
-order: 30
+order: 20
+group: "La lista de clientes"
 roles: [todos]
 screens: [/customers]
 keywords: [buscar cliente, buscador de clientes, encontrar un cliente, localizar cliente, buscar por nombre, buscar por celular, buscar por teléfono, buscar por correo, filtrar clientes, no encuentro a un cliente, el cliente no aparece, cliente desaparecido]

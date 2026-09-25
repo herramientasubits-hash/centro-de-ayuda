@@ -4,6 +4,7 @@ title: "Alertas de riesgo: clientes en riesgo, perdidos y vencidos"
 description: "La tarjeta de AI Insights que lista a los clientes que se están tardando en volver, con cuántos días llevan sin venir y su ciclo habitual."
 section: metricas
 order: 180
+group: "AI Insights"
 roles: [owner, admin]
 screens: [/]
 keywords: [alertas de riesgo de clientes, clientes en riesgo, clientes perdidos, clientes vencidos, clientes que no vuelven, se me están yendo, churn, días sin venir, ciclo, recuperar clientes, ai insights]

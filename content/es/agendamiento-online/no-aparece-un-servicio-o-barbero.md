@@ -4,6 +4,7 @@ title: "Un servicio o un barbero no aparece al reservar"
 description: "Qué revisar cuando un cliente no encuentra un servicio o un barbero en la página de reserva online."
 section: agendamiento-online
 order: 130
+group: "Si algo falla"
 roles: [owner, admin]
 screens: [/online-booking, /services, /team/barbers]
 keywords: [no aparece el servicio, no aparece el barbero, falta un servicio en la reserva, barbero oculto, servicio privado, no sale en la reserva online, reserva online incompleta]

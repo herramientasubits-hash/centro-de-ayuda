@@ -4,6 +4,7 @@ title: "Iniciar sesión con tu número de teléfono"
 description: "Cómo entras a Barberlytics: eliges el país, escribes tu teléfono y confirmas con un código."
 section: acceso-y-cuenta
 order: 10
+group: "Entrar"
 roles: [todos]
 screens: [/authenticate]
 keywords: [iniciar sesión, entrar, login, ingresar, teléfono, celular, número, sin contraseña, código, acceso, sms]

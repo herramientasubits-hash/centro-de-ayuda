@@ -3,7 +3,8 @@ id: clientes/indicadores-de-un-cliente
 title: "Los indicadores de un cliente: FOV, AVF, LTV, ver índice y vuelve a reservar"
 description: "Qué significa cada una de las doce tarjetas de la ficha de un cliente, en lenguaje de barbería: cuánto gasta, cada cuánto viene, cuántas citas cumple y cuáles quedan pendientes de confirmar."
 section: clientes
-order: 60
+order: 90
+group: "La ficha de un cliente"
 roles: [owner, admin]
 screens: [/customers/*]
 keywords: [indicadores del cliente, FOV, AVF, LTV, ver índice, ver indice, vuelve a reservar, promedio de venta, ticket promedio del cliente, número de transacciones, completadas, canceladas, no asistió, tiempo de reserva, total de citas, qué significa FOV, qué significa LTV, cuánto gasta un cliente, cada cuánto viene un cliente]

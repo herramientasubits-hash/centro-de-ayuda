@@ -3,7 +3,8 @@ id: clientes/tipos-de-cliente
 title: "Los tipos de cliente: nuevo, retenido, frecuente, VIP, pre-perdida, perdido y recuperado"
 description: "Qué significa cada tipo de cliente, con la definición exacta que muestra la app al elegir su pestaña, y qué es Bloqueo."
 section: clientes
-order: 20
+order: 60
+group: "Tipos de cliente"
 roles: [owner, admin]
 screens: [/customers]
 keywords: [tipos de cliente, tipo de cliente, nuevo, retenido, frecuente, VIP, pre-perdida, pre perdida, perdido, recuperado, bloqueo, cliente bloqueado, insignia, etiqueta del cliente, qué significa VIP, clientes en riesgo, clientes perdidos, clientes fieles]

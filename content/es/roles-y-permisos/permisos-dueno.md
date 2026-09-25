@@ -3,7 +3,8 @@ id: roles-y-permisos/permisos-dueno
 title: "Qué puede hacer y qué ve el dueño"
 description: "Los permisos del rol Dueño: acceso total a la barbería."
 section: roles-y-permisos
-order: 80
+order: 70
+group: "Qué puede hacer cada rol"
 roles: [owner]
 screens: [/team-permission]
 keywords: [dueño, propietario, permisos del dueño, acceso total, qué ve el dueño, rol dueño]

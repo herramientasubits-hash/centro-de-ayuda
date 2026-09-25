@@ -3,7 +3,8 @@ id: acceso-y-cuenta/reenviar-el-codigo
 title: "Reenviar el código"
 description: "Si el código no llega, pídelo otra vez con Reenviar Código en la pantalla Confirmar número."
 section: acceso-y-cuenta
-order: 32
+order: 40
+group: "Entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]
 keywords: [reenviar código, no me llega el código, pedir el código otra vez, sms, código de verificación, confirmar número, reenviar]

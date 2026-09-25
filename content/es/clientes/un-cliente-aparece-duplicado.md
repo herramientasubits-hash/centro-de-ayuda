@@ -4,6 +4,7 @@ title: "Un cliente aparece duplicado o con datos incompletos"
 description: "Por qué puedes ver dos veces al mismo cliente o fichas con datos vacíos, y qué revisar antes de crear otro."
 section: clientes
 order: 170
+group: "Si algo falla"
 roles: [owner, admin, recepcion]
 screens: [/customers]
 keywords: [cliente duplicado, dos veces el mismo cliente, cliente repetido, unir clientes, fusionar clientes, datos incompletos, sin correo, walk in]

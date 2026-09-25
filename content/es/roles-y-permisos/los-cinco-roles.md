@@ -4,6 +4,7 @@ title: "Los cinco roles y para qué sirve cada uno"
 description: "Dueño, administrador de la locación, recepcionista, barbero por comisión y barbero de renta: cómo describe la app cada uno."
 section: roles-y-permisos
 order: 20
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team-permission, /team/barbers]
 keywords: [roles, dueño, administrador de la locación, recepcionista, recepción, barbero por comisión, barbero de renta, rol, para qué sirve cada rol, crear miembro del equipo]

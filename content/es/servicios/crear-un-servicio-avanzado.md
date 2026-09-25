@@ -3,7 +3,8 @@ id: servicios/crear-un-servicio-avanzado
 title: "Crear un servicio: opciones avanzadas"
 description: "La pestaña Avanzado de un servicio: restringir los días y horas en que se puede reservar, permitir otra cita durante el servicio (Multiservicio) y añadir tiempo de preparación."
 section: servicios
-order: 60
+order: 80
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/create, /services/*]
 keywords: [pestaña avanzado, restricciones de tiempo, restringir horario de un servicio, solo por la mañana, solo ciertos días, multiservicio, dos citas a la vez, tiempo de preparación, tiempo entre citas, limpiar la silla, color del servicio, cronograma de servicios]

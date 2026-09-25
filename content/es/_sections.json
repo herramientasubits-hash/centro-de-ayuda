@@ -11,21 +11,39 @@
     "title": "Acceso y cuenta",
     "description": "Iniciar sesión, recuperar tu número, cerrar sesión, tu perfil y tu plan.",
     "icon": "key",
-    "order": 20
+    "order": 20,
+    "groups": [
+      "Entrar",
+      "Si no puedes entrar",
+      "Tu cuenta y tus perfiles",
+      "Tu plan y tus pagos"
+    ]
   },
   {
     "id": "sucursales",
     "title": "Sucursales",
     "description": "Empresa y sucursales: qué es de cada una, qué se comparte y cómo se activa el equipo y el catálogo en cada sucursal.",
     "icon": "store",
-    "order": 25
+    "order": 25,
+    "groups": [
+      "Cómo funciona",
+      "Crear y administrar",
+      "Activar equipo y catálogos",
+      "Si algo no aparece"
+    ]
   },
   {
     "id": "roles-y-permisos",
     "title": "Roles y permisos",
     "description": "Los cinco roles, los perfiles, qué puede hacer y qué ve cada uno, y cómo se ajustan los permisos.",
     "icon": "shield",
-    "order": 27
+    "order": 27,
+    "groups": [
+      "Cómo funciona",
+      "Qué puede hacer cada rol",
+      "Cambiar permisos",
+      "Si algo no aparece"
+    ]
   },
   {
     "id": "navegacion",
@@ -39,49 +57,93 @@
     "title": "Métricas",
     "description": "Cómo va tu barbería: negocio, clientes, barberos, marketing y recomendaciones.",
     "icon": "gauge",
-    "order": 40
+    "order": 40,
+    "groups": [
+      "Cómo leer Métricas",
+      "Negocio",
+      "Clientes",
+      "Barberos y marketing",
+      "AI Insights"
+    ]
   },
   {
     "id": "calendario",
     "title": "Calendario",
     "description": "Agendar, cobrar, mover y cancelar citas; clientes sin cita, ventas rápidas y reservas online.",
     "icon": "calendar",
-    "order": 50
+    "order": 50,
+    "groups": [
+      "Conoce el calendario",
+      "Agendar",
+      "Atender una cita",
+      "Cobrar y vender",
+      "Bloqueos y vacaciones",
+      "Si algo falla"
+    ]
   },
   {
     "id": "agendamiento-online",
     "title": "Agendamiento online",
     "description": "Cómo reservan tus clientes por internet, paso a paso, y cómo pones la reserva en tu sitio web, tu enlace y tus redes.",
     "icon": "globe",
-    "order": 55
+    "order": 55,
+    "groups": [
+      "Cómo funciona",
+      "Así reserva tu cliente",
+      "Llevar la reserva a tus canales",
+      "Si algo falla"
+    ]
   },
   {
     "id": "clientes",
     "title": "Clientes",
     "description": "La lista, los tipos de cliente, su ficha, sus notas y cómo bloquearlos.",
     "icon": "users",
-    "order": 60
+    "order": 60,
+    "groups": [
+      "La lista de clientes",
+      "Tipos de cliente",
+      "La ficha de un cliente",
+      "Si algo falla"
+    ]
   },
   {
     "id": "servicios",
     "title": "Servicios",
     "description": "Categorías, servicios y combos, con sus precios.",
     "icon": "scissors",
-    "order": 70
+    "order": 70,
+    "groups": [
+      "Cómo funciona",
+      "Crear y editar",
+      "Lo que ve el cliente al reservar"
+    ]
   },
   {
     "id": "productos",
     "title": "Productos",
     "description": "Lo que vendes en la barbería, con su precio y su inventario.",
     "icon": "package",
-    "order": 80
+    "order": 80,
+    "groups": [
+      "Cómo funciona",
+      "Crear y editar",
+      "Vender"
+    ]
   },
   {
     "id": "equipo",
     "title": "Equipo",
     "description": "Barberos, niveles, horarios, gerentes y la ficha de cada persona.",
     "icon": "team",
-    "order": 90
+    "order": 90,
+    "groups": [
+      "Cómo funciona",
+      "Agregar a alguien",
+      "La ficha de un barbero",
+      "Editar, inactivar o borrar",
+      "Horarios, niveles y orden"
+    ]
   },
   {
     "id": "gastos",
@@ -95,21 +157,38 @@
     "title": "Nómina",
     "description": "Cómo se le paga a cada barbero y cómo leer cada columna.",
     "icon": "wallet",
-    "order": 110
+    "order": 110,
+    "groups": [
+      "Cómo funciona",
+      "Leer la nómina",
+      "Si algo no cuadra"
+    ]
   },
   {
     "id": "transacciones",
     "title": "Transacciones",
     "description": "Todo lo cobrado y lo pendiente por cobrar.",
     "icon": "swap",
-    "order": 120
+    "order": 120,
+    "groups": [
+      "Cómo leer Transacciones",
+      "Buscar y revisar",
+      "Si algo falla"
+    ]
   },
   {
     "id": "configuracion",
     "title": "Configuración",
     "description": "Cada ajuste de la barbería, uno por uno.",
     "icon": "settings",
-    "order": 130
+    "order": 130,
+    "groups": [
+      "Configuración de la cuenta",
+      "Equipo",
+      "Ventas",
+      "Notificaciones",
+      "Eliminar cuenta"
+    ]
   },
   {
     "id": "glosario",

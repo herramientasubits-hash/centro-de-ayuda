@@ -3,7 +3,8 @@ id: productos/producto-publico-o-privado
 title: "Producto público o privado y disponibilidad de venta"
 description: "Qué hacen los dos interruptores de un producto: Privado / Público decide si el cliente lo ve al reservar online; Disponibilidad de venta decide si tu equipo puede venderlo."
 section: productos
-order: 60
+order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/products, /products/create, /products/*]
 keywords: [producto público, producto privado, privado o público, disponibilidad de venta, los barberos no pueden vender, visible en el flujo de reserva, esconder un producto, ocultar un producto, reserva online, producto no aparece en la venta rápida, producto de uso interno, insumo]

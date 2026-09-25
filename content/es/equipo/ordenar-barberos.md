@@ -3,7 +3,8 @@ id: equipo/ordenar-barberos
 title: "Ordenar a los barberos"
 description: "Cómo elegir el orden de las columnas del calendario arrastrando a los barberos en Acciones › Ordenar barberos, pestaña Barbero."
 section: equipo
-order: 230
+order: 270
+group: "Horarios, niveles y orden"
 roles: [owner]
 screens: [/team/barbers]
 keywords: [ordenar barberos, orden del calendario, orden de las columnas, arrastrar barberos, posición del barbero, primero en el calendario, reordenar, ordenar barberos agendas, secuencia, columna del barbero]

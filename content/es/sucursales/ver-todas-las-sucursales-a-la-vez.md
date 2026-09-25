@@ -3,7 +3,8 @@ id: sucursales/ver-todas-las-sucursales-a-la-vez
 title: "Ver todas las sucursales a la vez"
 description: "Cómo consolidar tus datos eligiendo Todas las sucursales, y qué pantallas cambian."
 section: sucursales
-order: 120
+order: 110
+group: "Crear y administrar"
 roles: [owner]
 screens: [/*]
 keywords: [todas las sucursales, ver todo, consolidado, varias sucursales, comparar sucursales, selector de sucursal, métricas de todas]

@@ -3,7 +3,8 @@ id: equipo/editar-a-un-miembro-del-equipo
 title: "Editar a un miembro del equipo"
 description: "Cómo abrir a una persona en modo editar desde Barberos o Gerentes, qué pestañas puedes cambiar y dónde está Guardar."
 section: equipo
-order: 160
+order: 210
+group: "Editar, inactivar o borrar"
 roles: [owner, admin]
 screens: [/team/barbers, /team/barbers/*]
 keywords: [editar barbero, editar miembro del equipo, cambiar datos de un barbero, cambiar teléfono, cambiar correo, cambiar nivel, cambiar comisión, cambiar horario, editar dueño, editar administrador, modificar equipo, actualizar datos]

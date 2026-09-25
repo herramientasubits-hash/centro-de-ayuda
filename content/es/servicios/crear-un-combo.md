@@ -3,7 +3,8 @@ id: servicios/crear-un-combo
 title: "Crear un combo de servicios"
 description: "Cómo juntar varios servicios en un combo con un solo precio: el formulario Crear combo de servicios, agregar servicios, el precio combinado, la duración y qué muestra Ver combo."
 section: servicios
-order: 120
+order: 90
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/*]
 keywords: [crear combo, combo de servicios, paquete de servicios, corte y barba, precio combinado, duración del combo, agregar servicio, promoción, oferta, dos servicios en uno, tarjetas de regalo, ver combo, lista de combos]

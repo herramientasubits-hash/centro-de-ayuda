@@ -3,7 +3,8 @@ id: nomina/como-se-calcula-la-renta
 title: "Cómo se calcula el pago de un barbero de renta"
 description: "Las piezas del pago de un barbero de renta: la Base de la renta, las tres deducciones en porcentaje de su ficha y lo que generó en el periodo."
 section: nomina
-order: 80
+order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/payroll]
 keywords: [cómo se calcula la renta, barbero de renta, base de la renta, renta fija, alquiler de silla, deducción por cita sin agendamiento, deducción por clientes nuevos, deducción por citas sin preferencia, pago neto, cuánto me paga el barbero de renta]

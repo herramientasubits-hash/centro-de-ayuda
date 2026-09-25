@@ -3,7 +3,8 @@ id: calendario/crear-una-venta-rapida
 title: "Crear una venta rápida de productos"
 description: "Vender productos sin cita desde el calendario: el panel Nueva venta, las categorías, el total y Pagar orden."
 section: calendario
-order: 120
+order: 230
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [venta rápida, vender producto, nueva venta, pagar orden, vender sin cita, cera, shampoo, producto de mostrador, venta de mostrador, caja]

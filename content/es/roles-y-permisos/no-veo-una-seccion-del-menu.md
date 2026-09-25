@@ -3,7 +3,8 @@ id: roles-y-permisos/no-veo-una-seccion-del-menu
 title: "No veo una sección del menú"
 description: "Qué revisar cuando falta Equipo, Servicios, Nómina u otra sección en tu menú."
 section: roles-y-permisos
-order: 60
+order: 150
+group: "Si algo no aparece"
 roles: [todos]
 screens: [/*]
 keywords: [no veo, falta una sección, no aparece equipo, no aparece nómina, menú incompleto, sin permiso, desapareció, no encuentro, servicios y productos]

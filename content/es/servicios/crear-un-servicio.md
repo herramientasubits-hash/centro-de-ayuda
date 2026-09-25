@@ -3,7 +3,8 @@ id: servicios/crear-un-servicio
 title: "Crear un servicio: datos generales"
 description: "La pestaña General de Crear Servicio paso a paso: nombre, costo, precio básico, descripción, público o privado, duración, impuestos y categoría."
 section: servicios
-order: 40
+order: 60
+group: "Crear y editar"
 roles: [owner, admin]
 screens: [/services, /services/create]
 keywords: [crear servicio, nuevo servicio, agregar servicio, añadir un corte, precio del servicio, precio básico, costo del servicio, duración del servicio, minutos, impuestos, categoría, foto del servicio, servicio público, servicio privado, continuar]

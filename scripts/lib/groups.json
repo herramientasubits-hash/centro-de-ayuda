@@ -1,0 +1,82 @@
+{
+  "$comment": "Subgrupos del menú por sección, en orden, con sus artículos en orden. Lo aplica scripts/apply-groups.mjs (escribe `group` y `order` en cada artículo y `groups` en _sections.json). Secciones de 8 artículos o menos no llevan subgrupos.",
+  "acceso-y-cuenta": {
+    "Entrar": ["ingresar", "elegir-el-pais-del-telefono", "confirmar-el-codigo", "reenviar-el-codigo", "olvidaste-tu-numero", "contactar-a-soporte-desde-la-entrada", "politica-de-privacidad-y-terminos"],
+    "Si no puedes entrar": ["codigo-incorrecto-o-vencido", "numero-no-registrado"],
+    "Tu cuenta y tus perfiles": ["mi-perfil", "cambiar-de-rol", "tienes-dos-perfiles", "cerrar-sesion"],
+    "Tu plan y tus pagos": ["cambiar-mi-plan", "metodos-de-pago-de-tu-plan", "descargar-tus-facturas"]
+  },
+  "sucursales": {
+    "Cómo funciona": ["como-se-organiza-tu-barberia", "empresa-y-sucursales", "que-es-propio-de-cada-sucursal", "equipo-compartido-entre-sucursales", "catalogos-compartidos-entre-sucursales", "ajustes-generales-y-por-sucursal"],
+    "Crear y administrar": ["abrir-una-sucursal-nueva", "crear-una-sucursal", "editar-una-sucursal", "ver-el-detalle-de-una-sucursal", "ver-todas-las-sucursales-a-la-vez", "inactivar-una-sucursal", "borrar-una-sucursal"],
+    "Activar equipo y catálogos": ["activar-equipo-en-una-sucursal", "activar-servicios-en-una-sucursal", "activar-productos-en-una-sucursal", "un-barbero-que-trabaja-en-dos-sucursales"],
+    "Si algo no aparece": ["no-veo-a-un-barbero-en-mi-sucursal", "no-veo-un-servicio-o-producto-en-mi-sucursal"]
+  },
+  "roles-y-permisos": {
+    "Cómo funciona": ["perfiles-y-roles", "los-cinco-roles", "como-funcionan-los-permisos", "tabla-de-permisos-por-rol", "de-que-depende-lo-que-ves", "que-ve-cada-rol-en-el-menu"],
+    "Qué puede hacer cada rol": ["permisos-dueno", "permisos-administrador-de-la-locacion", "permisos-recepcion", "permisos-barbero-por-comision", "permisos-barbero-de-renta"],
+    "Cambiar permisos": ["cambiar-los-permisos-de-un-rol", "cambiar-los-permisos-de-una-persona", "darle-a-recepcion-solo-lo-necesario"],
+    "Si algo no aparece": ["no-veo-una-seccion-del-menu", "no-puedo-editar-o-borrar"]
+  },
+  "metricas": {
+    "Cómo leer Métricas": ["como-leer-metricas", "filtrar-por-sucursal-equipo-y-periodo"],
+    "Negocio": ["ticket-promedio-cancelacion-y-propinas", "ventas-e-ingresos", "metodo-de-agendamiento-y-citas", "horas-de-solicitud-de-citas", "distribucion-de-pagos-reembolsos-y-descuentos", "ventas-por-servicio-y-de-productos"],
+    "Clientes": ["clientes-tasa-de-retencion", "clientes-ingreso-promedio-por-cliente", "clientes-reservas-online-y-rate-walk-in", "clientes-preferencia-de-barbero", "clientes-citas-por-tipo-de-cliente", "clientes-frecuencia-de-visita"],
+    "Barberos y marketing": ["total-neto-del-equipo", "marketing-canales-y-campanas"],
+    "AI Insights": ["puntaje-de-salud", "alertas-de-riesgo-de-clientes", "mapa-de-capacidad", "recomendaciones-inteligentes"]
+  },
+  "calendario": {
+    "Conoce el calendario": ["conoce-el-calendario", "ver-el-dia-la-agenda-o-el-mes", "filtrar-el-calendario-por-equipo", "moverte-entre-fechas"],
+    "Agendar": ["crear-una-cita", "crear-una-cita-para-un-cliente-nuevo", "cita-que-se-repite", "cliente-sin-cita-previa", "clientes-sin-preferencia-de-barbero", "lista-de-espera"],
+    "Atender una cita": ["abrir-una-cita", "estados-de-una-cita", "marcar-que-el-cliente-llego", "pasar-al-cliente-a-la-silla", "mover-o-reprogramar-una-cita", "cancelar-una-cita", "el-cliente-no-se-presento"],
+    "Cobrar y vender": ["cobrar-una-cita", "cobrar-con-propina", "aplicar-un-descuento", "lista-de-cobros", "venta-sin-cita", "crear-una-venta-rapida"],
+    "Bloqueos y vacaciones": ["bloquear-el-calendario", "vacaciones-de-un-barbero"],
+    "Si algo falla": ["no-puedo-agendar-a-esta-hora", "un-barbero-no-aparece-en-el-calendario", "el-cliente-no-recibio-el-recordatorio"]
+  },
+  "agendamiento-online": {
+    "Cómo funciona": ["que-es", "que-ve-tu-cliente", "citas-que-crea-el-cliente"],
+    "Así reserva tu cliente": ["como-reserva-tu-cliente", "cliente-que-vuelve", "elegir-sede-servicio-y-barbero", "elegir-fecha-y-hora", "confirmar-la-reserva"],
+    "Llevar la reserva a tus canales": ["enlace-directo-y-utm", "panel-lateral", "abrir-desde-un-enlace", "embebido"],
+    "Si algo falla": ["no-aparece-un-servicio-o-barbero", "no-hay-horas-disponibles"]
+  },
+  "clientes": {
+    "La lista de clientes": ["la-lista-de-clientes", "buscar-un-cliente", "crear-un-cliente", "importar-clientes", "descargar-clientes"],
+    "Tipos de cliente": ["tipos-de-cliente", "como-se-clasifica-un-cliente"],
+    "La ficha de un cliente": ["ver-un-cliente", "indicadores-de-un-cliente", "perfil-de-un-cliente", "citas-de-un-cliente", "pagos-de-un-cliente", "productos-de-un-cliente", "notas-del-cliente", "familia-y-amigos", "bloquear-a-un-cliente"],
+    "Si algo falla": ["un-cliente-aparece-duplicado"]
+  },
+  "servicios": {
+    "Cómo funciona": ["como-se-organizan-tus-servicios", "la-lista-de-servicios", "costo-y-precio-de-un-servicio", "precio-para-clientes-nuevos-y-de-lealtad"],
+    "Crear y editar": ["crear-una-categoria-de-servicios", "crear-un-servicio", "crear-un-servicio-equipo", "crear-un-servicio-avanzado", "crear-un-combo", "editar-un-servicio", "desactivar-o-borrar-un-servicio"],
+    "Lo que ve el cliente al reservar": ["servicio-publico-o-privado", "orden-de-agendamiento"]
+  },
+  "productos": {
+    "Cómo funciona": ["como-se-organizan-tus-productos", "la-lista-de-productos", "precio-de-compra-precio-de-venta-y-sku", "producto-publico-o-privado", "inventario-y-unidades"],
+    "Crear y editar": ["crear-una-categoria-de-productos", "crear-un-producto", "fotos-de-un-producto", "editar-o-borrar-un-producto"],
+    "Vender": ["vender-un-producto"]
+  },
+  "equipo": {
+    "Cómo funciona": ["conoce-la-seccion-equipo", "la-lista-de-barberos", "comision-o-renta", "como-se-le-paga-a-un-barbero", "gerentes"],
+    "Agregar a alguien": ["crear-barbero-por-comision", "crear-barbero-de-renta", "crear-recepcionista", "crear-administrador", "crear-dueno"],
+    "La ficha de un barbero": ["ficha-de-un-barbero-perfil", "ficha-de-un-barbero-servicios", "ficha-de-un-barbero-compensacion", "ficha-de-un-barbero-de-renta-pagos", "ficha-de-un-barbero-calendario", "ficha-de-un-barbero-permisos", "ficha-de-un-barbero-opciones", "visibilidad-para-agendamiento", "habilidades-y-fotos", "codigo-de-un-barbero"],
+    "Editar, inactivar o borrar": ["editar-a-un-miembro-del-equipo", "inactivar-a-un-miembro-del-equipo", "borrar-a-un-miembro-del-equipo"],
+    "Horarios, niveles y orden": ["horas-de-trabajo-del-equipo", "niveles-de-barberos", "crear-y-editar-un-nivel", "ordenar-barberos", "orden-para-clientes-sin-cita", "orden-para-clientes-sin-preferencia"]
+  },
+  "nomina": {
+    "Cómo funciona": ["como-funciona-la-nomina", "ciclo-de-pago", "como-se-calcula-una-comision", "como-se-calcula-la-renta", "propinas-en-la-nomina"],
+    "Leer la nómina": ["nomina-barberos-por-comision", "nomina-barberos-de-renta", "nomina-barberos-por-salario", "filtrar-la-nomina-por-fechas-y-sucursal", "descargar-la-nomina"],
+    "Si algo no cuadra": ["mi-pago-neto-sale-negativo", "la-nomina-no-coincide-con-lo-que-espero"]
+  },
+  "transacciones": {
+    "Cómo leer Transacciones": ["como-leer-transacciones", "las-cinco-tarjetas-de-transacciones", "estados-de-una-cuenta", "clientes-walk-in-en-transacciones", "metodos-de-pago-aceptados"],
+    "Buscar y revisar": ["filtrar-transacciones", "buscar-una-transaccion", "ver-el-detalle-de-una-cuenta", "devolver-un-pago"],
+    "Si algo falla": ["una-cuenta-quedo-por-cobrar"]
+  },
+  "configuracion": {
+    "Configuración de la cuenta": ["conoce-configuracion", "detalles-del-negocio-hora-y-calendario", "detalles-del-negocio-enlaces-en-linea", "detalles-de-facturacion-y-facturas", "periodos-de-cierre", "dispositivos-de-pago", "empresa"],
+    "Equipo": ["permisos-donde-se-cambian", "comisiones-que-se-deduce"],
+    "Ventas": ["impuestos", "tarifa-por-uso-de-tarjeta", "propinas-opciones-y-comportamiento", "precios-moneda-y-calculo-de-impuestos", "integracion-de-pagos-con-stripe"],
+    "Notificaciones": ["centro-de-notificaciones-como-funciona", "notificaciones-de-clientes", "notificaciones-de-productos", "notificaciones-del-calendario", "notificaciones-de-metricas", "notificaciones-por-rol"],
+    "Eliminar cuenta": ["eliminar-tu-cuenta"]
+  }
+}

@@ -3,7 +3,8 @@ id: equipo/ficha-de-un-barbero-perfil
 title: "La ficha de un barbero: perfil"
 description: "Cómo abrir la ficha de un barbero, qué pestañas tiene según sea por comisión o de renta, y qué datos trae la pestaña Perfil."
 section: equipo
-order: 90
+order: 110
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*, /team/barbers]
 keywords: [ficha de un barbero, perfil del barbero, ver barbero, datos del barbero, información personal, número telefónico, correo, código, visibilidad para agendamiento, habilidades, fotos, descripción, nivel, pestañas de la ficha]

@@ -4,6 +4,7 @@ title: "Reservas en tu sitio web: abrir desde tu propio botón"
 description: "La opción «Abrir desde enlace» del agendamiento online: la reserva se abre desde un botón o enlace que ya tienes en tu sitio web, sin botón flotante."
 section: agendamiento-online
 order: 110
+group: "Llevar la reserva a tus canales"
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [abrir desde enlace, mi propio botón, reservar desde un enlace, agendamiento online, reservas en mi sitio web, widget, data-trigger, copiar código, botón de reserva, reserva online, sitio web, id del enlace, reservar cita]

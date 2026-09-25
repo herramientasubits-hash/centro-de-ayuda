@@ -3,7 +3,8 @@ id: equipo/orden-para-clientes-sin-cita
 title: "Orden para clientes que llegan sin cita"
 description: "Cómo decidir qué barberos atienden a los clientes que entran sin agendar y en qué orden, en la pestaña Agendamiento sin cita."
 section: equipo
-order: 240
+order: 280
+group: "Horarios, niveles y orden"
 roles: [owner, admin]
 screens: [/team/barbers/lineup, /team/barbers]
 keywords: [sin cita, walk in, cliente sin cita, agendamiento sin cita, orden de atención, quién atiende sin cita, turno, fila de barberos, póngase en fila, deshabilitar barbero para sin cita, interruptor, ordenamiento]

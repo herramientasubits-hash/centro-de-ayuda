@@ -3,7 +3,8 @@ id: productos/precio-de-compra-precio-de-venta-y-sku
 title: "Precio de compra, precio de venta y código SKU"
 description: "Qué es cada uno de los tres campos de precio y código de un producto, cuál ve el cliente, para qué sirve el precio de compra y cómo puede descontarse antes de la comisión."
 section: productos
-order: 50
+order: 30
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/products, /products/create, /products/*]
 keywords: [precio de compra, precio de venta, código sku, sku, código de barras, referencia del producto, margen, ganancia por producto, cuánto gano por producto, costo del producto, deducir el costo del producto, comisión por productos, precio del producto, cuánto cobrar por una cera]

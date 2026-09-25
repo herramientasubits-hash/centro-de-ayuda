@@ -3,7 +3,8 @@ id: calendario/cobrar-una-cita
 title: "Cobrar una cita (check out)"
 description: "Cobrar desde el detalle de la cita con Pagar cita o con el checkout completo: métodos de pago (efectivo, tarjeta, link de pago y pago mixto), propina y resumen."
 section: calendario
-order: 170
+order: 180
+group: "Cobrar y vender"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [cobrar, pagar cita, check out, checkout, cobro, efectivo, tarjeta, crédito, débito, link de pago, pago mixto, propina, terminal, datáfono, dispositivo de pago, añadir producto al cobro]

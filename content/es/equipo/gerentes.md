@@ -3,7 +3,8 @@ id: equipo/gerentes
 title: "Gerentes: quiénes son y qué pueden hacer"
 description: "La pestaña Gerentes de Equipo: la Lista de miembros con dueños y administradores, cómo se ve un dueño que también es barbero y las acciones de cada fila."
 section: equipo
-order: 220
+order: 50
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [gerentes, lista de miembros, dueño, administrador de la locación, recepcionista, gerente de la barbería, dueño barbero, rol de un miembro, pestaña gerentes, activar gerentes, editar dueño, inactivar dueño, socio]

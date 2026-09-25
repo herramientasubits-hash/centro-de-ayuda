@@ -3,7 +3,8 @@ id: clientes/importar-clientes
 title: "Importar clientes"
 description: "Qué se sabe hoy de la importación de clientes: existe como permiso y como aviso, pero no se encontró el botón en la lista de clientes."
 section: clientes
-order: 140
+order: 40
+group: "La lista de clientes"
 roles: [owner, admin]
 screens: [/customers, /team-permission, /notifications-center]
 keywords: [importar clientes, subir lista de clientes, excel de clientes, migrar clientes, cargar clientes, traer clientes de otra app, csv]

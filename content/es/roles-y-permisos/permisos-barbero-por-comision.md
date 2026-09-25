@@ -3,7 +3,8 @@ id: roles-y-permisos/permisos-barbero-por-comision
 title: "Qué puede hacer y qué ve el barbero por comisión"
 description: "Qué ve y qué puede hacer un barbero al que se le paga comisión, con lo que se comprobó al entrar con ese perfil."
 section: roles-y-permisos
-order: 110
+order: 100
+group: "Qué puede hacer cada rol"
 roles: [owner, admin, barbero]
 screens: [/team-permission]
 keywords: [barbero por comisión, barber comission, permisos del barbero, qué ve el barbero, perfil de barbero, comisión]

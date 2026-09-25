@@ -4,6 +4,7 @@ title: "Agendamiento online: qué es y cómo funciona"
 description: "Cómo tus clientes agendan solos: el widget en tu sitio web, el enlace directo de reserva, qué servicios y productos ven y cómo se cuentan esas citas."
 section: agendamiento-online
 order: 10
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/online-booking]
 keywords: [agendamiento online, reserva online, reservas por internet, citas por internet, el cliente agenda solo, widget de reserva, enlace de reserva, book now, cita online, reservar en línea, página de reservas, sitio web, privado o público, negocio cerrado]

@@ -4,6 +4,7 @@ title: "Puntaje de salud de tu barbería"
 description: "La tarjeta de AI Insights que resume cómo va tu barbería en un número de 0 a 100, con las cuatro cifras que lo acompañan."
 section: metricas
 order: 170
+group: "AI Insights"
 roles: [owner, admin]
 screens: [/]
 keywords: [puntaje de salud, health score, cómo va mi barbería, nota de la barbería, 0 a 100, tasa de completación, tasa de retención, no asistió, ticket prom, ai insights, inteligencia artificial, resumen]

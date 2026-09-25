@@ -3,7 +3,8 @@ id: calendario/lista-de-espera
 title: "La lista de espera: anotar a un cliente cuando no hay hueco"
 description: "Dónde está la lista de espera del calendario y cómo añadir a un cliente con el servicio, el barbero y las franjas que le sirven."
 section: calendario
-order: 135
+order: 100
+group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [lista de espera, no hay hueco, anotar cliente, esperar turno, hueco libre, cancelación, cupo, waitlist, añadir a la lista de espera]

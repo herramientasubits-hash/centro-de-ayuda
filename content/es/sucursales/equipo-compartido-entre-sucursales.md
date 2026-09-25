@@ -4,6 +4,7 @@ title: "El equipo es de la empresa y se activa en cada sucursal"
 description: "Por qué en Equipo solo ves a parte de tu gente y cómo hacer que una persona trabaje en otra sucursal."
 section: sucursales
 order: 40
+group: "Cómo funciona"
 roles: [owner, admin]
 screens: [/team/barbers, /team/activate]
 keywords: [equipo, barberos, activar equipo, sucursal, otra sucursal, trabaja en dos sucursales, no aparece el barbero, importar equipo, gerentes]

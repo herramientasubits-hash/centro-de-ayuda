@@ -4,6 +4,7 @@ title: "Frecuencia de visita de tus clientes"
 description: "La tarjeta de la pestaña Clientes que agrupa a tus clientes según cada cuánto vienen: semanal, quincenal y más."
 section: metricas
 order: 140
+group: "Clientes"
 roles: [owner, admin, barbero]
 screens: [/]
 keywords: [frecuencia de visita, cada cuánto vienen, semanal, quincenal, mensual, cada dos semanas, ciclo de visita, cuántas veces al mes, clientes frecuentes, ritmo de visitas, clientes]

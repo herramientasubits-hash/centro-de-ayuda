@@ -3,7 +3,8 @@ id: clientes/productos-de-un-cliente
 title: "Los productos que compró un cliente"
 description: "Qué muestra la pestaña Productos de la ficha de un cliente: cada producto que ha comprado y cuántas unidades lleva."
 section: clientes
-order: 100
+order: 130
+group: "La ficha de un cliente"
 roles: [todos]
 screens: [/customers/*]
 keywords: [productos de un cliente, qué compró un cliente, compras del cliente, unidades compradas, pestaña productos, historial de compras, productos comprados, qué le vendí, cera, pomada, shampoo, venta de productos a un cliente]

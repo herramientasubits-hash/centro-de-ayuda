@@ -3,7 +3,8 @@ id: equipo/codigo-de-un-barbero
 title: "El código de un barbero"
 description: "Dónde está el campo Código en la ficha de un barbero y por qué no debes compartirlo."
 section: equipo
-order: 270
+order: 200
+group: "La ficha de un barbero"
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [código del barbero, código, información personal, pin del barbero, clave del barbero, código de acceso, dato sensible, ficha del barbero, identificador, número de barbero]

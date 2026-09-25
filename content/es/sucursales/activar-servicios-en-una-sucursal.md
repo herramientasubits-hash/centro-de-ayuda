@@ -3,7 +3,8 @@ id: sucursales/activar-servicios-en-una-sucursal
 title: "Activar servicios en una sucursal"
 description: "Cómo elegir cuáles de los servicios de tu empresa ofrece la sucursal donde estás, con la pantalla Activar servicios y su interruptor por servicio."
 section: sucursales
-order: 90
+order: 150
+group: "Activar equipo y catálogos"
 roles: [owner, admin]
 screens: [/services, /services/location/activate-service]
 keywords: [activar servicios, importar servicios, servicio en otra sucursal, sucursal nueva, interruptor, catálogo de servicios, guardar, no veo un servicio, listado de servicios, activar servicio]

@@ -3,7 +3,8 @@ id: agendamiento-online/elegir-fecha-y-hora
 title: "Elegir fecha y hora"
 description: "El paso Fecha y hora de la reserva online: los días del mes, las horas libres del barbero en Tarde y Noche, y la opción de aceptar a cualquier barbero para tener más horas."
 section: agendamiento-online
-order: 50
+order: 70
+group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [elegir hora, elegir fecha, horarios disponibles, horas libres, tarde, noche, any available barber, sin preferencia, cualquier barbero, disponibilidad]
