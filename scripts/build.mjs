@@ -104,7 +104,8 @@ for (const file of files) {
       order: Number(data.order ?? 0),
       roles: data.roles ?? ["todos"],
       screens: data.screens ?? [],
-      keywords: data.keywords ?? [],
+      // YAML lee `+57` o `no` como número o booleano: en el índice todo es texto.
+      keywords: (data.keywords ?? []).map(String),
       related: data.related ?? [],
       status: data.status ?? "draft",
       // YAML lee `2026-09-24` como fecha: se guarda siempre como texto ISO.
