@@ -1,45 +1,53 @@
 ---
 id: configuracion/agendamiento-online-panel-lateral
 title: "Reservas en tu sitio web: botón «Book now» flotante"
-description: "Cómo agregar a tu sitio web el panel lateral de reservas, con un botón flotante «Book now», copiando el código desde Barberlytics."
+description: "Cómo agregar a tu sitio web el Panel lateral de reservas: un botón flotante «Book now» que abre la reserva sin salir de tu página, copiando el código con Copiar."
 section: configuracion
 order: 60
-roles: [owner]
+roles: [owner, admin]
 screens: [/online-booking]
-keywords: [panel lateral, book now, botón flotante, reservas en mi sitio web, agendamiento online, widget, código para mi página, copiar código, incrustar reservas, reserva online, sitio web, pegar código]
-related: [configuracion/agendamiento-online-abrir-desde-un-enlace, configuracion/agendamiento-online-embebido]
-status: draft
+keywords: [panel lateral, book now, botón flotante, reservas en mi sitio web, agendamiento online, widget, código para mi página, copiar código, incrustar reservas, reserva online, sitio web, pegar código, data-mode floating, script]
+related: [configuracion/agendamiento-online-que-es, configuracion/agendamiento-online-abrir-desde-un-enlace, configuracion/agendamiento-online-embebido, configuracion/enlace-directo-de-reserva-y-utm]
+status: review
 updated: 2026-09-25
 ---
 
 # Reservas en tu sitio web: botón «Book now» flotante
 
-**En resumen:** la opción **Panel lateral** pone un botón flotante «Book now» en tu sitio web. Copias el código desde Barberlytics con el botón **Copiar** y lo pegas en tu página.
+**En resumen:** la opción **Panel lateral** pone un botón flotante «Book now» abajo a la derecha de tu sitio web. Al pulsarlo, la reserva se abre en un panel sobre tu página, sin salir de ella. Copias el código con **Copiar** y lo pegas en tu sitio.
 
 ## Dónde está
 
-1. Ve a **Configuración**.
-2. En **Configuración de la cuenta**, toca **Agendamiento online**. La pantalla se llama «Reserva online».
-3. Busca «Agrega las reservas a tu sitio web». Ahí hay tres formas de agregarlas: **Panel lateral**, **Abrir desde enlace** y **Reserva embebida**.
+**Configuración › Configuración de la cuenta › Agendamiento online**. La tarjeta dice: «Ajustar la forma en que los clientes pueden reservar y gestionar sus citas en línea». En la pantalla «Reserva online», busca el bloque «Agrega las reservas a tu sitio web» y la opción **Panel lateral**.
+
+## Qué hace
+
+La pantalla lo explica así: «Agrega un botón flotante "Book now" abajo a la derecha de tu sitio. Al pulsarlo, el flujo de reserva se abre en un panel sobre tu página, sin salir de ella.» Y recomienda: «Ideal para un sitio que ya existe: el <div> puede ir en cualquier parte, el botón se posiciona solo.»
 
 ## Pasos
 
-1. Elige **Panel lateral**.
-2. Toca **Copiar**.
-3. Pega el código en tu sitio web.
+1. En «Agrega las reservas a tu sitio web», elige **Panel lateral**.
+2. Toca **Copiar**. El fragmento se copia con los datos de tu barbería ya puestos.
+   ![La opción Panel lateral con su fragmento de código y el botón Copiar](/assets/es/configuracion/agendamiento-online-panel-lateral/fragmento.png)
+3. Pega el fragmento en tu sitio web, en cualquier parte de la página. El botón se coloca solo.
 
-El código usa el script `barberlytics-widgets.js` y un elemento `<div>` con `data-bl-widget="booking"`. El que copias ya trae el identificador de tu barbería. En los ejemplos de este centro de ayuda lo llamamos **TU-ID**: no lo copies de aquí, copia siempre el tuyo desde la pantalla.
+El fragmento se parece a este. Aquí TU-ID y TU-PERFIL son solo nombres de ejemplo: copia siempre el tuyo desde la pantalla con **Copiar**.
 
-> [!NOTE]
-> Aún no está documentado dónde pegar el código según cómo esté hecho tu sitio web, ni cómo se ve el panel una vez abierto. Si otra persona administra tu sitio, envíale el código que copiaste.
+```html
+<div data-bl-widget="booking" data-uuid="TU-ID" data-profile="TU-PERFIL" data-timezone="America/Bogota" data-mode="floating"></div>
+<script src="https://fd.barberlytics.com/barberlytics-widgets.js" async></script>
+```
+
+> [!TIP]
+> Si usas dos formas en la misma página, la pantalla pide incluir el `<script>` una sola vez.
 
 ## Preguntas frecuentes
 
-**¿Puedo cambiar el texto «Book now»?**
-Aún no lo tenemos documentado. Lo que sí sabemos es que el panel lateral muestra un botón flotante con ese texto.
+**¿Tengo que saber programar?**
+La pantalla te da el código listo. Pegarlo depende de cómo esté hecho tu sitio; la misma pantalla avisa que «si no tienes experiencia técnica, podrías necesitar el apoyo de un programador». Si otra persona administra tu sitio, envíale el fragmento.
 
 **¿Qué pasa si no tengo sitio web?**
-Puedes usar el **Enlace directo de reserva**, que está en la misma pantalla. Mira El enlace directo de reserva y los parámetros UTM.
+Usa el **Enlace directo de reserva** de la misma pantalla. Mira [El enlace directo de reserva y los parámetros UTM](/ayuda/configuracion/enlace-directo-de-reserva-y-utm).
 
 **¿Todos mis servicios aparecen en la reserva?**
-Cada servicio tiene un interruptor **Privado / Público** que decide si es visible en el agendamiento online.
+Solo los que están en **Público**. Mira [Servicio público o privado](/ayuda/servicios/servicio-publico-o-privado).

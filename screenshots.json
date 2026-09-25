@@ -3164,7 +3164,10 @@
     "route": "/online-booking",
     "state": "prod-page",
     "viewport": "tall",
-    "theme": "light"
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
   },
   "configuracion/agendamiento-online-panel-lateral/fragmento": {
     "source": "produccion",
@@ -3172,7 +3175,10 @@
     "state": "prod-page",
     "viewport": "tall",
     "theme": "light",
-    "clip": "text=Panel lateral >> xpath=ancestor::*[2]"
+    "clip": "text=Panel lateral >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
   },
   "configuracion/agendamiento-online-abrir-desde-un-enlace/fragmento": {
     "source": "produccion",
@@ -3180,7 +3186,10 @@
     "state": "prod-page",
     "viewport": "tall",
     "theme": "light",
-    "clip": "text=Abrir desde enlace >> xpath=ancestor::*[2]"
+    "clip": "text=Abrir desde enlace >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
   },
   "configuracion/agendamiento-online-embebido/fragmento": {
     "source": "produccion",
@@ -3188,7 +3197,10 @@
     "state": "prod-page",
     "viewport": "tall",
     "theme": "light",
-    "clip": "text=Reserva embebida >> xpath=ancestor::*[2]"
+    "clip": "text=Reserva embebida >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
   },
   "configuracion/enlace-directo-de-reserva-y-utm/enlace": {
     "source": "produccion",
@@ -3196,7 +3208,10 @@
     "state": "prod-page",
     "viewport": "tall",
     "theme": "light",
-    "clip": "text=Link de reserva online para tu sitio web >> xpath=ancestor::*[2]"
+    "clip": "text=Link de reserva online para tu sitio web >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
   },
   "configuracion/periodos-de-cierre/pantalla": {
     "source": "produccion",
