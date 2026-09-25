@@ -33,7 +33,7 @@ const noMask = args.includes("--no-mask");
 const filter = args.filter((arg) => !arg.startsWith("-"));
 
 // `tall` es para páginas largas: la app hace scroll dentro de un contenedor y fullPage no las alcanza.
-const VIEWPORTS = { desktop: { width: 1280, height: 800 }, tall: { width: 1280, height: 2400 }, mobile: { width: 390, height: 844 } };
+const VIEWPORTS = { desktop: { width: 1280, height: 800 }, tall: { width: 1280, height: 2400 }, medium: { width: 1280, height: 1300 }, mobile: { width: 390, height: 844 } };
 const CLIP_PADDING = 16;
 
 /** Los tres botones desplegables de la cabecera de producción, en orden. */
@@ -42,11 +42,12 @@ const headerToggle = (page, index) => page.locator(".actions-dashboard > div.dro
 async function prodPage(page, recipe) {
   await page.goto(`${PROD_URL}${recipe.route}`);
   await page.locator(".actions-dashboard").waitFor();
-  await page.waitForLoadState("networkidle");
+  // El calendario consulta sin parar: si la red no se calma en 8 s, seguimos.
+  await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   await page.waitForTimeout(1200);
   // La sesión guardada arranca sin sucursal elegida; la receta puede pedir otra.
   if (!recipe.keepBranchChooser && (await chooseBranch(page, recipe.branch))) {
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   }
   await runSteps(page, recipe.steps);
 }

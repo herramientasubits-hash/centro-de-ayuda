@@ -67,13 +67,13 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 
 ## Estado
 
-**248 artículos planeados · 81 escritos (33 %)**
+**249 artículos planeados · 123 escritos (49 %)**
 
 | Estado | Artículos |
 |---|---|
-| ○ pendiente | 167 |
-| ◐ borrador | 34 |
-| ◑ en revisión | 47 |
+| ○ pendiente | 126 |
+| ◐ borrador | 69 |
+| ◑ en revisión | 54 |
 | ● publicado | 0 |
 
 ### Por sección
@@ -85,8 +85,8 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 | Sucursales | 19 | 13 | 3 |
 | Roles y permisos | 16 | 13 | 2 |
 | Moverte por la app | 7 | 4 | 0 |
-| Métricas | 20 | 2 | 10 |
-| Calendario | 29 | 4 | 17 |
+| Métricas | 20 | 20 | 0 |
+| Calendario | 30 | 28 | 1 |
 | Clientes | 17 | 6 | 6 |
 | Servicios | 13 | 2 | 8 |
 | Productos | 10 | 2 | 5 |
@@ -102,11 +102,11 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 
 | Necesita | Qué implica | Artículos pendientes | De ellos P1 |
 |---|---|---|---|
-| **L** | leer producción | 88 | 58 |
-| **E** | crear datos de prueba en la sucursal «Prueba Elkin» | 76 | 51 |
+| **L** | leer producción | 65 | 43 |
+| **E** | crear datos de prueba en la sucursal «Prueba Elkin» | 57 | 39 |
 | **R** | verlo con otro rol | 5 | 0 |
 | **C** | celular real (lo hace el usuario) | 4 | 3 |
-| **D** | confirmar una regla con el equipo | 101 | 59 |
+| **D** | confirmar una regla con el equipo | 73 | 44 |
 | **P** | pantalla pública, sin sesión | 2 | 2 |
 
 **Se pueden escribir ya, solo leyendo producción:** 4 artículos (2 de prioridad P1).
@@ -134,39 +134,8 @@ Cada línea es un artículo cuya regla la pantalla no explica. Se agrupan para l
 - Cambiar los permisos predeterminados de un rol
 - Cambiar los permisos de una persona sin cambiar su rol
 
-**Métricas**
-
-- Ticket promedio, tasa de cancelación y % de propinas
-- Ventas e ingresos: servicios, productos, impuestos, propinas y tarifas
-- Método de agendamiento y citas: interno, online y sin cita previa
-- Horas de solicitud de citas: mañana, tarde y noche
-- Distribución de pagos, reembolsos y descuentos
-- Ventas por servicio, ventas físicas y ventas de productos
-- Tasa de retención y clientes recurrentes
-- Ingreso promedio por cliente
-- Reservas online y rate de clientes sin cita previa
-- Preferencia de barbero: con y sin preferencia
-- Citas por tipo de cliente y nuevos vs recurrentes
-- Frecuencia de visita de tus clientes
-- Total neto del equipo y lealtad al barbero
-- Marketing: canales digitales, campañas y conversión
-- Puntaje de salud de tu barbería
-- Alertas de riesgo: clientes en riesgo, perdidos y vencidos
-- Mapa de capacidad: qué horas se llenan
-- Recomendaciones inteligentes: de dónde salen y qué hacer con ellas
-
 **Calendario**
 
-- Filtrar por equipo: quién aparece en el calendario
-- Crear una cita que se repite
-- Cliente que llega sin cita previa
-- Los estados de una cita: agendada, llegó, en silla, cerrada y terminada
-- Aplicar un descuento a una cita
-- El cliente no se presentó
-- Vacaciones de un barbero
-- Clientes sin preferencia de barbero: quién los atiende
-- Citas que crea el cliente: cuándo entran y cómo las recibes
-- No puedo agendar a esta hora
 - El cliente no recibió el recordatorio
 
 **Clientes**
@@ -377,25 +346,25 @@ _Cómo va tu barbería: negocio, clientes, barberos, marketing y recomendaciones
 | | Artículo | T | Prio. | Necesita | Pantallas |
 |---|---|---|---|---|---|
 | ◑ | Cómo leer Métricas: pestañas, filtros y periodos | C | P1 | L | `/` |
-| ◐ | Filtrar por sucursal, por barbero y por periodo | G | P1 | L | `/` |
-| ○ | Ticket promedio, tasa de cancelación y % de propinas | R | P1 | L D | `/` |
-| ○ | Ventas e ingresos: servicios, productos, impuestos, propinas y tarifas | R | P1 | L D | `/` |
-| ○ | Método de agendamiento y citas: interno, online y sin cita previa | R | P1 | L D | `/` |
-| ○ | Horas de solicitud de citas: mañana, tarde y noche | R | P2 | L D | `/` |
-| ○ | Distribución de pagos, reembolsos y descuentos | R | P2 | L D | `/` |
-| ○ | Ventas por servicio, ventas físicas y ventas de productos | R | P2 | L D | `/` |
-| ○ | Tasa de retención y clientes recurrentes | R | P1 | L D | `/` |
-| ○ | Ingreso promedio por cliente | R | P1 | L D | `/` |
-| ○ | Reservas online y rate de clientes sin cita previa | R | P1 | L D | `/` |
-| ○ | Preferencia de barbero: con y sin preferencia | R | P1 | L D | `/` |
-| ○ | Citas por tipo de cliente y nuevos vs recurrentes | R | P1 | L D | `/` |
-| ○ | Frecuencia de visita de tus clientes | R | P1 | L D | `/` |
-| ○ | Total neto del equipo y lealtad al barbero | R | P1 | L D | `/` |
-| ○ | Marketing: canales digitales, campañas y conversión | R | P2 | L D | `/` |
-| ○ | Puntaje de salud de tu barbería | R | P2 | L D | `/` |
-| ○ | Alertas de riesgo: clientes en riesgo, perdidos y vencidos | R | P2 | L D | `/` |
-| ○ | Mapa de capacidad: qué horas se llenan | R | P2 | L D | `/` |
-| ○ | Recomendaciones inteligentes: de dónde salen y qué hacer con ellas | R | P2 | L D | `/` |
+| ◑ | Filtrar por sucursal, por barbero y por periodo | G | P1 | L | `/` |
+| ◐ | Ticket promedio, tasa de cancelación y % de propinas | R | P1 | L D | `/` |
+| ◐ | Ventas e ingresos: servicios, productos, impuestos, propinas y tarifas | R | P1 | L D | `/` |
+| ◐ | Método de agendamiento y citas: interno, online y sin cita previa | R | P1 | L D | `/` |
+| ◐ | Horas de solicitud de citas: mañana, tarde y noche | R | P2 | L D | `/` |
+| ◐ | Distribución de pagos, reembolsos y descuentos | R | P2 | L D | `/` |
+| ◐ | Ventas por servicio, ventas físicas y ventas de productos | R | P2 | L D | `/` |
+| ◐ | Tasa de retención y clientes recurrentes | R | P1 | L D | `/` |
+| ◐ | Ingreso promedio por cliente | R | P1 | L D | `/` |
+| ◐ | Reservas online y rate de clientes sin cita previa | R | P1 | L D | `/` |
+| ◐ | Preferencia de barbero: con y sin preferencia | R | P1 | L D | `/` |
+| ◐ | Citas por tipo de cliente y nuevos vs recurrentes | R | P1 | L D | `/` |
+| ◐ | Frecuencia de visita de tus clientes | R | P1 | L D | `/` |
+| ◐ | Total neto del equipo y lealtad al barbero | R | P1 | L D | `/` |
+| ◐ | Marketing: canales digitales, campañas y conversión | R | P2 | L D | `/` |
+| ◐ | Puntaje de salud de tu barbería | R | P2 | L D | `/` |
+| ◐ | Alertas de riesgo: clientes en riesgo, perdidos y vencidos | R | P2 | L D | `/` |
+| ◐ | Mapa de capacidad: qué horas se llenan | R | P2 | L D | `/` |
+| ◐ | Recomendaciones inteligentes: de dónde salen y qué hacer con ellas | R | P2 | L D | `/` |
 
 ### Calendario
 
@@ -403,35 +372,36 @@ _Agendar, cobrar, mover y cancelar citas; clientes sin cita, ventas rápidas y r
 
 | | Artículo | T | Prio. | Necesita | Pantallas |
 |---|---|---|---|---|---|
-| ◐ | Conoce el calendario: barberos, horas y colores | C | P1 | L | `/calendar` |
-| ◐ | Ver el día, la agenda o el mes | G | P1 | L | `/calendar` |
-| ○ | Filtrar por equipo: quién aparece en el calendario | G | P1 | L D | `/calendar` |
-| ◐ | Moverte entre fechas | G | P2 | L | `/calendar` |
-| ○ | Crear una cita | G | P1 | E | `/calendar` |
-| ○ | Crear una cita para un cliente nuevo | G | P1 | E | `/calendar` |
-| ○ | Crear una cita que se repite | G | P2 | E D | `/calendar` |
-| ○ | Cliente que llega sin cita previa | G | P1 | E D | `/calendar` |
-| ○ | Venta sin cita | G | P1 | E | `/calendar` |
-| ○ | Crear una venta rápida de productos | G | P1 | E | `/calendar` |
-| ○ | La lista de cobros: por cobrar y pagado | G | P1 | L E | `/calendar` |
-| ○ | Los estados de una cita: agendada, llegó, en silla, cerrada y terminada | C | P1 | L D | `/calendar` `/transactions` |
-| ○ | Abrir una cita y ver su detalle | G | P1 | E | `/calendar` |
-| ○ | Marcar que el cliente llegó (check in) | G | P1 | E | `/calendar` |
-| ○ | Pasar al cliente a la silla | G | P2 | E | `/calendar` |
-| ○ | Cobrar una cita (check out) | G | P1 | E | `/calendar` |
-| ○ | Cobrar con propina | G | P2 | E | `/calendar` |
-| ○ | Aplicar un descuento a una cita | G | P2 | E D | `/calendar` |
-| ○ | Mover o reprogramar una cita | G | P1 | E | `/calendar` |
-| ○ | Cancelar una cita | G | P1 | E | `/calendar` |
-| ○ | El cliente no se presentó | G | P2 | E D | `/calendar` |
-| ○ | Bloquear el calendario de un barbero | G | P1 | E | `/calendar` |
-| ○ | Vacaciones de un barbero | G | P2 | E D | `/calendar` |
-| ○ | Clientes sin preferencia de barbero: quién los atiende | C | P1 | L D | `/team/barbers/lineup` |
+| ◑ | Conoce el calendario: barberos, horas y colores | C | P1 | L | `/calendar` |
+| ◑ | Ver el día, la agenda o el mes | G | P1 | L | `/calendar` |
+| ◑ | Filtrar por equipo: quién aparece en el calendario | G | P1 | L D | `/calendar` |
+| ◑ | Moverte entre fechas | G | P2 | L | `/calendar` |
+| ◐ | Crear una cita | G | P1 | E | `/calendar` |
+| ◐ | Crear una cita para un cliente nuevo | G | P1 | E | `/calendar` |
+| ◐ | Crear una cita que se repite | G | P2 | E D | `/calendar` |
+| ◐ | Cliente que llega sin cita previa | G | P1 | E D | `/calendar` |
+| ◐ | Venta sin cita | G | P1 | E | `/calendar` |
+| ◐ | Crear una venta rápida de productos | G | P1 | E | `/calendar` |
+| ◑ | La lista de cobros: por cobrar y pagado | G | P1 | L E | `/calendar` |
+| ◐ | Los estados de una cita: agendada, llegó, en silla, cerrada y terminada | C | P1 | L D | `/calendar` `/transactions` |
+| ◑ | Abrir una cita y ver su detalle | G | P1 | E | `/calendar` |
+| ◐ | Marcar que el cliente llegó (check in) | G | P1 | E | `/calendar` |
+| ◐ | Pasar al cliente a la silla | G | P2 | E | `/calendar` |
+| ◐ | Cobrar una cita (check out) | G | P1 | E | `/calendar` |
+| ◐ | Cobrar con propina | G | P2 | E | `/calendar` |
+| ◐ | Aplicar un descuento a una cita | G | P2 | E D | `/calendar` |
+| ◐ | Mover o reprogramar una cita | G | P1 | E | `/calendar` |
+| ◐ | Cancelar una cita | G | P1 | E | `/calendar` |
+| ◐ | El cliente no se presentó | G | P2 | E D | `/calendar` |
+| ◐ | Bloquear el calendario de un barbero | G | P1 | E | `/calendar` |
+| ◐ | Vacaciones de un barbero | G | P2 | E D | `/calendar` |
+| ◐ | Clientes sin preferencia de barbero: quién los atiende | C | P1 | L D | `/team/barbers/lineup` |
 | ○ | Reservas online: cómo las ve tu cliente | C | P1 | L P | `/online-booking` |
-| ○ | Citas que crea el cliente: cuándo entran y cómo las recibes | C | P2 | D E | `/calendar` |
-| ○ | No puedo agendar a esta hora | P | P1 | L D | `/calendar` |
+| ◐ | Citas que crea el cliente: cuándo entran y cómo las recibes | C | P2 | D E | `/calendar` |
+| ◐ | No puedo agendar a esta hora | P | P1 | L D | `/calendar` |
 | ◑ | Un barbero no aparece en el calendario | P | P1 | L | `/calendar` |
 | ○ | El cliente no recibió el recordatorio | P | P2 | D | `/calendar` |
+| ◐ | La lista de espera: anotar a un cliente cuando no hay hueco | G | P2 | L E | `/calendar` |
 
 ### Clientes
 

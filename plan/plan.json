@@ -4296,6 +4296,26 @@
     "D"
    ],
    "priority": "P1"
+  },
+  {
+   "id": "calendario/lista-de-espera",
+   "title": "La lista de espera: anotar a un cliente cuando no hay hueco",
+   "section": "calendario",
+   "type": "G",
+   "screens": [
+    "/calendar"
+   ],
+   "roles": [
+    "owner",
+    "admin",
+    "recepcion",
+    "barbero"
+   ],
+   "needs": [
+    "L",
+    "E"
+   ],
+   "priority": "P2"
   }
  ]
 }

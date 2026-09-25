@@ -24,12 +24,18 @@ try {
   const context = await browser.newContext({ storageState: path.join(ROOT, ".auth", "prod.json"), viewport: { width: 1280, height: 800 }, locale: "es-CO" });
   const page = await context.newPage();
   await page.goto(`${PROD_URL}${route}`);
-  await page.waitForLoadState("networkidle");
+  // El calendario consulta sin parar: si la red no se calma en 8 s, seguimos.
+  await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   await page.waitForTimeout(1500);
   await chooseBranch(page);
+  // --click "Texto" pulsa por texto visible; --click "sel:.css" por selector; "sel:.css*5" lo repite 5 veces.
   for (const text of clicks) {
-    await page.getByText(text, { exact: true }).locator("visible=true").first().click();
-    await page.waitForTimeout(900);
+    const [, selector, times] = text.match(/^sel:(.+?)(?:\*(\d+))?$/) ?? [];
+    for (let i = 0; i < Number(times ?? 1); i += 1) {
+      if (selector) await page.locator(selector).first().click();
+      else await page.getByText(text, { exact: true }).locator("visible=true").first().click();
+      await page.waitForTimeout(900);
+    }
   }
   for (const hover of hovers) {
     await page.locator(hover).first().hover();

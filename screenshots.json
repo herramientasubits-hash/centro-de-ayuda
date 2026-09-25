@@ -725,5 +725,672 @@
       }
     ],
     "clip": ".containerDahsboarMiddle:has-text(\"Recomendaciones Inteligentes\")"
+  },
+  "calendario/conoce-el-calendario/pantalla": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light"
+  },
+  "calendario/conoce-el-calendario/barra": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".container-header-calendar"
+  },
+  "calendario/conoce-el-calendario/columnas": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".container-barbers-calendar"
+  },
+  "calendario/conoce-el-calendario/tarjeta-cita": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": "section.calendar-card-appointment"
+  },
+  "calendario/conoce-el-calendario/menu-barbero": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".dropdown-button-barbers:not([disabled])",
+        "wait": 900
+      }
+    ],
+    "clip": ".container-barbers-calendar",
+    "clipExtra": 130
+  },
+  "calendario/conoce-el-calendario/franja-vacia": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".container-events-barberlytics >> nth=1 >> button.calendar-slot-section:not(.not-work) >> nth=6",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/ver-el-dia-la-agenda-o-el-mes/selector": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Dia",
+        "wait": 900
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "calendario/ver-el-dia-la-agenda-o-el-mes/dia": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "calendario/ver-el-dia-la-agenda-o-el-mes/agenda": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Dia",
+        "wait": 900
+      },
+      {
+        "clickText": "Agenda",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/ver-el-dia-la-agenda-o-el-mes/mes": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Dia",
+        "wait": 900
+      },
+      {
+        "clickText": "Mes",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/ver-el-dia-la-agenda-o-el-mes/equipo-filtro": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Trabajando",
+        "wait": 900
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "calendario/moverte-entre-fechas/flechas": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "clip": ".container-header-calendar",
+    "highlight": ".container-change-day"
+  },
+  "calendario/moverte-entre-fechas/selector-de-fecha": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button[aria-label^='Elige fecha']",
+        "wait": 900
+      }
+    ],
+    "clip": ".MuiPickersPopper-root, .MuiPickersLayout-root"
+  },
+  "calendario/moverte-entre-fechas/hoy": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "button[title='Dia anterior']",
+        "wait": 1200
+      }
+    ],
+    "clip": ".container-header-calendar",
+    "highlight": ".container-header-calendar >> text=Hoy"
+  },
+  "calendario/las-acciones-del-calendario/menu-acciones": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      }
+    ],
+    "clip": ".container-header-calendar",
+    "clipExtra": 200
+  },
+  "calendario/las-acciones-del-calendario/menu-ajustes": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".dropdown-wrapper button",
+        "wait": 900
+      }
+    ],
+    "clip": ".container-header-calendar",
+    "clipExtra": 120
+  },
+  "calendario/crear-una-cita/panel": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/crear-una-cita/cliente": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      },
+      {
+        "click": ".rightmodal-aside-2 button.button-input:has-text('Cliente')",
+        "wait": 1200
+      }
+    ]
+  },
+  "calendario/crear-una-cita/servicio": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      },
+      {
+        "click": ".rightmodal-aside-2 button.button-input:has-text('Servicio')",
+        "wait": 1200
+      }
+    ]
+  },
+  "calendario/crear-una-cita/barbero": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      },
+      {
+        "click": ".rightmodal-aside-2 button.button-input:has-text('Barbero')",
+        "wait": 1200
+      }
+    ]
+  },
+  "calendario/crear-una-cita/fecha-y-hora": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      },
+      {
+        "click": ".rightmodal-aside-2 button.button-input:has-text('Fecha & Hora')",
+        "wait": 1200
+      }
+    ]
+  },
+  "calendario/crear-una-cita/repeticion": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      },
+      {
+        "click": ".rightmodal-aside-2 [role=combobox]",
+        "wait": 800
+      }
+    ],
+    "clip": "[role=listbox]"
+  },
+  "calendario/crear-una-cita/sin-cita-previa": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear cita",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2",
+    "highlight": "label[for='walkin'] >> xpath=.."
+  },
+  "calendario/abrir-una-cita/resumen": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "medium",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/acciones": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "click": ".ov-head-menu",
+        "wait": 800
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/notas": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "medium",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Notas",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/cliente": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "medium",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Cliente",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/historial": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "medium",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Historial",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/agregar-nota": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Notas",
+        "wait": 900
+      },
+      {
+        "clickText": "Agregar nota",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/abrir-una-cita/cambiar-duracion": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2",
+    "highlight": ".calendar-duration-value"
+  },
+  "calendario/cobrar-una-cita/pagar-cita": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Pagar cita",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/cobrar-una-cita/checkout": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "steps": [
+      {
+        "click": "section.calendar-card-appointment",
+        "wait": 1200
+      },
+      {
+        "clickText": "Pagar cita",
+        "wait": 1200
+      },
+      {
+        "clickText": "Abrir checkout completo",
+        "wait": 1500
+      }
+    ]
+  },
+  "calendario/lista-de-cobros/por-cobrar": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Lista de cobros",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/lista-de-cobros/pagado": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Lista de cobros",
+        "wait": 1200
+      },
+      {
+        "clickText": "Pagado",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/venta-rapida/panel": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear venta rapida",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/venta-sin-cita/panel": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Acciones",
+        "wait": 900
+      },
+      {
+        "clickText": "Venta sin cita",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/lista-de-espera/panel": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".dropdown-wrapper button",
+        "wait": 900
+      },
+      {
+        "clickText": "Lista de espera",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/lista-de-espera/anadir": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "click": ".dropdown-wrapper button",
+        "wait": 900
+      },
+      {
+        "clickText": "Lista de espera",
+        "wait": 1200
+      },
+      {
+        "clickText": "Añadir a la lista de espera",
+        "wait": 900
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
+  },
+  "calendario/bloquear-el-calendario/menu": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Dia",
+        "wait": 900
+      },
+      {
+        "clickText": "Mes",
+        "wait": 1500
+      },
+      {
+        "click": ".dropdown-button-barbers:not([disabled])",
+        "wait": 900
+      }
+    ],
+    "clip": ".container-barbers-calendar",
+    "clipExtra": 150
+  },
+  "calendario/bloquear-el-calendario/panel": {
+    "source": "produccion",
+    "route": "/calendar",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "steps": [
+      {
+        "clickText": "Dia",
+        "wait": 900
+      },
+      {
+        "clickText": "Mes",
+        "wait": 1500
+      },
+      {
+        "click": ".dropdown-button-barbers:not([disabled])",
+        "wait": 900
+      },
+      {
+        "clickText": "Crear bloque de tiempo",
+        "wait": 1200
+      }
+    ],
+    "clip": ".rightmodal-aside-2"
   }
 }
