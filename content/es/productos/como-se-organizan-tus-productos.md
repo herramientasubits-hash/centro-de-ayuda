@@ -7,7 +7,7 @@ order: 10
 roles: [owner, admin]
 screens: [/products]
 keywords: [productos, categorías de productos, catálogo de productos, organizar productos, activar productos, productos por sucursal, no veo un producto, productos de barbería, crear producto, inventario]
-related: [productos/la-lista-de-productos, sucursales-roles-y-permisos/activar-productos-en-una-sucursal, sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales]
+related: [productos/la-lista-de-productos, sucursales/activar-productos-en-una-sucursal, sucursales/catalogos-compartidos-entre-sucursales]
 status: review
 updated: 2026-09-25
 ---

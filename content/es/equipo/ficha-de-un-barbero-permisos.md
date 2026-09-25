@@ -7,7 +7,7 @@ order: 140
 roles: [owner, admin]
 screens: [/team/barbers/view/*]
 keywords: [permisos de un barbero, permisos de una persona, matriz de permisos, ver crear editar borrar, quitar permisos, ocultar sección del menú, personalizar permisos, permisos por usuario, rol y permisos, no ve una sección]
-related: [sucursales-roles-y-permisos/tabla-de-permisos-por-rol, sucursales-roles-y-permisos/como-funcionan-los-permisos, equipo/ficha-de-un-barbero-perfil]
+related: [roles-y-permisos/tabla-de-permisos-por-rol, roles-y-permisos/como-funcionan-los-permisos, equipo/ficha-de-un-barbero-perfil]
 status: draft
 updated: 2026-09-25
 ---
@@ -35,7 +35,7 @@ Es la misma matriz que ves en **Configuración** › **Permisos**, pero aquí es
 
 ## De dónde salen los permisos de una persona
 
-1. Cuando creas a la persona, sus permisos se **copian de su rol**. Los valores de fábrica de cada rol están en [Tabla de permisos por rol](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+1. Cuando creas a la persona, sus permisos se **copian de su rol**. Los valores de fábrica de cada rol están en [Tabla de permisos por rol](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).
 2. Después, los puedes **personalizar** en esta pestaña.
 
 Por eso los permisos de una persona pueden ser distintos a los de su rol. Por ejemplo, un barbero por comisión puede tener **Bloquear calendario** completo, aunque el valor de su rol sea solo **Ver**.

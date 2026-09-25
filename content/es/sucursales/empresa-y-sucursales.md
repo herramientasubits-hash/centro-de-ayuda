@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/empresa-y-sucursales
+id: sucursales/empresa-y-sucursales
 title: "Empresa y sucursales: en qué se diferencian"
 description: "Qué es la empresa, qué es una sucursal, dónde se ve cada una y qué datos tiene cada una."
-section: sucursales-roles-y-permisos
+section: sucursales
 order: 20
 roles: [owner, admin]
 screens: [/companies, /companies/locations]
 keywords: [empresa, sucursal, locación, ubicación, diferencia, lista de sucursales, lista de empresas, crear sucursal, identificación, nit]
-related: [sucursales-roles-y-permisos/como-se-organiza-tu-barberia, sucursales-roles-y-permisos/editar-una-sucursal, navegacion/cambiar-de-sucursal]
+related: [sucursales/como-se-organiza-tu-barberia, sucursales/editar-una-sucursal, navegacion/cambiar-de-sucursal]
 status: review
 updated: 2026-09-25
 ---

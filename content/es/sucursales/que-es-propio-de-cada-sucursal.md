@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal
+id: sucursales/que-es-propio-de-cada-sucursal
 title: "Qué cambia de una sucursal a otra: moneda, zona horaria, idioma y horario"
 description: "Los datos que cada sucursal tiene por su cuenta y los que son de toda la empresa."
-section: sucursales-roles-y-permisos
+section: sucursales
 order: 30
 roles: [owner, admin]
 screens: [/companies/locations, /business-details/*, /sales-pricing]
 keywords: [moneda, zona horaria, idioma, horario, hora de inicio, formato de hora, sucursal, otro país, pesos, dólares, cambiar moneda, propio de cada sucursal]
-related: [sucursales-roles-y-permisos/editar-una-sucursal, sucursales-roles-y-permisos/como-se-organiza-tu-barberia]
+related: [sucursales/editar-una-sucursal, sucursales/como-se-organiza-tu-barberia]
 status: draft
 updated: 2026-09-25
 ---

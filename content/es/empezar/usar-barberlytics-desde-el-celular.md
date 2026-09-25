@@ -7,7 +7,7 @@ order: 30
 roles: [todos]
 screens: [/*]
 keywords: [celular, móvil, teléfono, pantalla pequeña, menú de abajo, barra inferior, botón más, usar desde el celular, app, navegar en el celular, tableta]
-related: [navegacion/las-secciones-de-barberlytics, sucursales-roles-y-permisos/que-ve-cada-rol-en-el-menu]
+related: [navegacion/las-secciones-de-barberlytics, roles-y-permisos/que-ve-cada-rol-en-el-menu]
 status: review
 updated: 2026-09-25
 ---

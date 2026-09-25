@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/permisos-dueno
+id: roles-y-permisos/permisos-dueno
 title: "Qué puede hacer y qué ve el dueño"
 description: "Los permisos del rol Dueño: acceso total a la barbería."
-section: sucursales-roles-y-permisos
-order: 210
+section: roles-y-permisos
+order: 80
 roles: [owner]
 screens: [/team-permission]
 keywords: [dueño, propietario, permisos del dueño, acceso total, qué ve el dueño, rol dueño]
-related: [sucursales-roles-y-permisos/tabla-de-permisos-por-rol, sucursales-roles-y-permisos/los-cinco-roles, sucursales-roles-y-permisos/como-funcionan-los-permisos]
+related: [roles-y-permisos/tabla-de-permisos-por-rol, roles-y-permisos/los-cinco-roles, roles-y-permisos/como-funcionan-los-permisos]
 status: draft
 updated: 2026-09-25
 ---
@@ -35,4 +35,4 @@ updated: 2026-09-25
 ## Preguntas frecuentes
 
 **¿Puedo ser dueño y barbero a la vez?**
-Sí. Tu cuenta puede tener dos perfiles: mira [Perfiles y roles](/ayuda/sucursales-roles-y-permisos/perfiles-y-roles).
+Sí. Tu cuenta puede tener dos perfiles: mira [Perfiles y roles](/ayuda/roles-y-permisos/perfiles-y-roles).

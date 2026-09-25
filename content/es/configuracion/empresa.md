@@ -7,7 +7,7 @@ order: 120
 roles: [owner]
 screens: [/companies]
 keywords: [empresa, empresas, lista de empresas, identificación, datos de la empresa, razón social, nit, configuración de la empresa, sucursales de la empresa, estado de la empresa, teléfono]
-related: [sucursales-roles-y-permisos/empresa-y-sucursales, sucursales-roles-y-permisos/como-se-organiza-tu-barberia, configuracion/conoce-configuracion]
+related: [sucursales/empresa-y-sucursales, sucursales/como-se-organiza-tu-barberia, configuracion/conoce-configuracion]
 status: draft
 updated: 2026-09-25
 ---
@@ -32,7 +32,7 @@ La pantalla se llama «Lista de empresas». Sus columnas son:
 
 ## Empresa y sucursales
 
-Tu empresa agrupa tus sucursales, tu equipo y tus catálogos de servicios y productos. Las sucursales se ven en **Configuración › Sucursales**. Para entender la diferencia, mira [Empresa y sucursales: en qué se diferencian](/ayuda/sucursales-roles-y-permisos/empresa-y-sucursales).
+Tu empresa agrupa tus sucursales, tu equipo y tus catálogos de servicios y productos. Las sucursales se ven en **Configuración › Sucursales**. Para entender la diferencia, mira [Empresa y sucursales: en qué se diferencian](/ayuda/sucursales/empresa-y-sucursales).
 
 > [!NOTE]
 > Aún no está documentado cómo editar los datos de una empresa desde esta pantalla.

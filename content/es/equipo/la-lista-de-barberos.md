@@ -7,7 +7,7 @@ order: 20
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [lista de barberos, listado de barberos, barbero por comisión, barbero renta, barbero de renta, filtrar por nivel, estado del barbero, ver barbero, editar barbero, inactivar barbero, buscar un barbero]
-related: [equipo/conoce-la-seccion-equipo, equipo/ficha-de-un-barbero-perfil, sucursales-roles-y-permisos/activar-equipo-en-una-sucursal]
+related: [equipo/conoce-la-seccion-equipo, equipo/ficha-de-un-barbero-perfil, sucursales/activar-equipo-en-una-sucursal]
 status: review
 updated: 2026-09-25
 ---

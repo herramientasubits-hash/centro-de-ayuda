@@ -7,7 +7,7 @@ order: 45
 roles: [owner]
 screens: [/*]
 keywords: [dos perfiles, dueño y barbero, business, barber comission, mi nombre aparece dos veces, cambiar de perfil, soy dueño y corto pelo]
-related: [acceso-y-cuenta/cambiar-de-rol, sucursales-roles-y-permisos/perfiles-y-roles]
+related: [acceso-y-cuenta/cambiar-de-rol, roles-y-permisos/perfiles-y-roles]
 status: review
 updated: 2026-09-25
 ---

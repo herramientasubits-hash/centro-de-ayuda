@@ -7,7 +7,7 @@ order: 20
 roles: [owner]
 screens: [/*]
 keywords: [primeros pasos, empezar, configurar mi barbería, por dónde empiezo, checklist, dejar lista, preparar la barbería, comenzar, arrancar, nueva cuenta, dueño]
-related: [sucursales-roles-y-permisos/activar-equipo-en-una-sucursal, sucursales-roles-y-permisos/activar-servicios-en-una-sucursal, empezar/guia-del-dueno]
+related: [sucursales/activar-equipo-en-una-sucursal, sucursales/activar-servicios-en-una-sucursal, empezar/guia-del-dueno]
 status: draft
 updated: 2026-09-25
 ---

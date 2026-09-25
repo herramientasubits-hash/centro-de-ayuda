@@ -406,9 +406,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/como-se-organiza-tu-barberia",
+   "id": "sucursales/como-se-organiza-tu-barberia",
    "title": "Cómo se organiza tu barbería: empresa, sucursales, equipo y catálogos",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "C",
    "screens": [
     "/settings/*"
@@ -423,9 +423,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/empresa-y-sucursales",
+   "id": "sucursales/empresa-y-sucursales",
    "title": "Empresa y sucursales: en qué se diferencian",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "C",
    "screens": [
     "/companies",
@@ -440,9 +440,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal",
+   "id": "sucursales/que-es-propio-de-cada-sucursal",
    "title": "Qué cambia de una sucursal a otra: moneda, zona horaria, idioma y horario",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "R",
    "screens": [
     "/companies/locations/edit/*"
@@ -456,9 +456,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/equipo-compartido-entre-sucursales",
+   "id": "sucursales/equipo-compartido-entre-sucursales",
    "title": "El equipo es de la empresa y se activa en cada sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "C",
    "screens": [
     "/team/activate"
@@ -473,9 +473,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales",
+   "id": "sucursales/catalogos-compartidos-entre-sucursales",
    "title": "Servicios y productos: se crean una vez y se activan por sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "C",
    "screens": [
     "/services/location/activate-service"
@@ -490,9 +490,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/perfiles-y-roles",
+   "id": "roles-y-permisos/perfiles-y-roles",
    "title": "Perfiles y roles: qué son y en qué se diferencian",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "C",
    "screens": [
     "/team-permission"
@@ -507,9 +507,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/los-cinco-roles",
+   "id": "roles-y-permisos/los-cinco-roles",
    "title": "Los cinco roles y para qué sirve cada uno",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -524,9 +524,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/como-funcionan-los-permisos",
+   "id": "roles-y-permisos/como-funcionan-los-permisos",
    "title": "Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "C",
    "screens": [
     "/team-permission"
@@ -542,9 +542,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/tabla-de-permisos-por-rol",
+   "id": "roles-y-permisos/tabla-de-permisos-por-rol",
    "title": "Tabla de permisos: qué puede hacer cada rol",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -559,9 +559,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/permisos-dueno",
+   "id": "roles-y-permisos/permisos-dueno",
    "title": "Qué puede hacer y qué ve del dueño",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -577,9 +577,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/permisos-administrador-de-la-locacion",
+   "id": "roles-y-permisos/permisos-administrador-de-la-locacion",
    "title": "Qué puede hacer y qué ve del administrador de la locación",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -595,9 +595,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/permisos-recepcion",
+   "id": "roles-y-permisos/permisos-recepcion",
    "title": "Qué puede hacer y qué ve de recepción",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -613,9 +613,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/permisos-barbero-por-comision",
+   "id": "roles-y-permisos/permisos-barbero-por-comision",
    "title": "Qué puede hacer y qué ve del barbero por comisión",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -631,9 +631,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/permisos-barbero-de-renta",
+   "id": "roles-y-permisos/permisos-barbero-de-renta",
    "title": "Qué puede hacer y qué ve del barbero de renta",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/team-permission"
@@ -649,9 +649,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/que-ve-cada-rol-en-el-menu",
+   "id": "roles-y-permisos/que-ve-cada-rol-en-el-menu",
    "title": "Qué secciones del menú ve cada rol",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "R",
    "screens": [
     "/*"
@@ -666,9 +666,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/de-que-depende-lo-que-ves",
+   "id": "roles-y-permisos/de-que-depende-lo-que-ves",
    "title": "De qué depende lo que ves: tu rol, tu sucursal y tus permisos",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "C",
    "screens": [
     "/*"
@@ -683,9 +683,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/crear-una-sucursal",
+   "id": "sucursales/crear-una-sucursal",
    "title": "Crear una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations"
@@ -699,9 +699,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/editar-una-sucursal",
+   "id": "sucursales/editar-una-sucursal",
    "title": "Editar los datos de una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations/edit/*"
@@ -715,9 +715,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/ver-el-detalle-de-una-sucursal",
+   "id": "sucursales/ver-el-detalle-de-una-sucursal",
    "title": "Ver el detalle de una sucursal: clientes, equipo y licencia",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations/view/*"
@@ -732,9 +732,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/inactivar-una-sucursal",
+   "id": "sucursales/inactivar-una-sucursal",
    "title": "Inactivar una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations/view/*"
@@ -749,9 +749,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/borrar-una-sucursal",
+   "id": "sucursales/borrar-una-sucursal",
    "title": "Borrar una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations"
@@ -766,9 +766,9 @@
    "priority": "P3"
   },
   {
-   "id": "sucursales-roles-y-permisos/ver-todas-las-sucursales-a-la-vez",
+   "id": "sucursales/ver-todas-las-sucursales-a-la-vez",
    "title": "Ver todas las sucursales a la vez",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/*"
@@ -782,9 +782,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/activar-equipo-en-una-sucursal",
+   "id": "sucursales/activar-equipo-en-una-sucursal",
    "title": "Activar al equipo en una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/team/activate"
@@ -800,9 +800,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/activar-servicios-en-una-sucursal",
+   "id": "sucursales/activar-servicios-en-una-sucursal",
    "title": "Activar servicios en una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/services/location/activate-service"
@@ -818,9 +818,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/activar-productos-en-una-sucursal",
+   "id": "sucursales/activar-productos-en-una-sucursal",
    "title": "Activar productos en una sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/products/*"
@@ -836,9 +836,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/un-barbero-que-trabaja-en-dos-sucursales",
+   "id": "sucursales/un-barbero-que-trabaja-en-dos-sucursales",
    "title": "Un barbero que trabaja en dos sucursales",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/team/*"
@@ -852,9 +852,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/abrir-una-sucursal-nueva",
+   "id": "sucursales/abrir-una-sucursal-nueva",
    "title": "Abrir una sucursal nueva: la lista completa, paso a paso",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "G",
    "screens": [
     "/companies/locations"
@@ -868,9 +868,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/cambiar-los-permisos-de-un-rol",
+   "id": "roles-y-permisos/cambiar-los-permisos-de-un-rol",
    "title": "Cambiar los permisos predeterminados de un rol",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "G",
    "screens": [
     "/team-permission"
@@ -885,9 +885,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/cambiar-los-permisos-de-una-persona",
+   "id": "roles-y-permisos/cambiar-los-permisos-de-una-persona",
    "title": "Cambiar los permisos de una persona sin cambiar su rol",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "G",
    "screens": [
     "/team/barbers/view/*"
@@ -903,9 +903,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/darle-a-recepcion-solo-lo-necesario",
+   "id": "roles-y-permisos/darle-a-recepcion-solo-lo-necesario",
    "title": "Darle a recepción solo lo que necesita",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "G",
    "screens": [
     "/team-permission"
@@ -919,9 +919,9 @@
    "priority": "P2"
   },
   {
-   "id": "sucursales-roles-y-permisos/ajustes-generales-y-por-sucursal",
+   "id": "sucursales/ajustes-generales-y-por-sucursal",
    "title": "Ajustes generales y ajustes por sucursal: dónde se cambia cada uno",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "R",
    "screens": [
     "/settings"
@@ -936,9 +936,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/no-veo-a-un-barbero-en-mi-sucursal",
+   "id": "sucursales/no-veo-a-un-barbero-en-mi-sucursal",
    "title": "No veo a un barbero en mi sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "P",
    "screens": [
     "/team/barbers"
@@ -953,9 +953,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal",
+   "id": "sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal",
    "title": "No veo un servicio o un producto en mi sucursal",
-   "section": "sucursales-roles-y-permisos",
+   "section": "sucursales",
    "type": "P",
    "screens": [
     "/services",
@@ -971,9 +971,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/no-veo-una-seccion-del-menu",
+   "id": "roles-y-permisos/no-veo-una-seccion-del-menu",
    "title": "No veo una sección del menú",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "P",
    "screens": [
     "/*"
@@ -988,9 +988,9 @@
    "priority": "P1"
   },
   {
-   "id": "sucursales-roles-y-permisos/no-puedo-editar-o-borrar",
+   "id": "roles-y-permisos/no-puedo-editar-o-borrar",
    "title": "No puedo editar o borrar algo",
-   "section": "sucursales-roles-y-permisos",
+   "section": "roles-y-permisos",
    "type": "P",
    "screens": [
     "/*"

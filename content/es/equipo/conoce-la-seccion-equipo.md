@@ -7,7 +7,7 @@ order: 10
 roles: [owner, admin]
 screens: [/team/barbers]
 keywords: [equipo, sección equipo, barberos, niveles, horas de trabajo, gerentes, activar equipo, equipo por sucursal, no veo a un barbero, crear miembro del equipo, personal]
-related: [equipo/la-lista-de-barberos, equipo/gerentes, sucursales-roles-y-permisos/activar-equipo-en-una-sucursal, sucursales-roles-y-permisos/equipo-compartido-entre-sucursales]
+related: [equipo/la-lista-de-barberos, equipo/gerentes, sucursales/activar-equipo-en-una-sucursal, sucursales/equipo-compartido-entre-sucursales]
 status: review
 updated: 2026-09-25
 ---

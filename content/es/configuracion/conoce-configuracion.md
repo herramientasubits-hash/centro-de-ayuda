@@ -7,7 +7,7 @@ order: 10
 roles: [owner]
 screens: [/settings]
 keywords: [configuración, ajustes, settings, dónde cambio, grupos de ajustes, cuenta, equipo, ventas, notificaciones, mapa de configuración, eliminar cuenta, opciones]
-related: [navegacion/las-secciones-de-barberlytics, sucursales-roles-y-permisos/ajustes-generales-y-por-sucursal]
+related: [navegacion/las-secciones-de-barberlytics, sucursales/ajustes-generales-y-por-sucursal]
 status: review
 updated: 2026-09-25
 ---

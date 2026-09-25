@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/permisos-recepcion
+id: roles-y-permisos/permisos-recepcion
 title: "Qué puede hacer y qué ve la recepción"
 description: "Los permisos de fábrica del rol Recepcionista."
-section: sucursales-roles-y-permisos
-order: 230
+section: roles-y-permisos
+order: 100
 roles: [owner, admin, recepcion]
 screens: [/team-permission]
 keywords: [recepción, recepcionista, secretaria, mostrador, permisos de recepción, qué ve la recepcionista, check in]
-related: [sucursales-roles-y-permisos/tabla-de-permisos-por-rol, sucursales-roles-y-permisos/los-cinco-roles, sucursales-roles-y-permisos/como-funcionan-los-permisos]
+related: [roles-y-permisos/tabla-de-permisos-por-rol, roles-y-permisos/los-cinco-roles, roles-y-permisos/como-funcionan-los-permisos]
 status: draft
 updated: 2026-09-25
 ---

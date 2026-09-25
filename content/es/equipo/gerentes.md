@@ -7,7 +7,7 @@ order: 220
 roles: [owner]
 screens: [/team/barbers]
 keywords: [gerentes, lista de miembros, dueño, administrador, gerente de la barbería, dueño barbero, rol de un miembro, pestaña gerentes, activar gerentes, permisos de gerentes]
-related: [equipo/conoce-la-seccion-equipo, sucursales-roles-y-permisos/los-cinco-roles, sucursales-roles-y-permisos/tabla-de-permisos-por-rol]
+related: [equipo/conoce-la-seccion-equipo, roles-y-permisos/los-cinco-roles, roles-y-permisos/tabla-de-permisos-por-rol]
 status: draft
 updated: 2026-09-25
 ---
@@ -50,7 +50,7 @@ Esa misma persona entra con más de un perfil. Para cambiar entre ellos, mira [C
 Al igual que los barberos, los gerentes se activan por sucursal: **Acciones** › **Activar equipo dentro de esta sucursal**, pestaña **Gerentes**.
 
 > [!NOTE]
-> Aún no está documentado qué otros roles aparecen en esta lista ni qué puede hacer cada gerente desde aquí. Para saber qué puede hacer cada rol, mira [Tabla de permisos por rol](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+> Aún no está documentado qué otros roles aparecen en esta lista ni qué puede hacer cada gerente desde aquí. Para saber qué puede hacer cada rol, mira [Tabla de permisos por rol](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).
 
 ## Preguntas frecuentes
 

@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/perfiles-y-roles
+id: roles-y-permisos/perfiles-y-roles
 title: "Perfiles y roles: qué son y en qué se diferencian"
 description: "Tu perfil es el «sombrero» con el que entras; el rol define qué puedes hacer. Una persona puede tener varios perfiles."
-section: sucursales-roles-y-permisos
-order: 60
+section: roles-y-permisos
+order: 10
 roles: [todos]
 screens: [/*]
 keywords: [perfil, rol, dueño y barbero, business, barber comission, varios perfiles, cambiar perfil, dos roles, permisos, sombrero]
-related: [sucursales-roles-y-permisos/los-cinco-roles, acceso-y-cuenta/cambiar-de-rol, sucursales-roles-y-permisos/de-que-depende-lo-que-ves]
+related: [roles-y-permisos/los-cinco-roles, acceso-y-cuenta/cambiar-de-rol, roles-y-permisos/de-que-depende-lo-que-ves]
 status: review
 updated: 2026-09-25
 ---
@@ -40,7 +40,7 @@ No te pide volver a entrar.
 
 ## Los cinco roles que existen
 
-Dueño, Administrador de la locación, Recepcionista, Barbero por comisión y Barbero de renta. Cada uno se explica en [Los cinco roles](/ayuda/sucursales-roles-y-permisos/los-cinco-roles).
+Dueño, Administrador de la locación, Recepcionista, Barbero por comisión y Barbero de renta. Cada uno se explica en [Los cinco roles](/ayuda/roles-y-permisos/los-cinco-roles).
 
 ## Preguntas frecuentes
 
@@ -51,4 +51,4 @@ Entonces tu cuenta tiene uno solo.
 Mira [Cambiar de rol](/ayuda/acceso-y-cuenta/cambiar-de-rol).
 
 **¿Quién decide qué puede hacer cada rol?**
-El dueño, en **Configuración › Permisos**. Mira [Cómo funcionan los permisos](/ayuda/sucursales-roles-y-permisos/como-funcionan-los-permisos).
+El dueño, en **Configuración › Permisos**. Mira [Cómo funcionan los permisos](/ayuda/roles-y-permisos/como-funcionan-los-permisos).

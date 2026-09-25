@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/tabla-de-permisos-por-rol
+id: roles-y-permisos/tabla-de-permisos-por-rol
 title: "Tabla de permisos: qué puede hacer cada rol"
 description: "Los permisos de fábrica de cada uno de los cinco roles, función por función."
-section: sucursales-roles-y-permisos
-order: 90
+section: roles-y-permisos
+order: 40
 roles: [owner, admin]
 screens: [/team-permission]
 keywords: [tabla de permisos, permisos por rol, qué puede hacer cada rol, administrador, recepción, barbero por comisión, barbero de renta, dueño, matriz, predeterminados]
-related: [sucursales-roles-y-permisos/como-funcionan-los-permisos, sucursales-roles-y-permisos/los-cinco-roles, sucursales-roles-y-permisos/cambiar-los-permisos-de-una-persona]
+related: [roles-y-permisos/como-funcionan-los-permisos, roles-y-permisos/los-cinco-roles, roles-y-permisos/cambiar-los-permisos-de-una-persona]
 status: review
 updated: 2026-09-25
 ---
@@ -67,4 +67,4 @@ updated: 2026-09-25
 Sí, en **Configuración › Permisos**, con una pestaña por rol. También puedes ajustar los permisos de una sola persona en su ficha.
 
 **Un barbero me dice que no ve una sección.**
-Mira [No veo una sección del menú](/ayuda/sucursales-roles-y-permisos/no-veo-una-seccion-del-menu).
+Mira [No veo una sección del menú](/ayuda/roles-y-permisos/no-veo-una-seccion-del-menu).

@@ -7,7 +7,7 @@ order: 20
 roles: [owner, admin]
 screens: [/services]
 keywords: [lista de servicios, listado de servicios, precio básico, estado del servicio, filtrar servicios, buscar un servicio, categoría, combos, servicios activos, tabla de servicios]
-related: [servicios/como-se-organizan-tus-servicios, sucursales-roles-y-permisos/activar-servicios-en-una-sucursal]
+related: [servicios/como-se-organizan-tus-servicios, sucursales/activar-servicios-en-una-sucursal]
 status: review
 updated: 2026-09-25
 ---

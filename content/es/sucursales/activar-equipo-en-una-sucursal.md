@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/activar-equipo-en-una-sucursal
+id: sucursales/activar-equipo-en-una-sucursal
 title: "Activar al equipo en una sucursal"
 description: "Paso a paso para elegir qué barberos y gerentes trabajan en la sucursal donde estás."
-section: sucursales-roles-y-permisos
-order: 150
+section: sucursales
+order: 80
 roles: [owner, admin]
 screens: [/team/activate, /team/barbers]
 keywords: [activar equipo, importar equipo, activar barbero, sucursal, gerentes, comisión, renta, interruptor, guardar, equipo en otra sucursal]
-related: [sucursales-roles-y-permisos/equipo-compartido-entre-sucursales, sucursales-roles-y-permisos/no-veo-a-un-barbero-en-mi-sucursal, equipo/la-lista-de-barberos]
+related: [sucursales/equipo-compartido-entre-sucursales, sucursales/no-veo-a-un-barbero-en-mi-sucursal, equipo/la-lista-de-barberos]
 status: review
 updated: 2026-09-25
 ---

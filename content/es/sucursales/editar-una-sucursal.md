@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/editar-una-sucursal
+id: sucursales/editar-una-sucursal
 title: "Editar los datos de una sucursal"
 description: "Dónde cambiar el nombre, la dirección, la moneda, el idioma y la zona horaria de una sucursal."
-section: sucursales-roles-y-permisos
-order: 180
+section: sucursales
+order: 110
 roles: [owner, admin]
 screens: [/companies/locations, /companies/locations/edit/*]
 keywords: [editar sucursal, cambiar nombre de sucursal, dirección, moneda, idioma, zona horaria, teléfono, código postal, logo, fotos, guardar]
-related: [sucursales-roles-y-permisos/empresa-y-sucursales, sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal]
+related: [sucursales/empresa-y-sucursales, sucursales/que-es-propio-de-cada-sucursal]
 status: draft
 updated: 2026-09-25
 ---

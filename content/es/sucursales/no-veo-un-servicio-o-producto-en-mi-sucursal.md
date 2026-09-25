@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal
+id: sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal
 title: "No veo un servicio o un producto en mi sucursal"
 description: "Un servicio o un producto existe pero no aparece en tu sucursal: falta activarlo ahí."
-section: sucursales-roles-y-permisos
-order: 140
+section: sucursales
+order: 70
 roles: [owner, admin]
 screens: [/services, /products, /services/location/activate-service]
 keywords: [no veo el servicio, no aparece el servicio, no aparece el producto, falta un servicio, activar servicios, activar productos, sucursal nueva vacía]
-related: [sucursales-roles-y-permisos/activar-servicios-en-una-sucursal, sucursales-roles-y-permisos/activar-productos-en-una-sucursal, sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales]
+related: [sucursales/activar-servicios-en-una-sucursal, sucursales/activar-productos-en-una-sucursal, sucursales/catalogos-compartidos-entre-sucursales]
 status: review
 updated: 2026-09-25
 ---

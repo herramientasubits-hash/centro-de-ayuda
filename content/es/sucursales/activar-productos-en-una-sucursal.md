@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/activar-productos-en-una-sucursal
+id: sucursales/activar-productos-en-una-sucursal
 title: "Activar productos en una sucursal"
 description: "Cómo elegir cuáles de los productos de tu empresa vende la sucursal donde estás."
-section: sucursales-roles-y-permisos
-order: 170
+section: sucursales
+order: 100
 roles: [owner, admin]
 screens: [/products]
 keywords: [activar productos, activar productos de barbería, productos en otra sucursal, sucursal nueva, catálogo de productos, inventario]
-related: [sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales, sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal, productos/la-lista-de-productos]
+related: [sucursales/catalogos-compartidos-entre-sucursales, sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal, productos/la-lista-de-productos]
 status: draft
 updated: 2026-09-25
 ---

@@ -14,11 +14,18 @@
     "order": 20
   },
   {
-    "id": "sucursales-roles-y-permisos",
-    "title": "Sucursales, roles y permisos",
-    "description": "Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte entre sucursales.",
-    "icon": "shield",
+    "id": "sucursales",
+    "title": "Sucursales",
+    "description": "Empresa y sucursales: qué es de cada una, qué se comparte y cómo se activa el equipo y el catálogo en cada sucursal.",
+    "icon": "store",
     "order": 25
+  },
+  {
+    "id": "roles-y-permisos",
+    "title": "Roles y permisos",
+    "description": "Los cinco roles, los perfiles, qué puede hacer y qué ve cada uno, y cómo se ajustan los permisos.",
+    "icon": "shield",
+    "order": 27
   },
   {
     "id": "navegacion",

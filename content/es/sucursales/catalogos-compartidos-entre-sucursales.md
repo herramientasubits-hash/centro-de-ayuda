@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales
+id: sucursales/catalogos-compartidos-entre-sucursales
 title: "Servicios y productos: se crean una vez y se activan por sucursal"
 description: "Cómo se reparten tus servicios y productos entre sucursales y dónde se activan."
-section: sucursales-roles-y-permisos
+section: sucursales
 order: 50
 roles: [owner, admin]
 screens: [/services, /products, /services/location/activate-service]
 keywords: [servicios, productos, catálogo, activar servicios, activar productos, sucursal, importar servicios, no aparece el servicio, compartido]
-related: [sucursales-roles-y-permisos/activar-servicios-en-una-sucursal, sucursales-roles-y-permisos/activar-productos-en-una-sucursal, sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal]
+related: [sucursales/activar-servicios-en-una-sucursal, sucursales/activar-productos-en-una-sucursal, sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal]
 status: review
 updated: 2026-09-25
 ---
@@ -37,7 +37,7 @@ Crear un servicio o un producto no lo pone en todas las sucursales de inmediato.
 ## Preguntas frecuentes
 
 **Creé un servicio y no aparece en mi sucursal.**
-Falta activarlo. Mira [Activar servicios en una sucursal](/ayuda/sucursales-roles-y-permisos/activar-servicios-en-una-sucursal).
+Falta activarlo. Mira [Activar servicios en una sucursal](/ayuda/sucursales/activar-servicios-en-una-sucursal).
 
 **¿Tengo que crear el servicio otra vez para abrir otra sucursal?**
 No. Lo creas una vez y lo activas en la sucursal nueva.

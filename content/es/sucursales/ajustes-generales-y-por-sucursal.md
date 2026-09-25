@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/ajustes-generales-y-por-sucursal
+id: sucursales/ajustes-generales-y-por-sucursal
 title: "Ajustes generales y ajustes por sucursal: dónde se cambia cada uno"
 description: "Qué ajustes son de toda la empresa, cuáles son de cada sucursal y qué dice la app sobre ajustar por ubicación."
-section: sucursales-roles-y-permisos
-order: 200
+section: sucursales
+order: 130
 roles: [owner, admin]
 screens: [/settings, /team-commission, /sales-taxes, /sales-tips, /business-closed, /team-permission]
 keywords: [ajustes generales, ajustes por sucursal, configuración por ubicación, comisiones, impuestos, propinas, cierres, permisos, configuración general]
-related: [sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal, configuracion/conoce-configuracion]
+related: [sucursales/que-es-propio-de-cada-sucursal, configuracion/conoce-configuracion]
 status: draft
 updated: 2026-09-25
 ---
@@ -27,7 +27,7 @@ Se ven igual sin importar la sucursal que elegiste arriba:
 
 ## Datos de cada sucursal
 
-En **Configuración › Sucursales › Acciones › Editar**: Moneda, Idioma, Zona horaria, dirección y teléfono. Mira [Qué cambia de una sucursal a otra](/ayuda/sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal).
+En **Configuración › Sucursales › Acciones › Editar**: Moneda, Idioma, Zona horaria, dirección y teléfono. Mira [Qué cambia de una sucursal a otra](/ayuda/sucursales/que-es-propio-de-cada-sucursal).
 
 ## Lo que dicen las pantallas
 

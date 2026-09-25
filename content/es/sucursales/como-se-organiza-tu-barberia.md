@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/como-se-organiza-tu-barberia
+id: sucursales/como-se-organiza-tu-barberia
 title: "Cómo se organiza tu barbería: empresa, sucursales, equipo y catálogos"
 description: "El mapa de Barberlytics en una página: qué es de toda la empresa, qué es de cada sucursal y qué se activa en cada una."
-section: sucursales-roles-y-permisos
+section: sucursales
 order: 10
 roles: [owner, admin]
 screens: [/companies/locations, /team/barbers, /services, /products, /settings]
 keywords: [empresa, sucursal, sucursales, locación, equipo, catálogo, servicios, productos, activar, organización, varias sucursales, cómo funciona, estructura]
-related: [sucursales-roles-y-permisos/empresa-y-sucursales, sucursales-roles-y-permisos/equipo-compartido-entre-sucursales, sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales, sucursales-roles-y-permisos/que-es-propio-de-cada-sucursal]
+related: [sucursales/empresa-y-sucursales, sucursales/equipo-compartido-entre-sucursales, sucursales/catalogos-compartidos-entre-sucursales, sucursales/que-es-propio-de-cada-sucursal]
 status: review
 updated: 2026-09-25
 ---
@@ -40,7 +40,7 @@ Por eso, si abres una sucursal nueva, empieza vacía: no verás a nadie del equi
 - **Configuración** se ve igual en cualquier sucursal, porque es de la empresa.
 
 > [!NOTE]
-> Lo que ves también depende de tu perfil y de tus permisos. Lee [De qué depende lo que ves](/ayuda/sucursales-roles-y-permisos/de-que-depende-lo-que-ves).
+> Lo que ves también depende de tu perfil y de tus permisos. Lee [De qué depende lo que ves](/ayuda/roles-y-permisos/de-que-depende-lo-que-ves).
 
 ## Preguntas frecuentes
 

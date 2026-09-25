@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/ver-todas-las-sucursales-a-la-vez
+id: sucursales/ver-todas-las-sucursales-a-la-vez
 title: "Ver todas las sucursales a la vez"
 description: "Cómo consolidar tus datos eligiendo Todas las sucursales, y qué pantallas cambian."
-section: sucursales-roles-y-permisos
-order: 190
+section: sucursales
+order: 120
 roles: [owner]
 screens: [/*]
 keywords: [todas las sucursales, ver todo, consolidado, varias sucursales, comparar sucursales, selector de sucursal, métricas de todas]
-related: [navegacion/cambiar-de-sucursal, sucursales-roles-y-permisos/como-se-organiza-tu-barberia]
+related: [navegacion/cambiar-de-sucursal, sucursales/como-se-organiza-tu-barberia]
 status: draft
 updated: 2026-09-25
 ---

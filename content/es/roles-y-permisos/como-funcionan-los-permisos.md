@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/como-funcionan-los-permisos
+id: roles-y-permisos/como-funcionan-los-permisos
 title: "Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo"
 description: "Qué significa cada columna de la pantalla de Permisos y cómo se reparten entre el rol y cada persona."
-section: sucursales-roles-y-permisos
-order: 80
+section: roles-y-permisos
+order: 30
 roles: [owner, admin]
 screens: [/team-permission, /team/barbers]
 keywords: [permisos, ver, crear, editar, borrar, activo, matriz de permisos, roles, personalizar permisos, qué puede hacer, acceso total, propietario]
-related: [sucursales-roles-y-permisos/tabla-de-permisos-por-rol, sucursales-roles-y-permisos/cambiar-los-permisos-de-una-persona, sucursales-roles-y-permisos/de-que-depende-lo-que-ves]
+related: [roles-y-permisos/tabla-de-permisos-por-rol, roles-y-permisos/cambiar-los-permisos-de-una-persona, roles-y-permisos/de-que-depende-lo-que-ves]
 status: draft
 updated: 2026-09-25
 ---
@@ -40,7 +40,7 @@ Las funciones están agrupadas en: **Reservas y clientes**, **Equipo**, **Métri
 
 ## Del rol a cada persona
 
-- Cada rol trae unos permisos de fábrica. Míralos en [Tabla de permisos](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+- Cada rol trae unos permisos de fábrica. Míralos en [Tabla de permisos](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).
 - Cuando creas a una persona, recibe una copia de los permisos de su rol.
 - Después puedes ajustarlos **para esa persona**: en su ficha, pestaña **Permisos** ([La ficha de un barbero: permisos](/ayuda/equipo/ficha-de-un-barbero-permisos)).
 

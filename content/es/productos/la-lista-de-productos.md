@@ -7,7 +7,7 @@ order: 20
 roles: [owner, admin, recepcion]
 screens: [/products]
 keywords: [lista de productos, listado de productos, productos de barbería, precio del producto, filtrar productos, buscar un producto, categorías, tabla de productos, All categories, inventario]
-related: [productos/como-se-organizan-tus-productos, sucursales-roles-y-permisos/activar-productos-en-una-sucursal]
+related: [productos/como-se-organizan-tus-productos, sucursales/activar-productos-en-una-sucursal]
 status: review
 updated: 2026-09-25
 ---

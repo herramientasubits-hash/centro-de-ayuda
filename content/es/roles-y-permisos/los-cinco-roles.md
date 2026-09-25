@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/los-cinco-roles
+id: roles-y-permisos/los-cinco-roles
 title: "Los cinco roles y para qué sirve cada uno"
 description: "Dueño, administrador de la locación, recepcionista, barbero por comisión y barbero de renta: cómo describe la app cada uno."
-section: sucursales-roles-y-permisos
-order: 70
+section: roles-y-permisos
+order: 20
 roles: [owner, admin]
 screens: [/team-permission, /team/barbers]
 keywords: [roles, dueño, administrador de la locación, recepcionista, recepción, barbero por comisión, barbero de renta, rol, para qué sirve cada rol, crear miembro del equipo]
-related: [sucursales-roles-y-permisos/perfiles-y-roles, sucursales-roles-y-permisos/tabla-de-permisos-por-rol, equipo/gerentes]
+related: [roles-y-permisos/perfiles-y-roles, roles-y-permisos/tabla-de-permisos-por-rol, equipo/gerentes]
 status: review
 updated: 2026-09-25
 ---
@@ -32,7 +32,7 @@ Al usar **Equipo › Acciones › Crear miembro del equipo**, la pantalla muestr
 
 ## Dónde se ven sus permisos
 
-En **Configuración › Permisos** hay una pestaña por rol: **Administrador de la locación**, **Barbero por comisión**, **Barbero por renta**, **Recepción - mostrador de recepción** y **Dueño**. La tabla completa está en [Tabla de permisos: qué puede hacer cada rol](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+En **Configuración › Permisos** hay una pestaña por rol: **Administrador de la locación**, **Barbero por comisión**, **Barbero por renta**, **Recepción - mostrador de recepción** y **Dueño**. La tabla completa está en [Tabla de permisos: qué puede hacer cada rol](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).
 
 > [!NOTE]
 > Un dueño puede ser también barbero por comisión. En la lista de **Gerentes** aparece como «Dueño - Barbero por comisión».
@@ -43,4 +43,4 @@ En **Configuración › Permisos** hay una pestaña por rol: **Administrador de 
 En las pantallas revisadas solo aparecen estos cinco roles.
 
 **¿La recepción puede ver los pagos de los barberos?**
-No. Esa sección es solo del dueño. Mira la [tabla de permisos](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+No. Esa sección es solo del dueño. Mira la [tabla de permisos](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).

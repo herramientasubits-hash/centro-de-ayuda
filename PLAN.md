@@ -82,7 +82,8 @@ Regla: **toda pantalla tiene su referencia; toda tarea, su guía; todo lo que co
 |---|---|---|---|
 | Empezar | 8 | 3 | 0 |
 | Acceso y cuenta | 16 | 12 | 2 |
-| Sucursales, roles y permisos | 35 | 26 | 5 |
+| Sucursales | 19 | 13 | 3 |
+| Roles y permisos | 16 | 13 | 2 |
 | Moverte por la app | 7 | 4 | 0 |
 | Métricas | 20 | 2 | 10 |
 | Calendario | 29 | 4 | 17 |
@@ -122,11 +123,14 @@ Cada línea es un artículo cuya regla la pantalla no explica. Se agrupan para l
 
 - Cambiar tu plan de Barberlytics
 
-**Sucursales, roles y permisos**
+**Sucursales**
 
 - Ver el detalle de una sucursal: clientes, equipo y licencia
 - Inactivar una sucursal
 - Borrar una sucursal
+
+**Roles y permisos**
+
 - Cambiar los permisos predeterminados de un rol
 - Cambiar los permisos de una persona sin cambiar su rol
 
@@ -303,9 +307,9 @@ _Iniciar sesión, recuperar tu número, cerrar sesión, tu perfil y tu plan._
 | ◑ | Descargar las facturas de Barberlytics | G | P2 | L | `/profile` `/settings/billing-details` |
 | ◑ | Tengo dos perfiles: dueño y barbero | C | P1 | L R | `/*` |
 
-### Sucursales, roles y permisos
+### Sucursales
 
-_Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte entre sucursales._
+_Empresa y sucursales: qué es de cada una, qué se comparte y cómo se activa el equipo y el catálogo en cada sucursal._
 
 | | Artículo | T | Prio. | Necesita | Pantallas |
 |---|---|---|---|---|---|
@@ -314,17 +318,6 @@ _Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte en
 | ◐ | Qué cambia de una sucursal a otra: moneda, zona horaria, idioma y horario | R | P1 | L | `/companies/locations/edit/*` |
 | ◑ | El equipo es de la empresa y se activa en cada sucursal | C | P1 | L | `/team/activate` |
 | ◑ | Servicios y productos: se crean una vez y se activan por sucursal | C | P1 | L | `/services/location/activate-service` |
-| ◑ | Perfiles y roles: qué son y en qué se diferencian | C | P1 | L | `/team-permission` |
-| ◑ | Los cinco roles y para qué sirve cada uno | R | P1 | L | `/team-permission` |
-| ◐ | Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo | C | P1 | L D | `/team-permission` |
-| ◑ | Tabla de permisos: qué puede hacer cada rol | R | P1 | L | `/team-permission` |
-| ◐ | Qué puede hacer y qué ve del dueño | R | P2 | L R | `/team-permission` |
-| ◐ | Qué puede hacer y qué ve del administrador de la locación | R | P2 | L R | `/team-permission` |
-| ◐ | Qué puede hacer y qué ve de recepción | R | P2 | L R | `/team-permission` |
-| ◐ | Qué puede hacer y qué ve del barbero por comisión | R | P2 | L R | `/team-permission` |
-| ◐ | Qué puede hacer y qué ve del barbero de renta | R | P2 | L R | `/team-permission` |
-| ◐ | Qué secciones del menú ve cada rol | R | P2 | R | `/*` |
-| ◑ | De qué depende lo que ves: tu rol, tu sucursal y tus permisos | C | P1 | L R | `/*` |
 | ○ | Crear una sucursal | G | P1 | E | `/companies/locations` |
 | ◐ | Editar los datos de una sucursal | G | P2 | L | `/companies/locations/edit/*` |
 | ○ | Ver el detalle de una sucursal: clientes, equipo y licencia | G | P2 | L D | `/companies/locations/view/*` |
@@ -336,12 +329,30 @@ _Cómo se organiza tu barbería, qué puede hacer cada rol y cómo se reparte en
 | ◐ | Activar productos en una sucursal | G | P1 | L E | `/products/*` |
 | ○ | Un barbero que trabaja en dos sucursales | G | P1 | E | `/team/*` |
 | ○ | Abrir una sucursal nueva: la lista completa, paso a paso | G | P1 | E | `/companies/locations` |
-| ○ | Cambiar los permisos predeterminados de un rol | G | P1 | E D | `/team-permission` |
-| ○ | Cambiar los permisos de una persona sin cambiar su rol | G | P1 | E D | `/team/barbers/view/*` |
-| ○ | Darle a recepción solo lo que necesita | G | P2 | E | `/team-permission` |
 | ◐ | Ajustes generales y ajustes por sucursal: dónde se cambia cada uno | R | P1 | L D | `/settings` |
 | ◑ | No veo a un barbero en mi sucursal | P | P1 | L | `/team/barbers` |
 | ◑ | No veo un servicio o un producto en mi sucursal | P | P1 | L | `/services` `/products` |
+
+### Roles y permisos
+
+_Los cinco roles, los perfiles, qué puede hacer y qué ve cada uno, y cómo se ajustan los permisos._
+
+| | Artículo | T | Prio. | Necesita | Pantallas |
+|---|---|---|---|---|---|
+| ◑ | Perfiles y roles: qué son y en qué se diferencian | C | P1 | L | `/team-permission` |
+| ◑ | Los cinco roles y para qué sirve cada uno | R | P1 | L | `/team-permission` |
+| ◐ | Cómo funcionan los permisos: Ver, Crear, Editar, Borrar y Activo | C | P1 | L D | `/team-permission` |
+| ◑ | Tabla de permisos: qué puede hacer cada rol | R | P1 | L | `/team-permission` |
+| ◐ | Qué puede hacer y qué ve del dueño | R | P2 | L R | `/team-permission` |
+| ◐ | Qué puede hacer y qué ve del administrador de la locación | R | P2 | L R | `/team-permission` |
+| ◐ | Qué puede hacer y qué ve de recepción | R | P2 | L R | `/team-permission` |
+| ◐ | Qué puede hacer y qué ve del barbero por comisión | R | P2 | L R | `/team-permission` |
+| ◐ | Qué puede hacer y qué ve del barbero de renta | R | P2 | L R | `/team-permission` |
+| ◐ | Qué secciones del menú ve cada rol | R | P2 | R | `/*` |
+| ◑ | De qué depende lo que ves: tu rol, tu sucursal y tus permisos | C | P1 | L R | `/*` |
+| ○ | Cambiar los permisos predeterminados de un rol | G | P1 | E D | `/team-permission` |
+| ○ | Cambiar los permisos de una persona sin cambiar su rol | G | P1 | E D | `/team/barbers/view/*` |
+| ○ | Darle a recepción solo lo que necesita | G | P2 | E | `/team-permission` |
 | ◑ | No veo una sección del menú | P | P1 | L R | `/*` |
 | ◐ | No puedo editar o borrar algo | P | P1 | L R | `/*` |
 

@@ -164,11 +164,14 @@ const index = {
   screens,
 };
 
+const sectionTitle = (id) => sections.find((section) => section.id === id)?.title ?? id;
+
 const search = articles.map((article) => ({
   id: article.meta.id,
   title: article.meta.title,
   description: article.meta.description,
   section: article.meta.section,
+  sectionTitle: sectionTitle(article.meta.section),
   keywords: article.meta.keywords,
   headings: article.meta.headings.map((heading) => heading.text),
   questions: extractQuestions(article.body),
@@ -177,7 +180,6 @@ const search = articles.map((article) => ({
   text: article.plain.slice(0, 6000),
 }));
 
-const sectionTitle = (id) => sections.find((section) => section.id === id)?.title ?? id;
 const llms = [
   "# Centro de ayuda de Barberlytics",
   "",

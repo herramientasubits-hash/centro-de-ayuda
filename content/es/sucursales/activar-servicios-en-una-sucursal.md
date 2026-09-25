@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/activar-servicios-en-una-sucursal
+id: sucursales/activar-servicios-en-una-sucursal
 title: "Activar servicios en una sucursal"
 description: "Cómo elegir cuáles de los servicios de tu empresa ofrece la sucursal donde estás."
-section: sucursales-roles-y-permisos
-order: 160
+section: sucursales
+order: 90
 roles: [owner, admin]
 screens: [/services, /services/location/activate-service]
 keywords: [activar servicios, importar servicios, servicio en otra sucursal, sucursal nueva, interruptor, catálogo de servicios, guardar]
-related: [sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales, sucursales-roles-y-permisos/no-veo-un-servicio-o-producto-en-mi-sucursal, servicios/la-lista-de-servicios]
+related: [sucursales/catalogos-compartidos-entre-sucursales, sucursales/no-veo-un-servicio-o-producto-en-mi-sucursal, servicios/la-lista-de-servicios]
 status: draft
 updated: 2026-09-25
 ---

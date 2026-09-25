@@ -7,7 +7,7 @@ order: 10
 roles: [owner, admin]
 screens: [/services]
 keywords: [servicios, categorías de servicios, combos, catálogo de servicios, organizar servicios, activar servicios, servicios por sucursal, no veo un servicio, menú servicios y productos, crear servicio]
-related: [servicios/la-lista-de-servicios, sucursales-roles-y-permisos/activar-servicios-en-una-sucursal, sucursales-roles-y-permisos/catalogos-compartidos-entre-sucursales]
+related: [servicios/la-lista-de-servicios, sucursales/activar-servicios-en-una-sucursal, sucursales/catalogos-compartidos-entre-sucursales]
 status: draft
 updated: 2026-09-25
 ---

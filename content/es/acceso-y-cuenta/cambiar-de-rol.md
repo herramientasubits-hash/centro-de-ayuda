@@ -7,7 +7,7 @@ order: 40
 roles: [owner, admin]
 screens: [/*]
 keywords: [cambiar rol, cambiar perfil, roles, dueño, barbero, business, barber comission, dos roles, rol activo, perfil]
-related: [acceso-y-cuenta/tienes-dos-perfiles, acceso-y-cuenta/cerrar-sesion, acceso-y-cuenta/mi-perfil, sucursales-roles-y-permisos/perfiles-y-roles]
+related: [acceso-y-cuenta/tienes-dos-perfiles, acceso-y-cuenta/cerrar-sesion, acceso-y-cuenta/mi-perfil, roles-y-permisos/perfiles-y-roles]
 status: review
 updated: 2026-09-25
 ---
@@ -39,4 +39,4 @@ Entonces tu cuenta tiene un solo rol.
 
 **¿Qué puede hacer cada rol?**
 Lo define el dueño en **Configuración › Permisos**. Hay un rol para el Administrador de la locación, el Barbero por
-comisión, el Barbero por renta, la Recepción y el Dueño. Las cuentas de dueño tienen acceso total. Mira la [tabla de permisos](/ayuda/sucursales-roles-y-permisos/tabla-de-permisos-por-rol).
+comisión, el Barbero por renta, la Recepción y el Dueño. Las cuentas de dueño tienen acceso total. Mira la [tabla de permisos](/ayuda/roles-y-permisos/tabla-de-permisos-por-rol).

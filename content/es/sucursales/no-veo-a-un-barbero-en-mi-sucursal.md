@@ -1,13 +1,13 @@
 ---
-id: sucursales-roles-y-permisos/no-veo-a-un-barbero-en-mi-sucursal
+id: sucursales/no-veo-a-un-barbero-en-mi-sucursal
 title: "No veo a un barbero en mi sucursal"
 description: "Un barbero de tu equipo no aparece en Equipo, en el calendario o al agendar: casi siempre falta activarlo en esa sucursal."
-section: sucursales-roles-y-permisos
-order: 130
+section: sucursales
+order: 60
 roles: [owner, admin]
 screens: [/team/barbers, /team/activate, /calendar]
 keywords: [no veo al barbero, no aparece el barbero, barbero desaparecido, falta un barbero, activar equipo, sucursal, calendario sin barbero, equipo]
-related: [sucursales-roles-y-permisos/activar-equipo-en-una-sucursal, sucursales-roles-y-permisos/equipo-compartido-entre-sucursales, calendario/un-barbero-no-aparece-en-el-calendario]
+related: [sucursales/activar-equipo-en-una-sucursal, sucursales/equipo-compartido-entre-sucursales, calendario/un-barbero-no-aparece-en-el-calendario]
 status: review
 updated: 2026-09-25
 ---
@@ -23,7 +23,7 @@ updated: 2026-09-25
 3. Busca a la persona en **Barberos** (o **Gerentes**) y, dentro, en **Comisión** o **Renta**.
 4. Enciende su interruptor y toca **Guardar**.
 
-Detalle completo en [Activar al equipo en una sucursal](/ayuda/sucursales-roles-y-permisos/activar-equipo-en-una-sucursal).
+Detalle completo en [Activar al equipo en una sucursal](/ayuda/sucursales/activar-equipo-en-una-sucursal).
 
 ## Si ya está activado y sigue sin salir
 
